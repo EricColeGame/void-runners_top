@@ -24,11 +24,15 @@ export const siteConfig: SiteConfig = {
   logoText: "VR",
   tagline: "Codes, Gameplay Guides, Builds & Tier Lists",
   description:
-    "Your complete Void Runners wiki — working codes, parkour and courier gameplay guides, salvage routes, builds, ships, tier lists and progression tips for the Roblox void courier game.",
+    "Your complete Void Runners wiki — working codes, ship builds, salvage routes, guardian boss strategies, co-op tips, tier lists and progression guides for the sci-fi void runner on Steam.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://void-runners.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://void-runners.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/117457763354785/Void-Runners",
+  supportEmail: "support@void-runners.top",
+  gameUrl: "https://store.steampowered.com/app/5334520/Void_Runners/",
   heroVideoId: "FnH86ToLs4A", // Void Runners gameplay showcase
+  social: {
+    discord: "https://steamcommunity.com/app/5334520",
+    youtube: "https://www.youtube.com/watch?v=FnH86ToLs4A",
+  },
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
 };

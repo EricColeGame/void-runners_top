@@ -19,19 +19,16 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
-  social: {
-    discord: "https://discord.gg/roblox",
-    youtube: "https://www.youtube.com/@roblox",
-  },
+  name: "Void Runners Wiki",
+  shortName: "Void Runners",
+  logoText: "VR",
+  tagline: "Codes, Gameplay Guides, Builds & Tier Lists",
+  description:
+    "Your complete Void Runners wiki — working codes, parkour and courier gameplay guides, salvage routes, builds, ships, tier lists and progression tips for the Roblox void courier game.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://void-runners.top",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://void-runners.top").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://www.roblox.com/games/117457763354785/Void-Runners",
+  heroVideoId: "FnH86ToLs4A", // Void Runners gameplay showcase
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
 };

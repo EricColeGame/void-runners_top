@@ -1,1 +1,535 @@
-{}
+{
+  "site": {
+    "name": "Void Runners Wiki",
+    "shortName": "Void Runners",
+    "tagline": "ビルド、サルベージルート、艦船ティアリスト＆ガイド",
+    "description": "Void Runners の完全ウィキ — 艦船ビルド、武器、サルベージルート、ガーディアンボス攻略、協力プレイのコツ、そして Steam の SF ヴォイドランナー向け進行ガイド。",
+    "legalNotice": "非公式のファンウィキ。プレイヤーがプレイヤーのために作成。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "menu": "メニュー",
+    "toggleTheme": "テーマ切替",
+    "guide": "ガイド",
+    "mechanics": "メカニクス",
+    "codes": "コード",
+    "items": "アイテム",
+    "characters": "キャラクター",
+    "maps": "マップ",
+    "community": "コミュニティ"
+  },
+  "home": {
+    "meta": {
+      "title": "Void Runners Wiki - ビルド・ガイド・最新情報",
+      "description": "Void Runners Wiki はビルド、ゲームプレイガイド、キャラクター詳細、進行のコツ、最新情報を提供し、高速なヴォイドランニング体験を極めるお手伝いをします。"
+    },
+    "hero": {
+      "eyebrow": "高速ヴォイドアドベンチャーゲーム",
+      "title": "Void Runners Wiki",
+      "description": "Void Runners のゲームメカニクス、ビルド、キャラクター、進行システム、ガイド、謎めいたヴォイド探索の必須テクニックを網羅するコミュニティウィキ。",
+      "stats": [
+        "有効コード",
+        "艦船ビルド＆パーツ",
+        "サルベージルート",
+        "ボス攻略"
+      ],
+      "primaryCta": "初心者ガイド",
+      "secondaryCta": "艦船ティアリスト",
+      "tertiaryCta": "有効コード",
+      "videoLabel": "ゲームプレイ紹介"
+    },
+    "updates": {
+      "title": "最新アップデート",
+      "browse": "すべてのガイドを見る",
+      "viewAll": "すべて表示"
+    },
+    "start": {
+      "eyebrow": "はじめに",
+      "title": "Void Runners の旅",
+      "cards": [
+        {
+          "number": "1",
+          "title": "初心者ガイド",
+          "description": "まずコアループを学ぼう。前方のルートを読み、モメンタムを維持し、最初のランから崩壊の波を先取りする。"
+        },
+        {
+          "number": "2",
+          "title": "有効コード",
+          "description": "最新の Void Runners コードを期限切れ前に交換して、無料のシャード、トレイル、コスメを手に入れよう。"
+        },
+        {
+          "number": "3",
+          "title": "アップグレード優先度",
+          "description": "序盤のリソースはスコア倍率より先に、ダッシュのクールダウンとモメンタム維持に使おう。"
+        },
+        {
+          "number": "4",
+          "title": "シャード稼ぎルート",
+          "description": "フルクリア、デイリークエスト、イベントボーナスを重ねて、毎回のセッションでシャードを大幅に稼ごう。"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "人気ページ",
+      "title": "今話題の記事",
+      "quickLinks": [
+        "初心者ガイド",
+        "移動テクニック",
+        "シャード稼ぎ",
+        "ボス戦"
+      ],
+      "cards": [
+        {
+          "badge": "初心者",
+          "title": "Void Runners 初心者ガイド",
+          "description": "最初のランに向けて、モメンタム、ダッシュのタイミング、崩壊タイマーを解説。",
+          "href": "/guide/void-runners-beginner-guide"
+        },
+        {
+          "badge": "更新済み",
+          "title": "Void Runners コード",
+          "description": "コードの入手元、交換方法、失敗したときの対処法。",
+          "href": "/codes/void-runners-code"
+        },
+        {
+          "badge": "人気",
+          "title": "移動ガイド",
+          "description": "タイムを削るダッシュキャンセル、ウォールダッシュリセット、空中制御ドリル。",
+          "href": "/mechanics/void-runners-movement"
+        },
+        {
+          "badge": "人気",
+          "title": "装備＆ロードアウト",
+          "description": "スロット、ステータス優先度、あらゆるプレイスタイル向けのビルドアーキタイプ。",
+          "href": "/items/void-runners-gear"
+        },
+        {
+          "badge": "新着",
+          "title": "カード＆デッキ",
+          "description": "カードの役割、レアリティ、ドロップルート、生き残れるデッキの組み方。",
+          "href": "/items/void-runners-cards"
+        },
+        {
+          "badge": "人気",
+          "title": "ボス戦ガイド",
+          "description": "アリーナのハザード、ボスのアーキタイプ、予備動作、クールダウン管理。",
+          "href": "/mechanics/void-runners-boss-fight"
+        },
+        {
+          "badge": "人気",
+          "title": "シャード稼ぎ",
+          "description": "クリア、クエスト、イベントを重ねてヴォイドシャードを大幅に稼ごう。",
+          "href": "/items/void-runners-shards"
+        },
+        {
+          "badge": "新着",
+          "title": "深宇宙マップ",
+          "description": "オープンなヴォイドマップのルート計画、ハザード解説、ナビゲーション。",
+          "href": "/maps/void-runners-deep-space"
+        },
+        {
+          "badge": "新着",
+          "title": "協力プレイ戦略",
+          "description": "チームの役割、ポジショニング、蘇生メカニクス、コミュニケーションコール。",
+          "href": "/guide/void-runners-strategy"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Void Runnersとは？",
+      "paragraphs": [
+        "Void Runners は、ひとつの問いを軸にした高速でモメンタム重視の SF ランナーだ——背後でヴォイドが道を飲み込む前に、どれだけ動き続けられるか？ 毎回のランでは崩壊しつつある宇宙の一区画に放り込まれ、床が溶けていく中をスプリント、ダッシュ、スライド、ウォールランで脱出地点へと向かう。",
+        "ランとランの合間には、移動モジュール、武器、スーツ、カード、シャードからロードアウトを組み、ソロまたは協力部隊でより過酷なアリーナやガーディアンボス戦へと踏み込んでいく。当 Void Runners ウィキは、ランを生き延びるための移動テクニック、アップグレード優先度、シャードルート、ボス攻略をまとめている。"
+      ],
+      "stats": [
+        {
+          "label": "プラットフォーム",
+          "value": "Steam（PC）"
+        },
+        {
+          "label": "ジャンル",
+          "value": "SFランナー"
+        },
+        {
+          "label": "モード",
+          "value": "ソロ＆協力"
+        },
+        {
+          "label": "ランの目標",
+          "value": "脱出地点に到達"
+        },
+        {
+          "label": "通貨",
+          "value": "ヴォイドシャード"
+        },
+        {
+          "label": "主要アクション",
+          "value": "ダッシュ＆ウォールラン"
+        }
+      ],
+      "cta": "すべてのガイドを見る"
+    },
+    "explore": {
+      "title": "Void Runners Wiki を探索",
+      "description": "移動テクニック、ビルド、艦船ティアリスト、武器とパーツ、ガーディアン、協力戦術、リリース情報、動作環境を扱う Void Runners ガイドで次のランを計画しよう。",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Void Runners 初心者ガイド",
+          "description": "このモジュールでは、コアゲームループ、協力メカニクス、艦船操作、サルベージラン、基本戦略を新規プレイヤーに紹介する。序盤セクターを生き延び、効果的なチームを組む方法を初心者が理解できるよう支援する。",
+          "href": "/guide/void-runners-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "自分のキャラではなく前方のルートを読み、早い段階でラインを決めよう。"
+            },
+            {
+              "label": "2",
+              "detail": "常にダッシュを1回温存し、ミスしても生き残れるようにしよう。"
+            },
+            {
+              "label": "3",
+              "detail": "ウォールランやグラップルを加える前に、ダッシュとスライドをマスターしよう。"
+            },
+            {
+              "label": "4",
+              "detail": "ルートを学んでいる間は、簡単に取れるシャードだけ回収しよう。"
+            },
+            {
+              "label": "5",
+              "detail": "最初のアップグレードはダッシュのクールダウンとモメンタム維持に使おう。"
+            },
+            {
+              "label": "6",
+              "detail": "絶対に後戻りしないこと。崩壊の波はあなたより速い。"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Void Runners ビルドガイド",
+          "description": "このセクションでは、艦船ビルド、武器、パーツ、シナジー、プレイスタイル別の推奨構成を扱う。クルー構成を最適化し、ランのパフォーマンスを高める方法を学べる。",
+          "href": "/items/void-runners-gear",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "スカーミッシャー",
+              "detail": "移動モジュールと速射武器でヒットアンドランを仕掛ける。"
+            },
+            {
+              "label": "アンカー",
+              "detail": "アーマー、再生、エリア制圧で空間を保持し、圧力を受け止める。"
+            },
+            {
+              "label": "サポート",
+              "detail": "バフ維持、蘇生速度、共有再生で部隊を前進させ続ける。"
+            },
+            {
+              "label": "バースト",
+              "detail": "クールダウン回復とアビリティダメージで優先目標を瞬殺する。"
+            },
+            {
+              "label": "エコノミー",
+              "detail": "追加のルートと回収範囲で、毎回のランでシャードをより多く稼ぐ。"
+            },
+            {
+              "label": "ユーティリティ",
+              "detail": "キットをまとめる、レリック・インプラント・チャームの柔軟な1枠。"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Void Runners 艦船ティアリスト",
+          "description": "このモジュールでは入手可能な艦船ハルをランク付けし、能力、長所、理想的なチーム役割を比較する。ソロとマルチのランに最適な艦船選びを支援する。",
+          "href": "/mechanics/void-runners-speed",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "最速のクリーンなラインを実現するダッシュクールダウン短縮とモメンタム維持。"
+            },
+            {
+              "label": "A",
+              "detail": "追加の空中ジャンプと回収範囲で別ルートを切り開く。"
+            },
+            {
+              "label": "B",
+              "detail": "1ランにつき1回のミスを許容するシールドまたは追加ライフの装甲。"
+            },
+            {
+              "label": "C",
+              "detail": "ランに影響しない、コスメ専用のハル。"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Void Runners 武器とパーツ",
+          "description": "このモジュールでは、サルベージレイドで入手できる武器、アップグレードパーツ、特殊効果を一覧化。アイテムの機能を素早く比較し、有用な組み合わせを発見できる。",
+          "href": "/items/void-runners-gear",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "移動モジュール",
+              "detail": "ブーツ、スラスター、ダッシュコア。最優先で最大強化すべき枠。"
+            },
+            {
+              "label": "ボディスーツ",
+              "detail": "生存力の下限を決めるアーマー、耐性、再生。"
+            },
+            {
+              "label": "メイン武器",
+              "detail": "エリートやシールド持ちへの持続ダメージ。"
+            },
+            {
+              "label": "アビリティモジュール",
+              "detail": "クールダウン回復に左右されるバーストダメージと群衆制御。"
+            },
+            {
+              "label": "ユーティリティスロット",
+              "detail": "キットの弱点を補うレリック、インプラント、チャーム。"
+            },
+            {
+              "label": "ヴォイドシャード",
+              "detail": "アップグレード、リロール、コスメ、保管に使うラン通貨。"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Void Runners ボスガイド",
+          "description": "このセクションでは、主要なガーディアン戦、攻撃パターン、強敵を倒すための推奨戦略を解説。終盤セクターに到達する前の準備を支援する。",
+          "href": "/mechanics/void-runners-boss-fight",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "追跡者",
+              "detail": "ダメージを出す前に、2つの退避ルートをあらかじめ決めておこう。"
+            },
+            {
+              "label": "ゾーン支配者",
+              "detail": "縮小する安全地帯からは、ゾーンに触れてからではなく早めに離脱しよう。"
+            },
+            {
+              "label": "サモナー",
+              "detail": "1人を雑魚処理に割り当て、メインターゲットを読みやすく保とう。"
+            },
+            {
+              "label": "ミラー",
+              "detail": "バースト連打を反射してくるので、勘ではなくリズムで回避しよう。"
+            },
+            {
+              "label": "消耗戦",
+              "detail": "フェーズ移行に備えてクールダウンを温存し、使い切りにしない。"
+            },
+            {
+              "label": "激怒",
+              "detail": "最終フェーズでは安全にトレードし、長いアニメーション硬直を避けよう。"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Void Runners 協力プレイガイド",
+          "description": "このモジュールでは、マルチプレイ、チームの位置取り、蘇生メカニクス、コミュニケーション戦略に焦点を当てる。オンラインまたはローカル協力プレイでの連携を改善する。",
+          "href": "/guide/void-runners-strategy",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "アンカー",
+              "detail": "敵の注意を引きつけ、ボスの向きを制御し、フェーズ移行をすべてコールする。"
+            },
+            {
+              "label": "ダメージ",
+              "detail": "安定した稼働を保ち、フェーズの合間に雑魚やシールドを割る。"
+            },
+            {
+              "label": "サポート",
+              "detail": "部隊を維持し、デバフを解除し、ローテーションをカバーする。"
+            },
+            {
+              "label": "フレックス",
+              "detail": "穴を埋め、メカニクスを処理し、倒れたランナーを救助する。"
+            },
+            {
+              "label": "コミュ",
+              "detail": "予備動作の時点でローテーションをコールし、被弾後に反応する事態を防ぐ。"
+            },
+            {
+              "label": "蘇生",
+              "detail": "倒れた味方のもとへ行けるよう、移動系クールダウンを1つ温存する。"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Void Runners リリース情報",
+          "description": "このセクションでは、公式発表、開発アップデート、リリース情報、重要な変更をまとめる。ゲームの開発進捗に関する最新ニュースを追える。",
+          "href": "/community/void-runners-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "リリース",
+              "detail": "発売時期と、正式な日付を裏付ける公式シグナルを追跡しよう。"
+            },
+            {
+              "label": "体験版",
+              "detail": "体験版をやり込む前に、進行状況が引き継がれるか確認しよう。"
+            },
+            {
+              "label": "パッチ",
+              "detail": "パッチごとにコストや調整が変わるので、ツールチップを読み直そう。"
+            },
+            {
+              "label": "Steam",
+              "detail": "パッチノートはストアの告知と固定スレッドをチェックしよう。"
+            },
+            {
+              "label": "トレーラー",
+              "detail": "まず公式チャンネルを確認し、再アップロードは未検証として扱おう。"
+            },
+            {
+              "label": "ウィッシュリスト",
+              "detail": "ゲームをウィッシュリストに追加し、発売日に備えて開発者通知をオンにしよう。"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Void Runners 動作環境",
+          "description": "このモジュールでは、ハードウェア要件、対応プラットフォーム、コントローラー情報、パフォーマンス詳細を提供する。自分の環境で快適に動くか確認できる。",
+          "href": "/community/void-runners-steam",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "プラットフォーム",
+              "detail": "Steam 経由の PC。対応 OS はストアページに記載。"
+            },
+            {
+              "label": "フレームレート",
+              "detail": "移動の挙動がフレームタイミングに依存すると感じたら、フレームレートを上限設定しよう。"
+            },
+            {
+              "label": "コントローラー",
+              "detail": "ダッシュとウォールランのキー割り当ては、崩壊の最中ではなくラン前にテストしよう。"
+            },
+            {
+              "label": "ネットワーク",
+              "detail": "セッション間で入力が不安定に感じたら、ping とティックレートを確認しよう。"
+            },
+            {
+              "label": "ストレージ",
+              "detail": "頻繁に更新されるので、パッチ用の空き容量を確保しておこう。"
+            },
+            {
+              "label": "ディスプレイ",
+              "detail": "広い視界が重要なので、設定の高さよりクリアで安定したフレームレートを優先しよう。"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "よくある質問",
+      "description": "Void Runners に関するよくある質問に手早く回答。",
+      "items": [
+        {
+          "question": "Void Runnersとは？",
+          "answer": "Void Runners は Steam の高速でモメンタム重視の SF ランナー。崩壊する宇宙区画をスプリント、ダッシュ、スライド、ウォールランで駆け抜け、シャードを集め、背後でヴォイドがルートを閉ざす前に脱出地点へ到達する。"
+        },
+        {
+          "question": "Void Runnersはソロでも協力プレイでも遊べますか？",
+          "answer": "どちらも可能。Void Runners はソロでも友達とスクワッドを組んでも遊べ、アンカー、ダメージ、サポート、フレックスといった明確な役割が長期戦でチームを生かす。"
+        },
+        {
+          "question": "Void Runnersのコードはどう使いますか？",
+          "answer": "Void Runners のコードは、ゲーム内で無料のシャード、トレイル、コスメと交換できる短い文字列。大文字小文字を区別し、多くはすぐ期限切れになるので、新しいコードが現れたらすぐ交換しよう。"
+        },
+        {
+          "question": "Void Runnersで最初に何を強化すべき？",
+          "answer": "移動を優先しよう。まずダッシュクールダウン短縮とモメンタム維持、次に回収範囲とシールドまたは追加ライフ。スコア倍率とコスメは最後。"
+        },
+        {
+          "question": "Void Runnersにボス戦はありますか？",
+          "answer": "はい。Void Runners のガーディアンは崩壊・拡張・漂流するアリーナで戦いを仕掛けてくるため、生のダメージよりも位置取りとクールダウン管理が重要になる。"
+        },
+        {
+          "question": "Void Runnersのシャードを効率よく稼ぐには？",
+          "answer": "1回のセッションで複数の源を重ねよう。ステージのフルクリア、ボスとエリートの撃破、デイリー・ウィークリークエスト、期間限定イベントボーナス。危険なシャードを追うより、ランを確実に完走しよう。"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Void Runnersを極める準備はできた？",
+      "description": "最初のサルベージランから終盤のガーディアン戦まで、当コミュニティウィキが無料で最新のガイドを提供します。",
+      "primary": "初心者ガイドを読む",
+      "secondary": "Steamでプレイ"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Void Runners ガイド",
+    "overviewDescription": "最初のランから上級のルートマスターまで、移動・ビルド・生存を扱うステップバイステップの Void Runners ガイド。"
+  },
+  "mechanics": {
+    "overviewTitle": "Void Runners メカニクス",
+    "overviewDescription": "Void Runners の実際の遊び方：モメンタム、フェーズダッシュ、ブーストベクトル、レーシングライン、戦闘ウィンドウ、ガーディアンボス戦。"
+  },
+  "codes": {
+    "overviewTitle": "Void Runners コード",
+    "overviewDescription": "Void Runners のコードの仕組み、入手場所、ゲーム内での交換方法、コードが失敗したときの対処法。"
+  },
+  "items": {
+    "overviewTitle": "Void Runners アイテム＆装備",
+    "overviewDescription": "スーツ、装備、シャード、カード、コレクティブル。各アイテムの効果、強化方法、狙う価値のあるドロップを解説。"
+  },
+  "characters": {
+    "overviewTitle": "Void Runners キャラクター",
+    "overviewDescription": "Kiana、Ravnivori、Wraith などの Void Runners キャラクターのプロフィールと、能力・役割・ビルド方針。"
+  },
+  "maps": {
+    "overviewTitle": "Void Runners マップ",
+    "overviewDescription": "Flashpoint、Lighthouse、Deep Space、Warp、Worlds Collide など Void Runners マップのルート計画と生存戦術。"
+  },
+  "community": {
+    "overviewTitle": "Void Runners コミュニティ",
+    "overviewDescription": "発売日追跡、Steam レビュー、Reddit のコツ、トレーラー、体験版の詳細、Void Runners をめぐる音楽コミュニティ。"
+  },
+  "shared": {
+    "wikiNavigation": "ウィキナビゲーション",
+    "activeCodes": "有効コード",
+    "updated": "更新済み",
+    "viewAllCodes": "すべてのコードを見る",
+    "playOnRoblox": "Robloxでプレイ",
+    "inThisSection": "このセクション内",
+    "tableOfContents": "目次",
+    "nextSteps": "次のステップ",
+    "needHelp": "ヘルプが必要ですか？",
+    "relatedReading": "関連記事",
+    "relatedGuides": "関連ガイド",
+    "readMore": "続きを読む",
+    "officialMedia": "公式メディア",
+    "home": "ホーム",
+    "noGuidesAvailable": "ガイドはまだありません。後ほど確認してください！"
+  },
+  "footer": {
+    "aboutTitle": "Void Runners Wiki",
+    "about": "Void Runners Wiki は、艦船、ビルド、サルベージルート、ガーディアン、そして新旧プレイヤーに必要なゲーム知識を扱う独立系ファン制作のガイドハブです。",
+    "quickLinks": "クイックリンク",
+    "guides": "ガイド",
+    "legal": "法的事項",
+    "copyright": "2026 Void Runners Wiki。Aaron Reisman および Steam とは提携していません。",
+    "description": "Steam の協力型 SF ヴォイドランナー。ソロまたは4人協力で深宇宙のサルベージランへ。",
+    "playGame": "Steamでプレイ",
+    "officialDiscord": "Steam コミュニティ",
+    "officialYoutube": "ゲームプレイトレーラー",
+    "vvBuilder": "Void Runners ビルダー（艦船プランナー）",
+    "beginnerGuide": "初心者ガイド",
+    "raceGuides": "キャラクターガイド",
+    "bossGuides": "ボスガイド",
+    "buildGuide": "ビルドガイド",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約"
+  }
+}

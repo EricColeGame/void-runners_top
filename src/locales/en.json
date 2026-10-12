@@ -43,22 +43,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn the core loop first: read the path ahead, keep momentum, and stay ahead of the collapse wave from your very first run."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Active Codes",
+          "description": "Redeem the latest Void Runners codes for free shards, trails, and cosmetics before they expire."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Upgrade Priorities",
+          "description": "Spend early resources on dash cooldown and momentum retention before you touch score multipliers."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Void Runners."
+          "title": "Shard Farming Routes",
+          "description": "Stack full clears, daily quests, and event bonuses to bank far more shards in every session."
         }
       ]
     },
@@ -66,237 +66,359 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Movement Tech",
+        "Shard Farming",
+        "Boss Fights"
       ],
       "cards": [
         {
           "badge": "Beginner",
-          "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "title": "Void Runners Beginner Guide",
+          "description": "Momentum, dash timing, and the collapse timer explained for your first runs.",
+          "href": "/guide/void-runners-beginner-guide"
         },
         {
           "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
-        },
-        {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "title": "Void Runners Codes",
+          "description": "Where codes come from, how to redeem them, and what to do when one fails.",
+          "href": "/codes/void-runners-code"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
-        },
-        {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "title": "Movement Guide",
+          "description": "Dash canceling, wall dash resets, and air control drills that cut seconds.",
+          "href": "/mechanics/void-runners-movement"
         },
         {
           "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
+          "title": "Gear & Loadouts",
+          "description": "Slots, stat priorities, and build archetypes for every playstyle.",
+          "href": "/items/void-runners-gear"
+        },
+        {
+          "badge": "New",
+          "title": "Cards & Decks",
+          "description": "Card roles, rarities, drop routes, and how to build a deck that survives.",
+          "href": "/items/void-runners-cards"
         },
         {
           "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "title": "Boss Fight Guide",
+          "description": "Arena hazards, boss archetypes, tells, and cooldown discipline.",
+          "href": "/mechanics/void-runners-boss-fight"
+        },
+        {
+          "badge": "Popular",
+          "title": "Shard Farming",
+          "description": "Stack clears, quests, and events to bank far more Void Shards.",
+          "href": "/items/void-runners-shards"
         },
         {
           "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
+          "title": "Deep Space Maps",
+          "description": "Route planning, hazard breakdowns, and navigation for open void maps.",
+          "href": "/maps/void-runners-deep-space"
         },
         {
           "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "title": "Co-op Strategy",
+          "description": "Team roles, positioning, revive mechanics, and communication calls.",
+          "href": "/guide/void-runners-strategy"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Void Runners?",
       "paragraphs": [
-        "Void Runners is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Void Runners is a fast, momentum-driven sci-fi runner built around one question: how long can you keep moving before the void swallows the path behind you? Each run drops you into a collapsing stretch of space where you sprint, dash, slide, and wall-run toward an extraction point while the floor dissolves behind you.",
+        "Between runs you build a loadout from movement modules, weapons, suits, cards, and shards, then push deeper into harder arenas and guardian boss fights, solo or with a co-op squad. Our Void Runners wiki gathers the movement tech, upgrade priorities, shard routes, and boss strategies that keep runs alive."
       ],
       "stats": [
         {
-          "label": "Developer",
-          "value": "Midnight Continent"
-        },
-        {
           "label": "Platform",
-          "value": "Roblox"
+          "value": "Steam (PC)"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Sci-Fi Runner"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Mode",
+          "value": "Solo & Co-op"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Run Goal",
+          "value": "Reach Extraction"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Currency",
+          "value": "Void Shards"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Key Move",
+          "value": "Dash & Wall-Run"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Void Runners Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Plan your next run with Void Runners guides covering movement tech, builds, ship tier lists, weapons and parts, guardians, co-op tactics, release updates, and system requirements.",
       "modules": [
         {
           "order": 1,
-          "name": "Void Runners Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/void-runners-code",
-          "displayType": "code-box",
+          "name": "Void Runners Beginner Guide",
+          "description": "This module introduces new players to the core gameplay loop, co-op mechanics, ship control, salvage runs, and basic strategies. It helps beginners understand how to survive early sectors and build effective teams.",
+          "href": "/guide/void-runners-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Read the path ahead instead of your character, and commit to a line early."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Bank one dash at all times so a mistake stays survivable."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Master dash and slide before you add wall-runs and grapples."
+            },
+            {
+              "label": "4",
+              "detail": "Take only the easy shards while you are still learning the route."
+            },
+            {
+              "label": "5",
+              "detail": "Spend first upgrades on dash cooldown and momentum retention."
+            },
+            {
+              "label": "6",
+              "detail": "Never backtrack, because the collapse wave is faster than you are."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/void-runners-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Void Runners Builds Guide",
+          "description": "This section covers ship builds, weapons, parts, synergies, and recommended combinations for different playstyles. Players can learn how to optimize their crew setup and improve run performance.",
+          "href": "/items/void-runners-gear",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Skirmisher",
+              "detail": "Movement module plus a fast-firing weapon for hit-and-run pressure."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "Anchor",
+              "detail": "Armor, regen, and area control to hold space and absorb pressure."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Support",
+              "detail": "Buff uptime, revive speed, and shared regen to keep the squad moving."
+            },
+            {
+              "label": "Burst",
+              "detail": "Cooldown recovery and ability damage to delete priority targets."
+            },
+            {
+              "label": "Economy",
+              "detail": "Extra loot and pickup radius to bank more shards every run."
+            },
+            {
+              "label": "Utility",
+              "detail": "One flex piece of relic, implant, or charm that glues the kit together."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/guide/void-runners-guide",
+          "name": "Void Runners Ships Tier List",
+          "description": "This module ranks available ship hulls and compares their abilities, strengths, and ideal team roles. It helps players choose the best ships for solo and multiplayer runs.",
+          "href": "/mechanics/void-runners-speed",
           "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "S",
+              "detail": "Dash cooldown reduction and momentum retention for the fastest clean lines."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "A",
+              "detail": "Extra mid-air jump and pickup radius frames that open alternate routes."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "B",
+              "detail": "Shield or extra-life plating that buys exactly one mistake per run."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "C",
+              "detail": "Cosmetic-only hulls with no gameplay effect on the run."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/guide/void-runners-gameplay-guide",
-          "displayType": "feature-cards",
+          "name": "Void Runners Weapons and Parts",
+          "description": "This module lists weapons, upgrade parts, and special effects available during salvage raids. Players can quickly compare item functions and discover useful combinations.",
+          "href": "/items/void-runners-gear",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Movement Module",
+              "detail": "Boots, thrusters, or a dash core, and the first slot worth maxing."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Body Suit",
+              "detail": "Armor, resistance, and regen that set your survivability floor."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Primary Weapon",
+              "detail": "Sustained damage for elites and shielded targets."
+            },
+            {
+              "label": "Ability Module",
+              "detail": "Burst damage and crowd control gated behind cooldown recovery."
+            },
+            {
+              "label": "Utility Slot",
+              "detail": "Relic, implant, or charm that patches the weakness in your kit."
+            },
+            {
+              "label": "Void Shards",
+              "detail": "Run currency for upgrades, rerolls, cosmetics, and storage."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/void-runners-tips",
-          "displayType": "feature-cards",
+          "name": "Void Runners Boss Guide",
+          "description": "This section explains major guardian encounters, attack patterns, and recommended strategies for defeating powerful enemies. It helps players prepare before reaching late-game sectors.",
+          "href": "/mechanics/void-runners-boss-fight",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "The Chaser",
+              "detail": "Pre-plan two exit lanes before you commit to a damage window."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "The Zoner",
+              "detail": "Rotate out of shrinking safe space early, not when the zone touches you."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Summoner",
+              "detail": "Assign one player to clear adds so the main target stays readable."
+            },
+            {
+              "label": "The Mirror",
+              "detail": "Dodge on a beat rather than on instinct, because it reflects burst spam."
+            },
+            {
+              "label": "Attrition",
+              "detail": "Bank cooldowns for phase transitions instead of firing them on cooldown."
+            },
+            {
+              "label": "Enrage",
+              "detail": "Trade safely in the final phase and avoid long animation locks."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
+          "name": "Void Runners Co-op Guide",
+          "description": "This module focuses on multiplayer gameplay, team positioning, revive mechanics, and communication strategies. It helps groups coordinate better during online or local co-op runs.",
           "href": "/guide/void-runners-strategy",
-          "displayType": "feature-cards",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Anchor",
+              "detail": "Hold attention, control boss facing, and call out every phase shift."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Damage",
+              "detail": "Keep steady uptime and break adds or shields between phases."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Support",
+              "detail": "Sustain the squad, cleanse debuffs, and cover rotations."
+            },
+            {
+              "label": "Flex",
+              "detail": "Fill gaps, handle mechanics, and rescue downed runners."
+            },
+            {
+              "label": "Comms",
+              "detail": "Call rotations on the tell so nobody reacts after the hit."
+            },
+            {
+              "label": "Revive",
+              "detail": "Keep one mobility cooldown so you can reach a downed teammate."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Void Runners Release Updates",
+          "description": "This section collects official announcements, development updates, release information, and important changes. Players can track the latest news about the game's development progress.",
+          "href": "/community/void-runners-release-date",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Release",
+              "detail": "Track the launch window and the official signals that confirm a real date."
+            },
+            {
+              "label": "Demo",
+              "detail": "Check whether demo progress carries over before you grind it."
+            },
+            {
+              "label": "Patches",
+              "detail": "Re-read tooltips after each patch, because costs and tuning shift."
+            },
+            {
+              "label": "Steam",
+              "detail": "Follow store announcements and pinned threads for patch notes."
+            },
+            {
+              "label": "Trailer",
+              "detail": "Watch official channels first and treat reuploads as unverified."
+            },
+            {
+              "label": "Wishlist",
+              "detail": "Wishlist the game and enable developer notifications for launch day."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Void Runners System Requirements",
+          "description": "This module provides hardware requirements, supported platforms, controller information, and performance details. It helps players check whether their setup can run the game smoothly.",
+          "href": "/community/void-runners-steam",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Platform",
+              "detail": "PC via Steam, with supported operating systems listed on the store page."
+            },
+            {
+              "label": "Frame Rate",
+              "detail": "Cap your frame rate if movement physics feel tied to frame timing."
+            },
+            {
+              "label": "Controller",
+              "detail": "Test dash and wall-run bindings before a run, not mid-collapse."
+            },
+            {
+              "label": "Network",
+              "detail": "Check ping and tick rate when inputs feel inconsistent between sessions."
+            },
+            {
+              "label": "Storage",
+              "detail": "Keep headroom for patches, since the game updates frequently."
+            },
+            {
+              "label": "Display",
+              "detail": "Wide sightlines matter, so favor a clear, stable frame rate over raw settings."
             }
           ]
         }
@@ -308,23 +430,27 @@
       "items": [
         {
           "question": "What is Void Runners?",
-          "answer": "Void Runners is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "Void Runners is a fast, momentum-driven sci-fi runner on Steam. You sprint, dash, slide, and wall-run through a collapsing stretch of space, collect shards, and reach an extraction point before the void closes the route behind you."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "Is Void Runners playable solo or in co-op?",
+          "answer": "Both. You can run Void Runners solo or squad up with friends, where clear roles such as anchor, damage, support, and flex keep the team alive through longer encounters."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How do Void Runners codes work?",
+          "answer": "Void Runners codes are short strings redeemed in-game for free shards, trails, and cosmetics. They are case-sensitive and most expire quickly, so redeem a new Void Runners code as soon as it appears."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "What should I upgrade first in Void Runners?",
+          "answer": "Prioritize movement: dash cooldown reduction and momentum retention first, then pickup radius and a shield or extra life. Score multipliers and cosmetics come last."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Does Void Runners have boss fights?",
+          "answer": "Yes. Void Runners guardians fight you on arenas that collapse, expand, and drift, so positioning and cooldown discipline matter more than raw damage."
+        },
+        {
+          "question": "How do I farm Void Runners shards fast?",
+          "answer": "Stack sources in one session: full stage clears, boss and elite kills, daily and weekly quests, and limited-time event bonuses. Bank the run instead of chasing risky shards."
         }
       ]
     },

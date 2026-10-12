@@ -1,0 +1,110 @@
+export const metadata = {
+  title: "Vector de impulso de Void Runners explicado: domina el momentum, el encadenamiento y el control aéreo",
+  description: "Aprende cómo funciona el vector de impulso de Void Runners, por qué la dirección vence a la velocidad bruta y los ejercicios de timing que convierten saltos caóticos en rutas limpias y repetibles.",
+  category: "mechanics",
+  date: "2026-10-12",
+}
+
+## Por qué el vector de impulso de Void Runners decide cada carrera
+
+Los void runners son juegos de momentum antes que juegos de reacción. El suelo no es fiable, los huecos son largos, y lo único que te mantiene vivo es la velocidad que ya llevas más cualquier empuje que puedas añadir encima. Por eso el vector de impulso de Void Runners importa más que cualquier otra entrada individual de tu arsenal.
+
+Un vector de impulso solo es dos piezas de información: con cuánta fuerza empuja y hacia dónde apunta. La mayoría de jugadores solo piensa en la primera mitad. Machacan el impulso para conseguir la fuerza máxima y luego se preguntan por qué rozan una cornisa o se desvían hacia un plano de muerte. La dirección es la mitad que realmente decide la ruta.
+
+Cuando empiezas a pensar en vectores, todo el juego cambia. Dejas de preguntarte "¿cómo voy más rápido?" y empiezas a preguntarte "¿hacia dónde apunta mi momentum ahora mismo, y hacia dónde necesito que apunte dentro de medio segundo?". Ese cambio es la diferencia entre una victoria de suerte y una repetible.
+
+| Componente | Qué controla | Qué pasa cuando lo ignoras |
+|---|---|---|
+| Magnitud | Cuánta velocidad añade el impulso | O te quedas corto en los huecos o te pasas de largo en los aterrizajes |
+| Dirección | Hacia dónde se dirige esa velocidad | Te desvías hacia paredes, techos o el vacío |
+| Ventana de timing | Cuándo se registra realmente el impulso | El empuje llega tarde y lucha contra tu momentum existente |
+| Curva de decaimiento | Con qué rapidez se disipa la velocidad añadida | Las rutas largas se sienten lentas a pesar de impulsos limpios |
+| Interacción con la gravedad | Cómo se combina el empuje con la caída | Pierdes la altura que necesitabas para la siguiente plataforma |
+
+La curva de decaimiento es el componente que más subestima la gente. Un impulso que se siente enorme en el momento de activarlo puede estar casi agotado cuando llegas a la siguiente plataforma. Cuando planifiques una ruta, piensa en la distancia que necesitas cubrir *después* del impulso, no solo en la distancia en el instante en que lo pulsas.
+
+## Tipos de impulso y el vector que produce cada uno
+
+No todos los impulsos se comportan igual, y tratarlos como intercambiables es una de las formas más rápidas de estancar una carrera. Cada tipo empuja a lo largo de un eje ligeramente distinto, y cada uno encaja mejor con una situación diferente.
+
+| Tipo de impulso | Eje principal | Mejor uso | Riesgo principal |
+|---|---|---|---|
+| Impulso terrestre | Horizontal, alineado con la superficie | Acumular velocidad bruta en tramos planos | Desperdiciarlo justo antes de una sección vertical |
+| Impulso aéreo | Orientación de cámara o personaje | Corregir en pleno vuelo y extender saltos | Apuntarlo hacia abajo sin querer |
+| Impulso encadenado | Compuesto a partir del impulso anterior | Tramos largos y abiertos con pocas plataformas | Encadenar demasiado pronto y perder control direccional |
+| Asistencia gravitatoria | Vertical, usando la velocidad de caída | Lanzarte a rutas inferiores y atajos | Comprometerte con un descenso del que no puedes salir |
+| Redirección en pared o borde | Perpendicular a la superficie | Giros cerrados sin perder velocidad | Angularte demasiado plano y rebotar en la pared |
+
+La regla general que se cumple en la mayoría de builds de void runner: los impulsos horizontales te compran distancia, los verticales te compran opciones. Si no estás seguro de cuál quiere una sección, pregúntate si necesitas viajar más lejos o llegar más alto. Esa única pregunta resuelve la mayoría de discusiones de ruta.
+
+### Leer tu vector antes de comprometerte
+
+Los informes de la comunidad describen de forma consistente el mismo hábito entre los jugadores rápidos: miran el punto de salida de un hueco, no el hueco en sí. Tu destino objetivo determina el vector que necesitas. Si apuntas al vacío, te dirigirás hacia el vacío.
+
+### Cuándo encadenar supera a un único impulso grande
+
+Un único impulso grande te da una decisión. Una cadena de impulsos más pequeños te da varias oportunidades de corregir. En rutas desconocidas, los jugadores que encadenan tienden a sobrevivir más tiempo, porque un primer empuje ligeramente equivocado puede arreglarse con el segundo o el tercero. Reserva los empujes máximos de un solo uso para rutas que ya te sepas de memoria.
+
+## Ventanas de timing y disciplina de entrada
+
+El timing es donde el vector de impulso de Void Runners deja de ser un problema matemático y empieza a ser un problema de memoria muscular. El vector en sí no cambia según cuándo pulses, pero el *resultado* sí, porque tu momentum existente es distinto en cada momento.
+
+| Cuándo pulsas | Resultado típico | Notas |
+|---|---|---|
+| En la cima de un arco | El impulso extiende el arco limpiamente | La ventana más segura para la mayoría de jugadores |
+| Subiendo | El impulso añade altura y cuesta velocidad hacia delante | Útil para rutas verticales |
+| Bajando | El impulso se combina con la gravedad | Rápido pero difícil de dirigir |
+| Justo al aterrizar | El impulso se cancela parcialmente al contacto | Normalmente una entrada desperdiciada |
+| A mitad de cooldown | La entrada se pierde por completo | El fallo silencioso más común |
+
+Esa última fila merece atención. En la mayoría de implementaciones, un impulso pulsado durante el cooldown no se pone en cola: simplemente no hace nada. Los jugadores que machacan el botón durante un cooldown creen que impulsaron, y luego culpan al juego cuando se quedan cortos. Aprender a contar el cooldown mentalmente no tiene glamur, y arregla más carreras fallidas que cualquier técnica avanzada.
+
+## Errores comunes que matan tu vector de impulso de Void Runners
+
+La mayoría de las carreras fallidas se remontan a un pequeño conjunto de errores repetidos. Corregir dos o tres de estos suele producir una mejora mayor que aprender un truco nuevo.
+
+| Error | Por qué duele | Solución |
+|---|---|---|
+| Impulsarte hacia la cámara | El empuje lucha contra tu momentum hacia delante | Fija la cámara antes de comprometerte |
+| Encadenar impulsos demasiado rápido | Los impulsos posteriores se los come el cooldown | Deja un compás entre entradas |
+| Apuntar al centro de la plataforma | Llegas sin espacio para corregir | Apunta al borde cercano y luego frena |
+| Ignorar la velocidad de caída | La gravedad rota silenciosamente tu vector efectivo | Ten en cuenta el descenso al elegir un ángulo |
+| Practicar solo carreras completas | Nunca aíslas el segmento que falla | Entrena la sección de forma aislada |
+
+El error de la cámara es el último que nota la gente. Como la cámara define "adelante" en muchas builds, un impulso disparado mientras la cámara gira apuntará a algún lugar que no pretendías. Adquiere el hábito de asentar la cámara antes de pulsar, aunque te cueste una fracción de segundo.
+
+## Ejercicios de práctica, planificación de rutas y hallazgos de la comunidad
+
+La mejora en las mecánicas de void runner viene de la repetición con un propósito. Las carreras completas aleatorias construyen aguante; los ejercicios específicos construyen habilidad.
+
+| Ejercicio | Objetivo | Cómo hacerlo |
+|---|---|---|
+| Repetición de un solo hueco | Encontrar el ángulo de impulso ideal | Haz el mismo salto 20 veces, ajustando una variable |
+| Completar sin impulso | Aprender el momentum base | Completa una sección sin impulsarte en absoluto |
+| Impulso a ciegas | Construir intuición de timing | Impúlsate con señales de audio o ritmo, no visuales |
+| Ruta inversa | Entender la geometría vectorial | Recorre hacia atrás una sección conocida |
+| Conteo de cooldown | Eliminar entradas perdidas | Cuenta en voz alta entre impulsos durante una carrera completa |
+
+La planificación de rutas merece la misma disciplina. Antes de intentar una sección nueva, mira una pasada limpia de ella y luego anota la secuencia de vectores que crees que necesita: horizontal, vertical, horizontal, redirección. Los jugadores que dibujan rutas en papel informan de menos dudas a mitad de carrera, porque la decisión ya estaba tomada antes de que empezara.
+
+Si buscas más títulos de void runner para practicar estas mecánicas, explora [el centro oficial de etiquetas Runner de Steam](https://store.steampowered.com/tags/en/Runner/), que reúne juegos impulsados por momentum con sistemas de movimiento similares.
+
+Una advertencia honesta: los valores exactos de impulso, las duraciones de cooldown y las tasas de decaimiento cambian de un juego a otro, y a veces entre parches del mismo juego. Todo lo anterior es un marco para pensar en el vector de impulso de Void Runners, no un conjunto universal de números. Prueba cada principio en tu propia build y quédate con lo que se sostenga.
+
+## Preguntas frecuentes
+
+### ¿Qué es exactamente el vector de impulso de Void Runners?
+
+Es la combinación de dirección y magnitud que se aplica cuando activas un impulso. Piénsalo como una flecha: la longitud de la flecha es cuánta velocidad ganas, y hacia dónde apunta es adónde va esa velocidad. Ambas mitades importan por igual, aunque la mayoría de jugadores solo presta atención a la longitud.
+
+### ¿Debería impulsarme siempre a máxima fuerza?
+
+No. La magnitud máxima solo es correcta cuando tu dirección ya es perfecta y la sección que tienes delante es larga y abierta. En pasillos estrechos, un impulso más pequeño y bien angulado te mantiene vivo. La precisión vence a la potencia en casi cualquier situación de corto alcance.
+
+### ¿Por qué a veces mi impulso no hace absolutamente nada?
+
+La causa más probable es una ventana de cooldown. En muchas implementaciones, las entradas pulsadas durante el cooldown se descartan en lugar de guardarse en cola. La segunda causa más probable es un ángulo de cámara u orientación que apunta el impulso a un lugar inofensivo, lo que hace que se sienta como una pulsación desperdiciada.
+
+### ¿Cuánto se tarda en dominar el control del vector de impulso?
+
+La experiencia de los jugadores sugiere que unas pocas sesiones centradas en repetir un solo hueco producen más progreso que semanas de carreras completas casuales. La habilidad es más reconocimiento de patrones que reflejos puros: una vez que puedes predecir adónde te enviará un impulso, la ejecución se vuelve casi automática.

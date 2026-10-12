@@ -1,0 +1,149 @@
+export const metadata = {
+  title: "Void Runners Movement Guide: Momentum, Dashes, and Air Control Mastery",
+  description: "Master void runners movement: momentum, dash timing, air control, coyote time, and drills that turn sloppy runs into clean, fast clears.",
+  category: "mechanics",
+  date: "2026-10-12",
+}
+
+Void runners movement is the difference between a run that looks effortless and one that ends against a wall. In games built around endless voids, momentum-driven dashes, and split-second air control, your hands are the only difficulty setting that truly matters. Nail the mechanics and the level design opens up; fumble them and every gap starts to feel like a trap.
+
+This guide breaks down how void runners movement actually works under the hood — the speed tiers, the hidden timing windows, the drills that build muscle memory, and the habits that quietly ruin otherwise good runs.
+
+## What Makes Void Runners Movement Feel So Good
+
+Every movement system in this space chases the same feeling: flow. You want the player to reach a state where input and outcome line up so tightly that conscious thinking stops and reacting takes over. Void runners get there with four design pillars.
+
+- **Forward bias.** Camera placement, level geometry, and rewards all push you toward the next platform. Backtracking is possible but rarely worth it.
+- **Forgiving windows.** Missing a jump by two frames shouldn't end a run, so generous coyote time and input buffering keep small errors from snowballing.
+- **Expressive chaining.** Dashes, wall kicks, and grapples link into each other, letting skilled players invent routes the designers never planned.
+- **Readable failure.** When you die, you should understand exactly why within a second of respawning.
+
+The void itself is more than a backdrop. It's a pressure system. Because there's no floor to stand on, hesitation costs altitude, and altitude costs options. That's why void runners movement rewards decisiveness more than raw precision.
+
+If you want to see how differently studios interpret these pillars, browsing a curated catalog such as [Steam's Parkour tag hub](https://store.steampowered.com/tags/en/Parkour/) makes the range obvious — some games lean into heavy physics, others into snappy, arcade-style acceleration.
+
+## The Core Mechanics Behind Void Runners Movement
+
+Most games in the genre build from the same small kit of verbs. The table below covers the ones you'll meet again and again.
+
+| Mechanic | What it does | Skill floor | Payoff when mastered |
+|---|---|---|---|
+| Dash / burst | Instant directional speed spike | Low | Closing gaps, mid-air corrections |
+| Double jump | One extra impulse after leaving the ground | Low | Height recovery, route extension |
+| Wall run / wall kick | Converts vertical surfaces into speed | Medium | Vertical shortcuts, corner escapes |
+| Grapple / tether | Pulls you toward an anchor point | High | Massive route freedom |
+| Slide | Retains speed on landing | Low | Slipping through tight geometry |
+| Air control | Steering while airborne | Medium | Precision landings, adjustments |
+| Launch pad / boost ring | Scripted speed injection | None | Free momentum, route entries |
+
+Notice how few of these are attack verbs. Void runners movement is almost entirely locomotion. Combat, when it exists at all, is usually a tool for redirecting momentum rather than stopping it.
+
+The magic happens in the combinations:
+
+- **Dash + air control** lets you cut corners that look impossible from the ground.
+- **Wall kick + grapple** creates vertical chains that skip entire sections.
+- **Slide + dash** preserves speed through tight corridors where a normal landing would kill it.
+
+Community reports from veteran players suggest the strongest runners rarely use every mechanic equally. They pick two or three, master them completely, and build every route around those strengths.
+
+## Momentum, Speed Tiers, and Route Reading
+
+Speed in these games isn't a single number. It's a state machine, and knowing which tier you're in tells you what's possible in the next second.
+
+| Speed state | How you get there | What it unlocks | Main risk |
+|---|---|---|---|
+| Neutral | Standing, walking, respawn | Precision movement, safe scouting | Losing tempo |
+| Cruising | Normal run speed | Standard jumps, simple chains | Easy for the level to outpace you |
+| Charged | Dash, boost pad, downhill slope | Long gaps, wall chains | Harder to steer |
+| Chained | Two or more momentum sources stacked | Route shortcuts, skips | One mistake erases everything |
+| Terminal | Sustained chaining over long stretches | Speedrun-level lines | Almost no recovery |
+
+Think of momentum as a debt you're always paying interest on. Every time you stop, you owe the game slower acceleration to get back to speed. Route reading, then, is mostly about deciding where you can afford to slow down.
+
+A practical method for planning a line:
+
+1. **Scan for the highest point.** Vertical position is usually worth more than horizontal distance.
+2. **Find your anchors.** Grapple points, launch pads, and wall segments define the skeleton of the route.
+3. **Mark the reset points.** Wide platforms and safe ledges are where you can breathe.
+4. **Test it backwards.** Running a route in reverse exposes shortcuts you'd miss going forward.
+
+Players who plan routes this way typically stop blaming their reflexes and start fixing their lines — which is a much faster path to improvement.
+
+## Timing Windows and Input Feel
+
+The invisible half of void runners movement is forgiveness. These systems are usually tuned with hidden windows that make inputs feel responsive even when they land slightly early or late.
+
+| System | What it forgives | Typical range | How to train it |
+|---|---|---|---|
+| Coyote time | Jumping just after leaving a ledge | ~80–170 ms | Deliberately jump late off ledges |
+| Jump buffer | Pressing jump just before landing | ~80–130 ms | Jump early into landings |
+| Dash buffer | Queuing a dash during another action | ~100 ms | Dash out of slides and wall kicks |
+| Corner correction | Clipping a platform edge | A few pixels | Aim slightly short on purpose |
+| Input leniency | Diagonal inputs near cardinal directions | Varies by game | Test on both input types |
+
+Exact values differ from game to game and often differ between keyboard and gamepad, so treat these ranges as general design conventions rather than universal rules. What matters is that you learn your game's feel, not the numbers behind it.
+
+One more variable people underestimate: display refresh rate. Community reports frequently mention that the same route feels different at 60 Hz versus higher refresh rates — not because the game changed, but because the feedback loop did. Late inputs become visible, and visible problems are fixable.
+
+Settings worth adjusting early:
+
+- **Field of view.** A wider view gives you more time to read upcoming geometry.
+- **Camera smoothing.** Reduce it; a camera that lags behind your movement hides landing spots.
+- **Camera shake.** Turn it down if it obscures the platform you're aiming for.
+- **Sensitivity / deadzone.** Tune until small stick movements produce predictable turns.
+
+## Practice Drills to Sharpen Void Runners Movement
+
+Grinding full runs is the slowest way to improve. Isolated drills build the same skills in a fraction of the time.
+
+| Drill | How to run it | Suggested volume | What it trains |
+|---|---|---|---|
+| No-dash run | Clear a section without dashing | 5–10 attempts | Jump timing, route efficiency |
+| Reverse route | Play a section backwards | 3–5 attempts | Spatial awareness |
+| One-life chain | Link as many gaps as possible, reset on any full stop | 10 attempts | Momentum management |
+| Late jump drill | Jump at the last possible moment off each ledge | 10 reps per ledge | Coyote time feel |
+| Segment split | Time one segment instead of the whole level | 5 runs | Consistency under pressure |
+
+Deliberate practice beats volume. Ten focused minutes on wall kicks will do more for your movement than an hour of unstructured runs, because you're training one variable at a time instead of five.
+
+A simple warm-up that takes about eight minutes:
+
+- Two minutes of air-control figure-eights.
+- Three minutes of dash cancels and buffered inputs.
+- Two minutes of full-speed straight-line running.
+- One minute of the hardest jump in your current route.
+
+## Common Mistakes That Break Your Flow
+
+Most stalled progress comes from a short list of repeatable errors. Find yours in the table below.
+
+| Mistake | Symptom | Fix |
+|---|---|---|
+| Over-dashing | Speed spikes, then stalls out | Dash only for gaps you can't jump |
+| Fighting the camera | Repeated misjudged landings | Increase FOV, cut smoothing, look further ahead |
+| Landing flat | Momentum dies on every platform | Land at an angle and slide into your next input |
+| Ignoring buffers | Inputs feel dropped or eaten | Press the next action before the current one ends |
+| Grinding one section | Tilt and sloppy muscle memory | Change routes or take a short break |
+| Copying routes blindly | Inconsistent execution | Adapt the line to your own timing |
+
+The last one deserves emphasis. Watching a top player's line and copying it exactly rarely works, because their route assumes their reaction time and their input device. Steal the structure, then rebuild the timing around your own hands.
+
+## FAQ
+
+### How long does it take to get good at void runners movement?
+
+It depends heavily on the game and how you practice. Players who isolate one mechanic per session tend to see noticeable improvement within a handful of focused sessions, while players who only run full levels often plateau for weeks. Consistency matters more than long sessions.
+
+### Is keyboard or controller better for void runners movement?
+
+Both work, and the right answer depends on how the game is tuned. Controllers generally offer smoother air control thanks to analog input, while keyboards give exact cardinal directions that make certain dash angles more consistent. Try both on the same segment and compare your times.
+
+### Why do I keep losing speed when I land?
+
+Landing flat is the usual culprit. In most movement systems, a flat landing converts your horizontal speed into a stop, while an angled landing or a slide preserves it. Chain a slide, a dash, or a jump buffer immediately after touchdown to keep the run alive.
+
+### Do graphics and input settings really affect performance?
+
+They can. Field of view, camera smoothing, and refresh rate all change how much information you have and how quickly you receive it. None of them replace practice, but a clean, readable screen makes every practice rep more useful.
+
+Mastering void runners movement isn't about memorizing frame data. It's about building a feel for momentum, respecting the timing windows the designers gave you, and practicing the specific skills your routes demand. Pick one drill, run it for ten minutes, and watch how quickly the void stops feeling empty.

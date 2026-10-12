@@ -1,0 +1,120 @@
+export const metadata = {
+  title: "La velocidad de los void runners explicada: mecánicas de movimiento, inercia y cómo moverte más rápido",
+  description: "Cómo funciona la velocidad de los void runners: estadísticas de movimiento, inercia del dash y técnicas de desplazamiento que se acumulan, además de ejercicios para exprimir hasta la última unidad de velocidad.",
+  category: "mechanics",
+  date: "2026-10-12",
+}
+
+## ¿Qué son los void runners?
+
+Los void runners viven y mueren por su velocidad. En cualquier juego que use el arquetipo —una unidad ligera, frágil y centrada en la movilidad, ligada a temáticas de vacío, fase o grieta—, la velocidad de los void runners es el único número que decide si limpias una sala o te quedas atrapado a campo abierto. A diferencia de un tanque, un void runner no absorbe daño; elimina el daño al no estar ahí cuando este aterriza.
+
+Ese cambio de enfoque importa, porque modifica cómo evalúas cada mejora. La salud efectiva de un void runner se mide en distancia recorrida por segundo, no en puntos de armadura. Si tu velocidad de void runner baja, tu supervivencia baja con ella, a menudo antes de que te des cuenta de la causa.
+
+El arquetipo aparece en tres formas comunes:
+
+- **Clase de jugador:** un personaje de movilidad con dashes de enfriamiento corto, valores de sprint altos y defensas finas.
+- **Unidad enemiga:** un flanqueador rápido que cierra distancias con rapidez y castiga reacciones lentas o mal posicionamiento.
+- **Build de roguelike:** una partida que acumula mejoras de movimiento hasta que el propio desplazamiento se convierte en la fuente de daño.
+
+| Rasgo | Void Runner | Bruiser estándar |
+|---|---|---|
+| Salud efectiva | Baja, basada en esquiva | Alta, basada en aguante |
+| Movimiento base | Por encima de la media | Por debajo de la media |
+| Movilidad explosiva | Dash o blink | Carga o salto |
+| Ventana de daño | Corta, frecuente | Larga, comprometida |
+| Castigado por | Control de masas, pasillos estrechos | Kiting, daño a distancia |
+| Gana mediante | Reposicionarse constantemente | Mantener la posición |
+
+## Las cinco capas de la velocidad de los void runners
+
+Los jugadores nuevos tratan la velocidad como una sola estadística. No lo es: es una pila de cinco capas, y la capa que descuidas suele ser la que más tiempo te cuesta.
+
+1. **Velocidad de movimiento base.** El suelo sobre el que se multiplica todo lo demás. Se aplica al caminar, al hacer strafe y, a menudo, al atacar.
+2. **Multiplicador de sprint o impulso.** Un porcentaje aplicado sobre la base. Aquí es donde se originan en realidad la mayoría de las quejas del tipo "me siento lento".
+3. **Movilidad explosiva.** Dashes, blinks, rodadas y pasos de fase. Ignoran la mayor parte de la fricción del suelo y son la mayor fuente individual de velocidad a corta distancia.
+4. **Conservación de inercia.** Cuánta velocidad sobrevive a un giro, un aterrizaje o el final de un dash. Una conservación alta te permite encadenar movimientos; una baja hace que cada acción se sienta como empezar desde cero.
+5. **El tope suave.** El punto en el que la velocidad extra rinde cada vez menos porque tus entradas, la cámara o tu radio de giro ya no pueden seguir el ritmo.
+
+| Capa | Qué la controla | Cuello de botella habitual | Solución más rápida |
+|---|---|---|---|
+| Velocidad base | Estadísticas del personaje, clase de peso | Equipo pesado sin compensación | Reequilibrar el peso del equipamiento |
+| Multiplicador de sprint | Mejoras, buffs, auras | El tiempo activo del buff, no su tamaño | Mejorar primero el tiempo activo |
+| Movilidad explosiva | Enfriamientos, cargas | Enfriamiento largo, una sola carga | Añadir una carga antes de añadir alcance |
+| Conservación de inercia | Física del motor, sincronización de entradas | Cancelar movimientos demasiado pronto | Practicar la sincronización de entradas |
+| Tope suave | Velocidad de giro, cámara, tiempo de reacción | La habilidad del jugador, no las estadísticas | Ejercicios, no equipo |
+
+La conclusión práctica: si ya superaste el tope suave, comprar más velocidad es tirar recursos. Convierte ese presupuesto en daño o supervivencia.
+
+## Técnicas de movimiento que realmente acumulan velocidad de void runner
+
+Las estadísticas brutas te llevan hasta el techo; la técnica decide si lo tocas. La experiencia de los jugadores en todo el género apunta de forma consistente a un mismo puñado de técnicas de movimiento como los verdaderos diferenciadores.
+
+- **Cancelación de dash.** Terminar un dash antes de tiempo para conservar la velocidad de salida y liberar tu siguiente acción. La ganancia es pequeña por uso y enorme a lo largo de una partida completa.
+- **Encadenado de deslizamientos o planeos.** Enlazar movimientos de desplazamiento de forma que la animación de recuperación de uno se convierta en el inicio del siguiente. Bien hecho, no hay pausa visible.
+- **Control aéreo y strafe.** Ajustar la dirección en el aire te permite recortar esquinas que el movimiento en el suelo te obligaría a rodear.
+- **Pegarse a las esquinas.** Cortar el interior de un giro ahorra más distancia de la que otorgan la mayoría de las mejoras de velocidad, y no cuesta nada.
+- **Cancelación de salto.** Interrumpir un aterrizaje para saltarte fotogramas de recuperación. En motores donde la física se ejecuta por fotograma, aquí es donde quitar el límite de FPS cambia la sensación de la velocidad de los void runners.
+
+| Técnica | Dificultad | Ganancia de velocidad | Riesgo |
+|---|---|---|---|
+| Pegarse a las esquinas | Baja | Constante, pequeña | Ninguno |
+| Control aéreo | Baja–Media | Moderada | Exposición en el aire |
+| Cancelación de salto | Media | Moderada | Una entrada mal sincronizada mata la inercia |
+| Cancelación de dash | Media | Alta con el tiempo | Enfriamiento desperdiciado si es pronto |
+| Encadenado de deslizamientos | Alta | La más alta sostenida | Alta presión de ejecución |
+
+Una nota sobre el hardware: los informes de la comunidad sugieren que, en algunos motores, la física del movimiento está ligada a la tasa de fotogramas o al tick rate del servidor. Si tus entradas se sienten inconsistentes entre sesiones, comprueba si cambió tu límite de FPS o tus condiciones de red antes de culpar a tu build.
+
+Para hacerte una idea de cómo maneja el género en general el movimiento de alta movilidad, echa un vistazo a los [juegos de runner frenéticos en Steam](https://store.steampowered.com/tags/en/Runner/) y compara cómo estructura cada uno la economía del dash: es un marco de referencia útil a la hora de evaluar los sistemas de cualquier juego concreto.
+
+## Builds de velocidad: prioridad de mejoras y compensaciones
+
+Cada punto gastado en velocidad de void runner es un punto que no se gasta en daño. El truco está en saber cuándo la velocidad ya se ha pagado sola.
+
+| Prioridad | Tipo de mejora | Por qué importa | Cuándo omitirla |
+|---|---|---|---|
+| 1 | Carga de dash extra | Multiplica todas las demás herramientas de movimiento | Nunca, en una build de movilidad pura |
+| 2 | Reducción de enfriamiento | Mejora el tiempo activo, el verdadero limitante | Cuando el tiempo activo ya ronda el 100 % |
+| 3 | Multiplicador de sprint | Beneficio amplio y siempre activo | Si ya alcanzaste el tope suave |
+| 4 | Velocidad de movimiento base | Eleva el suelo de todo lo demás | Si tu build depende del dash |
+| 5 | Buffs de velocidad fijos con temporizador | Estallido situacional | Si el tiempo activo es inferior a la mitad |
+
+La razón por la que las cargas de dash ocupan lo más alto: una segunda carga no solo te da más distancia, también te da una opción de seguridad y una opción de reposicionamiento en el mismo hueco. La reducción de enfriamiento va segunda porque duplicar el tiempo activo de un dash suele superar a añadir una fracción a tu valor de sprint.
+
+El rendimiento decreciente aparece rápido tras el tope suave. Una vez que superas cómodamente los proyectiles enemigos y los temporizadores de desplazamiento, invertir más en velocidad no produce ninguna mejora medible en el tiempo de limpieza, pero invertir en daño sí.
+
+## Ejercicios, errores y los límites de la velocidad
+
+La mayoría de las pérdidas de velocidad no son problemas de estadísticas. Son problemas de hábitos, y aparecen de formas predecibles.
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Cancelar los dashes demasiado pronto | Saltitos cortos en lugar de deslizamientos largos | Mantén la entrada hasta la extensión completa primero |
+| Hacer strafe en exceso | Trayectorias amplias e ineficientes | Practicar rutas en línea recta |
+| Guardar el dash para emergencias | Tiempos de limpieza lentos, enfriamientos sin usar | Gastar dashes según enfriamiento, no por miedo |
+| Ignorar el terreno | Rodear obstáculos | Aprender qué bordes puedes recortar |
+| Acumular velocidad por encima del tope | Ningún cambio en el tiempo de limpieza | Reasignar a daño |
+
+| Ejercicio | Duración | Qué entrena |
+|---|---|---|
+| Carrera de sprint en línea recta | 5 minutos | Ruteo base y recorte de esquinas |
+| Vuelta encadenando dashes | 10 minutos | Ritmo de enfriamiento y conservación de inercia |
+| Limpieza sin dash | 10 minutos | Posicionamiento sin muleta |
+| Partida completa cronometrada | 1 partida | Si los cambios ayudan de verdad |
+
+Haz la partida completa cronometrada al final. Es el único ejercicio que responde a la pregunta real: ¿este cambio te hizo más rápido o solo lo parece? Sentirse más rápido y ser más rápido son cosas distintas, y solo una de ellas aparece en el cronómetro.
+
+## Preguntas frecuentes
+
+**¿La velocidad de los void runners tiene un tope duro?**
+Normalmente hay un tope suave más que uno duro. Pasado cierto punto, la velocidad adicional produce rendimientos decrecientes porque tu velocidad de giro, la velocidad de cámara o tu tiempo de reacción se convierten en el factor limitante, no la estadística en sí.
+
+**¿Qué es más importante, la velocidad de movimiento base o el enfriamiento del dash?**
+Para la mayoría de los void runners, gana el enfriamiento del dash. Los dashes evitan la fricción y otorgan una distancia explosiva que la velocidad base no puede replicar, y un mejor tiempo activo se acumula a lo largo de una partida completa.
+
+**¿Se puede aumentar la velocidad de los void runners solo con equipo?**
+El equipo te lleva aproximadamente hasta el tope suave. Más allá de eso, la técnica —cancelación de dash, encadenado de deslizamientos y recorte de esquinas— es donde viven las ganancias restantes. La experiencia de los jugadores sugiere de forma consistente que el techo de habilidad está muy por encima del techo de estadísticas.
+
+**¿Por qué los void runners se sienten más rápidos en algunas configuraciones que en otras?**
+La tasa de fotogramas y el tick rate de la red pueden afectar a cómo se registran las entradas de movimiento en algunos motores. Si tu build no ha cambiado pero la sensación sí, comprueba esas dos variables antes de reconstruir nada.

@@ -9,7 +9,14 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "codes": "Codes",
+    "items": "Items",
+    "characters": "Characters",
+    "maps": "Maps",
+    "community": "Community"
   },
   "home": {
     "meta": {
@@ -461,7 +468,34 @@
       "secondary": "Play on Steam"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Void Runners Guides",
+    "overviewDescription": "Step-by-step Void Runners guides covering movement, builds, and survival, from your first run to advanced route mastery."
+  },
+  "mechanics": {
+    "overviewTitle": "Void Runners Mechanics",
+    "overviewDescription": "How Void Runners actually plays: momentum, phase dashes, boost vectors, racing lines, combat windows, and guardian boss fights."
+  },
+  "codes": {
+    "overviewTitle": "Void Runners Codes",
+    "overviewDescription": "How Void Runners codes work, where to find them, how to redeem them in-game, and what to do when a code fails."
+  },
+  "items": {
+    "overviewTitle": "Void Runners Items & Gear",
+    "overviewDescription": "Suits, gear, shards, cards, and collectibles: what each item does, how to upgrade it, and which drops are worth chasing."
+  },
+  "characters": {
+    "overviewTitle": "Void Runners Characters",
+    "overviewDescription": "Profiles for Void Runners characters such as Kiana, Ravnivori, and Wraith, with their abilities, roles, and build directions."
+  },
+  "maps": {
+    "overviewTitle": "Void Runners Maps",
+    "overviewDescription": "Route plans and survival tactics for Void Runners maps, including Flashpoint, Lighthouse, Deep Space, Warp, and Worlds Collide."
+  },
+  "community": {
+    "overviewTitle": "Void Runners Community",
+    "overviewDescription": "Release date tracking, Steam reviews, Reddit tips, trailers, demo details, and the music community around Void Runners."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -492,7 +526,7 @@
     "officialYoutube": "Gameplay Trailer",
     "vvBuilder": "Void Runners Builder (Ship Planner)",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Ship Guides",
+    "raceGuides": "Character Guides",
     "bossGuides": "Boss Guides",
     "buildGuide": "Build Guide",
     "privacyPolicy": "Privacy Policy",

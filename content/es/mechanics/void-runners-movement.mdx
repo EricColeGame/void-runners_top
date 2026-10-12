@@ -1,0 +1,149 @@
+export const metadata = {
+  title: "Guía de movimiento en Void Runners: dominio del impulso, los dashes y el control aéreo",
+  description: "Domina el movimiento en los void runners: impulso, timing del dash, control aéreo, tiempo coyote y ejercicios que convierten carreras torpes en clears limpios y rápidos.",
+  category: "mechanics",
+  date: "2026-10-12",
+}
+
+El movimiento en los void runners marca la diferencia entre una carrera que parece no costar nada y otra que termina estrellada contra una pared. En juegos construidos en torno a vacíos infinitos, dashes impulsados por el momento y control aéreo de fracciones de segundo, tus manos son el único ajuste de dificultad que de verdad importa. Domina las mecánicas y el diseño de niveles se abrirá ante ti; falla y cada hueco empezará a parecer una trampa.
+
+Esta guía desglosa cómo funciona de verdad el movimiento en los void runners a nivel interno: los niveles de velocidad, las ventanas de timing ocultas, los ejercicios que construyen memoria muscular y los hábitos que arruinan en silencio carreras que por lo demás serían buenas.
+
+## Qué hace que el movimiento de los void runners se sienta tan bien
+
+Todo sistema de movimiento en este género persigue la misma sensación: el flow. Buscas que el jugador llegue a un estado en el que entrada y resultado encajen con tal precisión que el pensamiento consciente se detenga y la reacción tome el control. Los void runners lo consiguen con cuatro pilares de diseño.
+
+- **Sesgo hacia delante.** La colocación de la cámara, la geometría del nivel y las recompensas te empujan hacia la siguiente plataforma. Volver atrás es posible, pero rara vez merece la pena.
+- **Ventanas permisivas.** Fallar un salto por dos frames no debería terminar una carrera, así que un tiempo coyote generoso y el buffering de entradas evitan que los errores pequeños se multipliquen.
+- **Encadenamiento expresivo.** Los dashes, las patadas de pared y los garfios se enlazan entre sí, permitiendo que los jugadores hábiles inventen rutas que los diseñadores nunca planearon.
+- **Fallo legible.** Cuando mueres, deberías entender exactamente por qué en el primer segundo tras reaparecer.
+
+El vacío en sí es más que un telón de fondo. Es un sistema de presión. Como no hay suelo donde pisar, dudar cuesta altura, y la altura cuesta opciones. Por eso el movimiento en los void runners premia la decisión más que la precisión pura.
+
+Si quieres ver con qué variedad interpretan los estudios estos pilares, echar un vistazo a un catálogo curado como [el centro de etiquetas Parkour de Steam](https://store.steampowered.com/tags/en/Parkour/) deja claro el abanico: algunos juegos apuestan por físicas pesadas, otros por una aceleración ágil de estilo arcade.
+
+## Las mecánicas centrales del movimiento en los void runners
+
+La mayoría de juegos del género se construyen a partir del mismo pequeño conjunto de verbos. La tabla siguiente cubre los que te encontrarás una y otra vez.
+
+| Mecánica | Qué hace | Nivel de habilidad mínimo | Recompensa al dominarla |
+|---|---|---|---|
+| Dash / impulso | Pico de velocidad direccional instantáneo | Bajo | Cerrar huecos, correcciones en el aire |
+| Doble salto | Un impulso extra tras dejar el suelo | Bajo | Recuperar altura, extender la ruta |
+| Carrera por pared / patada de pared | Convierte superficies verticales en velocidad | Medio | Atajos verticales, escapes en esquinas |
+| Garfio / cable | Te atrae hacia un punto de anclaje | Alto | Libertad de ruta enorme |
+| Deslizamiento | Conserva la velocidad al aterrizar | Bajo | Colarse por geometría estrecha |
+| Control aéreo | Dirección mientras estás en el aire | Medio | Aterrizajes precisos, ajustes |
+| Plataforma de lanzamiento / anillo de impulso | Inyección de velocidad programada | Ninguno | Impulso gratis, entradas de ruta |
+
+Fíjate en qué pocos de estos son verbos de ataque. El movimiento en los void runners es casi por completo locomoción. El combate, cuando existe, suele ser una herramienta para redirigir el impulso en lugar de detenerlo.
+
+La magia ocurre en las combinaciones:
+
+- **Dash + control aéreo** te permite trazar curvas que desde el suelo parecen imposibles.
+- **Patada de pared + garfio** crea cadenas verticales que se saltan secciones enteras.
+- **Deslizamiento + dash** conserva la velocidad en pasillos estrechos donde un aterrizaje normal la mataría.
+
+Los testimonios de la comunidad de jugadores veteranos sugieren que los mejores runners rara vez usan todas las mecánicas por igual. Eligen dos o tres, las dominan por completo y construyen cada ruta en torno a esas fortalezas.
+
+## Impulso, niveles de velocidad y lectura de rutas
+
+La velocidad en estos juegos no es un único número. Es una máquina de estados, y saber en qué nivel estás te dice qué es posible en el siguiente segundo.
+
+| Estado de velocidad | Cómo llegas a él | Qué desbloquea | Riesgo principal |
+|---|---|---|---|
+| Neutro | Estar de pie, caminar, reaparecer | Movimiento de precisión, exploración segura | Perder el tempo |
+| Crucero | Velocidad normal de carrera | Saltos estándar, cadenas simples | Que el nivel te supere con facilidad |
+| Cargado | Dash, plataforma de impulso, pendiente cuesta abajo | Huecos largos, cadenas en paredes | Más difícil de dirigir |
+| Encadenado | Dos o más fuentes de impulso acumuladas | Atajos de ruta, saltos de sección | Un solo error borra todo |
+| Terminal | Encadenamiento sostenido durante tramos largos | Líneas de nivel speedrun | Casi ninguna posibilidad de recuperación |
+
+Piensa en el impulso como una deuda sobre la que siempre pagas intereses. Cada vez que te detienes, le debes al juego una aceleración más lenta para volver a coger velocidad. La lectura de rutas, entonces, consiste sobre todo en decidir dónde puedes permitirte frenar.
+
+Un método práctico para planificar una línea:
+
+1. **Busca el punto más alto.** La posición vertical suele valer más que la distancia horizontal.
+2. **Encuentra tus anclajes.** Los puntos de garfio, las plataformas de lanzamiento y los segmentos de pared definen el esqueleto de la ruta.
+3. **Marca los puntos de reinicio.** Las plataformas amplias y las repisas seguras son donde puedes respirar.
+4. **Pruébala al revés.** Recorrer una ruta en sentido inverso revela atajos que pasarías por alto hacia delante.
+
+Los jugadores que planifican sus rutas así suelen dejar de culpar a sus reflejos y empiezan a corregir sus líneas, que es un camino mucho más rápido hacia la mejora.
+
+## Ventanas de timing y sensación de control
+
+La mitad invisible del movimiento en los void runners es la permisividad. Estos sistemas suelen ajustarse con ventanas ocultas que hacen que las entradas se sientan receptivas incluso cuando llegan un poco antes o un poco después.
+
+| Sistema | Qué perdona | Rango típico | Cómo entrenarlo |
+|---|---|---|---|
+| Tiempo coyote | Saltar justo después de dejar una repisa | ~80–170 ms | Salta a propósito tarde desde las repisas |
+| Buffer de salto | Pulsar salto justo antes de aterrizar | ~80–130 ms | Salta pronto al aterrizar |
+| Buffer de dash | Encolar un dash durante otra acción | ~100 ms | Haz dash saliendo de deslizamientos y patadas de pared |
+| Corrección de esquinas | Rozar el borde de una plataforma | Unos pocos píxeles | Apunta un poco corto a propósito |
+| Tolerancia de entrada | Entradas diagonales cerca de las direcciones cardinales | Varía según el juego | Prueba con ambos tipos de dispositivo |
+
+Los valores exactos varían de un juego a otro y a menudo difieren entre teclado y mando, así que toma estos rangos como convenciones generales de diseño y no como reglas universales. Lo que importa es que aprendas la sensación de tu juego, no los números que hay detrás.
+
+Otra variable que la gente subestima: la frecuencia de refresco de la pantalla. Los testimonios de la comunidad mencionan con frecuencia que la misma ruta se siente distinta a 60 Hz que a frecuencias de refresco más altas, no porque el juego haya cambiado, sino porque el bucle de retroalimentación sí lo hizo. Las entradas tardías se vuelven visibles, y los problemas visibles se pueden corregir.
+
+Ajustes que conviene tocar desde el principio:
+
+- **Campo de visión.** Una vista más amplia te da más tiempo para leer la geometría que viene.
+- **Suavizado de cámara.** Redúcelo; una cámara que se queda rezagada respecto a tu movimiento oculta los puntos de aterrizaje.
+- **Vibración de cámara.** Bájala si te oculta la plataforma a la que apuntas.
+- **Sensibilidad / zona muerta.** Ajusta hasta que los movimientos pequeños del stick produzcan giros predecibles.
+
+## Ejercicios de práctica para afinar el movimiento en los void runners
+
+Machacar carreras completas es la forma más lenta de mejorar. Los ejercicios aislados construyen las mismas habilidades en una fracción del tiempo.
+
+| Ejercicio | Cómo ejecutarlo | Volumen sugerido | Qué entrena |
+|---|---|---|---|
+| Carrera sin dash | Completa una sección sin usar el dash | 5–10 intentos | Timing de salto, eficiencia de ruta |
+| Ruta inversa | Juega una sección al revés | 3–5 intentos | Conciencia espacial |
+| Cadena de una vida | Enlaza tantos huecos como puedas y reinicia ante cualquier parada total | 10 intentos | Gestión del impulso |
+| Ejercicio de salto tardío | Salta en el último momento posible desde cada repisa | 10 repeticiones por repisa | Sensación del tiempo coyote |
+| Split por segmento | Cronometra un segmento en lugar del nivel entero | 5 carreras | Consistencia bajo presión |
+
+La práctica deliberada supera al volumen. Diez minutos concentrados en patadas de pared harán más por tu movimiento que una hora de carreras sin estructura, porque entrenas una variable a la vez en lugar de cinco.
+
+Un calentamiento sencillo de unos ocho minutos:
+
+- Dos minutos de ochos con control aéreo.
+- Tres minutos de cancelaciones de dash y entradas con buffer.
+- Dos minutos de carrera en línea recta a máxima velocidad.
+- Un minuto del salto más difícil de tu ruta actual.
+
+## Errores comunes que rompen tu flow
+
+La mayoría de los estancamientos provienen de una lista corta de errores repetibles. Encuentra el tuyo en la tabla de abajo.
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Abusar del dash | Picos de velocidad y luego frenazos | Usa el dash solo para huecos que no puedas saltar |
+| Pelearse con la cámara | Aterrizajes mal calculados una y otra vez | Aumenta el FOV, reduce el suavizado, mira más hacia delante |
+| Aterrizar plano | El impulso muere en cada plataforma | Aterriza en ángulo y desliza hacia tu siguiente entrada |
+| Ignorar los buffers | Las entradas parecen perderse o comerse | Pulsa la siguiente acción antes de que termine la actual |
+| Machacar una sola sección | Tilt y memoria muscular descuidada | Cambia de ruta o tómate un descanso corto |
+| Copiar rutas a ciegas | Ejecución inconsistente | Adapta la línea a tu propio timing |
+
+La última merece un énfasis especial. Ver la línea de un jugador de élite y copiarla al pie de la letra rara vez funciona, porque su ruta da por sentado su tiempo de reacción y su dispositivo de entrada. Roba la estructura y luego reconstruye el timing en torno a tus propias manos.
+
+## Preguntas frecuentes
+
+### ¿Cuánto se tarda en ser bueno en el movimiento de los void runners?
+
+Depende mucho del juego y de cómo practiques. Los jugadores que aíslan una mecánica por sesión suelen notar una mejora notable en un puñado de sesiones enfocadas, mientras que los que solo juegan niveles completos a menudo se estancan durante semanas. La constancia importa más que las sesiones largas.
+
+### ¿Es mejor el teclado o el mando para el movimiento de los void runners?
+
+Ambos funcionan, y la respuesta correcta depende de cómo esté ajustado el juego. Los mandos suelen ofrecer un control aéreo más suave gracias a la entrada analógica, mientras que los teclados dan direcciones cardinales exactas que hacen más consistentes ciertos ángulos de dash. Prueba ambos en el mismo segmento y compara tus tiempos.
+
+### ¿Por qué sigo perdiendo velocidad al aterrizar?
+
+Aterrizar plano suele ser el culpable. En la mayoría de sistemas de movimiento, un aterrizaje plano convierte tu velocidad horizontal en una parada, mientras que un aterrizaje en ángulo o un deslizamiento la conservan. Encadena un deslizamiento, un dash o un buffer de salto justo después de tocar el suelo para mantener viva la carrera.
+
+### ¿Afectan de verdad los ajustes gráficos y de entrada al rendimiento?
+
+Pueden hacerlo. El campo de visión, el suavizado de cámara y la frecuencia de refresco cambian cuánta información tienes y con qué rapidez la recibes. Ninguno sustituye a la práctica, pero una pantalla limpia y legible hace que cada repetición de práctica sea más útil.
+
+Dominar el movimiento en los void runners no consiste en memorizar datos de frames. Consiste en desarrollar una sensación para el impulso, respetar las ventanas de timing que te dieron los diseñadores y practicar las habilidades concretas que exigen tus rutas. Elige un ejercicio, practícalo durante diez minutos y observa lo rápido que el vacío deja de sentirse vacío.

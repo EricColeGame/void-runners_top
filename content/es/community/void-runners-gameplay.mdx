@@ -1,133 +1,97 @@
 export const metadata = {
-  title: "La jugabilidad de Void Runners explicada: mecánicas centrales, técnicas de movimiento y consejos de la comunidad",
-  description: "Un análisis a fondo de la jugabilidad de Void Runners: mecánicas de movimiento centrales, técnicas avanzadas, bucles de progresión y consejos probados por la comunidad para sobrevivir más tiempo en tus partidas.",
+  title: "Void Runners: Lo que realmente promete el roguelike cooperativo de rayos",
+  description: "Void Runners es un roguelike twin-stick no lanzado donde los rayos conectan de 1 a 4 naves. Esto es lo confirmado, lo que no, y cómo seguirlo.",
   category: "community",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Un dash mal calculado y la partida se acabó: esa es la tensión que late en el corazón de la jugabilidad de los void runners. Estos juegos se construyen sobre el impulso, el espacio vacío y la amenaza constante de caer fuera del mundo, y esa combinación es exactamente lo que hace que la comunidad siga volviendo por más. Entender cómo funciona realmente la jugabilidad de los void runners —las reglas de movimiento, el cálculo de riesgo y recompensa y los hábitos que separan una partida limpia de un desastre— es la forma más rápida de pasar de apenas sobrevivir a encadenar partidas de las que te sientas orgulloso.
+"Void Runners" es un nombre fácil de confundir con otra cosa. Hay un juego llamado Void Crew, un juego llamado Void Stranger y un juego muy diferente llamado Solar Ash. Ninguno de ellos es este. El Void Runners del que hablamos aquí es un proyecto específico y actualmente no lanzado del desarrollador y editor en solitario Aaron Reisman, listado en Steam como la app 5334520 con una ventana de lanzamiento en el primer trimestre de 2027. Esa distinción importa, porque la mayor parte de lo que circula sobre "void runners" como frase no tiene nada que ver con este juego.
 
-## Qué hace diferente la jugabilidad de los void runners
+Si buscas Void Runners porque viste un clip de naves unidas entre sí por rayos cortantes, este artículo cubre lo que el desarrollador realmente ha confirmado, lo que los primeros observadores han notado y lo que sigue sin documentarse antes del lanzamiento.
 
-Los juegos de void runner despojan casi todo lo que no sea movimiento. Rara vez hay una barra de vida que gestionar, una tabla de botín que farmear o un enemigo al que superar en disparos. El desafío viene, en cambio, de la geometría: huecos, plataformas giratorias, suelos que se derrumban y un abismo sin fondo debajo que acaba con todo en el instante en que lo tocas.
+## Qué es Void Runners, según la ficha oficial
 
-Ese diseño minimalista es precisamente el punto. Como las reglas son simples, cada mejora que haces se nota. Puedes sentir la diferencia entre una partida en la que saltas por pánico y otra en la que encadenas tus entradas con intención.
+La página de Steam de [Void Runners](https://store.steampowered.com/app/5334520/) lo describe como una incursión cooperativa de salvamento para uno a cuatro pilotos, jugable en un solo sofá o en línea. La mecánica central es el rayo: las naves están vinculadas en parejas por un rayo que destroza todo lo que barre. Esa sola frase hace la mayor parte del trabajo de diseño. No solo pilotas una nave y disparas; gestionas una relación espacial entre dos naves, porque el espacio entre ellas es un arma.
 
-Otro sello distintivo es la atmósfera. La mayoría de los títulos apuestan por espacios liminales y abstractos: islas flotantes, cuadrículas monocromáticas, pasillos que se difuminan en la niebla. Esos visuales no son solo decoración; te ayudan a leer la distancia y la velocidad, algo que importa cuando una fracción de segundo de mal cálculo te manda al vacío.
+La descripción de la tienda también confirma:
 
-Los testimonios de la comunidad describen siempre la misma curva: la primera hora parece imposible, la segunda se siente manejable y, en algún punto después, superas secciones que antes fallabas sin siquiera pensarlo.
+- Fuego cruzado, esquivas y reanimación de tripulantes desde cápsulas de escape como parte del bucle momento a momento
+- Una estructura de tres sectores y tres guardianes de profundidad
+- Construir una nave recuperada como concepto de progresión
+- De uno a cuatro jugadores, en sofá o en línea
 
-## Mecánicas centrales que definen una partida
+Eso se acerca al límite completo de lo que está documentado públicamente. La página no publica piezas de naves, estadísticas de armas, nombres de jefes, costes de desbloqueo ni ningún sistema de códigos. Si una guía o un vídeo afirma enumerar esas cosas, trátalo como especulación y no como documentación del desarrollador.
 
-La mayoría de los títulos de void runner comparten un vocabulario mecánico común. Aprender los nombres de estos sistemas facilita mucho seguir guías, ver repeticiones y diagnosticar por qué un salto concreto te sigue matando.
+## Por qué el rayo cambia tu forma de jugar
 
-| Mecánica | Qué hace | Por qué importa |
-|---|---|---|
-| Impulso (momentum) | Mantiene tu velocidad entre entradas | Premia planificar en lugar de aporrear botones |
-| Dash / dash aéreo | Proporciona un breve estallido de movimiento | Tu principal herramienta para salvar huecos y recuperarte |
-| Interacción con paredes | Te permite correr, deslizarte o impulsarte desde superficies | Convierte las paredes en rutas en lugar de barreras |
-| Puntos de control / segmentos | Divide un recorrido en tramos | Hace posible la práctica deliberada |
-| Coleccionables o llaves | Añade objetivos opcionales | Crea desvíos de riesgo y recompensa |
-| Cronómetro y repetición fantasma | Muestra tu ritmo y tu yo del pasado | El principal motor del valor de rejugabilidad |
+La mayoría de los juegos cooperativos twin-stick tratan a los demás jugadores como fuentes de daño paralelas. Void Runners parece invertir eso: tu compañero forma parte de tu arma. El rayo existe entre las naves, así que su posición la determina el movimiento de dos jugadores a la vez, no de uno.
 
-Algunas convenciones de diseño aparecen una y otra vez y merece la pena conocerlas por su nombre:
+Eso produce algunas consecuencias prácticas que vale la pena razonar antes del lanzamiento:
 
-- **Coyote time** — una breve ventana de gracia tras dejar un borde en la que un salto todavía se registra.
-- **Buffering de entradas** — pulsar salto un poco antes de aterrizar sigue encolando el salto.
-- **Control aéreo** — cuánto puedes dirigirte una vez estás en el aire, lo que determina lo indulgentes que se sienten las correcciones en pleno vuelo.
-- **Cancelaciones de dash** — usar un dash para interrumpir otra animación o extender un salto.
+**Separarse no es automáticamente correcto.** La ficha menciona "expandirse y hacer girar la red", lo que sugiere que ampliar la formación es una herramienta deliberada, no algo por defecto. Dos naves muy separadas barren una línea más larga; dos naves juntas barren una más corta y densa. La respuesta correcta depende de lo que tengas delante.
 
-Si un juego se siente «preciso», normalmente es porque estos sistemas están ajustados con generosidad. Si se siente «resbaladizo», es que uno de ellos juega en tu contra.
+**La posición es una decisión compartida, no individual.** Si vuelas de forma agresiva mientras tu compañero retrocede, estás estirando el rayo en lugar de apuntarlo. El movimiento coordinado es el techo de habilidad aquí, que es presumiblemente la razón por la que el juego admite juego en sofá, donde el chat de voz es gratis.
 
-## Técnicas de movimiento y el techo de habilidad
+**El fuego cruzado implica que los ángulos importan.** La descripción menciona el fuego cruzado explícitamente, lo que sugiere que las líneas de rayo superpuestas son una opción táctica real. Es una inferencia razonable a partir de las palabras, pero el comportamiento específico de daño de los rayos superpuestos no está documentado.
 
-El techo de habilidad en los juegos de void runner es inusualmente alto porque los sistemas de movimiento se acumulan. Un principiante usa cada herramienta una vez. Un jugador experimentado las encadena, y el mismo tramo de nivel que le llevaba treinta segundos ahora le lleva ocho.
+## Qué significan tres sectores y tres guardianes para una partida
 
-### Técnicas para principiantes
+La descripción oficial afirma que una partida llega a tres sectores y tres guardianes de profundidad. Es una estructura compacta en comparación con muchos roguelikes, y te dice algo sobre el ritmo: es probable que sea una partida de formato más corto y no una larga escalada de desgaste. Sin embargo, la página no especifica cuántos saltos hay en cada sector, cuánto dura un sector, si las partidas tienen límite de tiempo o cómo escala la dificultad con el número de jugadores.
 
-Empieza aquí. Estos son los fundamentos sobre los que se construye todo lo demás:
+Cualquier cosa que leas y que asigne un número específico de saltos, nombres de jefes o temas de sector no proviene del desarrollador. La forma fiable de confirmar la duración de una partida es jugar al juego después del lanzamiento, o consultar la página oficial de Steam para ver actualizaciones entre ahora y el primer trimestre de 2027.
 
-- Sincronización del salto simple, incluida la ventana de coyote time
-- Dash básico para salvar huecos medianos
-- Agarre de bordes para recuperarte de un casi-fallo
-- Control de cámara para estar siempre mirando tu punto de aterrizaje
+## Cooperativo, sofá y en línea: lo que está confirmado
 
-### Técnicas avanzadas
+| Característica | Estado |
+|---|---|
+| Número de jugadores | 1-4 pilotos (oficial) |
+| Juego local | Un sofá (oficial) |
+| Juego en línea | Compatible (oficial) |
+| Rayo que vincula naves | Mecánica central (oficial) |
+| Reanimar desde cápsulas de escape | Confirmado (oficial) |
+| Piezas y estadísticas de naves | No documentado |
+| Nombres de guardianes | No documentado |
+| Costes de desbloqueo o sistema de códigos | No documentado |
 
-Cuando lo básico ya es automático, los jugadores pasan a técnicas que requieren práctica deliberada:
+Merece la pena destacar el detalle de reanimar desde cápsulas de escape. Implica que la muerte no siempre es definitiva a mitad de partida y que recuperar a un compañero caído es una tarea activa en lugar de un temporizador de reaparición automática. La mecánica de esa recuperación, como si lleva tiempo, si requiere a un jugador concreto o si puede ocurrir durante una pelea contra un guardián, no está publicada.
 
-| Técnica | Dificultad | Beneficio | Mejor uso |
-|---|---|---|---|
-| Cancelación de dash | Baja | Ahorra unos pocos frames por salto | Secuencias de plataformas ajustadas |
-| Cadena de rebotes en pared | Media | Mantiene la velocidad en pozos verticales | Secciones de ascenso |
-| Preservación del impulso | Media | Mantiene la velocidad máxima en los giros | Rectas largas |
-| Slide hop | Alta | Convierte la velocidad de aterrizaje en velocidad hacia delante | Tramos planos antes de grandes huecos |
-| Recorte de esquina | Alta | Recorta distancia en curvas amplias | Rutas de contrarreloj |
+## Qué no está documentado y cómo verificarlo
 
-La experiencia de los jugadores sugiere que el mayor salto de habilidad no viene de aprender técnicas nuevas, sino de aprender cuándo *no* usarlas. Abusar de una técnica avanzada en una sección que solo necesita un salto normal es una de las formas más comunes de que una partida se desmorone.
+Lo más útil que puede hacer ahora mismo un posible jugador es separar la información confirmada del ruido. Según la ficha oficial de Steam, lo siguiente simplemente no es público:
 
-## Modos, progresión y rejugabilidad
+- Piezas individuales de naves, sus estadísticas o cómo funciona el salvamento en detalle
+- Números de daño de armas, cadencias de disparo o propiedades del rayo más allá de "destroza todo lo que barre"
+- Nombres de guardianes, patrones de ataque o valores de salud
+- Cualquier sistema de códigos, códigos de trucos o códigos de desbloqueo
+- Fecha exacta de lanzamiento dentro del primer trimestre de 2027
+- Si hay juego cruzado, servidores dedicados o conexión entre pares
 
-Los juegos de void runner suelen estructurarse en torno a intentos cortos y repetibles en lugar de largas campañas. Esa estructura es lo que hace tan fácil dedicarles docenas de horas.
+Para verificar cualquiera de estos puntos, la fuente principal es la [página oficial de Steam](https://store.steampowered.com/app/5334520/), que es donde el desarrollador publica actualizaciones, capturas y, con el tiempo, notas del parche. Steam también enumera los requisitos del sistema y las etiquetas más cerca del lanzamiento. Cualquier cosa que provenga de un sitio agregador, una wiki de fans o una miniatura de vídeo que prometa "todos los códigos" o "lista completa de jefes" debe tratarse como no verificada hasta que la página de la tienda lo confirme.
 
-| Tipo de modo | Ritmo | Nivel de riesgo | Ideal para |
-|---|---|---|---|
-| Campaña / niveles de historia | Moderado | Bajo a medio | Aprender las mecánicas a tu propio ritmo |
-| Contrarreloj | Rápido | Medio | Perseguir tus mejores marcas personales |
-| Modo infinito | Variable | Alto | Poner a prueba la consistencia bajo presión |
-| Desafío diario o semanal | Fijo | Medio | Compararte con la comunidad |
-| Recorridos creados por la comunidad | Varía mucho | Varía | Contenido nuevo tras el juego principal |
+## Observaciones de la comunidad frente a información del desarrollador
 
-La progresión suele venir en dos variantes: desbloqueos mecánicos que te dan nuevas herramientas de movimiento y desbloqueos cosméticos que presumen de lo que has logrado. Las clasificaciones y las repeticiones fantasma hacen la mayor parte del trabajo pesado en cuanto a motivación a largo plazo: competir contra una versión grabada de tu mejor partida suele motivar más que competir contra la de un desconocido.
+Como el juego no se ha lanzado, el material de la comunidad es limitado y en su mayoría de segunda mano. La cobertura de terceros ha repetido en general la mecánica del rayo y el enfoque cooperativo, lo que concuerda con la descripción oficial. Cuando las guías de terceros van más allá, por ejemplo especulando sobre variedad de builds o curvas de dificultad, esas son observaciones e inferencias, no documentación del desarrollador.
 
-Si estás buscando un título de este tipo, la [tienda de Steam](https://store.steampowered.com/) es un buen lugar para explorar, porque las etiquetas de los jugadores, el texto de las reseñas y los clips de jugabilidad facilitan saber si un juego se inclina hacia el plataformeo de precisión o hacia la velocidad libre.
-
-## Consejos probados por la comunidad para partidas más limpias
-
-Estos hábitos aparecen una y otra vez en las discusiones de los jugadores y se aplican tanto si acabas de empezar como si persigues un tiempo de élite.
-
-- **Aprende por segmentos, no por recorridos completos.** Repetir una sección difícil veinte veces te enseña más que veinte partidas completas.
-- **Identifica tus puntos de fallo.** Si mueres tres veces en el mismo sitio, deja de correr el nivel entero y practica ese punto en concreto.
-- **Mira tu propio fantasma antes que el de cualquier otro.** Tus errores son más útiles de corregir que la perfección ajena de copiar.
-- **Calienta con contenido fácil.** Dos o tres partidas relajadas antes de un intento serio reducen notablemente las muertes tempranas.
-- **Ajusta tu cámara y tu sensibilidad desde el principio.** El FOV y la velocidad de giro afectan a lo bien que puedes leer los huecos que vienen.
-- **Tómate descansos cuando te frustres.** La frustración lleva a entradas descuidadas, y las entradas descuidadas enseñan mala memoria muscular.
-
-Una rutina de práctica sencilla ayuda más que machacar sin estructura:
-
-| Bloque de sesión | Enfoque | Objetivo |
-|---|---|---|
-| Calentamiento | Recorrido fácil, ritmo relajado | Soltar las entradas |
-| Práctica específica | Sección más difícil, repetida | Reducir la tasa de fallo |
-| Partidas completas | Intentos completos | Construir consistencia |
-| Revisión | Análisis de la repetición fantasma | Detectar un error corregible |
-
-## Errores que acaban las partidas antes de tiempo
-
-Incluso los jugadores experimentados caen en trampas predecibles. Aquí tienes cómo detectarlas y qué hacer en su lugar.
-
-| Error | Cómo se ve | La solución |
-|---|---|---|
-| Saltar por pánico | Aporrear el salto cerca de un borde | Confía en el coyote time; haz una pausa de un instante |
-| Abusar del dash | Usar el dash cuando bastaría un salto | Pregúntate qué está resolviendo realmente el dash |
-| Ignorar la cámara | Aterrizar a ciegas en una plataforma nueva | Gira la cámara antes de comprometerte |
-| Coleccionables por codicia | Morir persiguiendo objetos opcionales | Sáltatelos hasta que la ruta esté limpia |
-| Practicar cansado | Repetir la misma muerte durante una hora | Para, descansa y vuelve mañana |
-
-El hilo que conecta todos estos errores es el control de los impulsos. La jugabilidad de los void runners castiga las reacciones y premia las decisiones tomadas un segundo antes.
+Una regla práctica: si una afirmación no puede rastrearse hasta una frase de la página de Steam, no planifiques en torno a ella. Eso incluye cualquier cosa sobre el ritmo de progresión, desbloqueos meta o cómo funciona realmente el sistema de construcción de naves recuperadas más allá de la frase "construir una nave recuperada".
 
 ## Preguntas frecuentes
 
-**¿Es difícil la jugabilidad de los void runners para principiantes?**
-Puede sentirse brutal al principio, pero la curva de dificultad suele tener más que ver con la familiaridad que con los reflejos puros. La mayoría de los jugadores nota una mejora evidente tras unas horas, una vez que las herramientas básicas de movimiento se vuelven automáticas.
+**¿Es Void Runners lo mismo que Void Crew o Void Stranger?**
+No. Son juegos separados con desarrolladores distintos. Void Runners es el proyecto de Aaron Reisman, app de Steam 5334520.
 
-**¿Necesito un mando?**
-No necesariamente. Muchos jugadores completan partidas difíciles con teclado y ratón. Lo que más importa es que tu dispositivo de entrada sea cómodo y que mantengas tus ajustes consistentes entre sesiones.
+**¿Cuándo sale Void Runners?**
+La ficha oficial dice el primer trimestre de 2027 y lo marca como próximamente. No se publica un día concreto.
 
-**¿Cómo practico sin desperdiciar partidas?**
-Usa modos con muchos puntos de control o recorridos de la comunidad que te permitan reiniciar un solo segmento. Practicar un salto difícil repetidamente es mucho más eficiente que repetir un nivel entero.
+**¿Cuántos jugadores pueden jugar?**
+De uno a cuatro pilotos, en un sofá o en línea, según la descripción oficial.
 
-**¿Es buena la jugabilidad de los void runners para sesiones cortas?**
-Sí. La estructura basada en partidas hace que un solo intento suela durar apenas unos minutos, lo que facilita encajarlo en un descanso corto, aunque el tirón de «una más» es real.
+**¿Hay códigos para Void Runners?**
+No hay ningún sistema de códigos documentado. La página de la tienda no publica códigos de ningún tipo.
 
-Ya sea que persigas un puesto en la clasificación o solo intentes terminar un recorrido sin caerte, el camino a seguir es el mismo: aprende las mecánicas, practica tus puntos débiles y deja que la consistencia haga el resto.
+**¿Tiene juego en solitario?**
+Sí. La ficha abarca de uno a cuatro pilotos, así que una partida en solitario entra dentro del rango anunciado.
+
+**¿Dónde debería consultar las actualizaciones?**
+La [página de la tienda de Steam](https://store.steampowered.com/app/5334520/) es la fuente autorizada para la fecha de lanzamiento, las características y cualquier nota del parche futura.
+
+Seguir esta información no te garantizará una buena partida cuando llegue el juego, y no debería, ya que la mecánica del rayo es un problema de coordinación que solo se resuelve con práctica. Lo que sí hará es evitar que construyas expectativas sobre detalles que el desarrollador no ha publicado.

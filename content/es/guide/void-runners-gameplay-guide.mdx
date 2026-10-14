@@ -1,126 +1,88 @@
 export const metadata = {
-  title: "Guía de juego de Void Runners: movimiento, builds y consejos de supervivencia",
-  description: "Una guía completa de juego de Void Runners que cubre técnicas de movimiento, prioridades de mejoras, fases de partida y los errores que terminan las partidas antes de tiempo.",
+  title: "Void Runners: Tácticas cooperativas de rayos en un roguelike twin-stick",
+  description: "Void Runners es un roguelike twin-stick cooperativo no lanzado donde los rayos entre naves destrozan enemigos. Esto es lo que confirma la página de Steam.",
   category: "guide",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Void Runners recompensa la velocidad y castiga el pánico. En el instante en que empieza una partida, la arena comienza a derrumbarse detrás de ti, y cada segundo que pasas dudando sobre un salto es un segundo que el vacío aprovecha para acercarse. Por eso una guía de juego de Void Runners sólida importa más aquí que en un juego más lento y permisivo: tus decisiones se comprimen en fracciones de segundo, y solo los buenos hábitos sobreviven a ese tipo de presión.
+"Void Runners" es un próximo roguelike twin-stick cooperativo del desarrollador y editor Aaron Reisman, listado en Steam como la app 5334520 y marcado como "próximamente" con una ventana de lanzamiento para el primer trimestre de 2027. Como el juego no se ha lanzado, todo lo útil que podemos decir ahora mismo proviene de un solo lugar: la [página oficial de la tienda de Steam](https://store.steampowered.com/app/5334520/). Esa página describe una idea de combate específica e inusual — naves unidas entre sí por rayos que destrozan todo lo que barren — y esa idea es la razón principal por la que vale la pena seguir el juego.
 
-Esta guía desglosa las técnicas de movimiento, las prioridades de mejoras y la planificación fase por fase que separan una derrota de dos minutos de una extracción limpia y con puntuación alta. Está escrita para jugadores que ya conocen los controles básicos y quieren dejar de morir por los mismos tres errores.
+Este artículo separa lo que el desarrollador realmente anuncia de lo que la comunidad ha reconstruido a partir de los tráilers, y de los muchos detalles que simplemente aún no son públicos. Si estás intentando decidir si Void Runners merece un lugar en tu lista de deseos, el objetivo aquí es ayudarte a leer la evidencia disponible con precisión en lugar de rellenar los huecos con conjeturas.
 
-Una nota antes de empezar: las cifras exactas cambian entre parches y plataformas, así que trata cada nivel y cada tiempo de abajo como un orden de prioridad, no como un valor fijo. La lógica se mantiene incluso cuando cambia el ajuste.
+## Qué es realmente Void Runners
 
-## Qué hace que Void Runners sea diferente de un endless runner estándar
+Según la ficha oficial de Steam, Void Runners es un roguelike twin-stick para uno a cuatro jugadores, jugable tanto en un solo sofá ( cooperativo local) como en línea. Es un juego de incursiones de salvamento: tú y tu tripulación voláis por el espacio hostil, y cada par de naves está unido por un rayo que destruye todo lo que barre.
 
-La mayoría de los endless runners te dan una pista fija y una velocidad fija. Void Runners se inclina hacia el otro lado: el camino por delante se genera, el suelo detrás de ti se disuelve, y tu velocidad es al mismo tiempo tu mejor arma y lo más probable que te mate.
+Esa única mecánica reconfigura todo lo demás. En un shooter twin-stick normal, tu posición importa por lo que puedes disparar. En Void Runners, tu posición importa por lo que cruza tu rayo — y el rayo es una línea entre dos jugadores en movimiento, no un cañón unido a tu propio casco. La descripción de la tienda enmarca explícitamente el atractivo como "desplegarse y hacer girar la red", creando fuego cruzado, esquivas y reanimación de la tripulación desde cápsulas de escape, todo mientras se construye una nave recuperada incursión tras incursión.
 
-El bucle central es simple. Corres, encadenas saltos y dashes, recoges fragmentos y llegas a un punto de extracción antes de que la ola de colapso se trague la ruta. Lo que lo hace interesante es la tensión entre la codicia y la seguridad. Los fragmentos suelen colocarse un poco fuera de la línea segura, así que cada recogida se convierte en una pequeña apuesta contra tus propios reflejos.
+Se describe una incursión como el cruce de tres sectores, cada uno de cuatro saltos de profundidad, terminando en un guardián. Esa es la estructura que el desarrollador ha comprometido públicamente. Como el juego no se ha lanzado, no se han publicado piezas de nave, estadísticas de armas, nombres de guardianes ni diseños de sectores, y no se ha mencionado ningún sistema de códigos en absoluto — cualquier cosa que afirme lo contrario no está respaldada por la página oficial.
 
-| Sistema | Cómo funciona | Por qué importa |
-|---|---|---|
-| Ola de colapso | El vacío se cierra desde atrás a un ritmo constante | Obliga a avanzar y castiga retroceder |
-| Recogida de fragmentos | Moneda dispersa fuera de la línea principal | Crea decisiones constantes de riesgo frente a recompensa |
-| Encadenamiento de movimiento | Saltos, dashes y deslizamientos se enlazan en un solo flujo | Las entradas limpias se convierten en velocidad extra |
-| Ventajas por partida | Las mejoras se reinician cuando termina una partida | Fomenta la experimentación en lugar del grinding |
-| Zonas de extracción | Aparecen salidas seguras a intervalos fijos | Te permite asegurar progreso o tentar a la suerte |
+### Verificación de identidad: a qué juego estás mirando realmente
 
-## Fundamentos del movimiento: las técnicas que ganan partidas
+Las búsquedas de "Void Runners" pueden mostrar títulos no relacionados. Void Runners no es Solar Ash, no es Void Crew, no es Void Stranger y no es Starfinder. Si una página describe un juego de tripulación en primera persona, un plataformas de puzles o una adaptación de juego de mesa, estás en la página equivocada. La app verificada de Steam para este juego es 5334520, acreditada a Aaron Reisman.
 
-En Void Runners, el impulso es un recurso. No tanto "tienes" velocidad como la proteges. Cada aterrizaje brusco, giro cerrado o entrada de pánico sangra velocidad, y una vez que pierdes el flujo, la ola de colapso cierra la distancia rápido.
+## Cómo la mecánica de rayos cambia el juego cooperativo
 
-Empieza con las técnicas simples y solo añade complejidad cuando ya te salgan de forma automática. Los jugadores que intentan aprenderlo todo a la vez suelen acabar con entradas descuidadas que fallan bajo presión.
+Lo más práctico que un jugador nuevo puede entender antes del lanzamiento es el problema geométrico que crea el juego. Con un solo jugador, un rayo es simplemente un arma de barrido. Con dos o más, el rayo se convierte en una relación.
 
-- **Saltos tardíos.** Pulsa salto en el último momento posible antes de un borde. El tiempo extra en el aire mantiene intacta tu velocidad hacia delante en lugar de frenarte.
-- **Cancelación de dash.** Corta un dash antes de tiempo en lugar de dejarlo llegar hasta el final. Conservas la mayor parte del impulso de distancia sin perder el control.
-- **Reinicio de dash en pared.** Un toque rápido contra una pared puede refrescar tu dash. Esta es la técnica más importante para salas verticales.
-- **Conversión de deslizamiento en pendiente.** Deslízate hacia una sección cuesta abajo para convertir la velocidad de caída en velocidad hacia delante en lugar de tropezar.
-- **Dirección aérea sutil.** Ajusta poco a poco, no des un tirón. Las correcciones grandes en pleno aire matan el impulso.
+| Jugadores | Pares de rayos | Consecuencia práctica |
+| --- | --- | --- |
+| 1 | 1 (un barrido auto-vinculado) | El posicionamiento es un problema de puntería en solitario |
+| 2 | 1 | Cada enemigo que matas es una decisión compartida sobre el espaciado |
+| 3 | 3 | Cortar un rayo para esquivar debilita otros dos |
+| 4 | 6 | La red es densa pero frágil; una mala deriva enreda a todos |
 
-| Técnica | Dificultad | Beneficio | Cuándo practicarla |
-|---|---|---|---|
-| Saltos tardíos | Baja | Alto | De inmediato: cada partida depende de ello |
-| Cancelación de dash | Baja | Medio | Cuando los saltos te salgan naturales |
-| Reinicio de dash en pared | Media | Alto | Salas verticales abiertas y pozos |
-| Conversión de deslizamiento en pendiente | Media | Medio | Secciones cuesta abajo y con muchas rampas |
-| Dirección aérea de precisión | Alta | Muy alto | Después de que lo básico sea memoria muscular |
+La tabla anterior es un razonamiento a partir de lo anunciado "cada par de naves está unido por un rayo", no de un documento de reglas publicado. Los recuentos se derivan de la aritmética de emparejamiento, e ilustran por qué más jugadores no es automáticamente más fácil. Una tripulación de cuatro jugadores tiene seis líneas de corte simultáneas a su favor y seis formas de arrastrar accidentalmente a un compañero fuera de posición.
 
-## Prioridades de mejoras y equipamiento
+Esto es también por lo que "desplegarse y hacer girar la red" es la frase que hay que interiorizar. Desplegarse alarga y angula cada rayo a través de más pantalla. Hacer girar significa rotar esa línea volando, lo que convierte el movimiento en el ataque. En la práctica, el estado de fallo interesante en un juego como este no es quedarse sin balas — es que dos jugadores deriven de modo que su rayo apunte al vacío mientras un tercer jugador queda rodeado.
 
-Las elecciones de mejoras deciden más partidas que la habilidad mecánica pura, sobre todo en las primeras horas. El principio guía es simple: toma cualquier cosa que te dé otra oportunidad de corregir un error antes de tomar algo que aumente tu puntuación.
+Como el juego no ha salido, nadie fuera del desarrollador ha jugado una versión terminada, así que cualquier afirmación sobre formaciones óptimas, cifras de daño o qué ángulos de rayo son más fuertes es especulativa. Trata el contenido de guías de terceros que promete combos específicos como observaciones sobre tráilers, no como documentación del desarrollador, a menos que la página oficial diga lo contrario.
 
-La reducción de enfriamiento y la retención de impulso están en lo más alto porque hacen que todas las demás mecánicas sean más indulgentes. Las ventajas de daño o puntuación solo valen la pena si sigues vivo para usarlas, y por eso quedan más abajo aunque parezcan llamativas.
+## Incursiones de salvamento, cápsulas de escape y la estructura de la incursión
 
-| Nivel | Tipo de mejora | Por qué está aquí |
-|---|---|---|
-| S | Reducción del enfriamiento del dash | Más dashes significa más opciones de recuperación |
-| S | Retención de impulso | Conserva la velocidad en giros y aterrizajes |
-| A | Salto aéreo adicional | Abre rutas alternativas y salva saltos malos |
-| A | Radio de recogida | Reduce desvíos arriesgados hacia fragmentos |
-| B | Escudo o vida extra | Compra exactamente un error por partida |
-| B | Multiplicadores de puntuación | Fuertes, pero solo si terminas |
-| C | Desbloqueos cosméticos | Ningún impacto en la jugabilidad |
+El bucle anunciado es una incursión de salvamento que termina con un guardián, repetida a lo largo de tres sectores con cuatro saltos cada uno. Dos detalles de la descripción de la tienda destacan para fines de planificación:
 
-Los informes de la comunidad muestran de forma consistente que los jugadores que escalan en las clasificaciones no son los que tienen builds de mayor daño, sino los que nunca dejan de moverse. Si estás atascado eligiendo entre dos ventajas y una de ellas toca el movimiento, elige la ventaja de movimiento.
+- **Cápsulas de escape y reanimación de la tripulación.** La muerte no es necesariamente el final de la participación de un jugador. La página menciona reanimar a la tripulación desde cápsulas de escape, lo que sugiere que un piloto caído deja algo que recuperar en lugar de simplemente espectar. Cómo se activan, cronometran o limitan las reanimaciones no está documentado.
+- **Construir una nave recuperada.** La descripción se refiere a construir una nave recuperada, lo que implica una progresión de incursión a incursión a partir de lo que recoges. No se ha publicado ninguna lista de piezas, costes de mejora ni moneda de desbloqueo.
 
-## Un plan fase por fase para cada partida
+Si quieres verificar algo de esto cerca del lanzamiento, el método fiable es el mismo que se usó aquí: abre la [página oficial de Steam](https://store.steampowered.com/app/5334520/) y lee la descripción y cualquier publicación del desarrollador, en lugar de confiar en resúmenes de agregadores. Cuando el juego se lance, los menús del juego — las pantallas de resumen de incursión, la interfaz de salvamento/construcción y el vestíbulo cooperativo — serán la fuente autoritativa para cualquier cosa que la página de la tienda no indique.
 
-Cada partida de Void Runners sigue un arco emocional similar: inicio tranquilo, mitad que se tensa, final frenético. Planificar esas fases con antelación evita que improvises en el peor momento posible.
+## Sofá o en línea: qué está confirmado sobre el multijugador
 
-| Fase | Cómo se siente | Tu objetivo | Qué evitar |
-|---|---|---|---|
-| Inicio | Carriles amplios, huecos permisivos | Ganar velocidad y leer el diseño | Perseguir cada fragmento |
-| Mitad de partida | Giros cerrados, peligros móviles | Fijar una línea segura y mantener un dash guardado | Hacer dash por pánico contra las paredes |
-| Fase de presión | El colapso se acelera | Cambiar fragmentos por supervivencia | Desvíos codiciosos fuera del camino principal |
-| Tramo final | La extracción es visible | Gastarlo todo y tomar la línea limpia | Jugadas heroicas improvisadas |
+Confirmado: de uno a cuatro jugadores, cooperativo local en sofá o en línea, según la página de la tienda. No confirmado: juego cruzado entre plataformas, si los jugadores locales y en línea pueden mezclarse en la misma sesión, emparejamiento frente a vestíbulos solo para amigos, o cualquier función de chat de voz. Esas son preguntas comunes para un roguelike cooperativo, pero la ficha de Steam no las responde.
 
-Un hábito útil es la "regla de un dash". Nunca entres en una sección desconocida con cero dashes disponibles. Un dash guardado convierte una muerte en un error torpe pero sobrevivible, y a lo largo de una sesión larga esa única regla vale más que cualquier nivel de mejora.
+La conclusión práctica es planificar para una tripulación con la que puedas coordinar verbalmente. Un juego construido sobre rayos giratorios entre jugadores recompensa el posicionamiento comunicado mucho más que el juego silencioso, lo que hace que el modo de sofá descrito en la página sea un ajuste natural. Si el juego en línea admite la misma inmediatez depende de funciones que no se han detallado.
 
-Si buscas un récord personal, hazlo en las fases de inicio y mitad de partida, donde la geometría es legible. No apuestes por mecánicas desconocidas durante la fase de presión: ahí es donde terminan las partidas.
+## Qué no es público todavía
 
-## Errores comunes que terminan las partidas antes de tiempo
+Para ser directos sobre los límites de la información disponible, nada de lo siguiente se ha publicado para Void Runners:
 
-La mayoría de las partidas fallidas no se deben a un diseño de nivel imposible. Se deben a un pequeño conjunto de errores repetibles que aparecen una y otra vez en informes de experiencia de jugadores y debates de la comunidad.
+- Piezas de nave, tipos de armas o cualquier estadística
+- Nombres de guardianes o mecánicas de jefes
+- Diseños de sectores o estructura del mapa de saltos más allá de "tres sectores, cuatro saltos"
+- Costes de desbloqueo, monedas o sistemas de progresión
+- Un sistema de códigos de cualquier tipo — no se menciona ninguno
+- Una fecha de lanzamiento exacta más allá del "primer trimestre de 2027"
+- Notas del parche, ya que el juego no se ha lanzado
 
-| Error | Por qué ocurre | La solución |
-|---|---|---|
-| Acumular dashes | Miedo a desperdiciar el enfriamiento | Mantén uno en reserva y gasta el resto |
-| Sobrecontrolar la dirección | Tratarlo como un juego de carreras | Toca ligeramente y deja que el impulso haga el trabajo |
-| Ignorar las señales de audio | Centrarse solo en lo visual | Aprende el sonido del colapso y confía en él |
-| Rutas de fragmentos codiciosas | Perseguir puntuación | Solo desvíate cuando la línea sea claramente segura |
-| Reinicios instantáneos | Tilt después de una mala muerte | Haz una pausa de diez segundos y nombra el error |
-
-Merecen mención otros dos más sutiles. Primero, muchos jugadores saltan demasiado pronto y luego se ajustan en pleno aire, lo que sangra velocidad y los deja por detrás de la ola de colapso. Segundo, los jugadores suelen tratar una zona nueva como un puzle que resolver despacio cuando en realidad es un ritmo que sentir: cuanto más dudas, menos información obtienes sobre la ruta que tienes delante.
-
-Grabar algunas de tus propias partidas y verlas de nuevo a velocidad normal es una de las formas más rápidas de detectar estos patrones. Lo que en el momento parece mala suerte suele verse como un error de entrada predecible en la repetición.
-
-## Cooperativo, clasificaciones y sabiduría de la comunidad
-
-Void Runners da lo mejor de sí cuando tratas cada partida como datos. Ya juegues solo o en cooperativo, el objetivo es el mismo: encontrar la línea que mantiene tu velocidad alta y tu dash disponible.
-
-Algunos hábitos que aparecen de forma consistente en los informes de la comunidad:
-
-- **Mira las repeticiones de las clasificaciones.** Las partidas mejor clasificadas suelen revelar atajos que son más seguros de lo que parecen.
-- **Aprende una técnica nueva por sesión.** Añadir dos a la vez suele significar no aprender ninguna.
-- **Establece un objetivo secundario.** "Llegar a la segunda extracción sin hacer dash" enseña más disciplina que perseguir la puntuación bruta.
-- **Consulta la página de la tienda de la plataforma** para ver las notas del parche antes de un gran intento, ya que los cambios de ajuste pueden modificar qué ventajas son más fuertes. Puedes explorar [los listados de Void Runners en la tienda de Steam](https://store.steampowered.com/search/?term=void+runners) para ver qué hay disponible actualmente.
-
-El cooperativo añade una capa de coordinación. Dividir las rutas de fragmentos entre dos jugadores suele ser más rápido que perseguir ambos el mismo grupo, y que un corredor se quede un poco atrás hace que reanimar sea mucho más fácil cuando alguien roza un peligro.
+Cualquier artículo, vídeo o base de datos que liste esos detalles está adivinando o describiendo un juego diferente. El enfoque honesto es añadir el juego a la lista de deseos, vigilar la página oficial en busca de actualizaciones y tratar la ventana del primer trimestre de 2027 como el objetivo declarado actual del desarrollador y no como una garantía.
 
 ## Preguntas frecuentes
 
-**¿De verdad hace falta una guía de juego de Void Runners, o puedo aprender simplemente jugando?**
+**¿Ya ha salido Void Runners?**
+No. La página de Steam lo marca como "próximamente" con una ventana de lanzamiento para el primer trimestre de 2027, a fecha de este escrito.
 
-Puedes aprender jugando, pero te estancarás rápido. Una guía acorta la fase de prueba y error al mostrarte qué mecánicas importan de verdad, sobre todo la retención de impulso, la gestión del dash y la lectura de rutas.
+**¿A cuántos jugadores da soporte?**
+De uno a cuatro, en un solo sofá o en línea, según la descripción oficial.
 
-**¿Cuál es la habilidad más importante que deberías practicar primero?**
+**¿Es Void Runners lo mismo que Void Crew o Void Stranger?**
+No. Es un juego separado de Aaron Reisman, app de Steam 5334520. Esos otros títulos comparten una palabra, no una identidad.
 
-Los saltos tardíos. Todo lo demás en Void Runners se construye sobre la capacidad de mantener la velocidad hacia delante a través de un hueco. Cuando eso te salga automático, la cancelación de dash y los reinicios en pared serán mucho más fáciles de aprender.
+**¿Cómo funciona exactamente el rayo entre naves?**
+La página de la tienda dice que cada par de naves está unido por un rayo que destroza todo lo que barre. Los valores de daño, la longitud del rayo y si los rayos se pueden activar o desactivar no están documentados.
 
-**¿Debería ir siempre a por cada fragmento?**
+**¿Dónde debería consultar actualizaciones precisas?**
+La [página oficial de la tienda de Steam](https://store.steampowered.com/app/5334520/) y cualquier anuncio del desarrollador enlazado desde ella. Las guías de terceros trabajan con la misma descripción pública que tú.
 
-No. Los fragmentos merecen la pena cuando están cerca de tu línea natural. Si una recogida requiere un desvío brusco durante la fase de presión, sáltala: sobrevivir hasta la siguiente extracción casi siempre vale más.
-
-**¿Cómo dejo de morir en el tramo final?**
-
-Deja de improvisar. Elige una ruta de finalización durante la fase de mitad de partida, guarda un dash para ella y ejecuta el mismo plan cada vez. La consistencia vence a la creatividad cuando la ola de colapso ya te pisa los talones.
+**¿Puedo garantizar una buena incursión siguiendo consejos sobre rayos?**
+No. El juego no se ha lanzado y nadie ha publicado tácticas verificadas. Trata la teoría de posicionamiento aquí como un razonamiento a partir de la mecánica anunciada, no como una estrategia que garantice el éxito.

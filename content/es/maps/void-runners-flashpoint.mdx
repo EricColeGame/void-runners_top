@@ -1,114 +1,68 @@
 export const metadata = {
-  title: "Guía del mapa Flashpoint de Void Runners: Rutas, consejos y tácticas de supervivencia",
-  description: "Domina el mapa Flashpoint de Void Runners con desgloses de zonas, comparativas de rutas, consejos de equipamiento y los errores que terminan las partidas antes de tiempo.",
+  title: "Void Runners: Qué es realmente el roguelike cooperativo de rayos",
+  description: "Void Runners es un roguelike cooperativo twin-stick no lanzado en el que los rayos conectan cada par de naves. Esto es lo que confirma la página de Steam y lo que no.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Void Runners Flashpoint es el tipo de mapa que castiga la indecisión. Un giro equivocado hacia un pasillo en colapso, un compañero atrapado en el lado incorrecto de un pozo de gravedad, y una partida prometedora se acabó antes del primer punto de control. Esa es exactamente la razón por la que tantos jugadores buscan un plan de ruta antes de volver a la cola.
+"Void Runners" es un nombre fácil de confundir con otra cosa. Si lo buscas, aparecerán un juego de acción de PlayStation, un simulador cooperativo de naves espaciales, un crawler de mazmorras con puzles y un título de ciencia ficción cercano a los juegos de mesa. Ninguno de ellos es este. El Void Runners que trata este artículo es un juego de Steam del desarrollador y editor Aaron Reisman, listado con el app 5334520, anunciado para el primer trimestre de 2027 y actualmente marcado como próximamente. No se ha lanzado, así que no hay parches, ni recuentos de jugadores, ni historial de equilibrio, ni meta que aprender todavía. Lo que existe es una descripción oficial de la tienda y una ventana de lanzamiento.
 
-Entender cómo fluye el diseño de Void Runners Flashpoint — dónde están los refugios seguros, qué zonas consumen más tiempo y qué habilidades realmente valen la pena — mejorará tu tasa de victorias mucho más que cualquier pieza de equipo individual. Esta guía divide el mapa en zonas digeribles, compara las rutas principales lado a lado y cubre las decisiones de equipamiento que más importan.
+Esa limitación condiciona todo lo que sigue. En lugar de fingir que te entregamos una guía estratégica para un juego que nadie puede instalar, este artículo separa lo que el desarrollador anuncia, lo que una comunidad incipiente está reconstruyendo a partir de tráilers y textos de la tienda, y lo que simplemente no es público. Si quieres la fuente primaria, lee tú mismo la [página oficial de Void Runners en Steam](https://store.steampowered.com/app/5334520/) antes de fiarte de cualquier resumen de segunda mano, incluido este.
 
-## ¿Qué es el mapa Flashpoint en Void Runners?
+## Qué anuncia Void Runners
 
-Flashpoint es un mapa de recorrido por etapas construido en torno a una geometría cambiante. Los jugadores suelen describirlo como uno de los desafíos más empinados de la fase media a tardía del juego, no porque los enemigos sean abrumadores, sino porque el propio entorno es la amenaza principal. Los suelos se desvanecen, los pozos de gravedad redirigen el impulso a mitad de salto y la visibilidad cae drásticamente en cuanto dejas el tramo inicial.
+Según la ficha de Steam, Void Runners es un roguelike twin-stick para uno a cuatro jugadores, jugable en un solo sofá o en línea. El gancho es el rayo. Las naves se conectan en parejas mediante un rayo que destroza todo lo que barre, así que tu posición nunca depende solo de ti; depende de la línea entre tú y tu compañero. La descripción enmarca la experiencia en torno a separarse y hacer oscilar la red, el fuego cruzado, esquivar y revivir a la tripulación desde cápsulas de escape. Las partidas se estructuran con tres sectores y tres guardianes de profundidad, y hay una nave que construyes con chatarra a medida que avanzas.
 
-A diferencia de los mapas que recompensan una limpieza lenta y metódica, Flashpoint recompensa el impulso. Los escuadrones que se detienen a combatir cada peligro tienden a perder más tiempo del que ganan, porque el temporizador de colapso del mapa sigue corriendo estés listo o no.
+Ese es todo el conjunto de características verificadas. Fíjate en cuánto deja abierto. Hay una estructura de partida —tres sectores, tres guardianes—, pero no hay nombres de sectores, ni mapa salto a salto, ni nombres de guardianes. Hay una nave basada en chatarra, pero no hay lista de piezas, ni sistema de ranuras, ni rutas de mejora. Hay un rayo, pero no hay cifras de daño. Si un resultado de búsqueda te promete nombres de jefes de Void Runners o una tier list, está rellenando huecos que el desarrollador no ha rellenado.
 
-Si no estás seguro de en qué versión o plataforma estás jugando, consultar la [ficha oficial de Void Runners en Steam](https://store.steampowered.com/) es un buen primer paso, ya que el ajuste del mapa y el comportamiento de los peligros pueden cambiar entre actualizaciones.
+| Anunciado | No documentado |
+| --- | --- |
+| 1–4 jugadores, local o en línea | Compatibilidad multiplataforma, detalles de emparejamiento |
+| Naves emparejadas unidas por rayos que destrozan | Longitud del rayo, daño o reglas de ruptura |
+| Partida de tres sectores, tres guardianes | Diseños de sectores, nombres de jefes, escalado de dificultad |
+| Revivir a la tripulación desde cápsulas de escape | Temporizadores de reanimación, costes o límites |
+| Nave construida con chatarra | Piezas, ranuras, monedas, costes de desbloqueo |
 
-| Característica | Detalles de Flashpoint |
-|---|---|
-| Tipo de mapa | Recorrido por etapas con extracción cronometrada |
-| Entorno | Plataformas del vacío fracturadas, ruinas industriales tenues |
-| Peligro principal | Terreno en colapso y zonas de gravedad cambiante |
-| Peligro secundario | Amenazas errantes en los anillos exteriores |
-| Enfoque de recorrido | Cadenas de impulso, escaladas verticales, saltos de precisión |
-| Tamaño ideal de escuadrón | Un dúo o trío coordinado, según informes de la comunidad |
-| Curva de dificultad | Apertura indulgente, parte media empinada, final implacable |
-| Estilo de extracción | Defensa cronometrada en una única plataforma marcada |
+## Por qué el rayo lo es todo
 
-La razón por la que esto importa: los puntos de control son escasos. Una muerte en el tercio medio del mapa suele costarle a tu escuadrón más que un reinicio completo de la apertura, porque volver a cruzar el Tramo con un equipo diezmado es donde la mayoría de las partidas se desmoronan silenciosamente.
+La mayoría de los roguelikes twin-stick preguntan dónde deberías estar. Void Runners pregunta dónde deberíamos estar *nosotros*. Si el rayo es la herramienta de daño principal, entonces cada esquiva, cada retirada y cada avance codicioso es una decisión sobre la geometría entre dos o más naves. Volar demasiado cerca y pierdes el barrido. Volar demasiado lejos y puedes perder el vínculo o dejar expuesto a un compañero. Si haces oscilar la red, el rayo cubre terreno nuevo, pero el arco es predecible, lo que significa que los enemigos pueden castigarlo.
 
-## Diseño del mapa Flashpoint: Zonas, puntos de referencia y flujo
+La lectura práctica del texto de la tienda es que la coordinación es la curva de dificultad. Un piloto en solitario controla una nave, y todavía no está documentado cómo gestiona un jugador solitario un rayo emparejado. Esa es una pregunta abierta real y merece la pena comprobarla en la página de la tienda o en cualquier actualización posterior del desarrollador en lugar de suponer. Para los equipos, el bucle anunciado de reanimación mediante cápsulas de escape implica que la muerte no es el final de una partida; perder una nave te cuesta posición y ritmo mientras alguien recupera la cápsula, lo que debilita el rayo justo cuando las cosas van peor. Es una inferencia de diseño a partir de la descripción, no una regla declarada.
 
-La mayoría de las guías tratan Flashpoint como una única pista de obstáculos larga. En la práctica, se juega como cinco zonas distintas, cada una con su propio ritmo. Aprender los puntos de transición entre ellas es lo que convierte una partida caótica en una repetible.
+## Qué pueden y qué no pueden decirte las guías tempranas de la comunidad
 
-| Zona | Qué sucede allí | Peligro principal | Mejor enfoque |
-|---|---|---|---|
-| El Umbral | Saltos de calentamiento, líneas de visión abiertas, pocas piezas móviles | Baldosas del borde en colapso | Avanzar rápido, saltarse el botín inicial |
-| El Tramo | Grandes huecos horizontales unidos por plataformas cronometradas | Ventanas de tiempo que se estrechan cuanto más te demoras | Encadenar saltos, dejar que un corredor lidere |
-| El Hueco | Interior vertical con repisas superpuestas | Pozos de gravedad y caídas a ciegas | Escalar en parejas, marcar tu repisa de entrada |
-| La Deriva | Campo abierto con escombros giratorios | Trayectorias de colisión impredecibles | Pegarse a la pared exterior, evitar el centro |
-| El Ancla | Plataforma de extracción con temporizador de defensa | Oleadas de presión crecientes | Establecer fuego cruzado, reservar enfriamientos de movilidad |
+La cobertura de terceros sobre Void Runners hasta ahora consiste sobre todo en análisis de tráilers y especulación. Trátalos como observaciones, no como documentación. Una guía puede decir razonablemente "el tráiler muestra dos naves barriendo un arco a través de un enjambre", porque eso es visible. No puede decirte la caída de daño del rayo ni si los rayos pueden romperse con el terreno, porque el desarrollador no lo ha dicho. Cuando una guía afirma una cifra, pregúntate de dónde sale. Si la respuesta no es la página de Steam o una publicación del desarrollador, es una conjetura.
 
-### Puntos de referencia que vale la pena memorizar
+Esto importa más de lo habitual en un roguelike no lanzado. Los roguelikes viven de sistemas, y los sistemas son exactamente lo que el marketing previo al lanzamiento oculta. La página de la tienda describe deliberadamente la sensación por encima de las matemáticas: destroza, hace oscilar, fuego cruzado, esquiva, revive. Eso basta para saber si el juego te interesa. No basta para construir una hoja de cálculo.
 
-- **El arco roto** en el extremo lejano del Tramo — marca la última plataforma segura antes del Hueco.
-- **El faro parpadeante** sobre la repisa superior del Hueco — tu punto de referencia cuando te desorientas a mitad de la escalada.
-- **Las dos grúas oxidadas** cerca de la entrada de la Deriva — una señal visual fiable de que se acerca el campo abierto.
-- **El anillo del ancla** — el círculo pulsante en la plataforma de extracción, visible desde la mayor parte de la Deriva si miras hacia arriba.
+## Cómo verificar cualquier cosa antes del primer trimestre de 2027
 
-La experiencia de los jugadores sugiere sistemáticamente que los escuadrones que nombran estos puntos de referencia sobreviven al Hueco con mucha más frecuencia. El diseño por capas de la zona hace fácil perder el rumbo, y un vocabulario compartido de puntos de referencia lo soluciona más rápido que cualquier marcador del minimapa.
+Como el juego no ha salido, toda afirmación debería tener una fuente comprobable. Las fiables son la [ficha de Steam del app 5334520](https://store.steampowered.com/app/5334520/), que incluye el nombre del desarrollador, el editor, la ventana de lanzamiento y la descripción de características citada arriba; cualquier publicación del desarrollador o kit de prensa enlazado desde ahí; y, una vez que el juego se lance, el propio juego. Tras el lanzamiento podrás confirmar el comportamiento del rayo probándolo en una partida, confirmar las opciones de piezas y chatarra construyendo una nave, y confirmar la estructura de tres sectores completando una.
 
-## Mejores rutas a través de Flashpoint
+Hasta entonces, desconfía de cualquier cosa que se parezca a una lista de códigos, una tabla de desbloqueos o una referencia de atajos de teclado. La página de la tienda no publica ningún sistema de códigos, ningún esquema de controles ni costes de progresión. Si un sitio ofrece códigos de Void Runners en 2026, los códigos no son reales, porque no hay ningún cliente lanzado en el que canjearlos.
 
-No hay una única ruta "correcta" a través de Void Runners Flashpoint, pero hay cuatro rutas que cubren casi todos los estilos de juego. El truco está en comprometerse pronto — cambiar de ruta a mitad del Tramo es la forma más rápida de quedarte varado.
+## Expectativas prácticas para un juego cooperativo de rayos para jugar en el sofá
 
-| Ruta | Camino | Velocidad | Riesgo | Mejor para |
-|---|---|---|---|---|
-| Ruta Alta | Umbral → Repisas superiores del Tramo → Parte alta del Hueco → Pared de la Deriva → Ancla | La más rápida | Alta | Corredores experimentados que buscan tiempos de victoria |
-| Línea Media | Umbral → Plataformas medias del Tramo → Parte media del Hueco → Borde de la Deriva → Ancla | Equilibrada | Moderado | La mayoría de los escuadrones, especialmente en primeras victorias |
-| Ruta Baja | Umbral → Parte inferior del Tramo → Suelo del Hueco → Trinchera de la Deriva → Ancla | La más lenta | Moderado–alto | Equipos centrados en el botín |
-| Empuje Dividido | Un corredor toma la Ruta Alta, otro la Ruta Baja, se reagrupan en la Deriva | Variable | Alto | Dúos coordinados con chat de voz |
+El enfoque de local o en línea, de uno a cuatro jugadores, es lo más concreto que hay aquí, y sugiere que la experiencia prevista es una pantalla compartida con gente hablando por encima de los demás. El emparejamiento de rayos significa que la comunicación es mecánica, no un adorno social: necesitas decir adónde vas antes de ir. Si estás planeando un grupo, la preparación útil no es memorizar builds. Es decidir quién vuela con quién, y si tu equipo puede manejar una partida en la que el rayo recompensa la paciencia por encima de las heroicidades en solitario.
 
-La Línea Media se ha ganado su reputación como opción predeterminada por una razón. Mantiene a todo el escuadrón dentro del alcance de reanimación durante la mayor parte del mapa, y sus tiempos de plataforma son los más indulgentes de las tres rutas principales. Si aún estás aprendiendo Flashpoint, trata la Ruta Alta como un objetivo ambicioso en lugar de un punto de partida.
+Ajusta tus expectativas en consecuencia. Void Runners es un objetivo de lanzamiento para el primer trimestre de 2027 de un desarrollador y editor en solitario, lo que históricamente significa que la ventana puede moverse. Nada en el material oficial promete un día concreto. Vigila la página de la tienda en busca de actualizaciones en lugar de una cuenta atrás de un tercero.
 
-Para los escuadrones centrados en el botín, la Ruta Baja es tentadora pero exige disciplina. La trinchera bajo el Hueco contiene los mejores objetos del mapa, pero también tiene las menores opciones de escape si el colapso te atrapa a mitad de búsqueda. Establece un límite de tiempo estricto para saquear y cúmplelo.
+## FAQ
 
-Una regla práctica de los jugadores experimentados: decide tu ruta antes de que termine el Umbral, y nunca dividas el escuadrón después del Hueco. Pasado ese punto, los equipos reagrupados casi siempre superan a los dispersos.
+**¿Es Void Runners lo mismo que Void Crew, Void Stranger o Solar Ash?**
+No. Comparte palabras con varios juegos no relacionados. Este es el app 5334520 de Steam, de Aaron Reisman.
 
-## Equipamiento, habilidades y roles de equipo para Flashpoint
+**¿Está lanzado Void Runners?**
+No. Está marcado como próximamente con una ventana para el primer trimestre de 2027.
 
-Los peligros de Flashpoint son ambientales, así que las habilidades que más importan son las que te dan una segunda oportunidad ante un mal salto o un mal aterrizaje. Las configuraciones de daño puro tienden a rendir por debajo de lo esperado aquí.
+**¿Cuántos jugadores?**
+De uno a cuatro, en un solo sofá o en línea, según la descripción de la tienda.
 
-| Rol | Habilidades prioritarias | Por qué funciona en Flashpoint |
-|---|---|---|
-| Corredor de Punta | Dash, parpadeo de enfriamiento corto | Lidera los saltos y marca las ventanas de tiempo para el escuadrón |
-| Ancla | Escudos, campo de curación, reanimaciones más rápidas | Aguanta la plataforma de extracción durante las oleadas de presión |
-| Explorador | Revelación, escaneo, visión extendida | Detecta baldosas en colapso y apariciones de peligros antes de que impacten |
-| Flexible | Control de masas más una herramienta de movilidad | Cubre los huecos entre el corredor de punta y el ancla |
+**¿Se han publicado piezas de nave, nombres de jefes o códigos?**
+No. Las piezas de nave, las estadísticas de armas, los nombres de guardianes, los diseños de sectores, los costes de desbloqueo y cualquier sistema de códigos no son públicos.
 
-La economía de habilidades en este mapa es simple: los enfriamientos de movilidad son tu póliza de seguro. Gastar un dash para ahorrar dos segundos en el Tramo suele ser un mal intercambio, porque ese mismo dash es lo que te saca de un pozo de gravedad en el Hueco o te aleja de los escombros en la Deriva.
+**¿Cuánto dura una partida?**
+La descripción dice tres sectores y tres guardianes de profundidad. No da una estimación de tiempo.
 
-Los informes de la comunidad también sugieren que un único rol de soporte dedicado aumenta drásticamente las tasas de supervivencia en el Ancla. La defensa de la extracción es donde terminan la mayoría de las partidas por lo demás limpias, y un sanador o escudero que reserva su equipo para ese último minuto cambia las cuentas por completo.
-
-## Errores comunes que terminan las partidas en Flashpoint
-
-La mayoría de las partidas fallidas comparten el mismo puñado de causas. Ninguna tiene que ver con la habilidad bruta — tienen que ver con decisiones tomadas en los primeros dos minutos.
-
-| Error | Por qué perjudica | La solución |
-|---|---|---|
-| Correr solo hacia adelante | Divide al escuadrón y elimina cualquier posibilidad de reanimación | Nombrar un corredor de punta y reagruparse en cada límite de zona |
-| Saquear en el Umbral | El temporizador de colapso se acumula mientras abres cajas | Saltarse el botín inicial y reservar las búsquedas para el Hueco y la Deriva |
-| Combatir en el centro de la Deriva | Los escombros y los enemigos se acumulan en un sándwich imposible | Arrastrar cada combate hacia la pared exterior |
-| Quemar enfriamientos antes del Ancla | No queda movilidad para las oleadas de presión finales | Reservar al menos una herramienta de escape |
-| Ignorar las señales de audio | Las advertencias de colapso se oyen antes de verse | Jugar con auriculares y aprender los tonos de advertencia |
-
-Algunos hábitos más pequeños también valen la pena. Marca la repisa desde la que escalaste antes de subir en el Hueco. Mantén a un corredor en terreno elevado en el Ancla para que pueda avisar de las oleadas entrantes. Y si alguien cae en la Deriva, decide de inmediato si la reanimación vale el tiempo — dudar ahí cuesta más partidas que comprometerse en cualquier dirección.
-
-## Preguntas frecuentes
-
-**¿Se considera Flashpoint un mapa difícil en Void Runners?**
-La experiencia de los jugadores generalmente lo sitúa en la mitad más dura del grupo de mapas, principalmente por los escasos puntos de control y la extracción cronometrada. Los saltos individuales no son brutales; es la presión acumulada la que pilla desprevenidos a los escuadrones.
-
-**¿Cuál es la ruta más rápida a través de Void Runners Flashpoint?**
-La Ruta Alta es la más rápida cuando se ejecuta limpiamente, pero ofrece casi ningún margen de recuperación. Para la mayoría de los jugadores, la Línea Media produce partidas *completadas* más rápidas porque evita los reinicios que conlleva un fracaso en la Ruta Alta.
-
-**¿Cuántos jugadores debería llevar a Void Runners Flashpoint?**
-Un dúo o trío tiende a ser el punto óptimo, según los informes de la comunidad. Los jugadores en solitario tienen dificultades con la defensa del Ancla, mientras que los grupos más grandes pueden atascar las estrechas repisas del Hueco y bloquearse los saltos entre sí.
-
-**¿Qué debo hacer si me separo en Flashpoint?**
-Deja de avanzar y mantén la posición en el punto de referencia más cercano. El mapa castiga los avances en solitario mucho más de lo que castiga unos pocos segundos perdidos, y tu escuadrón normalmente puede reunirse contigo más rápido de lo que tardarías en completar la zona solo.
-
-Acierta con la ruta, los roles y la disciplina de enfriamientos, y Void Runners Flashpoint deja de ser una moneda al aire y empieza a ser un mapa que puedes farmear.
+**¿Dónde debería consultar actualizaciones reales?**
+La [página oficial de Steam](https://store.steampowered.com/app/5334520/), que es la única fuente que contiene detalles confirmados por el desarrollador.

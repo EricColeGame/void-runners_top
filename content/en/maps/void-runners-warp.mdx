@@ -1,137 +1,93 @@
 export const metadata = {
-  title: "Void Runners Warp Guide: Master Teleport Pads, Map Routes, and Speed Tricks",
-  description: "Learn how void runners warp mechanics work, how to chain teleport pads, and the map routes that shave seconds off every run.",
+  title: "Void Runners: What We Know About the Co-Op Beam Roguelike",
+  description: "Void Runners is an unreleased co-op twin-stick roguelike where beams link ships. Here's what the Steam page confirms and what's still unknown.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## What a Void Runners Warp Actually Does
+"Void Runners" is an easy name to confuse with something else. There is a stylish action game about skating across a broken world, a co-op spaceship sim, a puzzle-driven dungeon crawler, and a long-running tabletop space fantasy — and none of them are this. The Void Runners on Steam (app 5334520) is a separate, smaller, and currently unreleased project from developer and publisher Aaron Reisman. It is a twin-stick roguelike for one to four players, it is built around beams that connect your ships, and as of this writing it has not shipped.
 
-Void runner maps are built on one simple idea: a thin ribbon of platforms floating over an endless drop, with nothing to catch you but a respawn point. A void runners warp breaks that tension on purpose. It moves your character from one part of the course to another, either as a shortcut, a recovery tool, or a full route reset after a bad fall.
+That last point matters more than usual. Because the game is still marked "coming soon" with a Q1 2027 release window, most of the questions people search for — ship parts, weapon tiers, guardian names, unlock codes — do not have answers yet. This article sticks to what the [official Steam page](https://store.steampowered.com/app/5334520/) actually advertises, flags what is community guesswork, and tells you how to check the rest yourself.
 
-The term covers a lot of ground. In some experiences it means a glowing pad you step on. In others it's a cooldown-based ability you trigger mid-air. Either way, the goal is identical: relocate the player instantly and change what the map demands of them.
+## The core idea: your position is the weapon
 
-Why does this matter? Because in a runner map, seconds are the score. A warp that saves four seconds on a thirty-second course is a double-digit percentage gain. Players who understand warp placement climb leaderboards faster than players who simply jump well.
+Most twin-stick shooters ask one question: where do you aim? Void Runners asks a different one. Each pair of ships is joined by a beam, and that beam shreds whatever it sweeps. You are not just dodging bullets and firing back — you are dragging a damaging line across the screen, and the line only exists because two players (or two of your own hands) are in specific places.
 
-### The Two Families of Warp
+That single design choice cascades into everything else the store description mentions:
 
-Most community-built maps use one of two systems, and occasionally both:
+- **Spreading out** widens what the beam can reach and sweeps across more of the arena at once.
+- **Swinging the web** implies rotating that line, so one player orbiting another turns a static tether into a cutting arc.
+- **Crossfire** suggests overlapping beams from multiple ship pairs, which is where a four-player crew gets value that a solo pilot cannot replicate.
+- **Dodging** stays central because a wide formation is also a big target.
 
-- **Static warps** — fixed pads, portals, or trigger volumes placed by the map creator. They fire the moment you touch them, whether you want them to or not.
-- **Ability warps** — a button you press. These usually run on a cooldown or a limited charge count, which means the decision of *when* to warp matters as much as *where*.
+The practical takeaway, even before release: coordination beats individual skill. A crew that flies in a tight, predictable clump wastes the beam. A crew that drifts apart without a plan sweeps empty space and eats damage. The interesting decisions happen in the space between those extremes.
 
-Knowing which system a map uses is the first thing you should figure out, because it completely changes how you plan a route.
+## Advertised features (from the developer's own store listing)
 
-## Warp Types You'll Meet in Void Runner Maps
+Everything in this section comes straight from the Steam store description and is safe to treat as intended design.
 
-Not every warp behaves the same way, and mixing them up is the fastest way to die. Community reports consistently describe five common varieties, each with a distinct risk profile.
+| Advertised feature | What the store page says |
+| --- | --- |
+| Players | 1–4 pilots, same couch or online |
+| Genre | Twin-stick roguelike |
+| Signature mechanic | Beams that link ships and shred anything they sweep |
+| Session structure | Three sectors, four jumps each, ending at a guardian |
+| Progression flavor | Build a salvaged ship over the course of a run |
+| Fail states | Ships can be destroyed; crew can be revived from escape pods |
 
-| Warp Type | How It Triggers | Typical Use | Main Risk |
-|---|---|---|---|
-| Static warp pad | Step on a marked tile | Skip a long jump segment | One-time use or cooldown |
-| Checkpoint warp | Touch a checkpoint | Return after falling into the void | Sends you backward, not forward |
-| Portal pair | Enter one portal | Long-distance map travel | Misaligned exit velocity |
-| Ability warp | Player presses a key | Mid-air recovery or gap clear | Limited charges per life |
-| Secret warp | Hidden trigger volume | Unlock shortcuts and bonus routes | Easy to miss entirely |
+Two details are worth pulling out. First, the run length is defined in jumps rather than minutes: three sectors of four jumps, culminating in a guardian, means twelve jumps plus three boss encounters. That is a compact structure, which fits a couch co-op night better than a sprawling campaign.
 
-The secret warp deserves special attention. Map creators often hide one or two off the main path, and finding them is frequently the difference between a good time and a personal best. Player experience suggests that most hidden warps sit near vertical structures or behind decorative geometry, because those spots are the least likely to be accidentally triggered.
+Second, the revive system is escape pods rather than instant respawns. That tells you death is meant to be recoverable but not free — someone has to go get the pod, and going to get it means leaving formation, which means the beam changes shape. The store page does not say how long a pod stays active, how many revives a run allows, or whether a solo pilot can self-revive. Those specifics are not public.
 
-## How Warps Handle Momentum and Velocity
+## What is not documented
 
-This is the mechanic that separates casual players from serious ones. A void runners warp does not simply move you — it decides what happens to the speed you carried into it.
+This is the honest part that most write-ups skip.
 
-| Entry State | Warp Type | Typical Exit Result |
-|---|---|---|
-| Standing still | Static pad | Stationary exit, no momentum carried |
-| Full sprint | Static pad | Forward speed preserved on exit |
-| Mid-air fall | Portal | Downward velocity carries through |
-| Sliding | Ability warp | Slide canceled, small forward boost |
-| Wall-running | Warp pad | Wall state cleared, neutral exit |
+- **Ship parts and loadouts.** The store page says you build a salvaged ship. It does not list any parts, slots, rarities, or upgrade paths. Third-party coverage that names specific modules is extrapolating from the genre, not quoting the developer.
+- **Weapon stats.** No damage numbers, fire rates, or beam widths are published.
+- **Guardian names or mechanics.** The store description references guardians as a category. No individual guardian has been named.
+- **Unlock costs, currency, or meta-progression.** Unknown. The roguelike label suggests something persists between runs, but nothing is confirmed.
+- **Any code system.** There is no documented code system, no seed-sharing feature, and no redemption mechanic. If you see a "Void Runners codes" list, it is not based on developer information.
+- **Release date beyond Q1 2027.** No specific day, no pricing, no pre-order details.
 
-The practical takeaway: never enter a warp while falling if you can avoid it. Downward momentum carried through a portal is one of the most common causes of instant respawns, especially on maps with a landing platform placed just past the exit.
+If you need one of these before buying, you are going to be waiting. The cleanest verification method is the Steam page itself, which updates its "About" text and system requirements as a game approaches launch. Wishlisting the app is the only reliable way to get notified when any of this changes.
 
-If your game preserves sprint speed through warps, build your route around it. A short run-up before a pad is often worth more than a technically cleaner jump, because the warp amplifies whatever you bring into it.
+## Community observations and how much to trust them
 
-### Test Warp Behavior Safely
+Because the game is unreleased, "community observations" are thin by definition. What exists tends to be reactions to the concept rather than hands-on reports: genre fans noting that beam-tethering is an unusual take on the twin-stick formula, and co-op players noting that a four-player requirement for the fullest version of the mechanic could be awkward for solo or duo play.
 
-Before you commit to a competitive run, spend one life deliberately testing each warp on the map:
+Treat all of that as commentary, not documentation. The store page explicitly advertises 1–4 players, so solo and duo are supported configurations — but it does not explain how beams work when there are fewer than four ships. Perhaps a solo pilot controls two ships, perhaps beams form differently, perhaps the design simply scales beam count to ship count. That is genuinely unknown, and it is the single biggest question for anyone planning to play alone.
 
-1. Walk into it slowly and note the exit position.
-2. Sprint into it and compare the exit.
-3. Fall into it and see whether you survive.
-4. Time how long the cooldown lasts.
-5. Note whether the warp can be re-triggered in the same life.
+## Practical reasoning for a pre-release audience
 
-Five minutes of testing saves dozens of failed runs.
+If you are considering Void Runners, the useful question is not "what are the best builds" — that cannot be answered yet. It is "does the core loop match my group."
 
-## Reading a Void Runners Warp Map Like a Route Planner
+Ask yourself:
 
-Every runner map is a puzzle about sequencing. Warps are the pieces that let you skip parts of the puzzle — but only if you know where they land relative to the rest of the course.
+- Do I have one to three people who will sit on the same couch, or play online on a schedule?
+- Does my group enjoy positional, coordination-heavy play, or do we prefer independent power fantasy?
+- Am I comfortable buying into a mechanically unusual roguelike before the meta-progression is public?
 
-Start by identifying warp density. A map with many warps rewards exploration and route knowledge. A map with two or three warps rewards execution, because each one is a major decision point.
+If the answers line up, the game is worth following. If your group plays solo most of the time and you need to know exactly how a two-hand control scheme works before committing, the responsible move is to wait for launch impressions. Nothing here guarantees a good time — the game has not been played by the public, and a concept that sounds great on paper can land differently in the hands.
 
-| Map Archetype | Warp Density | Best Strategy |
-|---|---|---|
-| Linear gauntlet | Low (1–2) | Perfect the jumps, save warps for recovery |
-| Hub-and-spoke | Medium | Learn every branch, pick the shortest chain |
-| Tower climb | Medium–high | Chain vertical warps to skip floors |
-| Labyrinth | High | Scout fully, then run the optimized line |
-| Endurance course | Low | Conserve ability warps for late sections |
+What can be said with confidence is that the beam-linking idea is specific. It is not a generic twin-stick shooter with a co-op label slapped on. The design forces players to negotiate space with each other continuously, and that is a real, verifiable commitment in the store description rather than marketing filler.
 
-Many warp-heavy runner maps are published on accessible platforms such as [Roblox's official site](https://www.roblox.com/), where community creators upload new courses constantly. That constant churn means route knowledge has a shelf life — a shortcut that works today may be patched tomorrow, so always verify before a serious attempt.
+## FAQ
 
-### Scout, Then Optimize
+**Is Void Runners the same as Void Crew, Void Stranger, or Solar Ash?**
+No. Those are separate games by separate developers. Void Runners is Steam app 5334520 by Aaron Reisman.
 
-Your first pass should be slow and deliberate. Do not try to set a time. Instead:
+**When does it come out?**
+The store page lists Q1 2027, marked as coming soon. No exact date has been announced.
 
-- Walk the whole course and mark every warp you find.
-- Note which warps are mandatory and which are optional.
-- Identify the one section where you consistently lose the most time.
-- Ask whether a warp can eliminate that section entirely.
+**How many players?**
+One to four, on one couch or online, per the official description.
 
-That last question is the highest-value one in the entire genre. Removing a hard section is almost always better than perfecting it.
+**Are there cheat codes?**
+No code system is documented anywhere in the official material. Any list claiming otherwise is not sourced.
 
-## Warp Chaining and Speed Techniques
+**How long is a run?**
+Structurally, three sectors of four jumps each, ending in a guardian. The store page does not give a time estimate.
 
-Advanced players don't use warps one at a time. They chain them, using the exit velocity of one to reach the trigger of the next. A well-built void runners warp chain can carry a player through a third of a map in a handful of seconds.
-
-Chaining requires two habits. First, look ahead: your camera should be on the next warp before you touch the current one. Second, buffer your inputs — press the warp key or step toward the pad slightly before you land, so the action registers the instant it becomes legal.
-
-| Drill | What It Trains | Suggested Reps |
-|---|---|---|
-| Single-warp entry at sprint speed | Momentum retention | 20 |
-| Two-warp chain with no stop | Timing and camera control | 20 |
-| Mid-air ability warp recovery | Panic management | 15 |
-| Full-course run with warps only | Route memory | 10 |
-| No-warp run for comparison | Baseline execution | 5 |
-
-That last drill is underrated. Running a map without using any warps tells you exactly how much value your warp route is actually adding. If the difference is small, your route may be poorly optimized — or the map simply isn't warp-dependent.
-
-### Common Warp Mistakes and Fixes
-
-| Mistake | Why It Happens | Fix |
-|---|---|---|
-| Warping into a fall | Entering a portal mid-drop | Approach warps from ground level |
-| Missing the exit platform | Wrong entry speed | Match speed to the exit gap |
-| Wasting ability charges early | Panic use on easy sections | Save charges for the final third |
-| Triggering a secret warp by accident | Hugging decorative geometry | Learn the trigger's exact footprint |
-| Assuming a warp is one-way | Not testing in both directions | Always test the return path |
-
-Community reports also flag a subtler problem: players memorizing a warp route from a video that was recorded before a map update. Geometry shifts, cooldowns change, and a route that once worked can send you straight into the void. Verify in-game rather than trusting a clip.
-
-## Frequently Asked Questions
-
-**Is a void runners warp the same as a checkpoint?**
-No, and the difference matters. A checkpoint saves your progress and sends you backward when you fail. A warp relocates you instantly, often forward, and usually can't be used as a safety net. Treating a warp like a checkpoint is a common beginner error.
-
-**Can I disable warps to practice the raw course?**
-On many maps, yes — either through a settings menu or simply by avoiding the pads. Practicing without warps builds the execution skill you'll need when a warp is on cooldown or unavailable.
-
-**Do ability warps and static warps stack?**
-Generally, they're independent systems, so using one doesn't block the other. Player experience suggests the best routes use a static pad to gain height, then an ability warp to cross a gap that would otherwise be impossible.
-
-**How do I find secret warps on a new map?**
-Scout methodically. Check behind decorative objects, at the top of towers, and at the end of dead-end branches. If a section looks suspiciously empty, there's often a trigger volume hidden in it. Most importantly, a void runners warp shortcut is usually placed where a designer wanted to reward curiosity — so explore before you compete.
-
-**Does warp speed affect my final time?**
-Only indirectly. What affects your time is how much course the warp lets you skip and how much momentum you retain on exit. Two players can use the same warp and finish seconds apart purely because of entry speed.
+**Where should I check for updates?**
+The [official Steam page](https://store.steampowered.com/app/5334520/) is the authoritative source. Wishlist it there, and treat everything else — including this article — as secondary until the game ships.

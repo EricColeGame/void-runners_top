@@ -1,141 +1,92 @@
 export const metadata = {
-  title: "Guía de Void Runners Wraith: habilidades, builds y consejos de estilo de juego para ganar",
-  description: "Una guía completa de Void Runners Wraith que abarca habilidades, roles, builds, counters y consejos de estilo de juego para ayudarte a dominar a este personaje que se desplaza entre fases.",
+  title: "Void Runners: El combate cooperativo con rayos explicado",
+  description: "Void Runners es un roguelike cooperativo twin-stick donde los rayos conectan tus naves. Esto es lo confirmado para el lanzamiento de 2027 y lo que no lo está.",
   category: "characters",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Por qué el arquetipo Void Runners Wraith domina las partidas
+La mayoría de los roguelikes te piden que te mantengas con vida. Void Runners, un próximo roguelike twin-stick del desarrollador y editor en solitario Aaron Reisman, te pide que mantengas toda la formación con vida a la vez. El gancho es fácil de enunciar y difícil de jugar: cada par de naves está unido por un rayo, y ese rayo destroza todo lo que barre. Tu supervivencia depende menos de tu puntería individual que de dónde vuelas en relación con tu tripulación.
 
-Si alguna vez has visto a un Void Runners Wraith desaparecer en mitad de un combate y reaparecer detrás de tu línea trasera, ya entiendes por qué este arquetipo de personaje distorsiona partidas enteras. Los kits de Void Runners Wraith combinan velocidad pura con teletransporte de corto alcance, lo que les permite cruzar terreno disputado más rápido que casi cualquier otro mientras escapan del peligro en el último segundo posible. Aprender cómo funciona realmente ese conjunto de herramientas —y cómo castigarlo— es la diferencia entre perseguir sombras toda la partida y cerrar victorias limpias.
+Esa única restricción reconfigura casi todas las decisiones del juego, desde cómo te dispersas hasta cómo reanimas a un compañero caído. Según la página oficial de Steam de la aplicación 5334520, el juego estaba marcado como "próximamente" con una ventana de lanzamiento del primer trimestre de 2027 en el momento de escribir esto. Esa página es la única fuente autorizada de información sobre las características en este momento, y es deliberadamente escasa en detalles concretos. Este artículo se ciñe a lo que confirma la página de la tienda, señala lo que ha observado la comunidad y nombra con claridad lo que no está documentado.
 
-El arquetipo aparece en shooters, RPG de acción y brawlers de héroes bajo nombres ligeramente distintos, pero la filosofía de diseño se mantiene notablemente coherente. Un void runner se mueve a través del espacio vacío; un wraith es la versión espectral de esa idea, que cambia durabilidad pura por sigilo, imágenes residuales e intangibilidad breve. Júntalos y obtienes un personaje que es frustrante de inmovilizar y aterrador cuando se pilota bien.
+## Qué cambia realmente la mecánica de los rayos
 
-Esta guía desglosa el kit, el estilo de juego, las builds y el counterplay para que puedas dominar el arquetipo o neutralizarlo.
+En un shooter twin-stick convencional, tu nave es un arma autónoma. Apuntas, disparas, te reposicionas en tu propio beneficio. Void Runners rompe esa suposición. La descripción de la tienda dice que los rayos conectan las naves y destrozan todo lo que barren, así que tu daño es un objeto compartido y en movimiento en lugar de un proyectil que posees.
 
-## ¿Qué es exactamente un Void Runner Wraith?
+Las consecuencias prácticas se derivan directamente de esa descripción:
 
-En esencia, un void runner es un personaje centrado en la movilidad y construido en torno a saltos espaciales de corto alcance. El "vacío" aquí es el espacio vacío entre posiciones: la brecha que un runner atraviesa en lugar de cruzar. Una variante wraith superpone un tema espectral: fase, señuelos o una imagen fantasmal que rompe el apuntado enemigo durante un instante.
+- **El espaciado es la habilidad principal.** Volar separados estira el rayo sobre más terreno pero adelgaza tu cobertura; mantenerse juntos lo concentra pero agrupa a tu tripulación en un único blanco.
+- **El movimiento es daño.** La descripción enfatiza "blandir la red", lo que significa que destruyes cosas reposicionándote, no solo manteniendo apretado un gatillo.
+- **El fuego cruzado importa.** Con varias naves conectadas, la geometría entre los pilotos crea zonas de muerte superpuestas que ninguna nave podría producir por sí sola.
+- **Esquivar es un problema de grupo.** Cuando te mueves para barrer a un enemigo, también mueves el rayo que te mantiene conectado.
 
-El resultado es un híbrido de hostigador y asesino. Estos personajes son lo bastante rápidos para elegir sus peleas en sus propios términos y lo bastante escurridizos para marcharse cuando esas peleas se torcen. Lo que normalmente no son es resistentes. Casi todas las versiones de este arquetipo castigan el posicionamiento codicioso, que es exactamente por lo que su techo de habilidad es tan alto.
+Como dos naves comparten un rayo, una partida recompensa a los pilotos que se comunican sobre *dónde* están, no solo sobre *qué* están disparando. Esa es la identidad completa del juego en una frase, y es la parte de Void Runners que lo separa de otros shooters cooperativos para cuatro jugadores.
 
-| Atributo | Diseño típico | Por qué importa |
-|---|---|---|
-| Movilidad | Muy alta | Define todo el kit; lo demás lo apoya |
-| Durabilidad | Baja a media | Obliga a golpear y huir en lugar de intercambios largos |
-| Daño explosivo | Alto | Recompensa ventanas de enfrentamiento precisas y cortas |
-| Daño sostenido | Bajo a medio | Las peleas largas casi siempre acaban mal |
-| Utilidad | Media | Visión, señuelos o herramientas de control de masas |
-| Piso de habilidad | Medio-alto | La gestión de enfriamientos es obligatoria |
-| Rol principal | Flanqueador / explorador | Se usa mejor en ángulos laterales, no de frente |
-| Alcance efectivo | Corto a medio | Pierde mucho valor a distancia |
+## Características confirmadas frente a detalles no confirmados
 
-### La capa Wraith
+La página de la tienda es específica sobre el planteamiento y silenciosa sobre los entresijos. Esta tabla separa ambas cosas.
 
-Las variantes con temática wraith suelen apoyarse en el folclore: un espíritu que permanece, se desvanece y regresa. En términos de jugabilidad, eso se traduce en ventanas de invisibilidad, reducción de daño mientras está en fase o una imagen residual que absorbe uno o dos disparos. El tema es cosmético en la superficie, pero moldea el equilibrio: un void runner con sabor a wraith es casi siempre el miembro más sigiloso de su plantilla, y el que más probablemente se ajuste en torno a la escapada en lugar de la agresión pura.
+| Anunciado en la página oficial de Steam | No documentado en ninguna fuente oficial |
+| --- | --- |
+| 1–4 jugadores, sofá local u online | Piezas de nave y cómo se desbloquean |
+| Naves conectadas por rayos que destrozan | Estadísticas de armas, cifras de daño, cadencias de disparo |
+| Dispersarse y "blandir la red" | Nombres de guardianes y patrones de ataque |
+| Fuego cruzado y esquiva como habilidades clave | Diseños de sectores y mapas salto a salto |
+| Reanimar a la tripulación desde cápsulas de escape | Un sistema de códigos de cualquier tipo |
+| Construir una nave recuperada | Costes de desbloqueo, monedas, árboles de progresión |
+| Tres sectores, cuatro saltos cada uno, tres guardianes | Opciones de dificultad o ajustes de accesibilidad |
 
-## Habilidades: cómo es un kit típico
+Si ves una guía, un vídeo o una página wiki que enumere piezas de nave de Void Runners, valores de daño de los rayos o el nombre de un jefe, trátala como una conjetura de terceros y no como documentación del desarrollador. Los desarrolladores no han publicado esos detalles. Como el juego no ha salido aún, cualquier lista de ese tipo debe tratarse como especulación hasta que la página de la tienda se actualice o el propio juego se lance.
 
-La mayoría de los diseños de Void Runners Wraith siguen el mismo esqueleto de cinco espacios. Los nombres cambian de un juego a otro, pero las funciones se repiten con una regularidad llamativa. Los informes de la comunidad describen sistemáticamente la misma curva de aprendizaje: sobrevivir es fácil, asegurar bajas es lo difícil, porque la habilidad que te salva suele ser la misma con la que quieres abrir.
+## La estructura de la partida: tres sectores, tres guardianes
 
-| Espacio | Función común | Mejor uso | Error habitual |
-|---|---|---|---|
-| Pasiva | Intangibilidad breve tras recibir daño | Desengancharse de un intercambio malo | Desperdiciarla en daño de chip |
-| Primaria | Virote del vacío o proyectil explosivo de corto alcance | Rematar objetivos con poca vida | Spamearla a máxima distancia |
-| Movimiento | Dash de grieta, parpadeo o paso de fase | Cerrar distancias y reposicionarse | Hacer dash hacia un equipo enemigo agrupado |
-| Utilidad | Imagen residual, señuelo o humo | Romper la línea de visión | Activarla estando ya visible |
-| Definitiva | Forma wraith o estallido espectral | Zambullirse y escapar en una sola ventana | Usarla sin plan de salida |
+La única pieza de estructura macro que confirma la página de la tienda es la forma de una partida: tres sectores, cada uno de cuatro saltos de profundidad, terminando en un guardián. Hay tres guardianes en total, uno por sector.
 
-La clave está en la superposición. Tu habilidad de movimiento y tu definitiva cumplen con frecuencia una doble función como herramientas tanto de inicio como de desenganche. Cada vez que quemas una para atacar, estás renunciando silenciosamente a tu ruta de escape. Ese único intercambio es lo que separa a un Void Runners Wraith promedio de uno genuinamente opresivo.
+Eso te dice algo útil sobre el ritmo incluso sin ninguna cifra asociada. Una partida es finita y legible. Doce saltos en total, divididos en tres tramos de cuatro, con un jefe al final de cada tramo en lugar de solo al final del todo. Esa estructura sugiere que cada sector avanza hacia una prueba concreta en lugar de una única y larga contienda de desgaste.
 
-Si quieres ver cómo distintos títulos implementan este mismo arquetipo, explora [el catálogo de juegos de acción de Steam](https://store.steampowered.com/search/?term=void+runner) y compara kits de movilidad uno junto a otro.
+Lo que no te dice:
 
-## Cómo jugar: un bucle de enfrentamiento paso a paso
+- Cuánto dura un salto
+- Si los saltos se eligen, son aleatorios o son fijos
+- Si los guardianes escalan según el tamaño de la tripulación
+- Si una partida se puede pausar o guardar a mitad de sector
 
-El error que comete la mayoría de los jugadores es tratar a un Void Runners Wraith como un duelista. No lo es. Es un oportunista. Quieres pelear solo cuando los números te favorecen y luego desaparecer antes de que el enemigo pueda organizar una respuesta.
+Nada de eso está documentado. La página de la tienda describe el esqueleto de una partida pero no su textura. Puedes verificar la estructura tú mismo cuando salga el juego simplemente jugando una partida y contando los saltos hasta el primer guardián.
 
-| Paso | Qué hacer | Por qué funciona |
-|---|---|---|
-| 1. Explorar | Tomar un ángulo lateral y localizar objetivos aislados | Evita por completo las peleas justas |
-| 2. Picotear | Acertar disparos primarios para forzar enfriamientos defensivos | Hace que el enemigo queme sus escapes antes de tiempo |
-| 3. Cebar | Retroceder y dejar que te persigan | Los aleja de sus compañeros |
-| 4. Comprometerse | Hacer dash solo cuando su escape ya no esté | Garantiza que la ventana de ráfaga aterrice |
-| 5. Ráfaga | Descargar daño rápido y luego salir en fase | Minimiza el tiempo de exposición |
-| 6. Reiniciar | Recuperarse, volver a explorar, repetir | Te mantiene vivo para la siguiente pelea |
+## Jugar con una a cuatro personas
 
-### Consejos prácticos de la experiencia de los jugadores
+La descripción confirma de uno a cuatro pilotos en un mismo sofá o en línea. Ese rango importa porque la red de rayos escala según el tamaño de la tripulación:
 
-- **Sigue los enfriamientos, no las barras de vida.** Un enemigo a media vida con un escape listo es más peligroso que uno a vida completa sin él.
-- **Nunca abras con tu definitiva.** Guárdala como el segundo compromiso: el primero sirve para sacar herramientas defensivas.
-- **Juega el terreno, no el suelo abierto.** Los personajes con parpadeo ganan un valor enorme con muros, esquinas y verticalidad.
-- **Fija un umbral de vida y respétalo.** Elige un número —la mayoría de los jugadores usa aproximadamente la mitad— y sal en fase en el momento en que lo alcances.
-- **Practica la cancelación del parpadeo.** Los dashes cortos y controlados superan casi siempre a los saltos de máxima distancia.
+- **Un jugador:** sin compañero de rayo, así que la mecánica de conexión presumiblemente funciona de forma distinta o no funciona en absoluto en solitario. La página de la tienda no explica cómo gestiona el juego en solitario los rayos.
+- **Dos jugadores:** un rayo, una relación que gestionar. La versión más legible de la mecánica.
+- **Tres jugadores:** la geometría se vuelve interesante, ya que los enlaces pueden formar cadenas o triángulos según la implementación, algo que la página de la tienda no especifica.
+- **Cuatro jugadores:** la versión más caótica y, presumiblemente, la más gratificante del puzle de espaciado.
 
-## Builds y prioridades de equipamiento
+Como la página de la tienda incluye el juego en línea junto al cooperativo de sofá, asume que no necesitarás reunir a todo el mundo en una misma habitación. Aun así, el énfasis en el posicionamiento físico sugiere que el juego local se sentirá distinto del juego en línea, ya que puedes ver la pantalla y el lenguaje corporal de tu compañero en un sofá de una forma que no puedes por chat de voz.
 
-La mayoría de los jugadores invierte en exceso en daño. Eso se siente bien en el campo de pruebas y te mata en partidas reales. Para una build de Void Runners Wraith, el tiempo de actividad de movilidad y la eficiencia de enfriamientos superan casi siempre a la ráfaga pura, porque tu ventana de daño dura solo lo que permita tu escape.
+Reanimar a la tripulación desde cápsulas de escape se anuncia explícitamente, lo que significa que la muerte no es necesariamente el final de la partida de un jugador. Es una decisión de diseño significativa para un juego de rayos conectados: perder a un piloto cambia la propia red, así que la recuperación tiene un coste estructural, no solo numérico.
 
-| Prioridad | En qué invertir | Motivo |
-|---|---|---|
-| 1 | Tiempo de actividad de movilidad | Más parpadeos significa más ventanas de inicio |
-| 2 | Reducción de enfriamientos | Acorta el tiempo muerto entre jugadas |
-| 3 | Daño explosivo | Solo el necesario para cerrar una baja |
-| 4 | Supervivencia | Un golpe extra a menudo compra toda la escapada |
-| 5 | Visión / utilidad | Convierte las conjeturas en zambullidas seguras |
-| 6 | Daño sostenido | Poco valor: rara vez peleas largo |
+## Construir una nave recuperada
 
-### Juego temprano, medio y tardío
+La página de la tienda menciona "construir una nave recuperada", lo que ata el tema. No eliges un equipamiento desde un menú limpio; ensamblas algo con lo que encuentras. Ese enfoque es coherente con el género roguelike, donde las partidas se definen por combinaciones improvisadas en lugar de builds fijas.
 
-Al principio, prioriza todo lo que te haga moverte con más frecuencia. En el juego medio, añade suficiente daño para convertir tus ventanas de forma fiable. El juego tardío es donde los objetos de supervivencia ganan partidas en silencio: una sola estadística defensiva puede ser la diferencia entre cambiar tu vida por una baja y marcharte con el objetivo.
-
-## Counters, debilidades y enfrentamientos
-
-Todo personaje de movilidad tiene un counter duro, y los void runners no son la excepción. Toda su ventaja proviene de elegir cuándo y dónde pelear, así que cualquier cosa que elimine esa elección —visión, negación de zona o control de masas duro— resulta devastadora.
-
-| Amenaza | Por qué duele | Cómo contrarrestarla |
-|---|---|---|
-| Negación de zona | Elimina los puntos seguros a los que parpadeas | Espera a que pase la zona; nunca te zambullas a través de ella |
-| Aturdimientos en cadena | Borra por completo tu ventana de escape | Ceba el primer aturdimiento y luego parpadea |
-| Revelación / visión verdadera | Mata tu ventaja de invisibilidad | Rompe la línea de visión antes de volver a enganchar |
-| Luchadores tanques | Superan en sustento tu ráfaga | Nunca aceptes un 1v1 justo; usa a tus compañeros |
-| Picoteo de largo alcance | Castiga tu ruta de aproximación | Rota a través de cobertura, no por carriles abiertos |
-
-### Debilidades conocidas
-
-- **Reserva de vida efectiva pequeña.** Una zambullida mal calculada termina tu partida.
-- **Dependencia de enfriamientos.** Atrapa a un Void Runners Wraith con todo en enfriamiento y es una baja gratis.
-- **Débil en terreno abierto.** Sin terreno alrededor del cual parpadear, el kit pierde la mayor parte de su valor.
-- **Escapes dependientes de la definitiva.** Fuerza la definitiva, desengánchate y vuelve a enganchar antes de que regrese.
-
-## Juego en equipo y composición
-
-Un Void Runners Wraith rara vez carga solo. Amplifica a un equipo que ya genera presión y sufre mucho cuando tiene que generar todo el tempo por sí mismo.
-
-| Composición | Rol del Void Runner Wraith | Notas |
-|---|---|---|
-| Dive / agresiva | Flanqueador principal | Sigue los inicios del tanque |
-| Poke / desgaste | Amenaza secundaria | Castiga a cualquiera que quede fuera de posición |
-| Defensa de objetivo | Explorador y disruptor | Disputa los flancos, retrasa los avances |
-| Cola en solitario | Hostigador autosuficiente | Juega por bajas, no por peleas de equipo |
-
-El patrón es consistente: eres el personaje que convierte un estancamiento en una apertura. Cuando tu equipo aplica presión en otro lugar, te vuelves letal. Cuando tu equipo es pasivo, te vuelves una carga.
+Lo que no es público: ningún nombre de pieza, ninguna ruta de mejora, ninguna indicación de si la construcción de la nave ocurre a mitad de partida, entre saltos o entre sectores. No hay un sistema de códigos publicado, ni una lista de desbloqueos, ni una moneda. Si una fuente afirma lo contrario, no se está basando en documentación del desarrollador.
 
 ## Preguntas frecuentes
 
-**¿Es el Void Runners Wraith una buena elección para principiantes?**
+**¿Void Runners está relacionado con Solar Ash, Void Crew, Void Stranger o Starfinder?**
+No. Void Runners es un juego distinto de Aaron Reisman, publicado bajo el ID de aplicación de Steam 5334520. Comparte una palabra con varios títulos no relacionados y nada más.
 
-Es jugable pero implacable. El kit enseña una disciplina excelente de enfriamientos y conciencia del mapa, pero la baja durabilidad significa que cada error se castiga de inmediato. Los jugadores nuevos suelen ir mejor empezando con un personaje más robusto y cambiando una vez que entienden el timing de los enfrentamientos.
+**¿Cuándo sale?**
+El listado oficial dice primer trimestre de 2027 y está marcado como "próximamente" a fecha de octubre de 2026. Consulta la [página oficial de Steam](https://store.steampowered.com/app/5334520/) para la fecha actual, ya que puede cambiar.
 
-**¿Cuál es la forma más rápida de contrarrestar a un Void Runners Wraith?**
+**¿Cuántos jugadores pueden unirse?**
+De uno a cuatro, en un mismo sofá o en línea, según la descripción de la tienda.
 
-Negar información y espacio. Las habilidades de revelación eliminan la ventaja de invisibilidad, la negación de zona elimina los destinos seguros de parpadeo y el control de masas duro borra por completo la ventana de escape. Si puedes forzar la definitiva pronto y luego desengancharte, el personaje se vuelve mucho menos amenazante durante el siguiente minuto.
+**¿Hay un sistema de códigos o una lista de desbloqueos?**
+No está documentado. No se han publicado códigos, monedas ni costes de desbloqueo.
 
-**¿Funciona este arquetipo en cola en solitario?**
+**¿Cómo verifico los detalles antes de comprar?**
+Lee la página de la tienda de Steam, mira el tráiler si hay uno publicado y consulta el centro de la comunidad de Steam después del lanzamiento. Hasta entonces, cualquier cifra concreta que encuentres en línea no está verificada.
 
-Sí, con un ajuste. En juego organizado sigues un inicio coordinado. En cola en solitario, en cambio, deberías buscar objetivos aislados, ganar el 1v1 y rotar. Jugar por bajas en lugar de peleas de equipo mantiene tu valor consistente sin importar lo que hagan tus compañeros.
-
-**¿Qué debería mejorar primero?**
-
-Tiempo de actividad de movilidad, luego reducción de enfriamientos, luego daño explosivo. El daño se siente satisfactorio pero no sirve de nada si no puedes alcanzar al objetivo de forma fiable y marcharte después. La supervivencia completa la build una vez que tus hábitos de posicionamiento son consistentes.
-
-Dominar al Void Runners Wraith se trata, en última instancia, de paciencia. El kit recompensa a los jugadores que esperan la ventana correcta, se comprometen con fuerza y desaparecen antes de que nadie pueda responder, y castiga a todo el que olvida que el escape importa más que la baja.
+El resumen honesto: Void Runners tiene una idea central clara y original, y el material oficial describe bien esa idea. No describe en absoluto los entresijos del juego. Si te interesa, la página de la tienda es el único lugar en el que vale la pena confiar, y el propio juego será el único lugar para confirmar el resto.

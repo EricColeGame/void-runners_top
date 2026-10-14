@@ -1,110 +1,80 @@
 export const metadata = {
-  title: "Void Runners Boost-Vektor erklärt: Momentum, Verkettung und Luftkontrolle meistern",
-  description: "Lerne, wie der Void Runners Boost-Vektor funktioniert, warum Richtung wichtiger ist als reine Geschwindigkeit, und welche Timing-Übungen chaotische Sprünge in saubere, wiederholbare Routen verwandeln.",
+  title: "Void Runners Koop-Strahlen erklärt: Wie die Tether-Waffe funktioniert",
+  description: "Wie die Koop-Strahlen von Void Runners funktionieren: Schiffe, die durch einen zerschreddernden Tether verbunden sind, verifiziert anhand der offiziellen Steam-Seite für dieses Twin-Stick-Roguelike für 1-4 Spieler.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Warum der Void Runners Boost-Vektor jeden Run entscheidet
+In Void Runners ist der Strahl das Spiel. Aaron Reismans Twin-Stick-Roguelike für ein bis vier Piloten verlangt nicht so sehr, eine Waffe zu zielen, sondern eine Linie zu positionieren: Jedes Schiffspaar ist durch einen Tether verbunden, der alles zerschreddert, was er überstreicht – das bedeutet, deine Bewegung ist dein Schaden. Diesen einen Satz zu verstehen, ist der größte Unterschied zwischen einem sauberen Run und einem Haufen Rettungskapseln.
 
-Void Runner sind Momentum-Spiele, bevor sie Reaktionsspiele sind. Der Boden ist unzuverlässig, die Lücken sind lang, und das Einzige, was dich am Leben hält, ist die Geschwindigkeit, die du bereits trägst, plus jeder zusätzliche Schub, den du obendrauf packen kannst. Deshalb ist der Void Runners Boost-Vektor wichtiger als jede andere einzelne Eingabe in deinem Werkzeugkasten.
+Alles Folgende stammt aus der offiziellen Store-Beschreibung, und wo die Seite schweigt, sagt dieser Artikel das, anstatt zu raten. Du kannst die Quelle selbst auf der [Void Runners Steam-Seite](https://store.steampowered.com/app/5334520/) nachlesen, die das Spiel als „coming soon" für Q1 2027 listet.
 
-Ein Boost-Vektor besteht nur aus zwei Informationen: wie stark der Schub ist und in welche Richtung er zeigt. Die meisten Spieler denken nur an die erste Hälfte. Sie hämmern den Boost für maximale Kraft und wundern sich dann, warum sie an einer Kante hängen bleiben oder in eine Todesebene abdriften. Die Richtung ist die Hälfte, die tatsächlich die Route entscheidet.
+## Was der Strahl tatsächlich ist
 
-Sobald du anfängst, in Vektoren zu denken, verändert sich das ganze Spiel. Du hörst auf zu fragen „Wie werde ich schneller?" und fängst an zu fragen „Wohin zeigt mein Momentum gerade jetzt, und wohin muss es in einer halben Sekunde zeigen?" Dieser Wandel ist der Unterschied zwischen einem glücklichen Clear und einem wiederholbaren.
+Laut der offiziellen Beschreibung „verbinden Strahlen Schiffe, die alles zerschreddern, was sie überstreichen." Diese Formulierung ist wichtig. Der Strahl ist kein Projektil, keine Fähigkeit mit Cooldown und kein Schalter, den du feuerst. Er ist die Geometrie zwischen zwei Spielern. Wo auch immer das Segment verläuft, das dein Schiff mit dem deines Crewmitglieds verbindet, erleiden Gegner auf diesem Pfad Schaden.
 
-| Komponente | Was sie steuert | Was passiert, wenn du sie ignorierst |
-|---|---|---|
-| Magnitude | Wie viel Geschwindigkeit der Boost hinzufügt | Du unterschreitest Lücken oder schießt über Landungen hinaus |
-| Richtung | Wohin diese Geschwindigkeit zeigt | Du driftest in Wände, Decken oder leeren Void |
-| Timing-Fenster | Wann der Boost tatsächlich registriert wird | Der Schub landet zu spät und kämpft gegen dein bestehendes Momentum |
-| Abfallkurve | Wie schnell die zusätzliche Geschwindigkeit verpufft | Lange Routen fühlen sich zäh an trotz sauberer Boosts |
-| Gravitations-Interaktion | Wie der Schub sich mit dem Fallen kombiniert | Du verlierst die Höhe, die du für die nächste Plattform brauchst |
+Drei Konsequenzen ergeben sich direkt daraus:
 
-Die Abfallkurve ist die Komponente, die die meisten am stärksten unterschätzen. Ein Boost, der sich im Moment der Aktivierung gewaltig anfühlt, kann fast verschwunden sein, wenn du die nächste Plattform erreichst. Wenn du eine Route planst, denk an die Distanz, die du *nach* dem Boost zurücklegen musst, nicht nur an die Distanz im Moment des Drückens.
+- **Du kannst nicht getrennt zielen und dich bewegen.** Deine Feuerlösung ist deine Flugbahn. Drehen ist Zielen.
+- **Der Schaden skaliert mit Kooperation, nicht mit Upgrades, die du noch nicht gesehen hast.** Ein Schiffspaar, das einen weiten Bogen überstreicht, deckt mehr Fläche ab als ein Schiff, das einen Strahl hinter sich herzieht.
+- **Zwei Spieler bedeuten einen Strahl.** Drei Spieler bedeuten drei Strahlenpaare. Vier Spieler bedeuten sechs. Die offizielle Beschreibung nennt nicht die genaue Paarungsmathematik, aber sie sagt „jedes Schiffspaar ist durch einen Strahl verbunden", also bedeuten mehr Piloten ein dichteres Netz.
 
-## Boost-Typen und der Vektor, den jeder erzeugt
+Die Store-Seite veröffentlicht weder Strahllänge, Schadenswerte, Tick-Raten noch ob Strahlen verbessert werden können. Diese Details sind noch nicht öffentlich, und du solltest sie nach dem Launch im Spiel überprüfen, anstatt irgendeiner Zahl zu vertrauen, die du anderswo liest.
 
-Nicht jeder Boost verhält sich gleich, und sie als austauschbar zu behandeln ist eine der schnellsten Arten, einen Run zum Erliegen zu bringen. Jeder Typ schiebt entlang einer etwas anderen Achse, und jeder passt besser zu einer anderen Situation.
+## Auseinanderfliegen und das Netz schwingen
 
-| Boost-Typ | Primärachse | Am besten geeignet für | Hauptrisiko |
-|---|---|---|---|
-| Boden-Boost | Horizontal, oberflächenausgerichtet | Rohe Geschwindigkeit auf flachen Strecken aufbauen | Ihn direkt vor einem vertikalen Abschnitt verschwenden |
-| Luft-Boost | Kamera- oder Charakterausrichtung | Mitten im Flug korrigieren und Sprünge verlängern | Ihn unabsichtlich nach unten richten |
-| Ketten-Boost | Aufgebaut aus dem vorherigen Boost | Lange offene Strecken mit wenigen Plattformen | Zu früh stapeln und Richtungskontrolle verlieren |
-| Gravitations-Assist | Vertikal, unter Nutzung der Fallgeschwindigkeit | In tiefere Routen und Abkürzungen eintauchen | Sich auf einen Abstieg festlegen, aus dem du nicht mehr hochkommst |
-| Wand- oder Kanten-Umleitung | Senkrecht zur Oberfläche | Scharfe Kurven ohne Geschwindigkeitsverlust | Zu flach anwinkeln und von der Wand abprallen |
+Die offizielle Beschreibung benennt zwei Verhaltensweisen explizit: „auseinanderfliegen und das Netz schwingen". Das sind keine dekorativen Phrasen. Sie beschreiben die zwei konkurrierenden Kräfte des Strahlsystems.
 
-Die allgemeine Regel, die für die meisten Void Runner Builds gilt: Horizontale Boosts kaufen dir Distanz, vertikale Boosts kaufen dir Optionen. Wenn du unsicher bist, was ein Abschnitt will, frag dich, ob du weiter reisen oder höher ankommen musst. Diese eine Frage löst die meisten Routing-Diskussionen.
+**Auseinanderfliegen** verlängert den Strahl, was die überstrichene Fläche vergrößert, aber deine Abdeckung ausdünnt. Wenn zwei Schiffe zu gegenüberliegenden Rändern einer Arena fliegen, durchquert der Strahl die Mitte und berührt die Flanken selten. Gegner an den Rändern bleiben unberührt.
 
-### Deinen Vektor lesen, bevor du dich festlegst
+**Das Netz schwingen** ist das, was passiert, wenn die Crew sich um ein gemeinsames Zentrum dreht. Wenn alle in dieselbe Rotationsrichtung driften, überstreichen die Strahlen wie Sensen und decken eine riesige Fläche ab – auf Kosten eines ungeschützten Zentrums der Formation.
 
-Community-Berichte beschreiben durchweg dieselbe Gewohnheit bei schnellen Spielern — sie schauen auf den Austrittspunkt einer Lücke, nicht auf die Lücke selbst. Dein Zielort bestimmt den Vektor, den du brauchst. Wenn du auf den Void zielst, wirst du in den Void steuern.
+Die praktische Spannung besteht also zwischen Fläche und Dichte. Eine enge Formation zerschreddert alles, was nahe kommt. Eine weite Formation zerschreddert alles auf Distanz, lässt aber Gegner durch die Mitte schlüpfen. Die offizielle Seite rahmt dies als die Kernentscheidung des Fliegens relativ zu deiner Crew ein, was eine Designaussage ist, kein Tipp.
 
-### Wann Verketten einen einzelnen großen Boost schlägt
+## Kreuzfeuer, Ausweichen und der Preis des Scheiterns
 
-Ein einzelner großer Boost gibt dir eine Entscheidung. Eine Kette kleinerer Boosts gibt dir mehrere Chancen zu korrigieren. Auf unbekannten Routen überleben Spieler, die verketten, tendenziell länger, weil ein leicht falscher erster Schub durch den zweiten oder dritten korrigiert werden kann. Spar dir die einmaligen Maximalschübe für Routen, die du bereits memoriert hast.
+Die Store-Beschreibung listet auch „Kreuzfeuer" und „Ausweichen" als beworbene Features. Zusammen mit der Strahlenmechanik gelesen, impliziert dies, dass dieselben Linien, die Gegner töten, auch für dich Gefahr schaffen können: Strahlen mit einem Teamkollegen zu kreuzen, ist wie du Kreuzfeuer aufbaust, und sie sorglos zu kreuzen, ist wie du eingekesselt wirst. Die offizielle Seite sagt nicht, ob freundliche Strahlen freundliche Schiffe beschädigen, also behandle das als undokumentiert, bis du es testen kannst.
 
-## Timing-Fenster und Eingabedisziplin
+Was die Seite bestätigt, ist, dass der Tod nicht unbedingt das Ende eines Runs ist. Die Crew kann „aus Rettungskapseln wiederbelebt" werden, was bedeutet, dass ein abgeschossener Pilot eine Kapsel hinterlässt, die überlebende Teamkollegen bergen können. Ob das erfordert, in die Kapsel zu fliegen, in ihrer Nähe Position zu halten oder sie einfach zu erreichen, ist auf der Store-Seite nicht dokumentiert.
 
-Beim Timing hört der Void Runners Boost-Vektor auf, ein Matheproblem zu sein, und wird ein Muskelgedächtnisproblem. Der Vektor selbst ändert sich nicht je nachdem, wann du drückst — aber das *Ergebnis* tut es, weil dein bestehendes Momentum in jedem Moment anders ist.
+## Die Run-Struktur: Drei Sektoren, drei Wächter
 
-| Wann du drückst | Typisches Ergebnis | Anmerkungen |
-|---|---|---|
-| Am Scheitelpunkt eines Bogens | Boost verlängert den Bogen sauber | Sicherstes Fenster für die meisten Spieler |
-| Auf dem Weg nach oben | Boost fügt Höhe hinzu, kostet Vorwärtsgeschwindigkeit | Nützlich für vertikale Routen |
-| Auf dem Weg nach unten | Boost verstärkt sich mit der Gravitation | Schnell, aber schwer zu steuern |
-| Direkt bei einer Landung | Boost wird bei Kontakt teilweise aufgehoben | Normalerweise verschwendete Eingabe |
-| Mitten in der Abklingzeit | Eingabe entfällt vollständig | Der häufigste stille Fehlschlag |
+Die offizielle Beschreibung ist spezifisch bezüglich der Form eines Runs: „drei Sektoren und drei Wächter tief". Das ist ein kurzer, lesbarer Bogen, der zu einem Couch-Koop-Spiel passt, bei dem Sessions sauber enden sollen.
 
-Die letzte Zeile verdient Aufmerksamkeit. In den meisten Implementierungen wird ein während der Abklingzeit gedrückter Boost nicht in die Warteschlange gestellt — er tut einfach nichts. Spieler, die während einer Abklingzeit auf den Knopf hämmern, glauben, sie hätten geboostet, und geben dann dem Spiel die Schuld, wenn sie zu kurz kommen. Die Abklingzeit im Kopf mitzuzählen ist unglamourös, und es behebt mehr fehlgeschlagene Runs als jede fortgeschrittene Technik.
+Was *nicht* dokumentiert ist:
 
-## Häufige Fehler, die deinen Void Runners Boost-Vektor zerstören
+| Frage | Offizieller Status |
+| --- | --- |
+| Schiffsteile und Loadout-Optionen | Nicht veröffentlicht |
+| Waffenstatistiken oder Strahlenschadenswerte | Nicht veröffentlicht |
+| Namen, Leben oder Angriffsmuster der Wächter | Nicht veröffentlicht |
+| Sektor-Layouts oder Sprungmodifikatoren | Nicht dokumentiert über „vier Sprünge" pro Sektor hinaus |
+| Freischaltkosten, Währungen oder Fortschrittswährung | Nicht veröffentlicht |
+| Ein Codesystem oder Cheat-Codes | Kein solches System ist dokumentiert |
 
-Die meisten fehlgeschlagenen Runs lassen sich auf eine kleine Gruppe wiederholter Fehler zurückführen. Zwei oder drei davon zu beheben, bringt normalerweise eine größere Verbesserung als das Erlernen eines neuen Tricks.
+Third-Party-Guides und Community-Spekulationen mögen einige dieser Lücken nach dem Launch füllen, aber sie sind Beobachtungen von Spielern, keine Entwicklerdokumentation, und sollten entsprechend zugeordnet und verifiziert werden.
 
-| Fehler | Warum er schadet | Lösung |
-|---|---|---|
-| In Richtung der Kamera boosten | Der Schub kämpft gegen dein Vorwärtsmomentum | Kamera fixieren, bevor du dich festlegst |
-| Boosts zu schnell verketten | Spätere Boosts werden von Abklingzeiten verschluckt | Einen Takt zwischen den Eingaben lassen |
-| Auf die Mitte der Plattform zielen | Du kommst ohne Korrekturspielraum an | Auf die nahe Kante zielen, dann bremsen |
-| Fallgeschwindigkeit ignorieren | Die Gravitation dreht still deinen effektiven Vektor | Abstieg einberechnen, wenn du einen Winkel wählst |
-| Nur komplette Runs üben | Du isolierst nie das fehlerhafte Segment | Den Abschnitt isoliert üben |
+## Ein geborgenes Schiff bauen
 
-Der Kamera-Fehler ist der, den Spieler am spätesten bemerken. Weil die Kamera in vielen Builds „vorwärts" definiert, zeigt ein Boost, der während einer Kamerabewegung ausgelöst wird, irgendwohin, wo du nicht hinwolltest. Gewöhn dir an, die Kamera zu beruhigen, bevor du drückst, auch wenn es dich einen Bruchteil einer Sekunde kostet.
+Die Store-Seite erwähnt „ein geborgenes Schiff bauen", was dir sagt, dass Progression existiert, aber sie beschreibt keinen Teilekatalog, keine Seltenheitsstufen oder Crafting-Stationen. Wenn du heute, vor dem Q1-2027-Release, einen Guide siehst, der spezifische Modulnamen oder Drop-Raten behauptet, stammt er nicht vom Entwickler.
 
-## Übungsdrills, Routenplanung und Community-Erkenntnisse
+Die ehrliche Position ist, dass der Strahl das einzige stark dokumentierte System ist. Alles andere, von Meta-Progression bis Boss-Design, ist ein Preview-Versprechen statt einer veröffentlichten Spezifikation. Das ist normal für ein Spiel, das noch als „coming soon" markiert ist.
 
-Verbesserung in der Void Runner Mechanik kommt durch Wiederholung mit einem Ziel. Zufällige komplette Runs bauen Ausdauer auf; gezielte Drills bauen Können auf.
+## Häufig gestellte Fragen
 
-| Drill | Ziel | Wie man ihn durchführt |
-|---|---|---|
-| Einzel-Lücken-Wiederholung | Den idealen Boost-Winkel finden | Denselben Sprung 20-mal ausführen, dabei eine Variable anpassen |
-| Clear ohne Boost | Basis-Momentum lernen | Einen Abschnitt komplett ohne Boosten abschließen |
-| Blinder Boost | Timing-Intuition aufbauen | Auf Audio- oder Rhythmus-Signale boosten, nicht auf visuelle |
-| Umgekehrte Route | Vektor-Geometrie verstehen | Einen bekannten Abschnitt rückwärts laufen |
-| Abklingzeit-Zählen | Verworfene Eingaben eliminieren | Bei einem kompletten Run laut zwischen Boosts zählen |
+**Ist Void Runners dasselbe wie Void Crew oder Void Stranger?**
+Nein. Es ist ein separates Spiel, entwickelt und veröffentlicht von Aaron Reisman, gelistet unter Steam App 5334520. Es ist nicht Solar Ash, Void Crew, Void Stranger oder Starfinder.
 
-Routenplanung verdient dieselbe Disziplin. Bevor du einen neuen Abschnitt versuchst, schau dir einen sauberen Clear davon an und schreib die Abfolge von Vektoren auf, die er deiner Meinung nach braucht: horizontal, vertikal, horizontal, umleiten. Spieler, die Routen auf Papier skizzieren, berichten von weniger Zögern mitten im Run, weil die Entscheidung bereits getroffen war, bevor der Run begann.
+**Wie viele Spieler können teilnehmen?**
+Ein bis vier Piloten, auf einer Couch oder online, laut der offiziellen Steam-Beschreibung.
 
-Wenn du weitere Void Runner Titel suchst, um diese Mechaniken zu üben, durchstöbere [Steams offiziellen Runner-Tag-Hub](https://store.steampowered.com/tags/en/Runner/), der momentumgetriebene Spiele mit ähnlichen Bewegungssystemen sammelt.
+**Erfordert der Strahl einen Tastendruck zum Feuern?**
+Die offizielle Seite beschreibt keinen Aktivierungs-Input. Sie beschreibt Strahlen, die Schiffe verbinden und alles zerschreddern, was sie überstreichen, was als immer aktive Geometrie gelesen wird.
 
-Eine ehrliche Einschränkung: Genaue Boost-Werte, Abklingzeiten und Abfallraten unterscheiden sich von Spiel zu Spiel und manchmal zwischen Patches desselben Spiels. Alles oben ist ein Rahmen zum Denken über den Void Runners Boost-Vektor, keine universelle Zahlenmenge. Teste jedes Prinzip in deinem eigenen Build und behalte, was sich bewährt.
+**Wie lang ist ein Run?**
+Drei Sektoren, vier Sprünge jeweils, endend bei einem Wächter, mit insgesamt drei Wächtern über den Run. Genaue Zeiten sind nicht veröffentlicht.
 
-## FAQ
+**Wo kann ich Details bestätigen?**
+Der [offizielle Steam-Eintrag](https://store.steampowered.com/app/5334520/) ist die Autorität. Für alles, was die Seite auslässt, warte auf den Release und prüfe die In-Game-Tooltips auf dem Schiffbau-Bildschirm und das Strahlenverhalten im Tutorial, wo ein Entwickler normalerweise eine so zentrale Mechanik lehrt.
 
-### Was genau ist der Void Runners Boost-Vektor?
-
-Er ist die Kombination aus Richtung und Magnitude, die beim Auslösen eines Boosts angewendet wird. Stell ihn dir als Pfeil vor: Die Länge des Pfeils ist, wie viel Geschwindigkeit du gewinnst, und die Art, wie er zeigt, wohin diese Geschwindigkeit geht. Beide Hälften zählen gleichermaßen, obwohl die meisten Spieler nur auf die Länge achten.
-
-### Sollte ich immer mit maximaler Stärke boosten?
-
-Nein. Maximale Magnitude ist nur dann richtig, wenn deine Richtung bereits perfekt ist und der Abschnitt vor dir lang und offen ist. In engen Korridoren hält dich ein kleinerer, gut angewinkelter Boost am Leben. Präzision schlägt Kraft in fast jeder Kurzstreckensituation.
-
-### Warum tut mein Boost manchmal überhaupt nichts?
-
-Die wahrscheinlichste Ursache ist ein Abklingzeit-Fenster. In vielen Implementierungen werden während der Abklingzeit gedrückte Eingaben verworfen statt in die Warteschlange gestellt. Die zweitwahrscheinlichste Ursache ist eine Kamera- oder Ausrichtungsrichtung, die den Boost irgendwohin harmlos richtet, was sich wie ein verschwendeter Tastendruck anfühlt.
-
-### Wie lange dauert es, gut in der Boost-Vektor-Kontrolle zu werden?
-
-Spielererfahrung legt nahe, dass ein paar fokussierte Sitzungen mit Einzel-Lücken-Wiederholung mehr Fortschritt bringen als wochenlange beiläufige komplette Runs. Die Fähigkeit ist eher Mustererkennung als reine Reflexe — sobald du vorhersagen kannst, wohin ein Boost dich schickt, wird die Ausführung fast automatisch.
+Die Kurzversion: Fliege, als wäre der Raum zwischen euch die Waffe, denn in Void Runners ist er das.

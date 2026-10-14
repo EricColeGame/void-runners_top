@@ -1,126 +1,93 @@
 export const metadata = {
-  title: "Void Runners Worlds Collide: A Complete Map Guide to Zones, Mechanics, and Survival Tips",
-  description: "A practical walkthrough of void runners worlds collide maps: zone layouts, core mechanics, routing advice, and survival tips for every skill level.",
+  title: "Void Runners: What the Co-op Beam Roguelike Actually Does",
+  description: "Void Runners is a twin-stick roguelike for one to four pilots whose ships are joined by shredding beams. Here's what's confirmed before its Q1 2027 launch.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## What Makes a Void Runner Map Different
+"Void Runners" is an easy name to confuse with something else. It is not Solar Ash, not Void Crew, not Void Stranger, and not Starfinder. It is a specific, currently unreleased Steam game from developer and publisher Aaron Reisman, listed under app 5334520 and marked "coming soon" with a Q1 2027 release window. Because it has not shipped, most of what circulates about it falls into three buckets: what the store page actually advertises, what players reasonably infer from that description, and what simply has not been documented anywhere. Keeping those buckets separate is the whole point of this article.
 
-Void runners worlds collide maps are the rare breed of obstacle course where the floor simply does not exist. If you have ever watched a runner sprint across floating platforms while an empty sky yawns beneath them, you already understand both the appeal and the terror of void runners worlds collide level design. There is no scenery to hide behind, no ground to catch a mistimed jump, and no second chances unless a checkpoint ring happens to be nearby.
+If you want to check any claim below against the source, the [official Void Runners Steam page](https://store.steampowered.com/app/5334520/) is the only place that matters. Everything here is drawn from it or labeled as inference.
 
-That single design choice changes everything. In a normal parkour course, the environment itself teaches you where to go — a ledge hints at a grab, a slope suggests a slide. In the void, every platform is an island, and the only map you get is the one you build in your head. Route knowledge, not raw reflexes, is what separates a clean clear from a hundred resets.
+## What the store page actually advertises
 
-This guide breaks down how these maps are built, how the "worlds collide" theme reshapes them, and what you can actually do to survive longer.
+The verified description is short, but it is dense with mechanical commitments. Strip the marketing language and you get this:
 
-## Why the "Worlds Collide" Theme Changes the Run
+- **Co-op salvage raids for one to four pilots**, playable on one couch or online. That means the same game supports solo play and full four-player crews without a separate mode.
+- **Beams link ships.** Each pair of ships is joined by an energy beam, and that beam shreds whatever it sweeps. The beam is not a cosmetic tether; it is the primary damage instrument.
+- **Positioning is the core decision.** The description explicitly frames spreading out and "swinging the web" as the point. Where you fly relative to your crewmates determines where your damage lands.
+- **Crossfire, dodging, and reviving crew from escape pods** are named as part of the loop. Downed pilots are recoverable rather than permanently lost within a run.
+- **You build a salvaged ship**, implying progression assembled from what you recover rather than a fixed loadout.
+- **A run crosses three sectors and three guardians deep.** That is the stated structure: three sectors, each ending at a guardian, with a final confrontation.
 
-Most void runner maps pick one visual identity and commit to it. The worlds collide variant does the opposite: it stitches several distinct themes into a single continuous course, so you might sprint out of a frozen shard field and land in a neon skyline three jumps later.
+Everything in that list is developer-stated. Nothing in it names a specific part, a damage number, or a boss.
 
-That variety is fantastic for atmosphere and terrible for muscle memory. Each zone tends to introduce its own hazard rhythm, its own platform spacing, and often its own physics flavor. Community reports consistently point to the same choke point: the transition itself. Runners who die at a zone seam usually aren't failing the jump — they're failing to switch mental gears fast enough.
+## How the beam web changes four-player decisions
 
-| Theme Layer | What Changes | What It Punishes |
+Most twin-stick co-op games treat each player as an independent turret. Void Runners does something structurally different: your damage output is a function of geometry shared with your teammates. If two ships link into a beam, the beam exists in the space between them. Move, and the beam moves. Rotate the formation, and the swept area changes shape.
+
+That produces a few practical consequences worth reasoning about before launch:
+
+**Spreading out covers more ground but thins your damage.** A wide web sweeps a big area slowly and unpredictably. A tight web concentrates fire but leaves everyone inside the same dodge window with less room to react.
+
+**One player's dodge is everyone's problem.** If a beam connects you to a crewmate, your evasive movement drags the beam — and possibly the beam's damage — across the arena. Dodging is not purely selfish in this design.
+
+**Solo play changes the puzzle entirely.** With one pilot there are no pairs, so the web mechanic as described cannot function the same way. The store page claims one-to-four player support, but it does not explain how beams work solo. **That detail is not public.** A solo player should verify it in-game or watch the official page for a solo-specific description before assuming parity with co-op.
+
+## What community and third-party sources add
+
+A handful of third-party guides and aggregator write-ups have appeared since the announcement. Treat these as secondary observations, not documentation. They generally restate the store description, sometimes with more confident phrasing than the source supports.
+
+Where third-party coverage has drifted into specifics — named ship parts, weapon tiers, unlock costs, guardian names, or any kind of code or seed system — those specifics are **not backed by the official page**. The store description publishes no ship parts, no weapon stats, no boss names, and no code system. If you see a "Void Runners codes" list, a tier chart, or a named final boss, it is invented, speculative, or borrowed from a different game. That is the single most common way coverage of an unreleased title goes wrong.
+
+A quick verification habit: if a claim is not on the [Steam store page](https://store.steampowered.com/app/5334520/) and not demonstrated in an official trailer or developer post, file it as unconfirmed and move on rather than memorizing it.
+
+| Claim type | Status | Where to verify |
 |---|---|---|
-| Ice and crystal zones | Slippery landings, low friction | Over-committing on landing |
-| Neon city zones | Tight spacing, vertical climbs | Rushed camera adjustments |
-| Storm and rift zones | Moving platforms, knockback pulses | Standing still to "plan" |
-| Overgrown ruin zones | Broken sightlines, uneven surfaces | Reading the route too late |
-| Finale mix zones | Everything at once | Any single bad habit |
+| 1–4 player co-op, couch or online | Advertised | Official Steam page |
+| Beams link ships and shred what they sweep | Advertised | Official Steam page |
+| Three sectors, three guardians | Advertised | Official Steam page |
+| Revive from escape pods | Advertised | Official Steam page |
+| Build a salvaged ship | Advertised | Official Steam page |
+| Named ship parts, weapon stats | Not documented | Nowhere yet; check at launch |
+| Boss names, sector layouts | Not documented | Nowhere yet; check at launch |
+| Codes, seeds, unlock costs | Not documented | Nowhere yet; check at launch |
 
-If you take one thing from this section, make it this: treat every zone boundary as its own mini-start. Stop sprinting for half a second, re-read the geometry, then commit.
+## The three-sector run and what "guardian" implies
 
-## Map Anatomy: The Building Blocks of a Course
+The advertised run structure is three sectors of four jumps each, ending at a guardian per sector. That is a legible, bounded run — short enough that a full attempt is a single sitting, which fits the roguelike framing the description leans on.
 
-Nearly every void runner course is assembled from the same small toolkit of parts. Learning to recognize them on sight is the fastest way to improve.
+What the page does not specify is what happens between jumps. Are jumps discrete combat arenas, transition screens, or something else? Is loot collected mid-jump or banked at sector end? Is there a shop, a choice screen, or a fixed order? **None of that is documented.** Anyone describing Void Runners' "jump map" in detail right now is sketching, not reporting.
 
-| Element | What It Does | What It Tests |
-|---|---|---|
-| Static platform | Standard safe footing | Jump distance and timing |
-| Fading platform | Collapses after contact | Pace and decisiveness |
-| Boost pad | Launches you forward or up | Air control |
-| Low-gravity field | Slows your fall | Float management |
-| Portal gate | Teleports you between zones | Zone-boundary awareness |
-| Hazard sweep | Timed laser or pulse line | Rhythm and patience |
-| Checkpoint ring | Saves your progress | Route memorization |
-| Moving anchor | Platform on a fixed path | Prediction, not reaction |
+The word "guardian" is doing real work, though. It signals a persistent, run-defining encounter rather than a generic elite mob — and with three of them placed at sector boundaries, the pacing is likely a steady escalation rather than a single spike. That is inference from the description's wording, not a confirmed design statement. The guardian names, attack patterns, and health values are all unpublished.
 
-The last one deserves emphasis. Moving anchors are the single biggest source of "unfair" deaths in void maps, and almost every one of those deaths comes from reacting to where the platform is instead of predicting where it will be. Watch a full cycle before you jump.
+## What to watch before Q1 2027
 
-This precision-first philosophy is the same one that defines parkour games on [Steam's parkour tag hub](https://store.steampowered.com/tags/en/Parkour/) — the genre rewards planning over panic.
+Because the game is unreleased, the useful move is knowing what would change your expectations — not memorizing numbers that do not exist yet.
 
-## Zone-by-Zone: Reading a Worlds Collide Layout
+1. **A solo-play explanation.** The beam web is a multiplayer-shaped idea. How the developer resolves it for one pilot is the biggest open question in the description.
+2. **A real gameplay trailer.** The store page text describes mechanics; footage would confirm whether the web reads as clearly on screen as it does in prose.
+3. **Any progression detail.** "Building a salvaged ship" is the vaguest advertised feature. Whether that means permanent unlocks, per-run assembly, or both will shape the whole loop.
+4. **A concrete release date.** Q1 2027 is a window, not a date. It can move.
 
-The void runners worlds collide structure usually follows a difficulty curve that looks random but isn't. Zones get shorter as they get harder, because short brutal sections are easier to retry than long brutal sections.
-
-| Zone Position | Typical Length | Main Threat | Best Approach |
-|---|---|---|---|
-| Opening zone | Long | Teaching the basics | Learn the rhythm, don't rush |
-| Second zone | Medium | New physics rule | Adjust your jump timing |
-| Third zone | Medium | Combined hazards | Slow down at seams |
-| Fourth zone | Short | Speed pressure | Commit fully, no hesitating |
-| Finale | Shortest | Everything at once | Execute the plan you already know |
-
-### Routing and Checkpoint Discipline
-
-Checkpoints are not just safety nets; they are information. The placement of a checkpoint ring tells you exactly where the map designer expected you to struggle. If a checkpoint sits right before a gap, that gap is the intended wall.
-
-- Always note the last checkpoint before you attempt a new section.
-- If a section kills you three times, stop and watch the moving pieces for a full cycle.
-- Do not "practice" a section you cannot see. Panic-repeating teaches panic.
-
-## Practical Tips to Survive Longer
-
-Void runner maps are unforgiving, but they are also predictable. Here is what actually moves the needle.
-
-- **Lower your camera sensitivity for void sections.** Small adjustments beat big sweeps when there is no horizon to anchor against.
-- **Aim for the far edge of platforms, not the center.** Landing deep gives you more room for the next jump.
-- **Hold your movement input through the jump arc.** Stutter-stepping mid-air kills momentum in most physics engines.
-- **Learn one zone at a time.** Speedrunning a full clear before you can clear each zone is a waste of attempts.
-- **Count the beat of hazard sweeps out loud.** Rhythm is easier to hold than a visual timer.
-
-| Skill Level | Primary Focus | Realistic Session Goal |
-|---|---|---|
-| New to void maps | Not falling off static platforms | Clear the opening zone three times |
-| Comfortable | Fading platforms and boosts | Reach the second checkpoint consistently |
-| Intermediate | Zone transitions | Clear two full zones without a death |
-| Advanced | Route optimization | Full clear with time to spare |
-| Expert | Consistency runs | Repeated clears, low death count |
-
-The jump from "comfortable" to "intermediate" is almost always a transition problem, not a mechanics problem. Spend your practice time at the seams.
-
-## Common Mistakes and How to Fix Them
-
-Even experienced runners repeat the same handful of errors on void runners worlds collide courses. The good news is that each one has a specific, mechanical fix.
-
-| Mistake | Why It Happens | The Fix |
-|---|---|---|
-| Jumping before a platform stops moving | Excitement | Watch one full cycle first |
-| Over-correcting in mid-air | No visual reference | Reduce camera sensitivity |
-| Sprinting through a zone seam | Momentum habit | Deliberate half-second pause |
-| Ignoring checkpoint placement | Assuming it's random | Read it as a difficulty hint |
-| Retrying instantly after a death | Frustration | Take five seconds, then reset |
-| Blaming the map | Ego | Record the attempt and review it |
-
-That last row matters more than it looks. Player experience suggests that runners who review their own failures improve noticeably faster than runners who simply grind attempts. A short clip of a death tells you more than ten more tries will.
+None of this promises the game will land well. It is a description with unusual mechanical specificity and very little supporting material, which is normal for a title this far out.
 
 ## FAQ
 
-**What exactly is a void runners worlds collide map?**
+**Is Void Runners the same as Void Crew or Void Stranger?**
+No. They are separate games with unrelated developers. Void Runners is Aaron Reisman's project, Steam app 5334520.
 
-It is a void-themed obstacle course — meaning there is no ground beneath the platforms — that blends multiple distinct visual and mechanical themes into a single continuous run. The "collide" part refers to how those themes overlap and interrupt each other.
+**Is Void Runners out yet?**
+No. It is marked "coming soon" with a Q1 2027 window.
 
-**Are void runners worlds collide maps harder than standard parkour maps?**
+**Does it support solo play?**
+The store page advertises one to four pilots, so yes by description — but how the beam-linking works with a single ship is not documented.
 
-Generally, yes, but not for the reason people assume. The jumps themselves are rarely more technically demanding. The difficulty comes from the lack of visual grounding and from the constant gear-switching between zones.
+**How long is a run?**
+Three sectors, four jumps each, with a guardian at the end of each sector. Total playtime is not stated.
 
-**How long does it take to clear one of these maps?**
+**Are there Void Runners codes?**
+No code system is published. Any code list you find is not from the developer.
 
-It varies enormously by map length and by your familiarity with void physics. Most players report that their first clear takes far longer than their second, because route knowledge — not reflex — is the real bottleneck.
-
-**Do I need a specific platform or game to play void runners worlds collide content?**
-
-No single platform owns the format. Void runner courses show up across sandbox builders, browser-based obstacle games, and community map hubs, so the core skills transfer between them.
-
-**What is the single best habit for improving at these maps?**
-
-Watching before jumping. Whether it is a moving anchor or a hazard sweep, one full observation cycle prevents more deaths than any amount of raw speed.
+**Where should I check for updates?**
+The [official Steam page](https://store.steampowered.com/app/5334520/) is the only authoritative source. Ignore aggregator pages that present speculation as fact.

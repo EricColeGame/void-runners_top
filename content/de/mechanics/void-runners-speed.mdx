@@ -1,120 +1,92 @@
 export const metadata = {
-  title: "Void-Runner-Geschwindigkeit erklärt: Bewegungsmechanik, Momentum und wie man sich schneller bewegt",
-  description: "Wie die Geschwindigkeit von Void Runnern funktioniert: Bewegungsstats, Dash-Momentum und Traversal-Techniken, die sich stapeln, plus Übungen, um jede letzte Einheit Geschwindigkeit herauszuholen.",
+  title: "Void Runners: Wie der Tether-Strahl vier Schiffe in eine Waffe verwandelt",
+  description: "Void Runners ist ein unveröffentlichter Koop-Twin-Stick-Roguelike, in dem Strahlen Schiffe verbinden. Hier ist, was der Entwickler tatsächlich bestätigt hat.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Was sind Void Runner?
+Die meisten Koop-Spiele verlangen von dir, gleichzeitig auf denselben Gegner zu schießen. Void Runners verlangt von dir, darüber nachzudenken, wo du im Verhältnis zu allen anderen stehst. Diese eine Verschiebung ist das gesamte Konzept, und es lohnt sich, sie zu verstehen, bevor das Spiel erscheint, denn sie verändert, wie du einen Run planst, wie du dich im Kampf positionierst und wie du mit deiner Crew sprichst.
 
-Void Runner leben und sterben mit ihrer Geschwindigkeit. In jedem Spiel, das diesen Archetyp verwendet — eine leichte, fragile Einheit, bei der Mobilität an erster Stelle steht und die an Void-, Phasen- oder Rift-Themen gebunden ist — ist die Void-Runner-Geschwindigkeit die eine Zahl, die darüber entscheidet, ob du einen Raum räumst oder im Freien stehend erwischt wirst. Anders als ein Tank absorbiert ein Void Runner keinen Schaden; er löscht den Schaden, indem er nicht da ist, wenn er eintrifft.
+Dieser Artikel hält sich an das, was Entwickler Aaron Reisman auf der [offiziellen Steam-Seite](https://store.steampowered.com/app/5334520/) des Spiels veröffentlicht hat, und kennzeichnet klar alles, was Spekulation, Beobachtung Dritter oder schlicht noch nicht dokumentiert ist. Void Runners wurde für Q1 2027 angekündigt und ist als „coming soon" markiert. Es wurde nicht veröffentlicht.
 
-Diese Umdeutung ist wichtig, denn sie verändert, wie du jedes Upgrade bewertest. Die effektive Gesundheit eines Void Runners wird in zurückgelegter Distanz pro Sekunde gemessen, nicht in Rüstungspunkten. Wenn deine Void-Runner-Geschwindigkeit sinkt, sinkt deine Überlebensfähigkeit mit — oft bevor du die Ursache bemerkst.
+Eine Klarstellung vorab, weil die Suchergebnisse bei diesem Namen unübersichtlich sind: Das ist nicht Solar Ash, nicht Void Crew, nicht Void Stranger und nicht Starfinder. Es teilt mit mehreren davon ein Wort und sonst nichts.
 
-Der Archetyp tritt in drei gängigen Formen auf:
+## Was der Entwickler bestätigt hat
 
-- **Spielerklasse:** ein Mobilitätscharakter mit Dashes auf kurzer Cooldown, hohen Sprintwerten und dünner Verteidigung.
-- **Feindeinheit:** ein schneller Flanker, der Lücken rasch schließt und langsame Reaktionen oder schlechte Positionierung bestraft.
-- **Roguelike-Build:** ein Run, der Bewegungs-Upgrades stapelt, bis die Fortbewegung selbst zur Schadensquelle wird.
+Der Steam-Eintrag beschreibt Void Runners als Koop-Bergungsraid für ein bis vier Piloten, spielbar auf einer Couch oder online. Die bestimmende Mechanik ist ein Strahl, der jedes Schiffspaar verbindet. Der Strahl zerfetzt alles, was er streift. Das bedeutet, der Strahl ist nicht nur ein visueller Verbinder oder eine Buff-Aura. Er ist Schaden, und er wirkt entlang der Linie zwischen zwei Spielern.
 
-| Merkmal | Void Runner | Standard-Bruiser |
-|---|---|---|
-| Effektive Gesundheit | Niedrig, ausweichbasiert | Hoch, einsteckbasiert |
-| Basisbewegung | Überdurchschnittlich | Unterdurchschnittlich |
-| Burst-Mobilität | Dash oder Blink | Charge oder Sprung |
-| Schadensfenster | Kurz, häufig | Lang, gebunden |
-| Bestraft durch | Crowd Control, enge Korridore | Kiting, Fernkampf-Chip |
-| Gewinnt durch | Ständiges Repositionieren | Halten der Stellung |
+Aus dieser einen Regel folgen mehrere beworbene Verhaltensweisen ganz naturally:
 
-## Die fünf Ebenen der Void-Runner-Geschwindigkeit
+- Auseinanderfliegen und das Netz schwingen. Spieler sollen sich voneinander wegbewegen und rotieren, wobei sie die Tether über Gegner ziehen, statt direkt auf sie zu zielen.
+- Kreuzfeuer. Überlappende Strahlen erzeugen Zonen, die Gegner auf eigene Gefahr durchqueren.
+- Ausweichen. Dieselbe Bewegung, die deinen Strahl ausrichtet, setzt dein Schiff auch aus oder schützt es.
+- Crew aus Rettungskapseln wiederbeleben. Abgeschossene Piloten sind nicht dauerhaft raus; es gibt einen Bergungsschritt.
+- Ein geborgenes Schiff bauen. Der Fortschritt ist darum herum aufgebaut, aus dem Geborgenen ein Schiff zusammenzusetzen.
 
-Neue Spieler behandeln Geschwindigkeit als einen einzigen Stat. Ist sie aber nicht — sie ist ein Stapel aus fünf Ebenen, und die Ebene, die du vernachlässigst, ist meist die, die dich die meiste Zeit kostet.
+Strukturell durchquert ein Run drei Sektoren mit je vier Sprüngen und endet bei einem Wächter. Die Shop-Seite erwähnt insgesamt drei Wächter. Das ist die gesamte dokumentierte Form eines Runs.
 
-1. **Basisbewegungsgeschwindigkeit.** Der Boden, auf dem alles andere multipliziert wird. Sie gilt beim Gehen, Strafen und oft auch beim Angreifen.
-2. **Sprint- oder Boost-Multiplikator.** Ein Prozentwert, der auf die Basis aufgeschlagen wird. Hier entstehen tatsächlich die meisten „Ich fühle mich langsam"-Beschwerden.
-3. **Burst-Mobilität.** Dashes, Blinks, Rollen und Phasenschritte. Sie ignorieren den größten Teil der Bodenreibung und sind die größte Einzelquelle für Geschwindigkeit auf kurze Distanz.
-4. **Momentum-Erhalt.** Wie viel Geschwindigkeit eine Kurve, eine Landung oder das Ende eines Dashes übersteht. Hoher Erhalt lässt dich Bewegungen verketten; niedriger Erhalt lässt jede Aktion wie einen Start bei null wirken.
-5. **Der Soft Cap.** Der Punkt, ab dem zusätzliche Geschwindigkeit abnehmenden Nutzen bringt, weil deine Eingaben, die Kamera oder dein Wendekreis nicht mehr mithalten können.
+## Warum die Tether deine Entscheidungen verändert
 
-| Ebene | Was sie steuert | Häufiger Engpass | Schnellste Lösung |
-|---|---|---|---|
-| Basisgeschwindigkeit | Charakterstats, Gewichtsklasse | Schwere Ausrüstung ohne Ausgleich | Loadout-Gewicht neu ausbalancieren |
-| Sprint-Multiplikator | Upgrades, Buffs, Auren | Buff-Uptime, nicht Buff-Größe | Zuerst Uptime verbessern |
-| Burst-Mobilität | Cooldowns, Ladungen | Lange Cooldown, eine Ladung | Erst eine Ladung hinzufügen, dann Reichweite |
-| Momentum-Erhalt | Engine-Physik, Eingabe-Timing | Bewegungen zu früh abbrechen | Eingabe-Timing üben |
-| Soft Cap | Wendegeschwindigkeit, Kamera, Reaktionszeit | Spielerkönnen, nicht Stats | Übungen, nicht Ausrüstung |
+In einem normalen Twin-Stick-Roguelike ist deine Position wichtig wegen dem, was du beschießen kannst und was dich beschießen kann. In Void Runners bestimmt deine Position außerdem, wo dein Schaden gerade ist, und dieser Schaden gehört zwei Personen gleichzeitig.
 
-Die praktische Schlussfolgerung: Wenn du den Soft Cap bereits überschritten hast, ist der Kauf von mehr Geschwindigkeit reine Ressourcenverschwendung. Stecke dieses Budget stattdessen in Schaden oder Überlebensfähigkeit.
+Betrachte die praktischen Konsequenzen. Wenn du und dein Partner parallel fliegt, fegt euer Strahl eine Spur. Wenn ihr ein Ziel von gegenüberliegenden Seiten umkreist, schneidet ihr es zweimal pro Umdrehung. Wenn ihr euch kreuzt, kollabiert der Strahl kurzzeitig zu nichts, was das Gegenteil dessen ist, was du während eines Schadensfensters willst. Jede dieser Entscheidungen ist eine räumliche Entscheidung, keine Abzug-zieh-Entscheidung.
 
-## Bewegungstechniken, die die Void-Runner-Geschwindigkeit wirklich stapeln
+Mit vier Piloten wird die Geometrie schwerer im Kopf zu behalten. Die Shop-Beschreibung spricht von einem „Netz" aus Strahlen, was auf mehrere interagierende Verbindungen hindeutet. Der Entwickler hat die genauen Paarungsregeln bei vier Spielern nicht veröffentlicht, also ob Strahlen eine feste Kette, ein volles Netz oder etwas mitten im Run neu Zugewiesenes bilden, ist **nicht dokumentiert**. Das ist ein Detail, auf das man in Patch Notes, einem offiziellen Trailer oder dem Ingame-Tutorial achten sollte.
 
-Rohe Stats bringen dich an die Decke; die Technik entscheidet, ob du sie berührst. Spielerfahrungen im gesamten Genre deuten immer wieder auf dieselbe Handvoll Bewegungstechniken als die eigentlichen Unterschiedsmacher hin.
+Dieselbe Vorsicht gilt für Schiffsteile, Waffenwerte und Wächter-Namen. Die Shop-Seite veröffentlicht sie nicht. Wer jetzt konkrete Zahlen nennt, rät, und Third-Party-Guides zu einem unveröffentlichten Spiel solltest du bestenfalls als zweithändig behandeln.
 
-- **Dash-Canceling.** Einen Dash vorzeitig beenden, um die Austrittsgeschwindigkeit zu erhalten und gleichzeitig deine nächste Aktion freizumachen. Der Gewinn ist pro Anwendung klein und über einen ganzen Run enorm.
-- **Slide- oder Glide-Chaining.** Traversal-Bewegungen so verketten, dass die Erholungsanimation der einen zum Start der nächsten wird. Gut ausgeführt gibt es keine sichtbare Pause.
-- **Luftkontrolle und Strafing.** Die Richtung in der Luft anzupassen, lässt dich Ecken schneiden, die du mit Bodenbewegung umlaufen müsstest.
-- **Kurven-Anschmiegen.** Die Innenseite einer Kurve zu schneiden, spart mehr Distanz, als die meisten Geschwindigkeits-Upgrades gewähren — und es kostet nichts.
-- **Jump-Canceling.** Eine Landung unterbrechen, um Erholungsframes zu überspringen. In Engines, in denen die Physik pro Frame läuft, verändert hier das Aufheben des Frame-Limits das Gefühl der Void-Runner-Geschwindigkeit.
+| Frage | Status laut Steam-Eintrag |
+|---|---|
+| Spielerzahl | Ein bis vier, Couch oder online (dokumentiert) |
+| Run-Struktur | Drei Sektoren, je vier Sprünge, Wächter am Ende (dokumentiert) |
+| Wächter | Drei erwähnt, keiner benannt (undokumentiert) |
+| Strahl-Paarungsregeln bei 4 Spielern | Nicht veröffentlicht |
+| Schiffsteile, Waffen, Werte | Nicht veröffentlicht |
+| Freischaltkosten, Code-System | Nicht veröffentlicht |
 
-| Technik | Schwierigkeit | Geschwindigkeitsgewinn | Risiko |
-|---|---|---|---|
-| Kurven-Anschmiegen | Niedrig | Konstant, klein | Keines |
-| Luftkontrolle | Niedrig–Mittel | Moderat | Angreifbarkeit in der Luft |
-| Jump-Canceling | Mittel | Moderat | Falsch getimte Eingabe tötet Momentum |
-| Dash-Canceling | Mittel | Mit der Zeit hoch | Verschwendete Cooldown bei zu frühem Abbruch |
-| Slide-Chaining | Hoch | Höchster Dauergewinn | Hoher Ausführungsdruck |
+## Den Strahl spielen statt den Abzug
 
-Ein Hinweis zur Hardware: Berichte aus der Community legen nahe, dass in manchen Engines die Bewegungsphysik an die Bildrate oder die Server-Tickrate gekoppelt ist. Wenn sich deine Eingaben zwischen Sessions inkonsistent anfühlen, prüfe, ob sich dein Frame-Limit oder deine Netzwerkbedingungen geändert haben, bevor du deinen Build verantwortlich machst.
+Wenn du dich vor dem Launch auf Void Runners vorbereiten willst, ist die nützliche mentale Übung nicht das Auswendiglernen von Builds. Es ist das Üben von Bewusstsein für die Bildschirmposition deines Verbündeten. Twin-Stick-Veteranen neigen dazu, sich auf das Fadenkreuz zu fixieren; dieses Spiel belohnt Piloten, die einen zweiten mentalen Marker auf ihrem Partner behalten.
 
-Um ein Gefühl dafür zu bekommen, wie das breitere Genre High-Mobility-Bewegung handhabt, stöbere in [schnellen Runner-Spielen auf Steam](https://store.steampowered.com/tags/en/Runner/) und vergleiche, wie jedes einzelne seine Dash-Ökonomie aufbaut — ein nützlicher Referenzrahmen, wenn du die Systeme eines einzelnen Spiels bewertest.
+Ein paar übertragbare Gewohnheiten aus anderen Couch-Koop-Spielen:
 
-## Speed-Builds: Upgrade-Priorität und Kompromisse
+- Rufe deine Bewegung aus, nicht nur deine Ziele. „Rotiere nach links" sagt deinem Partner, wohin der Strahl geht.
+- Behandle den Strahl als Ressource mit einem Ort. Frag, wo er ist, bevor du fragst, wo die Gegner sind.
+- Gib abgeschossenen Piloten eine Spur. Rettungskapsel-Wiederbelebung deutet darauf hin, dass die Bergung im Weltraum stattfindet, also kann ein Crewmitglied, das ein enges Muster fliegt, derjenige sein, der sie erreichen kann.
 
-Jeder Punkt, der in Void-Runner-Geschwindigkeit fließt, ist ein Punkt, der nicht in Schaden fließt. Der Trick ist zu wissen, wann sich Geschwindigkeit bereits bezahlt gemacht hat.
+Nichts davon ist eine Erfolgsgarantie. Das Spiel ist unveröffentlicht, die Balance ist unbekannt, und der Entwickler hat die Schwierigkeitsskalierung für Soloplay nicht beschrieben, außer zu bestätigen, dass ein Spieler unterstützt wird.
 
-| Priorität | Upgrade-Typ | Warum es zählt | Wann überspringen |
-|---|---|---|---|
-| 1 | Zusätzliche Dash-Ladung | Multipliziert jedes andere Bewegungsmittel | Nie, in einem reinen Mobilitäts-Build |
-| 2 | Cooldown-Reduktion | Verbessert die Uptime, den eigentlichen Limiter | Sobald die Uptime nahe 100 % liegt |
-| 3 | Sprint-Multiplikator | Breiter, dauerhafter Nutzen | Wenn du den Soft Cap bereits erreichst |
-| 4 | Basisbewegungsgeschwindigkeit | Hebt den Boden für alles an | Wenn dein Build auf Dashes setzt |
-| 5 | Flache Speed-Buffs mit Timern | Situativer Burst | Wenn die Uptime unter der Hälfte liegt |
+## Solo, Couch und Online im selben Design
 
-Der Grund, warum Dash-Ladungen ganz oben stehen: Eine zweite Ladung gibt dir nicht nur mehr Distanz, sondern auch eine Sicherheits- und eine Repositionierungsoption im selben Slot. Cooldown-Reduktion folgt auf Platz zwei, weil die Verdopplung der Uptime eines Dashes oft mehr bringt als ein Bruchteil mehr Sprintwert.
+Ein bis vier Spieler auf einer Couch *und* online zu unterstützen, ist eine echte Design-Einschränkung, und die Shop-Seite nennt beides ohne weitere Ausführungen. Bei einem strahlbasierten Spiel ist das interessante Unbekannte, wie ein einzelner Pilot die zentrale Mechanik erlebt, wenn es kein zweites Schiff zum Verbinden gibt. Die Beschreibung erklärt es nicht.
 
-Nach dem Soft Cap setzen schnell abnehmende Erträge ein. Sobald du gegnerische Projektile und Traversal-Timer locker überholst, bringt weitere Geschwindigkeitsinvestition keine messbare Clear-Time-Verbesserung mehr — Schadensinvestition dagegen schon.
+Wenn du eine Gruppe planst, ist der praktische Rat, früh zu entscheiden, ob ihr eine Couch-Crew oder eine Remote-Crew seid, denn Sprachkommunikation trägt die Hauptlast in einem Spiel, in dem relative Position der primäre Input ist. Online-Spiel braucht normalerweise klarere Ansagen als Shared-Screen-Spiel, wo du einfach zur Seite schauen kannst.
 
-## Übungen, Fehler und die Grenzen der Geschwindigkeit
+## Wie du alles vor dem Kauf überprüfen kannst
 
-Die meisten Geschwindigkeitsverluste sind keine Stat-Probleme. Es sind Gewohnheitsprobleme, und sie zeigen sich auf vorhersehbare Weise.
+Da Void Runners unveröffentlicht ist, ist der verantwortungsvolle Ansatz, die Quelle direkt zu prüfen. Die [Steam-Shop-Seite](https://store.steampowered.com/app/5334520/) enthält die maßgebliche Beschreibung, das angekündigte Q1-2027-Fenster und den „coming soon"-Status. Alles zu Teilen, Werten, Bosse oder Codes sollte dort, in einem offiziellen Trailer oder im fertigen Build selbst verifiziert werden, sobald er existiert.
 
-| Fehler | Symptom | Lösung |
-|---|---|---|
-| Dashes zu früh abbrechen | Kurze Hüpfer statt langer Slides | Halte die Eingabe erst bis zur vollen Streckung |
-| Übermäßiges Strafing | Weite, ineffiziente Wege | Gerade Routen üben |
-| Dash für Notfälle sparen | Langsame Clear-Zeiten, ungenutzte Cooldowns | Dashes auf Cooldown ausgeben, nicht aus Angst |
-| Gelände ignorieren | Um Hindernisse herumlaufen | Lernen, welche Kanten du schneiden kannst |
-| Geschwindigkeit über den Cap hinaus stapeln | Keine Veränderung der Clear-Time | In Schaden umverteilen |
-
-| Übung | Dauer | Was sie trainiert |
-|---|---|---|
-| Gerade Sprint-Route | 5 Minuten | Basis-Routing und Kurvenschneiden |
-| Dash-Chain-Runde | 10 Minuten | Cooldown-Rhythmus und Momentum-Erhalt |
-| Clear ohne Dash | 10 Minuten | Positionierung ohne Krücke |
-| Gezeiteter Komplett-Run | 1 Run | Ob Änderungen tatsächlich helfen |
-
-Führe den gezeiteten Komplett-Run zuletzt durch. Er ist die einzige Übung, die die eigentliche Frage beantwortet: Hat dich diese Änderung schneller gemacht, oder fühlt sie sich nur schneller an? Schneller fühlen und schneller sein sind zwei verschiedene Dinge, und nur eines davon zeigt sich auf der Uhr.
+Sei skeptisch gegenüber Aggregator-Seiten und keyword-abgeglichenen Artikeln, die Void Runners mit ähnlich benannten Spielen vermischen. Mehrere Titel teilen das Wort „void", und sie zu verwechseln, schickt dich auf die Suche nach Mechaniken, die es hier nicht gibt.
 
 ## FAQ
 
-**Hat die Void-Runner-Geschwindigkeit ein Hard Cap?**
-Meist gibt es eher ein Soft Cap als ein Hard Cap. Ab einem bestimmten Punkt bringt zusätzliche Geschwindigkeit abnehmende Erträge, weil deine Wendegeschwindigkeit, Kamerageschwindigkeit oder Reaktionszeit zum limitierenden Faktor wird — nicht der Stat selbst.
+**Ist Void Runners veröffentlicht?**
+Nein. Es ist als „coming soon" mit einem Q1-2027-Fenster auf Steam markiert.
 
-**Ist Basisbewegungsgeschwindigkeit oder Dash-Cooldown wichtiger?**
-Für die meisten Void Runner gewinnt der Dash-Cooldown. Dashes umgehen die Reibung und liefern Burst-Distanz, die Basisgeschwindigkeit nicht replizieren kann, und bessere Uptime summiert sich über einen ganzen Run.
+**Wer entwickelt es?**
+Aaron Reisman ist sowohl als Entwickler als auch als Publisher gelistet.
 
-**Kann man die Void-Runner-Geschwindigkeit allein mit Ausrüstung erhöhen?**
-Ausrüstung bringt dich ungefähr bis zum Soft Cap. Darüber hinaus liegen die verbleibenden Gewinne in der Technik — Dash-Canceling, Slide-Chaining und Kurvenschneiden. Spielerfahrungen deuten konsistent darauf hin, dass die Skill-Obergrenze deutlich über der Stat-Obergrenze liegt.
+**Wie viele Spieler?**
+Ein bis vier, auf einer Couch oder online.
 
-**Warum fühlen sich Void Runner auf manchen Setups schneller an als auf anderen?**
-Bildrate und Netzwerk-Tickrate können in manchen Engines beeinflussen, wie Bewegungs-Eingaben registriert werden. Wenn sich dein Build nicht geändert hat, das Gefühl aber schon, prüfe diese beiden Variablen, bevor du irgendetwas neu baust.
+**Was genau ist der Strahl?**
+Eine Verbindung zwischen zwei Schiffen, die alles zerfetzt, was sie streift. Er ist die zentrale Mechanik des Spiels und der Grund, warum Positionierung wichtiger ist als Zielen.
+
+**Gibt es benannte Wächter oder Schiffsteile?**
+Nicht öffentlich. Die Shop-Seite erwähnt drei Wächter und geborgenes Schiffbauen, benennt oder beziffert aber nichts.
+
+**Ist das dasselbe wie Void Crew oder Void Stranger?**
+Nein. Ganz andere Spiele, trotz des geteilten Wortes.
+
+**Kann ich es solo spielen?**
+Der Eintrag unterstützt einen Spieler. Wie der Strahl mit einem einzelnen Schiff funktioniert, ist nicht dokumentiert.

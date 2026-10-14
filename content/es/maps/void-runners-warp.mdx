@@ -1,137 +1,93 @@
 export const metadata = {
-  title: "Guía de warps de Void Runners: Domina las plataformas de teletransporte, las rutas del mapa y los trucos de velocidad",
-  description: "Aprende cómo funcionan las mecánicas de warp de Void Runners, cómo encadenar plataformas de teletransporte y las rutas del mapa que recortan segundos en cada carrera.",
+  title: "Void Runners: lo que sabemos sobre el roguelike cooperativo de rayos",
+  description: "Void Runners es un roguelike twin-stick cooperativo sin lanzar donde los rayos conectan naves. Esto es lo que confirma la página de Steam y lo que aún se desconoce.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Qué hace realmente un warp de Void Runners
+"Void Runners" es un nombre fácil de confundir con otra cosa. Hay un juego de acción estilizado sobre patinar por un mundo destrozado, un simulador cooperativo de naves espaciales, un dungeon crawler impulsado por puzles y una fantasía espacial de mesa de larga trayectoria — y ninguno de ellos es este. El Void Runners de Steam (app 5334520) es un proyecto separado, más pequeño y actualmente sin lanzar, del desarrollador y editor Aaron Reisman. Es un roguelike twin-stick para uno a cuatro jugadores, está construido en torno a rayos que conectan tus naves y, a día de hoy, no ha salido a la venta.
 
-Los mapas de Void Runners se construyen sobre una idea simple: una fina cinta de plataformas flotando sobre una caída infinita, sin nada que te atrape salvo un punto de reaparición. Un warp de Void Runners rompe esa tensión a propósito. Mueve a tu personaje de una parte del recorrido a otra, ya sea como atajo, herramienta de recuperación o reinicio completo de ruta tras una mala caída.
+Ese último punto importa más de lo habitual. Como el juego sigue marcado como "próximamente" con una ventana de lanzamiento en el primer trimestre de 2027, la mayoría de las preguntas que busca la gente — piezas de nave, niveles de armas, nombres de guardianes, códigos de desbloqueo — todavía no tienen respuesta. Este artículo se ciñe a lo que la [página oficial de Steam](https://store.steampowered.com/app/5334520/) anuncia realmente, señala lo que son conjeturas de la comunidad y te explica cómo comprobar el resto por tu cuenta.
 
-El término abarca mucho. En algunas experiencias significa una plataforma brillante sobre la que pisas. En otras, es una habilidad con enfriamiento que activas en el aire. En cualquier caso, el objetivo es idéntico: reubicar al jugador al instante y cambiar lo que el mapa le exige.
+## La idea central: tu posición es el arma
 
-¿Por qué importa? Porque en un mapa de carrera, los segundos son la puntuación. Un warp que ahorra cuatro segundos en un recorrido de treinta segundos es una ganancia de dos dígitos porcentuales. Los jugadores que entienden la colocación de los warps escalan las tablas de clasificación más rápido que los que simplemente saltan bien.
+La mayoría de los twin-stick shooters hacen una pregunta: ¿hacia dónde apuntas? Void Runners hace otra distinta. Cada par de naves está unido por un rayo, y ese rayo destroza todo lo que barre. No solo esquivas balas y disparas de vuelta — arrastras una línea dañina por la pantalla, y esa línea solo existe porque dos jugadores (o tus propias dos manos) están en posiciones concretas.
 
-### Las dos familias de warps
+Esa única decisión de diseño se ramifica en todo lo demás que menciona la descripción de la tienda:
 
-La mayoría de los mapas creados por la comunidad usan uno de dos sistemas, y a veces ambos:
+- **Separarse** amplía el alcance del rayo y barre más partes de la arena a la vez.
+- **Blandir la red** implica rotar esa línea, de modo que un jugador orbitando a otro convierte un amarre estático en un arco cortante.
+- **Fuego cruzado** sugiere rayos superpuestos de varios pares de naves, que es donde una tripulación de cuatro jugadores obtiene un valor que un piloto en solitario no puede replicar.
+- **Esquivar** sigue siendo central porque una formación amplia también es un blanco grande.
 
-- **Warps estáticos** — plataformas fijas, portales o volúmenes de activación colocados por el creador del mapa. Se activan en el momento en que los tocas, quieras o no.
-- **Warps de habilidad** — un botón que pulsas. Normalmente funcionan con un enfriamiento o una cantidad limitada de cargas, lo que significa que la decisión de *cuándo* hacer warp importa tanto como *dónde*.
+La conclusión práctica, incluso antes del lanzamiento: la coordinación supera a la habilidad individual. Una tripulación que vuela en un grupo compacto y predecible desperdicia el rayo. Una tripulación que se dispersa sin un plan barre espacio vacío y encaja daño. Las decisiones interesantes ocurren en el espacio entre esos extremos.
 
-Saber qué sistema usa un mapa es lo primero que deberías averiguar, porque cambia por completo cómo planificas una ruta.
+## Características anunciadas (según la propia ficha del desarrollador en la tienda)
 
-## Tipos de warp que encontrarás en los mapas de Void Runner
+Todo lo de esta sección proviene directamente de la descripción de la tienda de Steam y se puede tratar con seguridad como diseño previsto.
 
-No todos los warps se comportan igual, y confundirlos es la forma más rápida de morir. Los informes de la comunidad describen de forma consistente cinco variedades comunes, cada una con un perfil de riesgo distinto.
+| Característica anunciada | Lo que dice la página de la tienda |
+| --- | --- |
+| Jugadores | 1–4 pilotos, en el mismo sofá o en línea |
+| Género | Roguelike twin-stick |
+| Mecánica distintiva | Rayos que conectan naves y destrozan todo lo que barren |
+| Estructura de sesión | Tres sectores, cuatro saltos cada uno, terminando en un guardián |
+| Estilo de progresión | Construir una nave recuperada a lo largo de una partida |
+| Estados de fallo | Las naves pueden ser destruidas; la tripulación puede revivir desde cápsulas de escape |
 
-| Tipo de warp | Cómo se activa | Uso típico | Riesgo principal |
-|---|---|---|---|
-| Plataforma de warp estática | Pisar una baldosa marcada | Saltarse un segmento largo de saltos | Uso único o enfriamiento |
-| Warp de punto de control | Tocar un punto de control | Volver tras caer al vacío | Te envía hacia atrás, no hacia delante |
-| Pareja de portales | Entrar en un portal | Viaje de larga distancia por el mapa | Velocidad de salida desalineada |
-| Warp de habilidad | El jugador pulsa una tecla | Recuperación en el aire o cruzar un hueco | Cargas limitadas por vida |
-| Warp secreto | Volumen de activación oculto | Desbloquear atajos y rutas extra | Fácil de pasar por alto por completo |
+Merece la pena destacar dos detalles. Primero, la duración de la partida se define en saltos y no en minutos: tres sectores de cuatro saltos, culminando en un guardián, significa doce saltos más tres encuentros con jefes. Es una estructura compacta, que encaja mejor con una noche de cooperativo en el sofá que con una campaña extensa.
 
-El warp secreto merece especial atención. Los creadores de mapas suelen esconder uno o dos fuera del camino principal, y encontrarlos es con frecuencia la diferencia entre un buen tiempo y un récord personal. La experiencia de los jugadores sugiere que la mayoría de los warps ocultos están cerca de estructuras verticales o detrás de geometría decorativa, porque esos lugares son los menos propensos a activarse por accidente.
+Segundo, el sistema de reanimación son cápsulas de escape en lugar de reapariciones instantáneas. Eso te dice que la muerte está pensada para ser recuperable pero no gratuita — alguien tiene que ir a por la cápsula, e ir a por ella significa salirse de la formación, lo que significa que el rayo cambia de forma. La página de la tienda no dice cuánto tiempo permanece activa una cápsula, cuántas reanimaciones permite una partida ni si un piloto en solitario puede auto-reanimarse. Esos detalles no son públicos.
 
-## Cómo gestionan los warps el impulso y la velocidad
+## Lo que no está documentado
 
-Esta es la mecánica que separa a los jugadores casuales de los serios. Un warp de Void Runners no se limita a moverte: decide qué ocurre con la velocidad que llevabas al entrar.
+Esta es la parte honesta que la mayoría de los artículos se salta.
 
-| Estado de entrada | Tipo de warp | Resultado típico al salir |
-|---|---|---|
-| Quieto | Plataforma estática | Salida estacionaria, sin impulso conservado |
-| Sprint completo | Plataforma estática | Velocidad hacia delante conservada al salir |
-| Caída en el aire | Portal | La velocidad descendente se mantiene |
-| Deslizamiento | Warp de habilidad | Deslizamiento cancelado, pequeño impulso hacia delante |
-| Correr por la pared | Plataforma de warp | Estado de pared eliminado, salida neutral |
+- **Piezas de nave y configuraciones.** La página de la tienda dice que construyes una nave recuperada. No enumera ninguna pieza, ranura, rareza ni ruta de mejora. La cobertura de terceros que nombra módulos específicos está extrapolando del género, no citando al desarrollador.
+- **Estadísticas de armas.** No se publican cifras de daño, cadencias de disparo ni anchuras de rayo.
+- **Nombres o mecánicas de guardianes.** La descripción de la tienda menciona a los guardianes como categoría. No se ha nombrado a ningún guardián individual.
+- **Costes de desbloqueo, moneda o meta-progresión.** Desconocidos. La etiqueta de roguelike sugiere que algo persiste entre partidas, pero nada está confirmado.
+- **Cualquier sistema de códigos.** No hay ningún sistema de códigos documentado, ninguna función para compartir semillas y ninguna mecánica de canje. Si ves una lista de "códigos de Void Runners", no está basada en información del desarrollador.
+- **Fecha de lanzamiento más allá del primer trimestre de 2027.** Sin día concreto, sin precio, sin detalles de reserva.
 
-La conclusión práctica: nunca entres en un warp mientras caes si puedes evitarlo. El impulso descendente que se conserva a través de un portal es una de las causas más comunes de reapariciones instantáneas, sobre todo en mapas con una plataforma de aterrizaje colocada justo después de la salida.
+Si necesitas alguno de estos datos antes de comprar, vas a tener que esperar. El método de verificación más limpio es la propia página de Steam, que actualiza su texto de "Acerca de" y los requisitos del sistema a medida que un juego se acerca a su lanzamiento. Añadir la app a la lista de deseos es la única forma fiable de recibir una notificación cuando algo de esto cambie.
 
-Si tu juego conserva la velocidad de sprint a través de los warps, construye tu ruta alrededor de eso. Una corta carrera previa antes de una plataforma suele valer más que un salto técnicamente más limpio, porque el warp amplifica lo que llevas al entrar.
+## Observaciones de la comunidad y cuánto fiarse de ellas
 
-### Prueba el comportamiento de los warps con seguridad
+Como el juego no se ha lanzado, las "observaciones de la comunidad" son escasas por definición. Lo que existe tiende a ser reacciones al concepto más que informes de primera mano: aficionados al género que señalan que el amarre por rayos es una interpretación inusual de la fórmula twin-stick, y jugadores cooperativos que señalan que un requisito de cuatro jugadores para la versión más completa de la mecánica podría resultar incómodo para el juego en solitario o en pareja.
 
-Antes de comprometerte con una carrera competitiva, dedica una vida a probar deliberadamente cada warp del mapa:
+Toma todo eso como comentario, no como documentación. La página de la tienda anuncia explícitamente 1–4 jugadores, así que el modo en solitario y en pareja son configuraciones compatibles — pero no explica cómo funcionan los rayos cuando hay menos de cuatro naves. Quizá un piloto en solitario controle dos naves, quizá los rayos se formen de otra manera, quizá el diseño simplemente escale el número de rayos al número de naves. Eso es genuinamente desconocido, y es la mayor pregunta para cualquiera que planee jugar solo.
 
-1. Entra caminando despacio y anota la posición de salida.
-2. Entra esprintando y compara la salida.
-3. Cae dentro y observa si sobrevives.
-4. Cronometra cuánto dura el enfriamiento.
-5. Anota si el warp puede reactivarse en la misma vida.
+## Razonamiento práctico para un público previo al lanzamiento
 
-Cinco minutos de pruebas ahorran docenas de carreras fallidas.
+Si estás considerando Void Runners, la pregunta útil no es "cuáles son las mejores builds" — eso aún no se puede responder. Es "¿encaja el bucle central con mi grupo?".
 
-## Leer un mapa de warps de Void Runners como un planificador de rutas
+Pregúntate:
 
-Cada mapa de carrera es un puzle de secuenciación. Los warps son las piezas que te permiten saltarte partes del puzle, pero solo si sabes dónde acaban en relación con el resto del recorrido.
+- ¿Tengo una a tres personas que se sentarán en el mismo sofá, o que jugarán en línea con un horario?
+- ¿Disfruta mi grupo del juego posicional y centrado en la coordinación, o preferimos la fantasía de poder independiente?
+- ¿Me siento cómodo comprando un roguelike mecánicamente inusual antes de que la meta-progresión sea pública?
 
-Empieza por identificar la densidad de warps. Un mapa con muchos warps recompensa la exploración y el conocimiento de rutas. Un mapa con dos o tres warps recompensa la ejecución, porque cada uno es un punto de decisión importante.
+Si las respuestas encajan, vale la pena seguir el juego. Si tu grupo juega en solitario la mayor parte del tiempo y necesitas saber exactamente cómo funciona un esquema de control a dos manos antes de comprometerte, lo responsable es esperar a las impresiones del lanzamiento. Nada de esto garantiza que lo vayas a pasar bien — el público no ha jugado al juego, y un concepto que suena genial sobre el papel puede sentirse distinto en las manos.
 
-| Arquetipo de mapa | Densidad de warps | Mejor estrategia |
-|---|---|---|
-| Desafío lineal | Baja (1–2) | Perfecciona los saltos, reserva warps para recuperarte |
-| Centro y radios | Media | Aprende todas las ramas, elige la cadena más corta |
-| Ascenso de torre | Media-alta | Encadena warps verticales para saltarte pisos |
-| Laberinto | Alta | Explora por completo y luego corre la línea optimizada |
-| Circuito de resistencia | Baja | Conserva los warps de habilidad para las secciones finales |
+Lo que se puede afirmar con confianza es que la idea de enlazar rayos es específica. No es un twin-stick shooter genérico con una etiqueta cooperativa pegada encima. El diseño obliga a los jugadores a negociar el espacio entre ellos de forma continua, y eso es un compromiso real y verificable en la descripción de la tienda, no relleno de marketing.
 
-Muchos mapas de carrera con muchos warps se publican en plataformas accesibles como [el sitio oficial de Roblox](https://www.roblox.com/), donde los creadores de la comunidad suben nuevos recorridos constantemente. Ese cambio constante significa que el conocimiento de rutas caduca: un atajo que funciona hoy puede parchearse mañana, así que verifica siempre antes de un intento serio.
+## FAQ
 
-### Explora primero, luego optimiza
+**¿Es Void Runners lo mismo que Void Crew, Void Stranger o Solar Ash?**
+No. Son juegos distintos de desarrolladores distintos. Void Runners es la app 5334520 de Steam, de Aaron Reisman.
 
-Tu primera pasada debería ser lenta y deliberada. No intentes marcar un tiempo. En su lugar:
+**¿Cuándo sale?**
+La página de la tienda indica el primer trimestre de 2027, marcado como próximamente. No se ha anunciado una fecha exacta.
 
-- Recorre todo el circuito y marca cada warp que encuentres.
-- Anota qué warps son obligatorios y cuáles opcionales.
-- Identifica la sección en la que pierdes más tiempo de forma consistente.
-- Pregúntate si un warp puede eliminar esa sección por completo.
+**¿Para cuántos jugadores?**
+De uno a cuatro, en un sofá o en línea, según la descripción oficial.
 
-Esa última pregunta es la de mayor valor en todo el género. Eliminar una sección difícil casi siempre es mejor que perfeccionarla.
+**¿Hay códigos de trucos?**
+No hay ningún sistema de códigos documentado en ningún lugar del material oficial. Cualquier lista que afirme lo contrario no tiene fuente.
 
-## Encadenamiento de warps y técnicas de velocidad
+**¿Cuánto dura una partida?**
+Estructuralmente, tres sectores de cuatro saltos cada uno, terminando en un guardián. La página de la tienda no da una estimación de tiempo.
 
-Los jugadores avanzados no usan los warps de uno en uno. Los encadenan, usando la velocidad de salida de uno para alcanzar el activador del siguiente. Una cadena de warps de Void Runners bien construida puede llevar a un jugador por un tercio de un mapa en unos pocos segundos.
-
-Encadenar requiere dos hábitos. Primero, mira hacia delante: tu cámara debería estar en el siguiente warp antes de tocar el actual. Segundo, almacena tus entradas: pulsa la tecla de warp o avanza hacia la plataforma un poco antes de aterrizar, para que la acción se registre en el instante en que sea legal.
-
-| Ejercicio | Qué entrena | Repeticiones sugeridas |
-|---|---|---|
-| Entrada a un solo warp a velocidad de sprint | Retención del impulso | 20 |
-| Cadena de dos warps sin parar | Sincronización y control de cámara | 20 |
-| Recuperación con warp de habilidad en el aire | Gestión del pánico | 15 |
-| Carrera completa usando solo warps | Memoria de ruta | 10 |
-| Carrera sin warps para comparar | Ejecución base | 5 |
-
-Ese último ejercicio está infravalorado. Correr un mapa sin usar ningún warp te dice exactamente cuánto valor añade realmente tu ruta de warps. Si la diferencia es pequeña, puede que tu ruta esté mal optimizada, o que el mapa simplemente no dependa de los warps.
-
-### Errores comunes con los warps y soluciones
-
-| Error | Por qué ocurre | Solución |
-|---|---|---|
-| Hacer warp hacia una caída | Entrar en un portal en plena caída | Acércate a los warps desde el nivel del suelo |
-| Fallar la plataforma de salida | Velocidad de entrada incorrecta | Ajusta la velocidad al hueco de salida |
-| Desperdiciar cargas de habilidad al principio | Uso por pánico en secciones fáciles | Reserva cargas para el tercio final |
-| Activar un warp secreto por accidente | Pegarse a la geometría decorativa | Aprende la huella exacta del activador |
-| Asumir que un warp es de un solo sentido | No probarlo en ambas direcciones | Prueba siempre el camino de vuelta |
-
-Los informes de la comunidad también señalan un problema más sutil: jugadores que memorizan una ruta de warps a partir de un vídeo grabado antes de una actualización del mapa. La geometría cambia, los enfriamientos cambian, y una ruta que antes funcionaba puede enviarte directo al vacío. Verifica en el juego en lugar de confiar en un clip.
-
-## Preguntas frecuentes
-
-**¿Un warp de Void Runners es lo mismo que un punto de control?**
-No, y la diferencia importa. Un punto de control guarda tu progreso y te envía hacia atrás cuando fallas. Un warp te reubica al instante, a menudo hacia delante, y normalmente no puede usarse como red de seguridad. Tratar un warp como un punto de control es un error común de principiante.
-
-**¿Puedo desactivar los warps para practicar el recorrido original?**
-En muchos mapas, sí, ya sea mediante un menú de ajustes o simplemente evitando las plataformas. Practicar sin warps desarrolla la habilidad de ejecución que necesitarás cuando un warp esté en enfriamiento o no esté disponible.
-
-**¿Los warps de habilidad y los estáticos se acumulan?**
-Por lo general, son sistemas independientes, así que usar uno no bloquea el otro. La experiencia de los jugadores sugiere que las mejores rutas usan una plataforma estática para ganar altura y luego un warp de habilidad para cruzar un hueco que de otro modo sería imposible.
-
-**¿Cómo encuentro warps secretos en un mapa nuevo?**
-Explora metódicamente. Revisa detrás de objetos decorativos, en lo alto de torres y al final de ramas sin salida. Si una sección parece sospechosamente vacía, a menudo hay un volumen de activación escondido en ella. Y lo más importante: un atajo de warp de Void Runners suele colocarse donde un diseñador quería recompensar la curiosidad, así que explora antes de competir.
-
-**¿La velocidad del warp afecta a mi tiempo final?**
-Solo indirectamente. Lo que afecta a tu tiempo es cuánto recorrido te permite saltarte el warp y cuánto impulso conservas al salir. Dos jugadores pueden usar el mismo warp y terminar con segundos de diferencia solo por la velocidad de entrada.
+**¿Dónde debería consultar las novedades?**
+La [página oficial de Steam](https://store.steampowered.com/app/5334520/) es la fuente autorizada. Añádela a tu lista de deseos allí, y trata todo lo demás — incluido este artículo — como secundario hasta que el juego se lance.

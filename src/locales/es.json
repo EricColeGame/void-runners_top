@@ -2,9 +2,9 @@
   "site": {
     "name": "Void Runners Wiki",
     "shortName": "Void Runners",
-    "tagline": "Builds, rutas de salvamento, tier lists de naves y guías",
-    "description": "Tu wiki completa de Void Runners: builds de naves, armas, rutas de salvamento, estrategias contra jefes guardianes, consejos cooperativos y guías de progresión para el runner del vacío de ciencia ficción en Steam.",
-    "legalNotice": "Wiki de fans no oficial. Hecho por jugadores, para jugadores."
+    "tagline": "Guías de cooperativo roguelike twin-stick, rayos e incursiones de salvamento",
+    "description": "Tu wiki de Void Runners escrita por jugadores: tácticas de rayos en cooperativo, rutas de incursiones de salvamento, estrategias contra guardianes y notas de progresión para el roguelike twin-stick en Steam.",
+    "legalNotice": "Wiki de fans no oficial. Hecha por jugadores, para jugadores."
   },
   "nav": {
     "home": "Inicio",
@@ -20,52 +20,52 @@
   },
   "home": {
     "meta": {
-      "title": "Void Runners Wiki - Builds, guías y novedades",
-      "description": "Void Runners Wiki ofrece builds, guías de juego, detalles de personajes, consejos de progresión y novedades para ayudar a los jugadores a dominar la trepidante experiencia de correr por el vacío."
+      "title": "Void Runners Wiki: guías cooperativas y tácticas de rayos",
+      "description": "Void Runners Wiki ofrece tácticas de rayos en cooperativo, rutas de incursiones de salvamento, estrategias contra guardianes y notas de progresión para ayudar a las tripulaciones a sobrevivir tres sectores de cuatro saltos."
     },
     "hero": {
-      "eyebrow": "Juego de aventura del vacío trepidante",
+      "eyebrow": "Roguelike cooperativo twin-stick",
       "title": "Void Runners Wiki",
-      "description": "Un wiki comunitario que cubre las mecánicas de juego de Void Runners, builds, personajes, sistemas de progresión, guías y consejos esenciales para explorar el misterioso vacío.",
+      "description": "Una wiki comunitaria que cubre el gameplay de Void Runners, tácticas de rayos, incursiones de salvamento en cooperativo, combates contra guardianes y consejos esenciales para pilotar una tripulación a través del vacío.",
       "stats": [
-        "Códigos activos",
-        "Builds y piezas de naves",
+        "Códigos (no documentados)",
+        "Naves de salvamento",
         "Rutas de salvamento",
-        "Estrategias de jefes"
+        "Estrategias contra guardianes"
       ],
       "primaryCta": "Guía para principiantes",
-      "secondaryCta": "Tier list de naves",
-      "tertiaryCta": "Códigos activos",
+      "secondaryCta": "Tácticas de rayos en cooperativo",
+      "tertiaryCta": "Códigos (no documentados)",
       "videoLabel": "Muestra de gameplay"
     },
     "updates": {
-      "title": "Últimas novedades",
-      "browse": "Ver todas las guías",
+      "title": "Últimas actualizaciones",
+      "browse": "Explorar todas las guías",
       "viewAll": "Ver todo"
     },
     "start": {
       "eyebrow": "Empieza aquí",
-      "title": "Tu viaje en Void Runners",
+      "title": "Tu viaje por Void Runners",
       "cards": [
         {
           "number": "1",
           "title": "Guía para principiantes",
-          "description": "Aprende primero el bucle principal: lee el camino por delante, mantén el impulso y adelántate a la ola de colapso desde tu primera partida."
+          "description": "Aprende primero el bucle principal: tu rayo te une a un compañero de tripulación, y dónde vuelas respecto a él es la decisión que mantiene viva la red."
         },
         {
           "number": "2",
-          "title": "Códigos activos",
-          "description": "Canjea los últimos códigos de Void Runners antes de que caduquen para conseguir fragmentos, estelas y cosméticos gratis."
+          "title": "Códigos (no documentados)",
+          "description": "No se publica ningún sistema de códigos en la página de la tienda. Trata cualquier afirmación de códigos funcionales como no verificada."
         },
         {
           "number": "3",
-          "title": "Prioridades de mejora",
-          "description": "Gasta los recursos iniciales en reducir el enfriamiento del dash y retener impulso antes de tocar los multiplicadores de puntuación."
+          "title": "Prioridades de la tripulación",
+          "description": "Practica dispersarte y balancear la red de rayos antes de preocuparte por sectores más profundos."
         },
         {
           "number": "4",
-          "title": "Rutas de farmeo de fragmentos",
-          "description": "Combina clears completos, misiones diarias y bonos de eventos para acumular muchos más fragmentos en cada sesión."
+          "title": "Rutas de salvamento",
+          "description": "Cruza tres sectores de cuatro saltos cada uno, construyendo una nave de salvamento y llegando a un guardián al final."
         }
       ]
     },
@@ -74,63 +74,63 @@
       "title": "Tendencias ahora",
       "quickLinks": [
         "Guía para principiantes",
-        "Técnicas de movimiento",
-        "Farmeo de fragmentos",
-        "Combates contra jefes"
+        "Tácticas de rayos",
+        "Rutas de salvamento",
+        "Combates contra guardianes"
       ],
       "cards": [
         {
           "badge": "Principiante",
           "title": "Guía para principiantes de Void Runners",
-          "description": "Impulso, timing del dash y el temporizador de colapso explicados para tus primeras partidas.",
+          "description": "Posicionamiento de rayos, dispersión y conceptos básicos de salvamento en cooperativo para tus primeras partidas.",
           "href": "/guide/void-runners-beginner-guide"
         },
         {
           "badge": "Actualizado",
           "title": "Códigos de Void Runners",
-          "description": "De dónde salen los códigos, cómo canjearlos y qué hacer cuando uno falla.",
+          "description": "Lo que está documentado sobre un sistema de códigos, cómo podría funcionar el canje y qué hacer cuando una afirmación no está verificada.",
           "href": "/codes/void-runners-code"
         },
         {
           "badge": "Popular",
-          "title": "Guía de movimiento",
-          "description": "Cancelación de dash, reseteos de wall dash y ejercicios de control aéreo que recortan segundos.",
+          "title": "Tácticas de rayos",
+          "description": "Cómo se unen pares de naves mediante un rayo que destroza todo lo que barre, y cómo usarlo sin cortar a un compañero de tripulación.",
           "href": "/mechanics/void-runners-movement"
         },
         {
           "badge": "Popular",
-          "title": "Equipo y loadouts",
-          "description": "Ranuras, prioridades de estadísticas y arquetipos de build para cada estilo de juego.",
+          "title": "Nave de salvamento y equipamiento",
+          "description": "Construir una nave de salvamento partida a partida, y lo que la página de la tienda dice y no dice sobre las piezas.",
           "href": "/items/void-runners-gear"
         },
         {
           "badge": "Nuevo",
-          "title": "Cartas y mazos",
-          "description": "Roles de las cartas, rarezas, rutas de drop y cómo construir un mazo que sobreviva.",
+          "title": "Roles en cooperativo",
+          "description": "Juego en sofá y en línea para uno a cuatro pilotos, con roles de posicionamiento que mantienen intacta la red de rayos.",
           "href": "/items/void-runners-cards"
         },
         {
           "badge": "Popular",
-          "title": "Guía de combates contra jefes",
-          "description": "Peligros de la arena, arquetipos de jefes, avisos y disciplina de enfriamientos.",
+          "title": "Guía de combate contra guardianes",
+          "description": "Guardianes de sector, conciencia de la arena, esquiva y disciplina de enfriamientos para el final de cada sector.",
           "href": "/mechanics/void-runners-boss-fight"
         },
         {
           "badge": "Popular",
-          "title": "Farmeo de fragmentos",
-          "description": "Combina clears, misiones y eventos para acumular muchos más Fragmentos del Vacío.",
+          "title": "Incursiones de salvamento",
+          "description": "Fuego cruzado, revivir a la tripulación desde cápsulas de escape y cómo acumular progreso a lo largo de tres sectores.",
           "href": "/items/void-runners-shards"
         },
         {
           "badge": "Nuevo",
-          "title": "Mapas del espacio profundo",
-          "description": "Planificación de rutas, análisis de peligros y navegación para mapas abiertos del vacío.",
+          "title": "Rutas de sector",
+          "description": "Planificación de rutas por tres sectores de cuatro saltos, con notas sobre peligros y navegación.",
           "href": "/maps/void-runners-deep-space"
         },
         {
           "badge": "Nuevo",
-          "title": "Estrategia cooperativa",
-          "description": "Roles de equipo, posicionamiento, mecánicas de reanimación y llamadas de comunicación.",
+          "title": "Estrategia en cooperativo",
+          "description": "Posicionamiento del equipo, cobertura de rayos, mecánicas de reanimación y llamadas de comunicación.",
           "href": "/guide/void-runners-strategy"
         }
       ]
@@ -138,8 +138,8 @@
     "aboutGame": {
       "title": "¿Qué es Void Runners?",
       "paragraphs": [
-        "Void Runners es un runner de ciencia ficción rápido e impulsado por el momento, construido en torno a una pregunta: ¿cuánto tiempo puedes seguir moviéndote antes de que el vacío se trague el camino a tu espalda? Cada partida te lanza a un tramo de espacio en colapso donde esprintas, haces dash, te deslizas y corres por paredes hacia un punto de extracción mientras el suelo se disuelve tras de ti.",
-        "Entre partidas creas un loadout con módulos de movimiento, armas, trajes, cartas y fragmentos, y luego avanzas hacia arenas más duras y combates contra jefes guardianes, en solitario o con un escuadrón cooperativo. Nuestro wiki de Void Runners reúne las técnicas de movimiento, prioridades de mejora, rutas de fragmentos y estrategias de jefes que mantienen vivas las partidas."
+        "Void Runners es un roguelike twin-stick para uno a cuatro jugadores en un sofá o en línea, desarrollado y publicado por Aaron Reisman. Cada par de naves está unido por un rayo que destroza todo lo que barre, así que dónde vuelas respecto a tu tripulación es la decisión central.",
+        "Una partida cruza tres sectores de cuatro saltos y termina en un guardián. En el camino te dispersas y balanceas la red, usas fuego cruzado, esquivas, revives a la tripulación desde cápsulas de escape y construyes una nave de salvamento. La página de Steam marca el juego como próximamente con una ventana de lanzamiento en el primer trimestre de 2027, y no publica piezas de nave, estadísticas de armas, nombres de jefes ni un sistema de códigos."
       ],
       "stats": [
         {
@@ -148,284 +148,284 @@
         },
         {
           "label": "Género",
-          "value": "Runner de ciencia ficción"
+          "value": "Roguelike twin-stick"
         },
         {
           "label": "Modo",
-          "value": "Solo y cooperativo"
+          "value": "1–4 jugadores, sofá o en línea"
         },
         {
-          "label": "Objetivo de la partida",
-          "value": "Llegar a la extracción"
+          "label": "Duración de partida",
+          "value": "3 sectores de 4 saltos"
         },
         {
-          "label": "Moneda",
-          "value": "Fragmentos del vacío"
+          "label": "Lanzamiento",
+          "value": "Primer trimestre de 2027 (próximamente)"
         },
         {
-          "label": "Movimiento clave",
-          "value": "Dash y wall-run"
+          "label": "Mecánica clave",
+          "value": "Naves unidas por rayos"
         }
       ],
       "cta": "Explorar todas las guías"
     },
     "explore": {
       "title": "Explora Void Runners Wiki",
-      "description": "Planifica tu próxima partida con las guías de Void Runners sobre técnicas de movimiento, builds, tier lists de naves, armas y piezas, guardianes, tácticas cooperativas, novedades de lanzamiento y requisitos del sistema.",
+      "description": "Planifica tu próxima partida con las guías de Void Runners que cubren tácticas de rayos, incursiones de salvamento en cooperativo, guardianes, juego en sofá y en línea, seguimiento del lanzamiento y requisitos del sistema.",
       "modules": [
         {
           "order": 1,
           "name": "Guía para principiantes de Void Runners",
-          "description": "Este módulo introduce a los nuevos jugadores en el bucle principal de juego, las mecánicas cooperativas, el control de naves, las partidas de salvamento y las estrategias básicas. Ayuda a los principiantes a entender cómo sobrevivir a los primeros sectores y formar equipos eficaces.",
+          "description": "Este módulo introduce a los nuevos jugadores al bucle de juego principal, las mecánicas de rayos en cooperativo, el control de la nave, las partidas de salvamento y las estrategias básicas. Ayuda a los principiantes a entender cómo sobrevivir a los primeros sectores y formar tripulaciones eficaces.",
           "href": "/guide/void-runners-beginner-guide",
           "displayType": "step-by-step",
           "highlights": [
             {
               "label": "1",
-              "detail": "Lee el camino por delante en lugar de tu personaje y comprométete con una línea pronto."
+              "detail": "Lee la posición de tu compañero de tripulación, porque tu rayo os une a los dos y destroza lo que barre."
             },
             {
               "label": "2",
-              "detail": "Guarda siempre un dash para que un error siga siendo sobrevivible."
+              "detail": "Dispersaos y balancead la red para que el fuego cruzado cubra más espacio sin cortar a un compañero."
             },
             {
               "label": "3",
-              "detail": "Domina el dash y el deslizamiento antes de añadir wall-runs y ganchos."
+              "detail": "Practica la esquiva y el posicionamiento de rayos antes de adentrarte en saltos más profundos."
             },
             {
               "label": "4",
-              "detail": "Toma solo los fragmentos fáciles mientras sigues aprendiendo la ruta."
+              "detail": "Toma solo el salvamento fácil mientras todavía aprendes la ruta de tres sectores."
             },
             {
               "label": "5",
-              "detail": "Gasta las primeras mejoras en el enfriamiento del dash y la retención de impulso."
+              "detail": "Ten un plan para revivir a la tripulación desde cápsulas de escape en lugar de volar a ciegas."
             },
             {
               "label": "6",
-              "detail": "Nunca retrocedas, porque la ola de colapso es más rápida que tú."
+              "detail": "Recuerda que una partida cruza tres sectores de cuatro saltos y termina en un guardián."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Guía de builds de Void Runners",
-          "description": "Esta sección cubre builds de naves, armas, piezas, sinergias y combinaciones recomendadas para distintos estilos de juego. Los jugadores pueden aprender a optimizar su tripulación y mejorar el rendimiento en cada partida.",
+          "name": "Configuraciones de nave de salvamento en Void Runners",
+          "description": "Esta sección cubre la construcción de una nave de salvamento a lo largo de una partida. La página de la tienda no publica piezas de nave, sinergias ni combinaciones recomendadas, así que este módulo recopila lo documentado y trata las configuraciones específicas como teoría de jugadores.",
           "href": "/items/void-runners-gear",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Escaramuzador",
-              "detail": "Módulo de movimiento más un arma de disparo rápido para presionar con hit-and-run."
+              "detail": "Teoría de jugadores: una nave rápida que usa barridos de rayo para presionar con tácticas de golpear y huir."
             },
             {
               "label": "Ancla",
-              "detail": "Armadura, regeneración y control de área para mantener el espacio y absorber presión."
+              "detail": "Teoría de jugadores: una nave que mantiene el espacio mientras la red de rayos controla los carriles de aproximación."
             },
             {
-              "label": "Soporte",
-              "detail": "Tiempo de buffs, velocidad de reanimación y regeneración compartida para mantener al escuadrón en marcha."
+              "label": "Apoyo",
+              "detail": "Teoría de jugadores: posicionarse para cubrir reanimaciones y recogidas de cápsulas de escape."
             },
             {
               "label": "Ráfaga",
-              "detail": "Recuperación de enfriamiento y daño de habilidad para eliminar objetivos prioritarios."
+              "detail": "Teoría de jugadores: sincronizar el fuego cruzado de rayos para eliminar objetivos prioritarios."
             },
             {
               "label": "Economía",
-              "detail": "Botín extra y radio de recogida para acumular más fragmentos en cada partida."
+              "detail": "Teoría de jugadores: dirigir las recogidas de salvamento para acumular más por sector."
             },
             {
               "label": "Utilidad",
-              "detail": "Una pieza flexible de reliquia, implante o amuleto que une el conjunto."
+              "detail": "Las piezas específicas no están documentadas en la página de la tienda, así que trata los nombres de ranuras como descripciones de la comunidad."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Tier list de naves de Void Runners",
-          "description": "Este módulo clasifica los cascos de nave disponibles y compara sus habilidades, fortalezas y roles ideales en el equipo. Ayuda a los jugadores a elegir las mejores naves para partidas en solitario y multijugador.",
+          "name": "Comparación de naves de Void Runners",
+          "description": "Este módulo compara lo documentado sobre el comportamiento de las naves. La página de la tienda no publica una lista de cascos ni una clasificación por niveles, así que las notas y los cascos con nombre no están confirmados.",
           "href": "/mechanics/void-runners-speed",
           "displayType": "tier-grid",
           "highlights": [
             {
               "label": "S",
-              "detail": "Reducción del enfriamiento del dash y retención de impulso para las líneas limpias más rápidas."
+              "detail": "No se publica ninguna lista de niveles oficial. Trata cualquier nota S como opinión de jugadores."
             },
             {
               "label": "A",
-              "detail": "Salto extra en el aire y radio de recogida que abren rutas alternativas."
+              "detail": "No se documentan nombres de cascos ni clasificaciones en la página de la tienda."
             },
             {
               "label": "B",
-              "detail": "Escudo o blindaje de vida extra que concede exactamente un error por partida."
+              "detail": "El posicionamiento con naves unidas por rayos es la decisión central documentada, no una estadística de casco."
             },
             {
               "label": "C",
-              "detail": "Cascos solo cosméticos sin efecto en el juego."
+              "detail": "Las afirmaciones de que son solo cosméticos no están respaldadas por la información publicada en la tienda."
             }
           ]
         },
         {
           "order": 4,
           "name": "Armas y piezas de Void Runners",
-          "description": "Este módulo enumera las armas, piezas de mejora y efectos especiales disponibles en las incursiones de salvamento. Los jugadores pueden comparar rápidamente las funciones de los objetos y descubrir combinaciones útiles.",
+          "description": "Este módulo enumera lo que dice la página de la tienda sobre salvamento y combate: rayos que destrozan todo lo que barren, fuego cruzado, esquiva y revivir a la tripulación. Las estadísticas de armas, las piezas de mejora y los efectos especiales no están publicados, así que las funciones de objetos específicos no están documentadas.",
           "href": "/items/void-runners-gear",
           "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Módulo de movimiento",
-              "detail": "Botas, propulsores o un núcleo de dash, y la primera ranura que conviene maximizar."
+              "label": "Rayo",
+              "detail": "Cada par de naves está unido por un rayo que destroza todo lo que barre."
             },
             {
-              "label": "Traje corporal",
-              "detail": "Armadura, resistencia y regeneración que marcan tu umbral de supervivencia."
+              "label": "Fuego cruzado",
+              "detail": "Dispersarse y balancear la red permite que los rayos cubran más espacio."
             },
             {
-              "label": "Arma principal",
-              "detail": "Daño sostenido contra élites y objetivos con escudo."
+              "label": "Esquiva",
+              "detail": "La esquiva es una parte documentada del bucle de combate."
             },
             {
-              "label": "Módulo de habilidad",
-              "detail": "Daño de ráfaga y control de masas limitados por la recuperación de enfriamiento."
+              "label": "Reanimaciones",
+              "detail": "La tripulación puede revivirse desde cápsulas de escape."
             },
             {
-              "label": "Ranura de utilidad",
-              "detail": "Reliquia, implante o amuleto que cubre la debilidad de tu conjunto."
+              "label": "Nave de salvamento",
+              "detail": "La página de la tienda dice que construyes una nave de salvamento, pero no enumera piezas individuales ni sus efectos."
             },
             {
-              "label": "Fragmentos del vacío",
-              "detail": "Moneda de partida para mejoras, rerolls, cosméticos y almacenamiento."
+              "label": "Salvamento",
+              "detail": "La moneda de partida o los costes de mejora específicos no están publicados en la página de la tienda."
             }
           ]
         },
         {
           "order": 5,
-          "name": "Guía de jefes de Void Runners",
-          "description": "Esta sección explica los principales encuentros con guardianes, patrones de ataque y estrategias recomendadas para derrotar a enemigos poderosos. Ayuda a los jugadores a prepararse antes de llegar a los sectores finales.",
+          "name": "Guía de guardianes de Void Runners",
+          "description": "Esta sección explica los encuentros con guardianes tal como están documentados: una partida cruza tres sectores y tres guardianes de profundidad. Los patrones de ataque, los nombres de jefes y las estrategias recomendadas más allá del posicionamiento y la esquiva no están publicados.",
           "href": "/mechanics/void-runners-boss-fight",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "El Perseguidor",
-              "detail": "Planifica dos rutas de salida antes de comprometerte con una ventana de daño."
+              "detail": "No se documentan nombres oficiales de jefes, así que esta es una etiqueta de la comunidad."
             },
             {
               "label": "El Zonificador",
-              "detail": "Sal de la zona segura que se encoge pronto, no cuando la zona te toque."
+              "detail": "No se documentan nombres oficiales de jefes, así que esta es una etiqueta de la comunidad."
             },
             {
               "label": "Invocador",
-              "detail": "Asigna a un jugador para limpiar esbirros y que el objetivo principal siga siendo legible."
+              "detail": "No se documentan nombres oficiales de jefes, así que esta es una etiqueta de la comunidad."
             },
             {
               "label": "El Espejo",
-              "detail": "Esquiva al ritmo en lugar de por instinto, porque refleja el spam de ráfaga."
+              "detail": "No se documentan nombres oficiales de jefes, así que esta es una etiqueta de la comunidad."
             },
             {
               "label": "Desgaste",
-              "detail": "Reserva enfriamientos para las transiciones de fase en vez de usarlos al momento."
+              "detail": "El posicionamiento y la disciplina de enfriamientos son los fundamentos documentados, no patrones de fases específicos."
             },
             {
-              "label": "Enfurecimiento",
-              "detail": "Intercambia con seguridad en la fase final y evita bloqueos largos de animación."
+              "label": "Enfurecer",
+              "detail": "Las fases de enfurecimiento específicas no están publicadas en la página de la tienda."
             }
           ]
         },
         {
           "order": 6,
           "name": "Guía cooperativa de Void Runners",
-          "description": "Este módulo se centra en el juego multijugador, el posicionamiento del equipo, las mecánicas de reanimación y las estrategias de comunicación. Ayuda a los grupos a coordinarse mejor en partidas cooperativas online o locales.",
+          "description": "Este módulo se centra en el juego multijugador, el posicionamiento del equipo, las mecánicas de reanimación y las estrategias de comunicación. Ayuda a los grupos a coordinarse mejor durante partidas cooperativas en línea o en sofá para uno a cuatro pilotos.",
           "href": "/guide/void-runners-strategy",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Ancla",
-              "detail": "Atrae la atención, controla la orientación del jefe y avisa de cada cambio de fase."
+              "detail": "Mantén el espacio, controla los carriles de aproximación y canta los ángulos de los rayos para la tripulación."
             },
             {
               "label": "Daño",
-              "detail": "Mantén un uptime constante y rompe esbirros o escudos entre fases."
+              "detail": "Mantén el tiempo activo de los rayos y barre el fuego cruzado sobre los objetivos prioritarios."
             },
             {
-              "label": "Soporte",
-              "detail": "Mantén al escuadrón, limpia debuffs y cubre las rotaciones."
+              "label": "Apoyo",
+              "detail": "Cubre las reanimaciones desde cápsulas de escape y mantén intacta la red de rayos."
             },
             {
-              "label": "Flex",
-              "detail": "Cubre huecos, encárgate de las mecánicas y rescata a los corredores caídos."
+              "label": "Flexible",
+              "detail": "Cubre huecos en la formación y rescata a los corredores caídos."
             },
             {
               "label": "Comunicación",
-              "detail": "Avisa las rotaciones con el tell para que nadie reaccione después del golpe."
+              "detail": "Canta las rotaciones de dispersión y balanceo para que nadie corte el rayo de un compañero."
             },
             {
-              "label": "Revivir",
-              "detail": "Guarda un enfriamiento de movilidad para llegar a un compañero caído."
+              "label": "Reanimación",
+              "detail": "Mantén una esquiva lista para poder llegar a un compañero caído o a una cápsula de escape."
             }
           ]
         },
         {
           "order": 7,
-          "name": "Novedades de lanzamiento de Void Runners",
-          "description": "Esta sección recopila anuncios oficiales, novedades de desarrollo, información de lanzamiento y cambios importantes. Los jugadores pueden seguir las últimas noticias sobre el progreso del juego.",
+          "name": "Actualizaciones del lanzamiento de Void Runners",
+          "description": "Esta sección recopila lo que está documentado oficialmente sobre el desarrollo y el lanzamiento del juego. La página de Steam marca Void Runners como próximamente con una ventana de lanzamiento en el primer trimestre de 2027, y no publica notas de parche confirmadas.",
           "href": "/community/void-runners-release-date",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Lanzamiento",
-              "detail": "Sigue la ventana de lanzamiento y las señales oficiales que confirman una fecha real."
+              "detail": "Los appdetails oficiales de Steam muestran una ventana de lanzamiento en el primer trimestre de 2027 y un estado de próximamente."
             },
             {
               "label": "Demo",
-              "detail": "Comprueba si el progreso de la demo se conserva antes de farmearla."
+              "detail": "No se documenta ninguna demo en la página de la tienda, así que las afirmaciones de transferencia de demo no están respaldadas."
             },
             {
               "label": "Parches",
-              "detail": "Vuelve a leer los tooltips tras cada parche, porque los costes y el ajuste cambian."
+              "detail": "No se publican notas de parche confirmadas para este juego no lanzado."
             },
             {
               "label": "Steam",
-              "detail": "Sigue los anuncios de la tienda y los hilos fijados para las notas del parche."
+              "detail": "Sigue la página oficial de la tienda de Steam para los anuncios del desarrollador."
             },
             {
               "label": "Tráiler",
-              "detail": "Mira primero los canales oficiales y trata las resubidas como no verificadas."
+              "detail": "Aquí no se reclama ningún medio oficial exclusivo; consulta la página de Steam del desarrollador."
             },
             {
               "label": "Lista de deseos",
-              "detail": "Añade el juego a la lista de deseos y activa las notificaciones del desarrollador para el día del lanzamiento."
+              "detail": "Añade el juego a tu lista de deseos en Steam y activa las notificaciones del desarrollador para el día del lanzamiento."
             }
           ]
         },
         {
           "order": 8,
           "name": "Requisitos del sistema de Void Runners",
-          "description": "Este módulo ofrece los requisitos de hardware, plataformas compatibles, información sobre mandos y detalles de rendimiento. Ayuda a los jugadores a comprobar si su equipo puede ejecutar el juego con fluidez.",
+          "description": "Este módulo cubre lo documentado sobre plataformas y rendimiento. La página de la tienda lista el juego para Steam en PC, y los requisitos de hardware o los detalles de mando no están publicados allí.",
           "href": "/community/void-runners-steam",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Plataforma",
-              "detail": "PC a través de Steam; los sistemas operativos compatibles figuran en la página de la tienda."
+              "detail": "Steam en PC es la plataforma documentada; los sistemas operativos se listan en la página de la tienda."
             },
             {
-              "label": "Tasa de fotogramas",
-              "detail": "Limita la tasa de fotogramas si la física del movimiento parece ligada al timing de los fotogramas."
+              "label": "Fotogramas por segundo",
+              "detail": "No se publican objetivos de fotogramas por segundo ni vínculos físicos, así que ajusta según la sensación."
             },
             {
               "label": "Mando",
-              "detail": "Prueba las asignaciones de dash y wall-run antes de una partida, no en medio del colapso."
+              "detail": "Los detalles de compatibilidad con mando no están documentados en la página de la tienda."
             },
             {
               "label": "Red",
-              "detail": "Comprueba el ping y el tick rate cuando las entradas se sientan inconsistentes entre sesiones."
+              "detail": "El juego en línea para uno a cuatro pilotos está documentado, pero los detalles de red no."
             },
             {
               "label": "Almacenamiento",
-              "detail": "Deja espacio libre para los parches, ya que el juego se actualiza con frecuencia."
+              "detail": "Los requisitos de almacenamiento no están publicados en la página de la tienda."
             },
             {
               "label": "Pantalla",
-              "detail": "La amplitud visual importa, así que prioriza una tasa de fotogramas clara y estable sobre los ajustes brutos."
+              "detail": "Las líneas de visión amplias ayudan a seguir los rayos, así que favorece una tasa de fotogramas clara y estable."
             }
           ]
         }
@@ -437,98 +437,98 @@
       "items": [
         {
           "question": "¿Qué es Void Runners?",
-          "answer": "Void Runners es un runner de ciencia ficción rápido e impulsado por el momento en Steam. Esprintas, haces dash, te deslizas y corres por paredes a través de un tramo de espacio en colapso, recoges fragmentos y llegas a un punto de extracción antes de que el vacío cierre la ruta a tu espalda."
+          "answer": "Void Runners es un roguelike twin-stick para uno a cuatro jugadores en un sofá o en línea, desarrollado y publicado por Aaron Reisman. Cada par de naves está unido por un rayo que destroza todo lo que barre, así que dónde vuelas respecto a tu tripulación es la decisión central."
         },
         {
           "question": "¿Se puede jugar a Void Runners en solitario o en cooperativo?",
-          "answer": "Ambos. Puedes jugar a Void Runners en solitario o formar escuadrón con amigos, donde roles claros como ancla, daño, soporte y flex mantienen vivo al equipo en encuentros largos."
+          "answer": "Está documentado para uno a cuatro jugadores en un sofá o en línea. Dónde te posicionas respecto a tu tripulación importa por los rayos que os unen."
         },
         {
           "question": "¿Cómo funcionan los códigos de Void Runners?",
-          "answer": "Los códigos de Void Runners son cadenas cortas que se canjean en el juego por fragmentos, estelas y cosméticos gratis. Distinguen mayúsculas y minúsculas y la mayoría caducan rápido, así que canjea un nuevo código en cuanto aparezca."
+          "answer": "No se publica ningún sistema de códigos en la página de la tienda. Trata cualquier afirmación de códigos activos como no verificada hasta que el desarrollador anuncie uno."
         },
         {
-          "question": "¿Qué debería mejorar primero en Void Runners?",
-          "answer": "Prioriza el movimiento: primero reducción del enfriamiento del dash y retención de impulso, luego radio de recogida y un escudo o vida extra. Los multiplicadores de puntuación y los cosméticos van al final."
+          "question": "¿Qué debería aprender primero en Void Runners?",
+          "answer": "Empieza por el posicionamiento de rayos: dispersarse y balancear la red para que tus rayos barran lo que quieres sin cortar a un compañero de tripulación, además de la esquiva y la conciencia de reanimación."
         },
         {
-          "question": "¿Void Runners tiene combates contra jefes?",
-          "answer": "Sí. Los guardianes de Void Runners te combaten en arenas que colapsan, se expanden y derivan, así que el posicionamiento y la disciplina de enfriamientos importan más que el daño puro."
+          "question": "¿Tiene Void Runners combates contra jefes?",
+          "answer": "Sí. Una partida cruza tres sectores de cuatro saltos y termina en un guardián. Los nombres de jefes y los patrones de ataque específicos no están publicados."
         },
         {
-          "question": "¿Cómo farmeo fragmentos de Void Runners rápido?",
-          "answer": "Combina fuentes en una sola sesión: clears completos de fase, muertes de jefes y élites, misiones diarias y semanales, y bonos de eventos limitados. Asegura la partida en vez de perseguir fragmentos arriesgados."
+          "question": "¿Cómo progreso en Void Runners?",
+          "answer": "La página de la tienda dice que construyes una nave de salvamento y avanzas tres sectores y tres guardianes de profundidad. Los nombres de moneda y los costes de mejora específicos no están documentados."
         }
       ]
     },
     "finalCta": {
       "title": "¿Listo para dominar Void Runners?",
-      "description": "Desde tu primera partida de salvamento hasta los combates finales contra guardianes, nuestro wiki comunitario te cubre con guías gratuitas y actualizadas.",
+      "description": "Desde tu primera incursión de salvamento hasta los combates finales contra guardianes, nuestra wiki comunitaria te cubre con guías escritas por jugadores basadas en lo que está documentado.",
       "primary": "Leer la guía para principiantes",
       "secondary": "Jugar en Steam"
     }
   },
   "guide": {
     "overviewTitle": "Guías de Void Runners",
-    "overviewDescription": "Guías paso a paso de Void Runners sobre movimiento, builds y supervivencia, desde tu primera partida hasta el dominio avanzado de rutas."
+    "overviewDescription": "Guías paso a paso de Void Runners que cubren tácticas de rayos, incursiones de salvamento en cooperativo y supervivencia de la tripulación, desde tu primera partida hasta el dominio avanzado de rutas."
   },
   "mechanics": {
     "overviewTitle": "Mecánicas de Void Runners",
-    "overviewDescription": "Cómo se juega realmente a Void Runners: impulso, dashes de fase, vectores de impulso, líneas de carrera, ventanas de combate y combates contra jefes guardianes."
+    "overviewDescription": "Cómo se juega realmente a Void Runners: rayos que unen pares de naves, posicionamiento de dispersión y balanceo, fuego cruzado, esquiva, reanimaciones y combates contra guardianes a lo largo de tres sectores de cuatro saltos."
   },
   "codes": {
-    "overviewTitle": "Códigos de Void Runners",
-    "overviewDescription": "Cómo funcionan los códigos de Void Runners, dónde encontrarlos, cómo canjearlos en el juego y qué hacer cuando un código falla."
+    "overviewTitle": "Códigos de Void Runners (no documentados)",
+    "overviewDescription": "La página de la tienda no publica un sistema de códigos, así que esta sección rastrea lo que no está documentado y cómo evitar afirmaciones de códigos no verificadas."
   },
   "items": {
-    "overviewTitle": "Objetos y equipo de Void Runners",
-    "overviewDescription": "Trajes, equipo, fragmentos, cartas y coleccionables: qué hace cada objeto, cómo mejorarlo y qué drops merece la pena buscar."
+    "overviewTitle": "Nave y salvamento de Void Runners",
+    "overviewDescription": "Lo que está documentado sobre construir una nave de salvamento, recogidas de salvamento, fuego cruzado y rayos. Las piezas específicas, estadísticas y costes de mejora no están publicados."
   },
   "characters": {
-    "overviewTitle": "Personajes de Void Runners",
-    "overviewDescription": "Perfiles de personajes de Void Runners como Kiana, Ravnivori y Wraith, con sus habilidades, roles y direcciones de build."
+    "overviewTitle": "Pilotos de Void Runners",
+    "overviewDescription": "No se publican nombres de personajes en la página de la tienda. Esta sección cubre los roles de piloto documentados para una tripulación de uno a cuatro, como ancla, daño, apoyo y flexible."
   },
   "maps": {
-    "overviewTitle": "Mapas de Void Runners",
-    "overviewDescription": "Planes de ruta y tácticas de supervivencia para los mapas de Void Runners, incluidos Flashpoint, Lighthouse, Deep Space, Warp y Worlds Collide."
+    "overviewTitle": "Sectores de Void Runners",
+    "overviewDescription": "Planificación de rutas por tres sectores de cuatro saltos, con notas de peligros, encuentros con guardianes y navegación para la estructura de incursión documentada."
   },
   "community": {
     "overviewTitle": "Comunidad de Void Runners",
-    "overviewDescription": "Seguimiento de la fecha de lanzamiento, reseñas de Steam, consejos de Reddit, tráilers, detalles de la demo y la comunidad musical en torno a Void Runners."
+    "overviewDescription": "Seguimiento de la ventana de lanzamiento, estado de la tienda de Steam, actualizaciones del desarrollador, contexto del tráiler y consejos de la comunidad para Void Runners."
   },
   "shared": {
-    "wikiNavigation": "Navegación del wiki",
-    "activeCodes": "Códigos activos",
+    "wikiNavigation": "Navegación de la wiki",
+    "activeCodes": "Códigos (no documentados)",
     "updated": "Actualizado",
-    "viewAllCodes": "Ver todos los códigos",
-    "playOnRoblox": "Jugar en Roblox",
+    "viewAllCodes": "Ver estado de códigos",
+    "playOnRoblox": "Jugar en Steam",
     "inThisSection": "En esta sección",
     "tableOfContents": "Tabla de contenidos",
     "nextSteps": "Próximos pasos",
     "needHelp": "¿Necesitas ayuda?",
-    "relatedReading": "Lecturas relacionadas",
+    "relatedReading": "Lectura relacionada",
     "relatedGuides": "Guías relacionadas",
     "readMore": "Leer más",
     "officialMedia": "Medios oficiales",
     "home": "Inicio",
-    "noGuidesAvailable": "Aún no hay guías disponibles. ¡Vuelve pronto!"
+    "noGuidesAvailable": "Todavía no hay guías disponibles. ¡Vuelve pronto!"
   },
   "footer": {
     "aboutTitle": "Void Runners Wiki",
-    "about": "Void Runners Wiki es un centro de guías independiente creado por fans que cubre naves, builds, rutas de salvamento, guardianes y conocimientos esenciales del juego para jugadores nuevos y veteranos.",
+    "about": "Void Runners Wiki es un centro de guías independiente creado por fans que cubre tácticas de rayos, incursiones de salvamento en cooperativo, guardianes y conocimientos esenciales del juego tanto para jugadores nuevos como veteranos.",
     "quickLinks": "Enlaces rápidos",
     "guides": "Guías",
     "legal": "Legal",
-    "copyright": "2026 Void Runners Wiki. No afiliado a Aaron Reisman ni a Steam.",
-    "description": "Runner del vacío de ciencia ficción cooperativo en Steam. Partidas de salvamento en solitario o para cuatro jugadores por el espacio profundo.",
+    "copyright": "2026 Void Runners Wiki. No afiliada a Aaron Reisman ni a Steam.",
+    "description": "Roguelike twin-stick cooperativo en Steam. De uno a cuatro jugadores unen naves con rayos y rescatan tesoros tres sectores de profundidad.",
     "playGame": "Jugar en Steam",
     "officialDiscord": "Comunidad de Steam",
     "officialYoutube": "Tráiler de gameplay",
-    "vvBuilder": "Constructor de Void Runners (planificador de naves)",
+    "vvBuilder": "Void Runners Builder (planificador de naves)",
     "beginnerGuide": "Guía para principiantes",
-    "raceGuides": "Guías de personajes",
-    "bossGuides": "Guías de jefes",
-    "buildGuide": "Guía de builds",
+    "raceGuides": "Guías de roles de piloto",
+    "bossGuides": "Guías de guardianes",
+    "buildGuide": "Guía de configuraciones de salvamento",
     "privacyPolicy": "Política de privacidad",
     "termsOfService": "Términos de servicio"
   }

@@ -1,123 +1,79 @@
 export const metadata = {
-  title: "Guía del enfrentamiento contra el jefe Void Runners: mecánicas, fases y estrategias ganadoras",
-  description: "Domina cada enfrentamiento contra el jefe Void Runners con desgloses claros de las fases, las señales, el posicionamiento y las elecciones de equipamiento que convierten los wipes desastrosos en victorias limpias.",
+  title: "Void Runners Co-op: Cómo funciona la red de rayos en el roguelike twin-stick",
+  description: "Qué hace realmente el co-op de Void Runners: naves unidas por rayos desintegradores, tres sectores, tres guardianes y lo que la tienda aún no documenta.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Un enfrentamiento contra el jefe Void Runners rara vez se pierde por números de daño brutos: se pierde por el pánico. En el momento en que la arena cambia, el suelo desaparece o una segunda capa de ataques se acumula sobre la primera, la mayoría de los escuadrones dejan de leer la pantalla y empiezan a machacar botones. Entender las *mecánicas* detrás de estos encuentros es lo que separa una racha de veinte intentos fallidos de una victoria en dos intentos.
+Si has visto la frase "void runners" asociada a una docena de juegos distintos, la confusión es comprensible. Void Runners es un lanzamiento específico y próximo en Steam: un roguelike twin-stick del desarrollador y editor Aaron Reisman, listado con el app de Steam 5334520, anunciado para el primer trimestre de 2027 y aún marcado como "próximamente". No es Solar Ash, no es Void Crew, no es Void Stranger y no es Starfinder. Todo lo que sigue se ciñe a lo que realmente describe la [página oficial de Void Runners en Steam](https://store.steampowered.com/app/5334520/), más observaciones de terceros claramente etiquetadas cuando resultan útiles, y afirmaciones directas cuando los detalles simplemente no son públicos.
 
-Por eso esta guía se centra en la estructura y no en trucos secretos. Todo enfrentamiento contra el jefe Void Runners sigue una lógica: un conjunto de señales, un ritmo de fases y un pequeño número de decisiones que realmente importan. Aprende esa lógica y podrás entrar en un encuentro desconocido y aun así mantenerte firme.
+## Qué es Void Runners, según la tienda
 
-## Qué hace diferente a un enfrentamiento contra el jefe Void Runners
+La descripción oficial presenta Void Runners como incursiones cooperativas de salvamento para entre uno y cuatro pilotos, jugadas en un mismo sofá o en línea. Pilotas naves a través del espacio hostil, y cada par de naves está unido por un rayo. Ese rayo desintegra todo lo que barre. Así que el rayo no es solo una atadura o un adorno visual; es el arma, y su arco lo determina dónde eligen volar dos jugadores el uno respecto al otro.
 
-Los encuentros con temática del vacío comparten una filosofía de diseño: la arena es un arma. En lugar de estar de pie sobre terreno seguro mientras el jefe ataca, normalmente estás sobre un terreno que *también* está atacando: plataformas que se derrumban, zonas muertas que se expanden, peligros a la deriva o secciones que simplemente dejan de existir durante unos segundos.
+La estructura se indica con la misma claridad: una partida atraviesa tres sectores, cada uno de cuatro saltos de profundidad, y termina en un guardián, con tres guardianes en total. La tienda también menciona separarse y hacer girar la red, fuego cruzado, esquivar, revivir tripulantes desde cápsulas de escape y construir una nave recuperada.
 
-Esa única decisión de diseño cambia todo lo que viene después. La curación importa menos que el posicionamiento. El daño explosivo importa menos que la constancia. Y el jugador que memoriza la disposición de la arena a menudo supera al jugador con la mejor build.
+Ese es todo el conjunto de características anunciado. Fíjate en lo que *no* aparece: ni lista de piezas de nave, ni estadísticas de armas, ni nombres de jefes, ni mapas de sectores, ni sistema de códigos. Si un resultado de búsqueda te promete algo de eso, o está adivinando o está describiendo otro juego.
 
-Los informes de la comunidad de jugadores que farmean estos encuentros apuntan de forma consistente al mismo culpable: la mayoría de los wipes los causan los peligros ambientales, no los golpes directos del jefe. Trata el suelo como al verdadero jefe y al jefe como el cronómetro.
+## Por qué la geometría del rayo es la mecánica real
 
-| Arquetipo de jefe | Presión característica | Qué castiga | Primera contramedida |
-|---|---|---|---|
-| El Perseguidor | Persecución implacable con breves intervalos | Quedarse quieto para terminar un combo | Planifica de antemano dos rutas de salida antes de entrar en combate |
-| El Zonificador | Amplios campos de peligro que reducen el espacio seguro | Rotaciones tardías y ventanas de daño codiciosas | Rota pronto, no cuando la zona te toque |
-| El Invocador | Añadidos que dividen tu atención | Visión de túnel sobre el objetivo principal | Asigna permanentemente a un jugador para los añadidos |
-| El Espejo | Copia tu movimiento o refleja ataques | Esquivas reflejas y spam de daño explosivo | Esquiva al ritmo, no por instinto |
-| El Desgaste | Daño lento continuo más fases largas | Mala gestión de recursos | Reserva cooldowns para las transiciones de fase |
+La mayoría de los roguelikes twin-stick plantean una pregunta por segundo: ¿hacia dónde apunto? Void Runners añade una segunda pregunta: ¿dónde me *coloco*? Como el rayo une dos naves, su daño depende de una relación, no de una sola entrada. Eso cambia tres cosas de inmediato.
 
-## Estructura de fases: leer el ritmo del combate
+Primero, el posicionamiento se convierte en un recurso compartido. Si te apiñas con tu compañero, tu rayo es corto y tu barrido es estrecho. Si os separáis por la pantalla, el rayo se estira en una línea larga que cubre más terreno a medida que os movéis. La frase de la tienda "separarse y hacer girar la red" suena como una pista directa de que la distancia es lo importante.
 
-Casi todos los enfrentamientos contra el jefe Void Runners se dividen en fases, y cada fase cambia al menos una regla. El patrón más común es un cambio en el *comportamiento de la arena*: la zona segura se mueve, los peligros se aceleran o se añaden nuevos tipos de ataque sobre los existentes.
+Segundo, el fuego amigo está implícito en la propia mecánica. Un rayo que desintegra "todo lo que barre" no exime obviamente a tu propio casco. Que los rayos dañen a sus propios pilotos no está documentado, y eso es lo más importante que hay que probar el primer día.
 
-El error que cometen los jugadores es tratar las transiciones de fase como un descanso. No lo son. En la mayoría de los encuentros, la ventana de transición es cuando el jefe es más peligroso, porque te estás reposicionando mientras él sigue atacando.
+Tercero, los revives crean decisiones de ritmo. Los pilotos caídos vuelven mediante cápsulas de escape, que la tienda enumera como característica. Eso significa que una muerte no termina automáticamente la partida, pero alguien tiene que romper la formación para recoger la cápsula. En una partida de dos jugadores, eso implica renunciar a la cobertura del rayo; en una de cuatro, implica decidir quién se desengancha.
 
-| Fase | Qué suele cambiar | Prioridad del jugador | Fallo común |
-|---|---|---|---|
-| Apertura | Patrón de ataque básico, espaciado generoso | Aprender el ritmo de las señales | Comprometerte demasiado con el daño al principio |
-| Intermedia | Los peligros se aceleran o se expanden | Reposicionarte antes de que llegue el cambio | Reaccionar un tiempo demasiado tarde |
-| Tardía | Las capas de ataque se acumulan, el espacio seguro se reduce | Conservar los cooldowns de movilidad | Gastar las escapadas demasiado pronto |
-| Enfurecimiento / Final | La producción de daño aumenta bruscamente | Intercambiar con seguridad, evitar animaciones largas | Arriesgar por un remate |
-
-### Señales que nunca debes ignorar
-
-- **Cambios en la animación de preparación** — una preparación más larga o con un ángulo distinto suele indicar un ataque nuevo, no una versión más lenta del anterior.
-- **Cambios de color e iluminación** — muchas arenas con temática del vacío se oscurecen o se tiñen justo antes de que se active un peligro.
-- **Señales de audio** — un efecto de sonido distintivo casi siempre precede al ataque que mata a los jugadores desprevenidos.
-- **Cambios en la geometría de la arena** — si el patrón del suelo cambia, asume que las reglas cambiaron con él.
-- **Comportamiento de la cámara** — un tirón o zoom repentino suele marcar una transición o un ataque a gran escala.
-
-Si puedes nombrar la señal antes de que aterrice el ataque, ya has resuelto la mayor parte del encuentro.
-
-## Equipamiento, posicionamiento y disciplina de cooldowns
-
-Un enfrentamiento contra el jefe Void Runners recompensa la claridad de roles más que el poder bruto. Los escuadrones que asignan tareas antes del pull —y se ciñen a ellas— limpian notablemente más rápido que los escuadrones donde todos improvisan.
-
-| Rol | Tarea principal | Tarea secundaria | Error frecuente |
-|---|---|---|---|
-| Aggro / Ancla | Mantener la atención y controlar la orientación del jefe | Anunciar los cambios de fase | Perseguir al jefe hacia terreno inseguro |
-| Daño | Mantener un tiempo de actividad constante | Romper añadidos o escudos | Guardarlo todo para una ventana de daño explosivo que nunca llega |
-| Soporte | Sostener y limpiar | Cubrir las rotaciones de los demás | Curar a través de daño evitable |
-| Flex | Cubrir huecos, gestionar mecánicas | Rescatar a jugadores caídos | Hacer el trabajo de todos y ninguno propio |
-
-El posicionamiento es donde la mayoría de las mejoras ocurren más rápido. Tres hábitos importan más que cualquier build:
-
-1. **Colócate donde aún puedas moverte.** Nunca te estaciones en un callejón sin salida, incluso si el daño es mejor allí.
-2. **Rota con la señal, no con el golpe.** Moverte cuando el ataque aterriza significa que ya lo recibiste.
-3. **Mantén siempre un cooldown en reserva.** Los cooldowns de movilidad y defensivos son un seguro, no herramientas de daño.
-
-La disciplina de cooldowns es especialmente importante en combates más largos. Si un enfrentamiento contra el jefe Void Runners atraviesa cuatro fases, gastarlo todo en la fase uno significa que entras en la fase más difícil sin nada. Los informes de la comunidad describen repetidamente el mismo patrón: los escuadrones que reservan sus grandes cooldowns para la fase final limpian de forma mucho más consistente que los escuadrones que los sueltan en cuanto están listos.
-
-Para un contexto más amplio sobre cómo el diseño de encuentros moldea el comportamiento de los jugadores, el análisis de Game Developer sobre el diseño de encuentros contra jefes es una lectura útil para cualquiera que quiera entender *por qué* estos combates están estructurados como están.
-
-## Errores comunes que hacen fracasar un enfrentamiento contra el jefe Void Runners
-
-La mayoría de los intentos fallidos caen en un pequeño conjunto de errores repetibles. Corregirlos no requiere mejor equipo: requiere mejores hábitos.
-
-| Error | Por qué falla | Solución práctica |
+| Característica anunciada | Lo que dice la tienda | Lo que no está documentado |
 |---|---|---|
-| Quedarse quieto para terminar un combo | Las arenas del vacío castigan a los objetivos inmóviles | Cancela el combo, reposiciónate y retoma |
-| Que todos persigan al jefe | Divide al escuadrón y crea puntos ciegos | Deja que el jefe venga hacia el ancla |
-| Ignorar a los añadidos durante un cambio de fase | Los añadidos multiplican la presión durante la peor ventana | Asigna de antemano a un jugador para los añadidos |
-| Esquivar por pánico e instinto | Desperdicia escapadas y te deja en peligros | Esquiva con la señal, no con el impacto |
-| Curar a través de daño evitable | Agota recursos necesarios más tarde | Trata cada golpe como un error de posicionamiento |
-| Reiniciar tras un solo error | Impide aprender las fases posteriores | Lleva el intento tan lejos como sea posible |
+| Número de jugadores | 1 a 4 pilotos, sofá o en línea | Si las partidas de 1 jugador usan un dron o un rayo en solitario |
+| Rayo | Une cada par de naves, desintegra lo que barre | Límites de longitud del rayo, caída de daño, fuego amigo |
+| Estructura de la partida | 3 sectores, 4 saltos cada uno, 1 guardián por sector | Nombres de sectores, tipos de salto, identidades de los guardianes |
+| Progresión | Construir una nave recuperada | Piezas, estadísticas, costes de desbloqueo, monedas |
 
-Esa última fila importa más de lo que parece. Los jugadores que reinician en el instante en que algo va mal nunca aprenden la segunda mitad del combate. Incluso un intento condenado al fracaso te enseña el patrón de la fase tres, y ese conocimiento es lo que convierte el intento veinte en una victoria.
+## Un jugador y cuatro jugadores son juegos distintos
 
-## Un plan de práctica para aprender cualquier enfrentamiento contra el jefe Void Runners
+La descripción abarca de uno a cuatro pilotos, lo que cubre tres estilos de juego muy diferentes, y la lógica del rayo escala con cada uno.
 
-No necesitas docenas de intentos a ciegas. Necesitas intentos estructurados. El plan a continuación funciona para casi cualquier encuentro de este estilo, ya sea que juegues solo o con un escuadrón.
+En solitario, la pregunta es si un piloto solitario tiene algún rayo. La tienda no lo dice. Una sola nave no tiene pareja, así que o el juego concede una alternativa en solitario o el modo de un jugador es un conjunto de reglas completamente distinto. No des por hecho que la geometría cooperativa se mantiene.
 
-| Intento | Objetivo | Condición de parada |
-|---|---|---|
-| 1 | Sobrevive y observa | No persigas el daño; aprende las señales |
-| 2 | Prueba una ventana de daño | Identifica el momento de explosión más seguro |
-| 3 | Practica las transiciones de fase | Confirma el momento de la rotación |
-| 4 | Exige la gestión de recursos | Entra en la fase final con los cooldowns listos |
-| 5+ | Ejecuta con limpieza | Reduce el daño evitable a casi cero |
+Dos jugadores es la expresión más limpia de la idea: un rayo, un arco compartido, negociación constante sobre las distancias.
 
-### Consejos que aceleran el aprendizaje
+Tres jugadores es el caso incómodo, porque "cada par de naves está unido por un rayo" puede significar una cadena de dos rayos, un triángulo de tres o algo distinto. En un triángulo, cada piloto está anclado a dos compañeros a la vez, lo que dificulta mucho más separarse y facilita mucho más el fuego cruzado.
 
-- **Graba o mira tus intentos.** Detectarás la señal que te perdiste mucho más rápido en la repetición que en el momento.
-- **Nombra las mecánicas en voz alta.** Decir "zona moviéndose" o "añadidos arriba" desarrolla rápidamente el reconocimiento de patrones.
-- **Cambia una variable a la vez.** Sustituye una sola habilidad o posición, no todo tu enfoque.
-- **Practica la transición, no la apertura.** La apertura es fácil; el cambio es donde se deciden los combates.
-- **Acepta victorias más lentas.** Una victoria segura supera a un wipe rápido siempre.
+Cuatro jugadores es el máximo indicado. Más naves significa más rayos, más fuego cruzado y más posibilidades de que un rayo barra a un compañero. El chat de voz no se menciona como función integrada, así que cuenta con lo que ofrezca tu plataforma.
 
-Los jugadores que siguen un enfoque estructurado suelen informar que un enfrentamiento contra el jefe Void Runners deja de sentirse aleatorio tras tres o cuatro intentos concentrados. El encuentro no cambió: su lectura de él sí.
+## Cómo verificar cualquier cosa antes del primer trimestre de 2027
 
-## Preguntas frecuentes
+El juego no ha salido, así que la respuesta honesta para casi todos los detalles concretos es "aún no es público". Aquí tienes cómo comprobarlo sin depender de rumores:
 
-**¿Cuántas fases suele tener un enfrentamiento contra el jefe Void Runners?**
-La mayoría de los encuentros siguen una estructura de tres a cuatro fases, con una fase adicional de enfurecimiento o final si el combate se alarga. El número exacto varía según el encuentro, pero el patrón —aprende, adáptate, sobrevive— se mantiene constante.
+- Lee primero la página oficial de la tienda. Es la única fuente con texto escrito por el desarrollador, y es la página que controla Aaron Reisman.
+- Consulta las noticias de Steam y los centros de la comunidad en busca de publicaciones del desarrollador. Si una mecánica cambia, es ahí donde se indica.
+- Estate atento a una demo o a una prueba de juego. Las páginas de tienda de juegos sin lanzar a menudo añaden una opción de demo; si aparece una, resolverá el comportamiento del rayo, el fuego amigo y las reglas en solitario más rápido que cualquier artículo.
+- Trata las guías de terceros como secundarias. Pueden servir para enmarcar cómo otros roguelikes twin-stick gestionan el co-op, pero no son documentación del desarrollador y no pueden conocer cifras de un juego sin lanzar.
 
-**¿Es mejor jugar solo o con un escuadrón?**
-Los intentos en solitario te enseñan las mecánicas más rápido porque cada error es tuyo. Los escuadrones limpian más rápido una vez que se entienden las mecánicas. Un enfoque común es aprender en solitario y luego traer a un grupo una vez que puedas alcanzar la fase final de forma fiable.
+## Leer el género sin sobreinterpretarlo
 
-**¿Cuál es el error más grande en estos combates?**
-Quedarse quieto. Las arenas con temática del vacío están diseñadas para castigar a los objetivos inmóviles, así que casi cada muerte se remonta a un jugador que se quedó en su sitio un tiempo de más.
+Los jugadores de roguelikes buscan instintivamente la metaprogresión, los costes de desbloqueo y la variedad de builds. La tienda menciona construir una nave recuperada, lo que implica alguna forma de progresión, pero no nombra ni una sola pieza ni un solo precio. El salvamento es el gancho temático; la economía que hay detrás no está documentada, e inventarla sería deshonesto.
 
-**¿Necesito equipo específico para superarlo?**
-Las mecánicas importan mucho más que el equipo en este estilo de encuentro. Un mejor equipo acorta el combate, pero no salvará a un jugador que ignora las señales, desperdicia cooldowns y se queda de pie en los peligros.
+La misma cautela se aplica a los inevitables términos de búsqueda. No hay ningún sistema de códigos publicado, ni lista de trucos, ni ranking por niveles, ni nombre de jefe que consultar. Si encuentras una página que afirme lo contrario, comprueba si en realidad trata de Void Crew, Void Stranger o Starfinder, que son juegos separados con comunidades separadas.
 
-Domina la arena, respeta el ritmo de las fases y mantén una escapada en reserva, y un enfrentamiento contra el jefe Void Runners se convierte en una de las victorias más satisfactorias del juego en lugar del muro contra el que sigues chocando.
+Lo que puedes dar por seguro es limitado pero realmente útil: cuatro pilotos, rayos vinculados, tres sectores de cuatro saltos, tres guardianes, cápsulas de escape y una nave recuperada. Eso basta para entender por qué el espaciado es la decisión central. Todo lo demás es una pregunta para el propio juego, y no responderá hasta que salga.
+
+## FAQ
+
+**¿Es Void Runners lo mismo que Void Crew o Void Stranger?**
+No. Void Runners es el app de Steam 5334520 de Aaron Reisman. Void Crew y Void Stranger son títulos sin relación, con sus propios desarrolladores y páginas de tienda.
+
+**¿Cuántos jugadores pueden unirse?**
+La tienda indica de uno a cuatro pilotos, en un mismo sofá o en línea.
+
+**¿Los rayos dañan a tu propia tripulación?**
+No está documentado. La tienda dice que los rayos desintegran todo lo que barren, pero no indica si los compañeros están incluidos. Prueba esto con una partida corta cuando el juego esté disponible.
+
+**¿Cuánto dura una partida?**
+La descripción dice tres sectores, cada uno de cuatro saltos, terminando en un guardián, con tres guardianes en total. No se ha publicado ninguna estimación de tiempo.
+
+**¿Hay una fecha de lanzamiento a la que pueda aferrarme?**
+El primer trimestre de 2027 es la ventana anunciada, y la página está marcada como próximamente. Trata cualquier fecha más firme como no confirmada hasta que el desarrollador la publique.

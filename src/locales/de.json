@@ -2,14 +2,14 @@
   "site": {
     "name": "Void Runners Wiki",
     "shortName": "Void Runners",
-    "tagline": "Builds, Bergungsrouten, Schiff-Tier-Listen & Guides",
-    "description": "Dein komplettes Void Runners Wiki — Schiff-Builds, Waffen, Bergungsrouten, Guardian-Boss-Strategien, Koop-Tipps und Fortschrittsguides für den Sci-Fi-Void-Runner auf Steam.",
-    "legalNotice": "Inoffizielles Fan-Wiki. Von Spielern für Spieler."
+    "tagline": "Twin-Stick-Roguelike-Co-op-Guides, Beams & Bergungsraids",
+    "description": "Dein spielergeschriebenes Void Runners Wiki — Co-op-Beam-Taktiken, Bergungsraid-Routen, Guardian-Strategien und Fortschrittsnotizen für das Twin-Stick-Roguelike auf Steam.",
+    "legalNotice": "Inoffizielles Fan-Wiki. Von Spielern für Spieler erstellt."
   },
   "nav": {
-    "home": "Start",
+    "home": "Startseite",
     "menu": "Menü",
-    "toggleTheme": "Design wechseln",
+    "toggleTheme": "Design umschalten",
     "guide": "Guide",
     "mechanics": "Mechaniken",
     "codes": "Codes",
@@ -20,117 +20,117 @@
   },
   "home": {
     "meta": {
-      "title": "Void Runners Wiki - Builds, Guide & Updates",
-      "description": "Das Void Runners Wiki bietet Builds, Gameplay-Guides, Charakterdetails, Fortschrittstipps und Updates, damit Spieler das schnelle Void-Running-Erlebnis meistern."
+      "title": "Void Runners Wiki - Co-op-Guides & Beam-Taktiken",
+      "description": "Das Void Runners Wiki bietet Co-op-Beam-Taktiken, Bergungsraid-Routen, Guardian-Strategien und Fortschrittsnotizen, um Crews durch drei Sektoren mit vier Sprüngen zu bringen."
     },
     "hero": {
-      "eyebrow": "Schnelles Void-Abenteuerspiel",
+      "eyebrow": "Twin-Stick-Co-op-Roguelike",
       "title": "Void Runners Wiki",
-      "description": "Ein Community-Wiki zu Void Runners Gameplay-Mechaniken, Builds, Charakteren, Fortschrittssystemen, Guides und wichtigen Tipps für die Erkundung des geheimnisvollen Voids.",
+      "description": "Ein Community-Wiki zu Void Runners Gameplay, Beam-Taktiken, Co-op-Bergungsraids, Guardian-Kämpfen und wichtigen Tipps, um eine Crew durch die Leere zu fliegen.",
       "stats": [
-        "Aktive Codes",
-        "Schiff-Builds & Teile",
+        "Codes (Nicht Dokumentiert)",
+        "Bergungsschiff-Builds",
         "Bergungsrouten",
-        "Boss-Strategien"
+        "Guardian-Strategien"
       ],
-      "primaryCta": "Einsteigerguide",
-      "secondaryCta": "Schiff-Tier-Liste",
-      "tertiaryCta": "Aktive Codes",
-      "videoLabel": "Gameplay-Showcase"
+      "primaryCta": "Einsteiger-Guide",
+      "secondaryCta": "Co-op-Beam-Taktiken",
+      "tertiaryCta": "Codes (Nicht Dokumentiert)",
+      "videoLabel": "Gameplay-Präsentation"
     },
     "updates": {
       "title": "Neueste Updates",
-      "browse": "Alle Guides durchsuchen",
-      "viewAll": "Alle anzeigen"
+      "browse": "Alle Guides Durchsuchen",
+      "viewAll": "Alle Anzeigen"
     },
     "start": {
-      "eyebrow": "Hier starten",
+      "eyebrow": "Hier Starten",
       "title": "Deine Void Runners Reise",
       "cards": [
         {
           "number": "1",
-          "title": "Einsteigerguide",
-          "description": "Lerne zuerst die Kernschleife: Lies den Weg voraus, halte das Momentum und bleib schon im ersten Run vor der Kollaps-Welle."
+          "title": "Einsteiger-Guide",
+          "description": "Lerne zuerst die Kernschleife: Dein Beam verbindet dich mit einem Crewmitglied, und wo du relativ zu ihm fliegst, ist die Entscheidung, die das Netz am Leben hält."
         },
         {
           "number": "2",
-          "title": "Aktive Codes",
-          "description": "Löse die neuesten Void Runners Codes vor Ablauf ein und sichere dir kostenlose Scherben, Trails und Kosmetik."
+          "title": "Codes (Nicht Dokumentiert)",
+          "description": "Auf der Store-Seite ist kein Codesystem veröffentlicht. Behandle jede Behauptung über funktionierende Codes als unbestätigt."
         },
         {
           "number": "3",
-          "title": "Upgrade-Prioritäten",
-          "description": "Investiere frühe Ressourcen in Dash-Abklingzeit und Momentum-Erhalt, bevor du Punktemultiplikatoren anfasst."
+          "title": "Crew-Prioritäten",
+          "description": "Übe das Ausbreiten und Schwingen des Beam-Netzes, bevor du dich um tiefer gelegene Sektoren kümmerst."
         },
         {
           "number": "4",
-          "title": "Shard-Farming-Routen",
-          "description": "Kombiniere volle Clears, tägliche Quests und Event-Boni, um in jeder Session deutlich mehr Scherben zu sammeln."
+          "title": "Bergungsrouten",
+          "description": "Durchquere drei Sektoren mit jeweils vier Sprüngen, baue ein geborgenes Schiff und erreiche am Ende einen Guardian."
         }
       ]
     },
     "popular": {
       "eyebrow": "Beliebte Seiten",
-      "title": "Gerade angesagt",
+      "title": "Gerade im Trend",
       "quickLinks": [
-        "Einsteigerguide",
-        "Movement-Tech",
-        "Shard-Farming",
-        "Bosskämpfe"
+        "Einsteiger-Guide",
+        "Beam-Taktiken",
+        "Bergungsrouten",
+        "Guardian-Kämpfe"
       ],
       "cards": [
         {
           "badge": "Einsteiger",
-          "title": "Void Runners Einsteigerguide",
-          "description": "Momentum, Dash-Timing und der Kollaps-Timer erklärt für deine ersten Runs.",
+          "title": "Void Runners Einsteiger-Guide",
+          "description": "Beam-Positionierung, Ausbreiten und Co-op-Bergungsgrundlagen für deine ersten Runs.",
           "href": "/guide/void-runners-beginner-guide"
         },
         {
           "badge": "Aktualisiert",
           "title": "Void Runners Codes",
-          "description": "Woher Codes kommen, wie man sie einlöst und was zu tun ist, wenn einer fehlschlägt.",
+          "description": "Was über ein Codesystem dokumentiert ist, wie die Einlösung funktionieren könnte und was zu tun ist, wenn eine Behauptung unbestätigt ist.",
           "href": "/codes/void-runners-code"
         },
         {
           "badge": "Beliebt",
-          "title": "Movement-Guide",
-          "description": "Dash-Canceling, Wall-Dash-Resets und Luftkontrolle-Drills, die Sekunden sparen.",
+          "title": "Beam-Taktiken",
+          "description": "Wie Schiffspaare durch einen Beam verbunden werden, der alles zerschreddert, was er überstreicht, und wie man ihn nutzt, ohne ein Crewmitglied zu treffen.",
           "href": "/mechanics/void-runners-movement"
         },
         {
           "badge": "Beliebt",
-          "title": "Ausrüstung & Loadouts",
-          "description": "Slots, Stat-Prioritäten und Build-Archetypen für jeden Spielstil.",
+          "title": "Bergungsschiff & Ausrüstung",
+          "description": "Ein geborgenes Schiff Run für Run aufbauen und was die Store-Seite über Teile sagt und was nicht.",
           "href": "/items/void-runners-gear"
         },
         {
           "badge": "Neu",
-          "title": "Karten & Decks",
-          "description": "Kartenrollen, Seltenheiten, Drop-Routen und wie man ein überlebensfähiges Deck baut.",
+          "title": "Co-op-Rollen",
+          "description": "Couch- und Online-Spiel für ein bis vier Piloten, mit Positionierungsrollen, die das Beam-Netz intakt halten.",
           "href": "/items/void-runners-cards"
         },
         {
           "badge": "Beliebt",
-          "title": "Bosskampf-Guide",
-          "description": "Arena-Gefahren, Boss-Archetypen, Tells und Cooldown-Disziplin.",
+          "title": "Guardian-Kampf-Guide",
+          "description": "Sektor-Guardians, Arenabewusstsein, Ausweichen und Cooldown-Disziplin am Ende jedes Sektors.",
           "href": "/mechanics/void-runners-boss-fight"
         },
         {
           "badge": "Beliebt",
-          "title": "Shard-Farming",
-          "description": "Kombiniere Clears, Quests und Events, um deutlich mehr Void-Scherben zu sammeln.",
+          "title": "Bergungsraiding",
+          "description": "Kreuzfeuer, Crew aus Rettungskapseln wiederbeleben und wie man Fortschritt über drei Sektoren sichert.",
           "href": "/items/void-runners-shards"
         },
         {
           "badge": "Neu",
-          "title": "Tiefraum-Karten",
-          "description": "Routenplanung, Gefahrenanalysen und Navigation für offene Void-Karten.",
+          "title": "Sektor-Routen",
+          "description": "Routenplanung über drei Sektoren mit vier Sprüngen, mit Gefahren- und Navigationsnotizen.",
           "href": "/maps/void-runners-deep-space"
         },
         {
           "badge": "Neu",
           "title": "Co-op-Strategie",
-          "description": "Teamrollen, Positionierung, Wiederbelebungsmechaniken und Kommunikations-Calls.",
+          "description": "Team-Positionierung, Beam-Abdeckung, Wiederbelebungsmechaniken und Kommunikationssignale.",
           "href": "/guide/void-runners-strategy"
         }
       ]
@@ -138,8 +138,8 @@
     "aboutGame": {
       "title": "Was ist Void Runners?",
       "paragraphs": [
-        "Void Runners ist ein schneller, momentumgetriebener Sci-Fi-Runner, der sich um eine Frage dreht: Wie lange kannst du dich bewegen, bevor das Void den Weg hinter dir verschlingt? Jeder Run wirft dich in einen kollabierenden Abschnitt des Alls, in dem du sprintest, dashst, slidest und wallrunst, während der Boden hinter dir zerfällt.",
-        "Zwischen den Runs baust du aus Bewegungsmodulen, Waffen, Anzügen, Karten und Scherben ein Loadout und dringst dann solo oder im Koop-Trupp tiefer in schwerere Arenen und Guardian-Bosskämpfe vor. Unser Void Runners Wiki sammelt die Movement-Tech, Upgrade-Prioritäten, Shard-Routen und Boss-Strategien, die Runs am Leben halten."
+        "Void Runners ist ein Twin-Stick-Roguelike für ein bis vier Spieler auf einer Couch oder online, entwickelt und veröffentlicht von Aaron Reisman. Jedes Schiffspaar wird durch einen Beam verbunden, der alles zerschreddert, was er überstreicht, sodass die Position relativ zu deiner Crew die Kernentscheidung ist.",
+        "Ein Run durchquert drei Sektoren mit vier Sprüngen und endet bei einem Guardian. Unterwegs breitet man sich aus und schwingt das Netz, nutzt Kreuzfeuer, weicht aus, belebt Crew aus Rettungskapseln wieder und baut ein geborgenes Schiff. Die Steam-Seite markiert das Spiel als demnächst verfügbar mit einem Veröffentlichungsfenster im Q1 2027 und veröffentlicht keine Schiffsteile, Waffenwerte, Bossnamen oder ein Codesystem."
       ],
       "stats": [
         {
@@ -148,360 +148,360 @@
         },
         {
           "label": "Genre",
-          "value": "Sci-Fi-Runner"
+          "value": "Twin-Stick-Roguelike"
         },
         {
           "label": "Modus",
-          "value": "Solo & Koop"
+          "value": "1–4 Spieler, Couch oder Online"
         },
         {
-          "label": "Run-Ziel",
-          "value": "Extraktion erreichen"
+          "label": "Run-Länge",
+          "value": "3 Sektoren mit 4 Sprüngen"
         },
         {
-          "label": "Währung",
-          "value": "Void-Scherben"
+          "label": "Veröffentlichung",
+          "value": "Q1 2027 (Demnächst Verfügbar)"
         },
         {
-          "label": "Kernbewegung",
-          "value": "Dash & Wallrun"
+          "label": "Schlüsselmechanik",
+          "value": "Beam-verbundene Schiffe"
         }
       ],
-      "cta": "Alle Guides erkunden"
+      "cta": "Alle Guides Entdecken"
     },
     "explore": {
-      "title": "Void Runners Wiki erkunden",
-      "description": "Plane deinen nächsten Run mit Void Runners Guides zu Movement-Tech, Builds, Schiff-Tier-Listen, Waffen und Teilen, Guardians, Koop-Taktik, Release-Updates und Systemanforderungen.",
+      "title": "Void Runners Wiki Entdecken",
+      "description": "Plane deinen nächsten Run mit Void Runners Guides zu Beam-Taktiken, Co-op-Bergungsraids, Guardians, Couch- und Online-Spiel, Release-Tracking und Systemanforderungen.",
       "modules": [
         {
           "order": 1,
-          "name": "Void Runners Einsteigerguide",
-          "description": "Dieses Modul führt neue Spieler in die Kern-Gameplay-Schleife, Koop-Mechaniken, Schiffsteuerung, Bergungsruns und Basisstrategien ein. Es hilft Einsteigern zu verstehen, wie sie frühe Sektoren überleben und effektive Teams aufbauen.",
+          "name": "Void Runners Einsteiger-Guide",
+          "description": "Dieses Modul führt neue Spieler in die Kern-Gameplay-Schleife, Co-op-Beam-Mechaniken, Schiffskontrolle, Bergungsruns und grundlegende Strategien ein. Es hilft Anfängern zu verstehen, wie man frühe Sektoren überlebt und effektive Crews aufbaut.",
           "href": "/guide/void-runners-beginner-guide",
           "displayType": "step-by-step",
           "highlights": [
             {
               "label": "1",
-              "detail": "Lies den Weg voraus statt deine Figur und leg dich früh auf eine Linie fest."
+              "detail": "Lies die Position deines Crewmitglieds, denn dein Beam verbindet euch beide und zerschreddert, was er überstreicht."
             },
             {
               "label": "2",
-              "detail": "Halte immer einen Dash in Reserve, damit ein Fehler überlebbar bleibt."
+              "detail": "Breite dich aus und schwinge das Netz, damit Kreuzfeuer mehr Raum abdeckt, ohne einen Teamkameraden zu treffen."
             },
             {
               "label": "3",
-              "detail": "Meistere Dash und Slide, bevor du Wallruns und Grapples hinzufügst."
+              "detail": "Übe Ausweichen und Beam-Positionierung, bevor du in tiefere Sprünge vorstößt."
             },
             {
               "label": "4",
-              "detail": "Nimm nur die einfachen Scherben mit, solange du die Route noch lernst."
+              "detail": "Nimm nur die einfache Bergung mit, solange du die Drei-Sektoren-Route noch lernst."
             },
             {
               "label": "5",
-              "detail": "Investiere die ersten Upgrades in Dash-Abklingzeit und Momentum-Erhalt."
+              "detail": "Behalte einen Plan zum Wiederbeleben von Crew aus Rettungskapseln, statt blind hineinzufliegen."
             },
             {
               "label": "6",
-              "detail": "Geh niemals zurück, denn die Kollaps-Welle ist schneller als du."
+              "detail": "Denk daran: Ein Run durchquert drei Sektoren mit vier Sprüngen und endet bei einem Guardian."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Void Runners Build-Guide",
-          "description": "Dieser Abschnitt behandelt Schiff-Builds, Waffen, Teile, Synergien und empfohlene Kombinationen für verschiedene Spielstile. Spieler lernen, ihr Crew-Setup zu optimieren und die Run-Leistung zu verbessern.",
+          "name": "Void Runners Bergungsschiff-Builds",
+          "description": "Dieser Abschnitt behandelt den Aufbau eines geborgenen Schiffs während eines Runs. Die Store-Seite veröffentlicht keine Schiffsteile, Synergien oder empfohlenen Kombinationen, daher sammelt dieses Modul, was dokumentiert ist, und behandelt spezifische Builds als Spielertheorie.",
           "href": "/items/void-runners-gear",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plänkler",
-              "detail": "Bewegungsmodul plus schnell feuernde Waffe für Hit-and-Run-Druck."
+              "label": "Skirmisher",
+              "detail": "Spielertheorie: ein schnelles Schiff, das Beam-Sweeps für Hit-and-Run-Druck nutzt."
             },
             {
-              "label": "Anker",
-              "detail": "Rüstung, Regeneration und Bereichskontrolle, um Raum zu halten und Druck aufzunehmen."
+              "label": "Anchor",
+              "detail": "Spielertheorie: ein Schiff, das Raum hält, während das Beam-Netz Anflugwege kontrolliert."
             },
             {
               "label": "Support",
-              "detail": "Buff-Uptime, Wiederbelebungsgeschwindigkeit und geteilte Regeneration, damit der Trupp in Bewegung bleibt."
+              "detail": "Spielertheorie: Positionierung zur Abdeckung von Wiederbelebungen und Rettungskapsel-Aufnahmen."
             },
             {
               "label": "Burst",
-              "detail": "Cooldown-Erholung und Fähigkeitsschaden, um Prioritätsziele auszuschalten."
+              "detail": "Spielertheorie: Timing von Beam-Kreuzfeuer, um vorrangige Ziele zu eliminieren."
             },
             {
-              "label": "Ökonomie",
-              "detail": "Zusätzliche Beute und Aufsammelradius, um in jedem Run mehr Scherben zu sammeln."
+              "label": "Economy",
+              "detail": "Spielertheorie: Bergungsaufnahmen so routen, dass man pro Sektor mehr anspart."
             },
             {
               "label": "Utility",
-              "detail": "Ein flexibles Stück Relikt, Implantat oder Glücksbringer, das das Kit zusammenhält."
+              "detail": "Spezifische Teile sind auf der Store-Seite nicht dokumentiert, daher sind Slot-Namen als Community-Beschreibungen zu betrachten."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Void Runners Schiff-Tier-Liste",
-          "description": "Dieses Modul bewertet verfügbare Schiffshüllen und vergleicht ihre Fähigkeiten, Stärken und idealen Teamrollen. Es hilft Spielern, die besten Schiffe für Solo- und Multiplayer-Runs zu wählen.",
+          "name": "Void Runners Schiff-Vergleich",
+          "description": "Dieses Modul vergleicht, was über das Schiffverhalten dokumentiert ist. Die Store-Seite veröffentlicht keine Rumpfliste oder Tier-Rangliste, daher sind Bewertungen und benannte Rümpfe nicht bestätigt.",
           "href": "/mechanics/void-runners-speed",
           "displayType": "tier-grid",
           "highlights": [
             {
               "label": "S",
-              "detail": "Dash-Abklingzeit-Reduktion und Momentum-Erhalt für die schnellsten sauberen Linien."
+              "detail": "Es ist keine offizielle Tier-Liste veröffentlicht. Behandle jede S-Bewertung als Spielermeinung."
             },
             {
               "label": "A",
-              "detail": "Zusätzlicher Sprung in der Luft und Aufsammelradius, die Alternativrouten öffnen."
+              "detail": "Auf der Store-Seite sind keine Rumpfnamen oder Ranglisten dokumentiert."
             },
             {
               "label": "B",
-              "detail": "Schild oder Extraleben-Panzerung, die genau einen Fehler pro Run verzeiht."
+              "detail": "Beam-verbundene Positionierung ist die dokumentierte Kernentscheidung, kein Rumpfwert."
             },
             {
               "label": "C",
-              "detail": "Rein kosmetische Hüllen ohne Gameplay-Effekt auf den Run."
+              "detail": "Behauptungen über reine Kosmetik werden durch veröffentlichte Store-Informationen nicht gestützt."
             }
           ]
         },
         {
           "order": 4,
           "name": "Void Runners Waffen und Teile",
-          "description": "Dieses Modul listet Waffen, Upgrade-Teile und Spezialeffekte, die bei Bergungsraids verfügbar sind. Spieler können Item-Funktionen schnell vergleichen und nützliche Kombinationen entdecken.",
+          "description": "Dieses Modul listet auf, was die Store-Seite über Bergung und Kampf sagt: Beams, die alles zerschreddern, was sie überstreichen, Kreuzfeuer, Ausweichen und Wiederbeleben von Crew. Waffenwerte, Upgrade-Teile und Spezialeffekte sind nicht veröffentlicht, daher sind spezifische Item-Funktionen nicht dokumentiert.",
           "href": "/items/void-runners-gear",
           "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Bewegungsmodul",
-              "detail": "Stiefel, Thruster oder ein Dash-Kern — der erste Slot, der maximiert werden sollte."
+              "label": "Beam",
+              "detail": "Jedes Schiffspaar wird durch einen Beam verbunden, der alles zerschreddert, was er überstreicht."
             },
             {
-              "label": "Körperanzug",
-              "detail": "Rüstung, Widerstand und Regeneration, die deine Überlebensbasis bestimmen."
+              "label": "Kreuzfeuer",
+              "detail": "Ausbreiten und Schwingen des Netzes lässt Beams mehr Raum abdecken."
             },
             {
-              "label": "Primärwaffe",
-              "detail": "Anhaltender Schaden gegen Elite- und Schildziele."
+              "label": "Ausweichen",
+              "detail": "Ausweichen ist ein dokumentierter Teil der Kampfschleife."
             },
             {
-              "label": "Fähigkeitsmodul",
-              "detail": "Burst-Schaden und Crowd-Control, die an Cooldown-Erholung gekoppelt sind."
+              "label": "Wiederbelebungen",
+              "detail": "Crew kann aus Rettungskapseln wiederbelebt werden."
             },
             {
-              "label": "Utility-Slot",
-              "detail": "Relikt, Implantat oder Glücksbringer, das die Schwäche deines Kits ausgleicht."
+              "label": "Geborgenes Schiff",
+              "detail": "Die Store-Seite sagt, dass man ein geborgenes Schiff baut, listet aber keine einzelnen Teile oder deren Effekte auf."
             },
             {
-              "label": "Void-Scherben",
-              "detail": "Run-Währung für Upgrades, Rerolls, Kosmetik und Lagerplatz."
+              "label": "Bergung",
+              "detail": "Run-Währung oder spezifische Upgrade-Kosten sind auf der Store-Seite nicht veröffentlicht."
             }
           ]
         },
         {
           "order": 5,
-          "name": "Void Runners Boss-Guide",
-          "description": "Dieser Abschnitt erklärt die wichtigsten Guardian-Begegnungen, Angriffsmuster und empfohlene Strategien zum Besiegen starker Gegner. Er hilft Spielern, sich vor den späten Sektoren vorzubereiten.",
+          "name": "Void Runners Guardian-Guide",
+          "description": "Dieser Abschnitt erklärt Guardian-Begegnungen wie dokumentiert: Ein Run durchquert drei Sektoren und drei Guardians tief. Angriffsmuster, Bossnamen und empfohlene Strategien jenseits von Positionierung und Ausweichen sind nicht veröffentlicht.",
           "href": "/mechanics/void-runners-boss-fight",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Der Verfolger",
-              "detail": "Plane zwei Ausweichrouten, bevor du dich auf ein Schadensfenster einlässt."
+              "label": "The Chaser",
+              "detail": "Es sind keine offiziellen Bossnamen dokumentiert, daher ist dies ein Community-Label."
             },
             {
-              "label": "Der Zonenwächter",
-              "detail": "Verlasse den schrumpfenden sicheren Bereich früh, nicht erst wenn die Zone dich berührt."
+              "label": "The Zoner",
+              "detail": "Es sind keine offiziellen Bossnamen dokumentiert, daher ist dies ein Community-Label."
             },
             {
-              "label": "Beschwörer",
-              "detail": "Teile einen Spieler für Adds ein, damit das Hauptziel lesbar bleibt."
+              "label": "Summoner",
+              "detail": "Es sind keine offiziellen Bossnamen dokumentiert, daher ist dies ein Community-Label."
             },
             {
-              "label": "Der Spiegel",
-              "detail": "Weiche im Takt aus statt instinktiv, denn er reflektiert Burst-Spam."
+              "label": "The Mirror",
+              "detail": "Es sind keine offiziellen Bossnamen dokumentiert, daher ist dies ein Community-Label."
             },
             {
-              "label": "Zermürbung",
-              "detail": "Spare Cooldowns für Phasenwechsel auf, statt sie sofort zu verbrauchen."
+              "label": "Attrition",
+              "detail": "Positionierung und Cooldown-Disziplin sind die dokumentierten Grundlagen, nicht spezifische Phasenmuster."
             },
             {
-              "label": "Wutphase",
-              "detail": "Tausche in der letzten Phase sicher und vermeide lange Animationssperren."
+              "label": "Enrage",
+              "detail": "Spezifische Enrage-Phasen sind auf der Store-Seite nicht veröffentlicht."
             }
           ]
         },
         {
           "order": 6,
           "name": "Void Runners Co-op-Guide",
-          "description": "Dieses Modul konzentriert sich auf Multiplayer-Gameplay, Team-Positionierung, Wiederbelebungsmechaniken und Kommunikationsstrategien. Es hilft Gruppen, sich bei Online- oder lokalen Koop-Runs besser zu koordinieren.",
+          "description": "Dieses Modul konzentriert sich auf Multiplayer-Gameplay, Team-Positionierung, Wiederbelebungsmechaniken und Kommunikationsstrategien. Es hilft Gruppen, sich während Online- oder Couch-Co-op-Runs für ein bis vier Piloten besser zu koordinieren.",
           "href": "/guide/void-runners-strategy",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Anker",
-              "detail": "Halte die Aufmerksamkeit, kontrolliere die Boss-Ausrichtung und rufe jeden Phasenwechsel aus."
+              "label": "Anchor",
+              "detail": "Halte Raum, kontrolliere Anflugwege und rufe Beam-Winkel für die Crew aus."
             },
             {
-              "label": "Schaden",
-              "detail": "Halte konstante Uptime und brich zwischen den Phasen Adds oder Schilde."
+              "label": "Damage",
+              "detail": "Halte Beam-Verfügbarkeit aufrecht und verteile Kreuzfeuer auf vorrangige Ziele."
             },
             {
               "label": "Support",
-              "detail": "Halte den Trupp am Leben, reinige Debuffs und decke Rotationen ab."
+              "detail": "Decke Wiederbelebungen aus Rettungskapseln ab und halte das Beam-Netz intakt."
             },
             {
               "label": "Flex",
-              "detail": "Fülle Lücken, übernimm Mechaniken und rette gefallene Runner."
+              "detail": "Fülle Lücken in der Formation und rette gefallene Runner."
             },
             {
-              "label": "Kommunikation",
-              "detail": "Rufe Rotationen beim Tell aus, damit niemand erst nach dem Treffer reagiert."
+              "label": "Comms",
+              "detail": "Rufe Spread-and-Swing-Rotationen aus, damit niemand den Beam eines Crewmitglieds trifft."
             },
             {
-              "label": "Wiederbeleben",
-              "detail": "Halte einen Mobilitäts-Cooldown zurück, um einen gefallenen Mitspieler zu erreichen."
+              "label": "Revive",
+              "detail": "Halte ein Ausweichmanöver bereit, um einen gefallenen Teamkameraden oder eine Rettungskapsel zu erreichen."
             }
           ]
         },
         {
           "order": 7,
           "name": "Void Runners Release-Updates",
-          "description": "Dieser Abschnitt sammelt offizielle Ankündigungen, Entwicklungs-Updates, Release-Informationen und wichtige Änderungen. Spieler können die neuesten News zum Entwicklungsfortschritt verfolgen.",
+          "description": "Dieser Abschnitt sammelt, was offiziell über die Entwicklung und Veröffentlichung des Spiels dokumentiert ist. Die Steam-Seite markiert Void Runners als demnächst verfügbar mit einem Veröffentlichungsfenster im Q1 2027 und veröffentlicht keine bestätigten Patch-Notes.",
           "href": "/community/void-runners-release-date",
           "displayType": "card-list",
           "highlights": [
             {
-              "label": "Release",
-              "detail": "Verfolge das Launch-Fenster und die offiziellen Signale, die ein echtes Datum bestätigen."
+              "label": "Veröffentlichung",
+              "detail": "Die offiziellen Steam-Appdetails zeigen ein Veröffentlichungsfenster im Q1 2027 und einen Demnächst-verfügbar-Status."
             },
             {
               "label": "Demo",
-              "detail": "Prüfe, ob der Demo-Fortschritt übernommen wird, bevor du grinden gehst."
+              "detail": "Auf der Store-Seite ist keine Demo dokumentiert, daher werden Behauptungen über Demo-Übernahmen nicht gestützt."
             },
             {
               "label": "Patches",
-              "detail": "Lies Tooltips nach jedem Patch neu, denn Kosten und Tuning ändern sich."
+              "detail": "Für dieses unveröffentlichte Spiel sind keine bestätigten Patch-Notes veröffentlicht."
             },
             {
               "label": "Steam",
-              "detail": "Verfolge Store-Ankündigungen und angepinnte Threads für Patch Notes."
+              "detail": "Folge der offiziellen Steam-Store-Seite für Ankündigungen des Entwicklers."
             },
             {
               "label": "Trailer",
-              "detail": "Schau zuerst offizielle Kanäle und behandle Reuploads als unbestätigt."
+              "detail": "Hier werden keine exklusiven offiziellen Medien beansprucht; prüfe die Steam-Seite des Entwicklers."
             },
             {
               "label": "Wunschliste",
-              "detail": "Setze das Spiel auf die Wunschliste und aktiviere Entwickler-Benachrichtigungen für den Launch."
+              "detail": "Setze das Spiel auf Steam auf die Wunschliste und aktiviere Entwicklerbenachrichtigungen für den Starttag."
             }
           ]
         },
         {
           "order": 8,
           "name": "Void Runners Systemanforderungen",
-          "description": "Dieses Modul bietet Hardware-Anforderungen, unterstützte Plattformen, Controller-Infos und Performance-Details. Spieler können prüfen, ob ihr Setup das Spiel flüssig ausführt.",
+          "description": "Dieses Modul behandelt, was über Plattformen und Leistung dokumentiert ist. Die Store-Seite listet das Spiel für Steam auf PC, und Hardware-Anforderungen oder Controller-Spezifika sind dort nicht veröffentlicht.",
           "href": "/community/void-runners-steam",
           "displayType": "card-list",
           "highlights": [
             {
               "label": "Plattform",
-              "detail": "PC über Steam; unterstützte Betriebssysteme stehen auf der Store-Seite."
+              "detail": "Steam auf PC ist die dokumentierte Plattform; Betriebssysteme sind auf der Store-Seite aufgeführt."
             },
             {
               "label": "Bildrate",
-              "detail": "Begrenze die Bildrate, wenn sich die Bewegungsphysik an das Frame-Timing gekoppelt anfühlt."
+              "detail": "Es sind keine Bildratenziele oder Physik-Kopplungen veröffentlicht, also stimme nach Gefühl ab."
             },
             {
               "label": "Controller",
-              "detail": "Teste Dash- und Wallrun-Tasten vor einem Run, nicht mitten im Kollaps."
+              "detail": "Details zur Controller-Unterstützung sind auf der Store-Seite nicht dokumentiert."
             },
             {
               "label": "Netzwerk",
-              "detail": "Prüfe Ping und Tickrate, wenn sich Eingaben zwischen Sessions inkonsistent anfühlen."
+              "detail": "Online-Spiel für ein bis vier Piloten ist dokumentiert, aber Netzwerk-Spezifika nicht."
             },
             {
               "label": "Speicher",
-              "detail": "Halte Speicherplatz für Patches frei, da das Spiel häufig aktualisiert wird."
+              "detail": "Speicheranforderungen sind auf der Store-Seite nicht veröffentlicht."
             },
             {
               "label": "Anzeige",
-              "detail": "Weite Sichtlinien zählen, daher ist eine klare, stabile Bildrate wichtiger als maximale Einstellungen."
+              "detail": "Weite Sichtlinien helfen, Beams zu verfolgen, daher bevorzuge eine klare, stabile Bildrate."
             }
           ]
         }
       ]
     },
     "faq": {
-      "title": "Häufig gestellte Fragen",
+      "title": "Häufig Gestellte Fragen",
       "description": "Schnelle Antworten auf die häufigsten Fragen zu Void Runners.",
       "items": [
         {
           "question": "Was ist Void Runners?",
-          "answer": "Void Runners ist ein schneller, momentumgetriebener Sci-Fi-Runner auf Steam. Du sprintest, dashst, slidest und wallrunst durch einen kollabierenden Raumabschnitt, sammelst Scherben und erreichst einen Extraktionspunkt, bevor das Void die Route hinter dir schließt."
+          "answer": "Void Runners ist ein Twin-Stick-Roguelike für ein bis vier Spieler auf einer Couch oder online, entwickelt und veröffentlicht von Aaron Reisman. Jedes Schiffspaar wird durch einen Beam verbunden, der alles zerschreddert, was er überstreicht, sodass die Position relativ zu deiner Crew die Kernentscheidung ist."
         },
         {
-          "question": "Kann man Void Runners solo oder im Koop spielen?",
-          "answer": "Beides. Du kannst Void Runners solo oder im Squad mit Freunden spielen, wo klare Rollen wie Anker, Schaden, Support und Flex das Team durch längere Begegnungen bringen."
+          "question": "Ist Void Runners solo oder im Co-op spielbar?",
+          "answer": "Es ist für ein bis vier Spieler auf einer Couch oder online dokumentiert. Wo du dich relativ zu deiner Crew positionierst, ist wegen der verbindenden Beams wichtig."
         },
         {
           "question": "Wie funktionieren Void Runners Codes?",
-          "answer": "Void Runners Codes sind kurze Zeichenketten, die im Spiel gegen kostenlose Scherben, Trails und Kosmetik eingelöst werden. Sie sind groß-/kleinschreibungssensitiv und laufen meist schnell ab, also löse einen neuen Void Runners Code sofort ein."
+          "answer": "Auf der Store-Seite ist kein Codesystem veröffentlicht. Behandle jede Behauptung über aktive Codes als unbestätigt, bis der Entwickler eines ankündigt."
         },
         {
-          "question": "Was sollte ich in Void Runners zuerst verbessern?",
-          "answer": "Priorisiere Bewegung: zuerst Dash-Abklingzeit-Reduktion und Momentum-Erhalt, dann Aufsammelradius und ein Schild oder Extraleben. Punktemultiplikatoren und Kosmetik kommen zuletzt."
+          "question": "Was sollte ich zuerst in Void Runners lernen?",
+          "answer": "Beginne mit der Beam-Positionierung: Ausbreiten und Schwingen des Netzes, damit deine Beams das überstreichen, was du willst, ohne ein Crewmitglied zu treffen, plus Ausweichen und Bewusstsein für Wiederbelebungen."
         },
         {
-          "question": "Gibt es in Void Runners Bosskämpfe?",
-          "answer": "Ja. Void Runners Guardians kämpfen in Arenen, die kollabieren, wachsen und driften, daher zählen Positionierung und Cooldown-Disziplin mehr als reiner Schaden."
+          "question": "Hat Void Runners Bosskämpfe?",
+          "answer": "Ja. Ein Run durchquert drei Sektoren mit vier Sprüngen und endet bei einem Guardian. Spezifische Bossnamen und Angriffsmuster sind nicht veröffentlicht."
         },
         {
-          "question": "Wie farme ich Void Runners Scherben schnell?",
-          "answer": "Kombiniere Quellen in einer Session: volle Stage-Clears, Boss- und Elite-Kills, tägliche und wöchentliche Quests sowie zeitlich begrenzte Event-Boni. Sichere den Run, statt riskante Scherben zu jagen."
+          "question": "Wie mache ich Fortschritt in Void Runners?",
+          "answer": "Die Store-Seite sagt, dass man ein geborgenes Schiff baut und drei Sektoren und drei Guardians tief vordringt. Spezifische Währungsnamen und Upgrade-Kosten sind nicht dokumentiert."
         }
       ]
     },
     "finalCta": {
       "title": "Bereit, Void Runners zu meistern?",
-      "description": "Von deinem ersten Bergungsrun bis zu Endgame-Guardian-Kämpfen deckt unser Community-Wiki dich mit kostenlosen, aktuellen Guides ab.",
-      "primary": "Einsteigerguide lesen",
-      "secondary": "Auf Steam spielen"
+      "description": "Von deinem ersten Bergungsrun bis zu den finalen Guardian-Kämpfen deckt unser Community-Wiki alles ab mit spielergeschriebenen Guides, die auf Dokumentiertem basieren.",
+      "primary": "Einsteiger-Guide Lesen",
+      "secondary": "Auf Steam Spielen"
     }
   },
   "guide": {
     "overviewTitle": "Void Runners Guides",
-    "overviewDescription": "Schritt-für-Schritt Void Runners Guides zu Bewegung, Builds und Überleben — vom ersten Run bis zur fortgeschrittenen Routenbeherrschung."
+    "overviewDescription": "Schritt-für-Schritt Void Runners Guides zu Beam-Taktiken, Co-op-Bergungsraids und Crew-Überleben, von deinem ersten Run bis zur fortgeschrittenen Routenbeherrschung."
   },
   "mechanics": {
     "overviewTitle": "Void Runners Mechaniken",
-    "overviewDescription": "Wie sich Void Runners wirklich spielt: Momentum, Phasen-Dashes, Boost-Vektoren, Racing Lines, Kampffenster und Guardian-Bosskämpfe."
+    "overviewDescription": "Wie Void Runners tatsächlich gespielt wird: Beams, die Schiffspaare verbinden, Spread-and-Swing-Positionierung, Kreuzfeuer, Ausweichen, Wiederbelebungen und Guardian-Kämpfe über drei Sektoren mit vier Sprüngen."
   },
   "codes": {
-    "overviewTitle": "Void Runners Codes",
-    "overviewDescription": "Wie Void Runners Codes funktionieren, wo man sie findet, wie man sie im Spiel einlöst und was zu tun ist, wenn ein Code fehlschlägt."
+    "overviewTitle": "Void Runners Codes (Nicht Dokumentiert)",
+    "overviewDescription": "Die Store-Seite veröffentlicht kein Codesystem, daher verfolgt dieser Abschnitt, was nicht dokumentiert ist und wie man unbestätigte Code-Behauptungen vermeidet."
   },
   "items": {
-    "overviewTitle": "Void Runners Items & Ausrüstung",
-    "overviewDescription": "Anzüge, Ausrüstung, Scherben, Karten und Sammelobjekte: was jedes Item bewirkt, wie man es verbessert und welche Drops sich lohnen."
+    "overviewTitle": "Void Runners Schiff & Bergung",
+    "overviewDescription": "Was über den Aufbau eines geborgenen Schiffs, Bergungsaufnahmen, Kreuzfeuer und Beams dokumentiert ist. Spezifische Teile, Werte und Upgrade-Kosten sind nicht veröffentlicht."
   },
   "characters": {
-    "overviewTitle": "Void Runners Charaktere",
-    "overviewDescription": "Profile zu Void Runners Charakteren wie Kiana, Ravnivori und Wraith mit ihren Fähigkeiten, Rollen und Build-Richtungen."
+    "overviewTitle": "Void Runners Piloten",
+    "overviewDescription": "Auf der Store-Seite sind keine Charakternamen veröffentlicht. Dieser Abschnitt behandelt die dokumentierten Pilotenrollen für eine Crew von ein bis vier, wie Anchor, Damage, Support und Flex."
   },
   "maps": {
-    "overviewTitle": "Void Runners Karten",
-    "overviewDescription": "Routenpläne und Überlebenstaktiken für Void Runners Karten, darunter Flashpoint, Lighthouse, Deep Space, Warp und Worlds Collide."
+    "overviewTitle": "Void Runners Sektoren",
+    "overviewDescription": "Routenplanung über drei Sektoren mit vier Sprüngen, mit Gefahrennotizen, Guardian-Begegnungen und Navigation für die dokumentierte Raid-Struktur."
   },
   "community": {
     "overviewTitle": "Void Runners Community",
-    "overviewDescription": "Release-Datum-Tracking, Steam-Reviews, Reddit-Tipps, Trailer, Demo-Details und die Musik-Community rund um Void Runners."
+    "overviewDescription": "Release-Fenster-Tracking, Steam-Store-Status, Entwickler-Updates, Trailer-Kontext und Community-Tipps für Void Runners."
   },
   "shared": {
     "wikiNavigation": "Wiki-Navigation",
-    "activeCodes": "Aktive Codes",
+    "activeCodes": "Codes (Nicht Dokumentiert)",
     "updated": "Aktualisiert",
-    "viewAllCodes": "Alle Codes ansehen",
-    "playOnRoblox": "Auf Roblox spielen",
+    "viewAllCodes": "Code-Status anzeigen",
+    "playOnRoblox": "Auf Steam Spielen",
     "inThisSection": "In diesem Abschnitt",
     "tableOfContents": "Inhaltsverzeichnis",
     "nextSteps": "Nächste Schritte",
@@ -510,26 +510,26 @@
     "relatedGuides": "Verwandte Guides",
     "readMore": "Mehr lesen",
     "officialMedia": "Offizielle Medien",
-    "home": "Start",
+    "home": "Startseite",
     "noGuidesAvailable": "Noch keine Guides verfügbar. Schau bald wieder vorbei!"
   },
   "footer": {
     "aboutTitle": "Void Runners Wiki",
-    "about": "Das Void Runners Wiki ist ein unabhängiger, von Fans erstellter Guide-Hub zu Schiffen, Builds, Bergungsrouten, Guardians und wichtigem Spielwissen für neue und erfahrene Spieler.",
+    "about": "Void Runners Wiki ist ein unabhängiger, von Fans erstellter Guide-Hub zu Beam-Taktiken, Co-op-Bergungsraids, Guardians und essenziellem Spielwissen für neue und erfahrene Spieler gleichermaßen.",
     "quickLinks": "Schnelllinks",
     "guides": "Guides",
     "legal": "Rechtliches",
     "copyright": "2026 Void Runners Wiki. Nicht mit Aaron Reisman oder Steam verbunden.",
-    "description": "Koop-Sci-Fi-Void-Runner auf Steam. Solo- oder Vier-Spieler-Bergungsruns durch den Tiefraum.",
-    "playGame": "Auf Steam spielen",
+    "description": "Co-op-Twin-Stick-Roguelike auf Steam. Ein bis vier Spieler verbinden Schiffe mit Beams und bergen drei Sektoren tief.",
+    "playGame": "Auf Steam Spielen",
     "officialDiscord": "Steam-Community",
     "officialYoutube": "Gameplay-Trailer",
     "vvBuilder": "Void Runners Builder (Schiffsplaner)",
-    "beginnerGuide": "Einsteigerguide",
-    "raceGuides": "Charakter-Guides",
-    "bossGuides": "Boss-Guides",
-    "buildGuide": "Build-Guide",
-    "privacyPolicy": "Datenschutzerklärung",
+    "beginnerGuide": "Einsteiger-Guide",
+    "raceGuides": "Pilotenrollen-Guides",
+    "bossGuides": "Guardian-Guides",
+    "buildGuide": "Bergungs-Build-Guide",
+    "privacyPolicy": "Datenschutzrichtlinie",
     "termsOfService": "Nutzungsbedingungen"
   }
 }

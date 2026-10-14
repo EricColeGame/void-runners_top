@@ -1,126 +1,88 @@
 export const metadata = {
-  title: "Void Runners Gameplay Guide: Movement, Builds, and Survival Tips",
-  description: "A complete void runners gameplay guide covering movement tech, upgrade priorities, run phases, and the mistakes that end runs early.",
+  title: "Void Runners: Co-op Beam Tactics in a Twin-Stick Roguelike",
+  description: "Void Runners is an unreleased co-op twin-stick roguelike where beams between ships shred enemies. Here's what the Steam page confirms.",
   category: "guide",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Void Runners rewards speed and punishes panic. The instant a run begins, the arena starts collapsing behind you, and every second spent second-guessing a jump is a second the void spends catching up. That is why a solid void runners gameplay guide matters more here than in a slower, more forgiving game — your decisions are compressed into fractions of a second, and only good habits survive that kind of pressure.
+"Void Runners" is an upcoming co-op twin-stick roguelike from developer and publisher Aaron Reisman, listed on Steam as app 5334520 and marked "coming soon" with a Q1 2027 release window. Because the game has not launched, everything useful we can say right now comes from one place: the official [Steam store page](https://store.steampowered.com/app/5334520/). That page describes a specific and unusual combat idea — ships tethered together by beams that shred whatever they sweep — and that idea is the whole reason the game is worth watching.
 
-This guide breaks down the movement tech, upgrade priorities, and stage-by-stage planning that separate a two-minute wipe from a clean, high-scoring extraction. It is written for players who already know the basic controls and want to stop dying to the same three mistakes.
+This article separates what the developer actually advertises from what the community has pieced together from trailers, and from the many details that simply are not public yet. If you are trying to decide whether Void Runners belongs on your wishlist, the goal here is to help you read the available evidence accurately rather than fill in gaps with guesswork.
 
-One note before we start: exact numbers shift between patches and platforms, so treat every tier and timing below as a priority order rather than a fixed value. The logic holds even when the tuning changes.
+## What Void Runners Actually Is
 
-## What Makes Void Runners Different From a Standard Endless Runner
+According to the official Steam listing, Void Runners is a twin-stick roguelike for one to four players, playable either on a single couch (local co-op) or online. It is a salvage-raid game: you and your crew fly through hostile space, and each pair of ships is joined by a beam that destroys anything it sweeps across.
 
-Most endless runners hand you a fixed track and a fixed speed. Void Runners leans the other way: the path ahead is generated, the floor behind you dissolves, and your speed is simultaneously your best weapon and the thing most likely to kill you.
+That single mechanic reshapes everything else. In a normal twin-stick shooter, your position matters because of what you can shoot. In Void Runners, your position matters because of what your beam crosses — and the beam is a line between two moving players, not a barrel attached to your own hull. The store description explicitly frames the appeal as "spreading out and swinging the web," creating crossfire, dodging, and reviving crew from escape pods, all while building up a salvaged ship run by run.
 
-The core loop is simple. You sprint, you chain jumps and dashes, you collect shards, and you reach an extraction point before the collapse wave swallows the route. What makes it interesting is the tension between greed and safety. Shards are usually placed just slightly off the safe line, so every pickup becomes a small bet against your own reflexes.
+A run is described as crossing three sectors, each four jumps deep, ending at a guardian. That is the structure the developer has committed to publicly. Because the game is unreleased, no ship parts, weapon stats, guardian names, or sector layouts have been published, and no code system has been mentioned at all — anything claiming otherwise is not backed by the official page.
 
-| System | How it works | Why it matters |
-|---|---|---|
-| Collapse wave | The void closes in from behind at a steady rate | Forces forward motion and punishes backtracking |
-| Shard pickups | Currency scattered off the main line | Creates constant risk-versus-reward decisions |
-| Movement chaining | Jumps, dashes, and slides link into one flow | Clean inputs convert into bonus speed |
-| Run-based perks | Upgrades reset when a run ends | Encourages experimentation over grinding |
-| Extraction zones | Safe exits appear at set intervals | Lets you bank progress or push your luck |
+### Identity check: which game you are actually looking at
 
-## Movement Fundamentals: The Tech That Wins Runs
+Searches for "Void Runners" can surface unrelated titles. Void Runners is not Solar Ash, not Void Crew, not Void Stranger, and not Starfinder. If a page describes a first-person crew game, a puzzle-platformer, or a tabletop adaptation, you are on the wrong page. The verified Steam app for this game is 5334520, credited to Aaron Reisman.
 
-In Void Runners, momentum is a resource. You do not "have" speed so much as you protect it. Every hard landing, sharp turn, or panic input bleeds velocity, and once you lose the flow, the collapse wave closes the gap fast.
+## How the Beam Mechanic Changes Co-op Play
 
-Start with the simple tech and only add complexity once it feels automatic. Players who try to learn everything at once usually end up with sloppy inputs that fail under pressure.
+The most practical thing a new player can understand before launch is the geometry problem the game creates. With one player, a beam is simply a sweeping weapon. With two or more, the beam becomes a relationship.
 
-- **Late jumps.** Press jump at the last possible moment before a ledge. The extra airtime keeps your forward speed intact instead of stalling you.
-- **Dash canceling.** Cut a dash short rather than riding it to the end. You keep most of the distance boost while staying in control.
-- **Wall dash resets.** A quick tap against a wall can refresh your dash. This is the single biggest tech for vertical rooms.
-- **Slope slide conversion.** Slide into a downhill section to turn fall speed into forward speed instead of a stumble.
-- **Small air steering.** Nudge, do not yank. Big mid-air corrections kill momentum.
+| Players | Beam pairs | Practical consequence |
+| --- | --- | --- |
+| 1 | 1 (a self-linked sweep) | Positioning is a solo aiming problem |
+| 2 | 1 | Every enemy you kill is a shared decision about spacing |
+| 3 | 3 | Cutting one beam off to dodge weakens two others |
+| 4 | 6 | The web is dense but fragile; one bad drift tangles everyone |
 
-| Tech | Difficulty | Payoff | When to practice |
-|---|---|---|---|
-| Late jumps | Low | High | Immediately — every run depends on it |
-| Dash canceling | Low | Medium | Once jumps feel natural |
-| Wall dash reset | Medium | High | Open vertical rooms and shafts |
-| Slope slide conversion | Medium | Medium | Downhill and ramp-heavy sections |
-| Precision air steering | High | Very high | After the basics are muscle memory |
+The table above is reasoning from the advertised "each pair of ships is joined by a beam," not from a published rules document. The counts follow from pairing arithmetic, and they illustrate why more players is not automatically easier. A four-player crew has six simultaneous cutting lines going for it and six ways to accidentally pull a teammate out of position.
 
-## Upgrade and Loadout Priorities
+This is also why "spreading out and swinging the web" is the phrase to internalize. Spreading out lengthens and angles each beam through more of the screen. Swinging means rotating that line by flying, which turns movement itself into the attack. In practice, the interesting failure state in a game like this is not running out of bullets — it is two players drifting so that their beam points at empty space while a third player gets surrounded.
 
-Upgrade choices decide more runs than raw mechanical skill does, especially in the early hours. The guiding principle is simple: take anything that gives you another chance to correct a mistake before you take anything that increases your score.
+Because the game is not out, nobody outside the developer has played a finished build, so any claim about optimal formations, damage numbers, or which beam angles are strongest is speculative. Treat third-party guide content promising specific combos as observations about trailers, not as developer documentation, unless the official page says so.
 
-Cooldown reduction and momentum retention sit at the top because they make every other mechanic more forgiving. Damage or score perks only pay off if you are still alive to use them, which is why they rank lower despite looking flashy.
+## Salvage Runs, Escape Pods, and the Run Structure
 
-| Tier | Upgrade type | Why it ranks here |
-|---|---|---|
-| S | Dash cooldown reduction | More dashes means more recovery options |
-| S | Momentum retention | Preserves speed through turns and landings |
-| A | Extra mid-air jump | Opens alternate routes and saves bad jumps |
-| A | Pickup radius | Reduces risky detours toward shards |
-| B | Shield or extra life | Buys exactly one mistake per run |
-| B | Score multipliers | Strong, but only if you finish |
-| C | Cosmetic unlocks | No gameplay impact whatsoever |
+The advertised loop is a salvage raid that ends with a guardian, repeated across three sectors with four jumps each. Two details from the store description stand out for planning purposes:
 
-Community reports consistently show that the players climbing the leaderboards are not the ones with the highest-damage builds — they are the ones who never stop moving. If you are stuck choosing between two perks and one of them touches movement, take the movement perk.
+- **Escape pods and reviving crew.** Death is not necessarily the end of a player's participation. The page mentions reviving crew from escape pods, which suggests that a downed pilot leaves something to retrieve rather than simply spectating. How revives are triggered, timed, or limited is not documented.
+- **Building a salvaged ship.** The description refers to building a salvaged ship, implying run-to-run progression from what you collect. No parts list, upgrade costs, or unlock currency has been published.
 
-## A Stage-by-Stage Plan for Every Run
+If you want to verify any of this closer to launch, the reliable method is the same one used here: open the [official Steam page](https://store.steampowered.com/app/5334520/) and read the description and any developer posts, rather than trusting aggregator summaries. When the game ships, the in-game menus — run summary screens, the salvage/build interface, and the co-op lobby — will be the authoritative source for anything the store page does not state.
 
-Every void runners run follows a similar emotional arc: calm opening, tightening middle, frantic finish. Planning for those phases in advance keeps you from improvising at the worst possible moment.
+## Couch or Online: What Is Confirmed About Multiplayer
 
-| Phase | What it feels like | Your goal | What to avoid |
-|---|---|---|---|
-| Opening | Wide lanes, forgiving gaps | Build speed and read the layout | Chasing every shard |
-| Mid-run | Tight turns, moving hazards | Lock in a safe line and keep one dash banked | Panic-dashing into walls |
-| Pressure phase | Collapse accelerates | Trade shards for survival | Greedy detours off the main path |
-| Final stretch | Extraction is visible | Spend everything and take the clean line | Improvised hero plays |
+Confirmed: one to four players, local couch co-op or online, per the store page. Not confirmed: crossplay between platforms, whether local and online players can mix in the same session, matchmaking versus friend-only lobbies, or any voice chat features. Those are common questions for a co-op roguelike, but the Steam listing does not answer them.
 
-A useful habit is the "one-dash rule." Never enter an unknown section with zero dashes available. One banked dash converts a death into a sloppy but survivable mistake, and over a long session that single rule is worth more than any upgrade tier.
+The practical takeaway is to plan for a crew you can coordinate with verbally. A game built on rotating beams between players rewards called-out positioning far more than silent play, which makes the couch mode described on the page a natural fit. Whether online play supports the same immediacy depends on features that have not been detailed.
 
-If you are pushing for a personal best, do it in the opening and mid-run phases where the geometry is readable. Do not gamble on unfamiliar mechanics during the pressure phase — that is where runs end.
+## What Is Not Public Yet
 
-## Common Mistakes That End Runs Early
+To be direct about the limits of available information, none of the following has been published for Void Runners:
 
-Most failed runs are not caused by impossible level design. They are caused by a small set of repeatable errors that show up again and again in player experience reports and community discussions.
+- Ship parts, weapon types, or any statistics
+- Guardian names or boss mechanics
+- Sector layouts or jump-map structure beyond "three sectors, four jumps"
+- Unlock costs, currencies, or progression systems
+- A code system of any kind — none is mentioned
+- An exact release date beyond "Q1 2027"
+- Patch notes, since the game is unreleased
 
-| Mistake | Why it happens | The fix |
-|---|---|---|
-| Hoarding dashes | Fear of wasting the cooldown | Keep one in reserve and spend the rest |
-| Over-steering | Treating it like a racing game | Tap lightly and let momentum do the work |
-| Ignoring audio cues | Focusing only on visuals | Learn the collapse sound and trust it |
-| Greedy shard routes | Score chasing | Only detour when the line is clearly safe |
-| Instant restarts | Tilt after a bad death | Pause ten seconds and name the mistake |
-
-Two more subtle ones deserve a mention. First, many players jump too early and then adjust mid-air, which bleeds speed and puts them behind the collapse wave. Second, players often treat a new area as a puzzle to solve slowly when it is actually a rhythm to feel — the longer you hesitate, the less information you get about the route ahead.
-
-Recording a few of your own runs and watching them back at normal speed is one of the fastest ways to spot these patterns. What feels like bad luck on the run usually looks like a predictable input error on replay.
-
-## Co-op, Leaderboards, and Community Wisdom
-
-Void Runners is at its best when you treat each run as data. Whether you are playing solo or in co-op, the goal is the same: find the line that keeps your speed high and your dash available.
-
-A few habits that consistently show up in community reports:
-
-- **Watch the leaderboard replays.** Higher-ranked runs usually reveal shortcuts that are safer than they look.
-- **Learn one new tech per session.** Adding two at once usually means learning neither.
-- **Set a secondary goal.** "Reach the second extraction without dashing" teaches discipline better than raw score chasing.
-- **Check the platform store page** for patch notes before a big push, since tuning changes can shift which perks are strongest. You can browse [Void Runners listings on the Steam store](https://store.steampowered.com/search/?term=void+runners) to see what is currently available.
-
-Co-op adds a coordination layer. Splitting shard routes between two players is usually faster than both players chasing the same cluster, and having one runner hang back slightly makes revives far easier when someone clips a hazard.
+Any article, video, or database listing those specifics is either guessing or describing a different game. The honest approach is to wishlist the game, watch the official page for updates, and treat the Q1 2027 window as the developer's current stated target rather than a guarantee.
 
 ## FAQ
 
-**Is a void runners gameplay guide really necessary, or can I just learn by playing?**
+**Is Void Runners out yet?**
+No. The Steam page marks it "coming soon" with a Q1 2027 release window, as of this writing.
 
-You can learn by playing, but you will plateau fast. A guide shortens the trial-and-error phase by showing you which mechanics actually matter — mainly momentum retention, dash management, and route reading.
+**How many players does it support?**
+One to four, on one couch or online, according to the official description.
 
-**What is the single most important skill to practice first?**
+**Is Void Runners the same as Void Crew or Void Stranger?**
+No. It is a separate game by Aaron Reisman, Steam app 5334520. Those other titles share a word, not an identity.
 
-Late jumps. Everything else in Void Runners builds on the ability to keep forward speed through a gap. Once that feels automatic, dash canceling and wall resets become much easier to learn.
+**How does the beam between ships work exactly?**
+The store page says each pair of ships is joined by a beam that shreds anything it sweeps. Damage values, beam length, and whether beams can be toggled are not documented.
 
-**Should I always go for every shard?**
+**Where should I check for accurate updates?**
+The [official Steam store page](https://store.steampowered.com/app/5334520/) and any developer announcements linked from it. Third-party guides are working from the same public description you are.
 
-No. Shards are worth grabbing when they sit near your natural line. If a pickup requires a sharp detour during the pressure phase, skip it — surviving to the next extraction is almost always worth more.
-
-**How do I stop dying in the final stretch?**
-
-Stop improvising. Pick a finish route during the mid-run phase, bank one dash for it, and execute the same plan every time. Consistency beats creativity when the collapse wave is already on your heels.
+**Can I guarantee a good run by following beam advice?**
+No. The game is unreleased and no one has published verified tactics. Treat positioning theory here as reasoning from the advertised mechanic, not as a strategy that guarantees success.

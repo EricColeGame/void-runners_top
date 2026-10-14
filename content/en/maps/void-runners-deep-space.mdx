@@ -1,127 +1,72 @@
 export const metadata = {
-  title: "Void Runners Deep Space Maps: Route Planning, Hazards, and Speed Tactics",
-  description: "Master void runners deep space maps with route planning tips, hazard breakdowns, layout tables, and navigation tactics that cut wasted runs.",
+  title: "Void Runners Co-op: How Beams, Sectors and Salvage Work",
+  description: "Void Runners is a 1–4 player twin-stick roguelike where linked ships cut with sweeping beams. Here's what's confirmed and what isn't yet.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## What Void Runners Deep Space Maps Actually Are
+Void Runners is not out yet. That single fact shapes everything useful anyone can write about it. According to the official [Steam listing for app 5334520](https://store.steampowered.com/app/5334520/), the game is developed and published by Aaron Reisman, is marked "coming soon," and carries a Q1 2027 release window. If you are searching for Void Runners co-op details because you want to plan a couch session with three friends, the honest answer is that the core loop is described, but the numbers behind it are not public. This article separates what the store page actually promises from what players will have to discover themselves after launch.
 
-Void runners deep space maps are built around absence. Where a traditional level uses walls, doors, and corridors to steer you, a void map uses emptiness, distance, and a handful of landmarks scattered across it. What looks like an open field is really a stack of narrow decisions: which landmark you commit to, when you commit, and how much of your boost budget you burn getting there.
+## What the store page actually advertises
 
-That design philosophy changes how you should read a map. In a corridor, the level tells you where to go. In the void, the map only hints — and the hints are easy to misread for the first dozen runs.
+Steam's appdetails data (retrieved October 14, 2026) gives a compact but specific picture. Void Runners is a twin-stick roguelike for one to four pilots, playable on one couch or online. The defining mechanic is that each pair of ships is joined by a beam, and that beam shreds whatever it sweeps. That means your position relative to your crewmates is not cosmetic. It is the decision the game is built around.
 
-Most players describe their early attempts the same way: they fly what feels like a straight line, arrive somewhere unexpected, and blame their controls. Community reports consistently point to the same real problem. In void runners deep space routes, the line was wrong before the run ever started.
+The description also mentions spreading out and swinging the web, crossfire, dodging, and reviving crew from escape pods. Structurally, a run crosses three sectors of four jumps each, ending at a guardian, and the store text refers to three guardians in total. Between fights, you build a salvaged ship.
 
-- **Sparse geometry.** A few structures carry the entire route; everything else is scenery.
-- **Long sightlines.** You can see very far, but distance flattens depth and hides approach angles.
-- **Compounding drift.** Small steering errors grow across long empty stretches.
-- **Memory-driven navigation.** Success depends on remembering the map, not reacting to it.
+That is the full extent of the verified feature set. Notably absent from the official page: ship parts, weapon stats, guardian names, sector layouts, unlock costs, and any kind of code system. If a search result promises you a Void Runners tier list or a redeem code, that content is not grounded in anything the developer has published.
 
-### Map Archetypes at a Glance
+## Why the beam changes how you play
 
-| Archetype | Signature Feature | What It Rewards | Main Risk |
-|---|---|---|---|
-| Open Void Sprint | Minimal landmarks, huge gaps | Clean lines and throttle control | Overcommitting to an unreachable anchor |
-| Debris Lattice | Dense field of small obstacles | Weaving and micro-adjustments | Chip damage from constant clipping |
-| Nebula Corridor | Reduced visibility, soft boundaries | Patience and instrument reading | Losing the line completely in fog |
-| Relay Chain | Landmarks in a visible sequence | Chaining boosts between beacons | Missing one relay and losing the chain |
-| Collapsing Sector | Geometry that changes mid-run | Improvisation and short plans | Planning a route that stops existing |
+Most twin-stick co-op games treat other players as independent damage sources who happen to share a screen. Void Runners inverts that. Because the beam only cuts where it sweeps, your damage output is a function of geometry between two ships, not of a single player's aim. Three practical consequences follow from the store description alone:
 
-No single archetype is "better." They test different skills, and the best runners rotate through all of them so that no single map style becomes a weakness.
+- Flying apart extends the beam's reach but thins your coverage and makes revives harder.
+- Flying together concentrates damage but forfeits the "swinging the web" crossfire the page describes.
+- Dodging is a shared problem. If one pilot breaks formation to avoid fire, the beam moves with them, and the other pilot's safe spot may stop being safe.
 
-## Reading the Map: Layout Vocabulary Every Runner Should Know
+None of this is speculation about specific stats. It is the logical read of "where you fly relative to your crew is the core decision." Players who have watched the trailer or followed community discussion tend to describe the same tension, but those are third-party observations, not developer documentation, and they should be treated as impressions rather than confirmed mechanics.
 
-Void maps speak in landmarks. Learn the vocabulary and the map stops looking random.
+## Run structure: three sectors, four jumps, one guardian
 
-| Landmark | What It Signals | Navigation Value |
+The advertised run length is short and legible, which matters for a couch game. Three sectors, four jumps per sector, and a guardian at the end of the chain gives a session a clear shape without requiring a wiki open on a second screen.
+
+| Element | What's documented | What isn't |
 |---|---|---|
-| Relay beacon | A confirmed waypoint, usually lit | High — anchor every plan to these |
-| Drift anchor | A large mass that bends your path | Medium — a slingshot if you respect it, a wall if you don't |
-| Debris shelf | A flat band of small obstacles | Medium — useful cover for a line change |
-| Dark channel | A visually empty lane between structures | High — often the fastest line, rarely the safest |
-| Fringe marker | An edge indicator for the playable area | Low as a target, high as a boundary |
+| Sectors | Three | Names, themes, hazards |
+| Jumps per sector | Four | Node types, branching, map layout |
+| Guardians | Three total | Names, patterns, health, rewards |
+| Ship building | "Building a salvaged ship" | Parts, slots, costs, synergies |
+| Crew size | 1–4, couch or online | Drop-in/drop-out rules, matchmaking |
 
-Landmarks do two jobs at once. They tell you where you are, and they tell you where you are *pointed*. Newer pilots tend to memorize positions only — "the beacon is over there" — and then arrive at the right place facing the wrong direction. Player experience suggests that memorizing your **heading** at each anchor matters more than memorizing the anchor itself.
+Because the store page publishes none of the right-hand column, any guide claiming to list guardian attack patterns or optimal salvage builds would be inventing them. The reliable way to fill that table is to play the game after release or check the official page for updates, since the developer may expand the description closer to launch.
 
-A quick habit that helps: as you pass each landmark, name the next one out loud or in your head. It sounds trivial, but it forces your attention forward instead of backward.
+## Revives, escape pods, and the cost of spreading out
 
-### Sightlines Are Not the Same as Information
+Reviving crew from escape pods is the one recovery mechanic named in the official description. What it implies is a risk-reward loop: dying does not necessarily remove a player from the run, but it does remove their ship from the beam web, which weakens everyone still flying. A crew that spreads out for coverage is also a crew that may struggle to reach a downed pilot quickly.
 
-Void maps offer enormous visibility and very little usable information. Two structures that look adjacent can be separated by a distance you cannot cross on your current budget. Before you commit to a long glide, ask whether you have actually seen the gap between those two points, or whether you are assuming it exists.
+The store page does not state how long a pod persists, whether revives are limited, or whether a solo pilot gets any equivalent safety net. Those details are simply not public. When the game ships, the fastest way to verify them is to deliberately lose a ship in the first sector and observe the timer, then check whether the behavior changes in later sectors.
 
-## Hazard Zones That Reshape Your Route
+## Is Void Runners the game you're thinking of?
 
-Hazards are where a clean practice line usually falls apart. They rarely punish you directly — they punish the assumptions you built the line on.
+The name collides with several unrelated titles. It is not Solar Ash, not Void Crew, not Void Stranger, and not Starfinder. Those are separate games with separate developers. The verified identity here is narrow: Aaron Reisman, Steam app 5334520, twin-stick roguelike, one to four players, beams linking ships, Q1 2027, unreleased.
 
-| Hazard | Effect on Movement | Route Response |
-|---|---|---|
-| Gravity shear | Pulls you off your line without warning | Approach at an angle, never head-on |
-| Ion squall | Adds random lateral push | Shorten the segment and cross quickly |
-| Debris drift | Obstacles migrate slowly across a lane | Time your crossing instead of memorizing it |
-| Sensor dead zone | Removes markers and UI hints | Fly on memory and fixed reference points |
-| Collapse timer | Geometry disappears on a schedule | Plan your exit before you enter |
-
-The important insight is that hazards change *timing*, not just danger. A lane that takes a comfortable glide when it is clear may require a hard burn to cross safely when debris has drifted into it. That is why serious route planning treats hazards as the last variable added, never the first.
-
-If you want to go deeper on how geometry quietly steers players, the broader [principles of level design](https://en.wikipedia.org/wiki/Level_design) are a useful companion read — the same ideas show up in void maps, just with the walls removed.
-
-## Route Planning, Step by Step
-
-A repeatable route beats a brilliant improvisation almost every time. Here is a sequence that works for nearly any void map.
-
-| Step | Action | Why It Matters |
-|---|---|---|
-| 1 | Scout with no goal | You cannot plan a line you have never seen |
-| 2 | Pick three or four anchors | Fewer decisions means fewer mistakes |
-| 3 | Segment the route | Short legs are easier to diagnose and fix |
-| 4 | Practice each leg alone | Consistency comes from repetition, not speed |
-| 5 | Add hazards last | You learn what the hazard actually changes |
-| 6 | Track your splits | Data beats memory when you are tired |
-
-Step one is the one people skip. Flying a map slowly, with no intention of finishing, feels like wasted time — until you realize you now know where the dark channel opens and where the debris shelf ends. Scouting is not practice. It is the input that makes practice useful.
-
-Steps two and three are about reducing cognitive load. A route with four anchors asks you to make four decisions per run. A route with twelve asks for twelve, and you will miss one. Community reports repeatedly describe the same pattern: the pilots who finish most often are not the fastest in any single segment, they are the ones who almost never take a wrong turn.
-
-Steps five and six close the loop. Once a clean line exists, add one hazard at a time and note what changes. Then record where you lose the most time. Two runs of honest split data will tell you more than twenty runs of gut feeling.
-
-## Common Mistakes in Void Runner Navigation
-
-Even experienced pilots fall into the same traps on unfamiliar maps. Most of them are planning errors wearing a piloting costume.
-
-| Mistake | Symptom | Fix |
-|---|---|---|
-| Chasing speed first | Fast start, early crash | Lock the line, then add speed |
-| Memorizing places, not angles | Right location, wrong heading | Note your direction at each anchor |
-| Ignoring the boundary | Sudden reset mid-run | Treat fringe markers as walls |
-| Reusing one line everywhere | Great in one mode, terrible in another | Adjust for visibility and hazards |
-| Skipping the boring reps | Occasional clean runs, never consistent | Practice the slow segments too |
-
-A few habits that separate steady runners from erratic ones:
-
-- **Reset early.** If the first segment goes wrong, restart. A bad start rarely recovers.
-- **Slow the crowded parts.** Speed belongs in empty space, not in a debris lattice.
-- **Re-scout after changes.** Any update to a map can invalidate an old line.
-- **Compare notes.** Player experience shared in forums and videos is the fastest way to find a better line.
-
-Consistency is the real score. A runner who finishes reliably will outperform a faster pilot who only finishes half the time, and void runners deep space maps are designed to make that gap obvious.
+If you landed here looking for a different void-themed game, the quickest check is the Steam app number. Anything pointing at 5334520 is this game.
 
 ## FAQ
 
-**What makes void runners deep space maps different from ordinary levels?**
+**Is Void Runners released?**
+No. The official [Steam page](https://store.steampowered.com/app/5334520/) lists a Q1 2027 release window and marks the game as coming soon.
 
-They replace walls with distance. Ordinary levels steer you with geometry you can bump into; void maps steer you with emptiness, a few landmarks, and your own memory. That makes route planning a bigger part of success than raw reflexes.
+**How many players can join?**
+One to four, on a single couch or online, according to the store description.
 
-**How many landmarks should I memorize first?**
+**Are there Void Runners codes or unlock keys?**
+No code system is documented. The store page publishes no codes, and no official source describes one.
 
-Start with three or four anchors per map. That is enough to keep a route coherent without overwhelming you, and you can add more once the first few become automatic. Runners who try to memorize everything at once usually remember nothing under pressure.
+**How long is a run?**
+The advertised structure is three sectors of four jumps each, ending at a guardian, with three guardians across a full run. Exact playtime is not stated.
 
-**Should I prioritize speed or safety on a new map?**
+**Can I play solo?**
+The game is listed for one to four pilots, so solo play is supported. How the beam works with a single ship is not described and will need to be checked in-game.
 
-Safety, then speed. Build a clean, repeatable line first, add hazards one at a time, and only start optimizing pace once you can finish consistently. Speed added to an unstable route just makes the crashes faster.
-
-**Do community reports agree on the fastest route?**
-
-Rarely on a single "best" line, but they agree strongly on principles: fewer anchors, shorter segments, hazards added last, and consistent finishes over occasional fast ones. Those shared patterns are more useful than any one claimed record.
-
-Whether you are chasing a personal best or just trying to stop getting lost, the same approach holds. Learn the map, anchor your route, respect the hazards, and let speed arrive on its own.
+**Where should I look for confirmed details?**
+The official Steam page is the only authoritative source right now. Anything about ship parts, weapon stats, or guardian names that doesn't appear there is unverified.

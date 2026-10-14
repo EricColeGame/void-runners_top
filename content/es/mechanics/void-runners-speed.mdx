@@ -1,120 +1,92 @@
 export const metadata = {
-  title: "La velocidad de los void runners explicada: mecánicas de movimiento, inercia y cómo moverte más rápido",
-  description: "Cómo funciona la velocidad de los void runners: estadísticas de movimiento, inercia del dash y técnicas de desplazamiento que se acumulan, además de ejercicios para exprimir hasta la última unidad de velocidad.",
+  title: "Void Runners: Cómo el rayo de amarre convierte cuatro naves en un arma",
+  description: "Void Runners es un roguelike cooperativo twin-stick no lanzado en el que los rayos enlazan naves. Esto es lo que el desarrollador ha confirmado realmente.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## ¿Qué son los void runners?
+La mayoría de los juegos cooperativos te piden disparar al mismo enemigo al mismo tiempo. Void Runners te pide que pienses en dónde estás situado respecto a todos los demás. Ese único cambio es toda la propuesta, y merece la pena entenderlo antes de que llegue el juego, porque cambia cómo planificas una partida, cómo te posicionas en un combate y cómo hablas con tu tripulación.
 
-Los void runners viven y mueren por su velocidad. En cualquier juego que use el arquetipo —una unidad ligera, frágil y centrada en la movilidad, ligada a temáticas de vacío, fase o grieta—, la velocidad de los void runners es el único número que decide si limpias una sala o te quedas atrapado a campo abierto. A diferencia de un tanque, un void runner no absorbe daño; elimina el daño al no estar ahí cuando este aterriza.
+Este artículo se ciñe a lo que el desarrollador Aaron Reisman ha publicado en la [página oficial de Steam](https://store.steampowered.com/app/5334520/) del juego, y señala claramente todo lo que sea especulación, observación de terceros o simplemente aún no documentado. Void Runners se anunció para el primer trimestre de 2027 y está marcado como "próximamente". No se ha lanzado.
 
-Ese cambio de enfoque importa, porque modifica cómo evalúas cada mejora. La salud efectiva de un void runner se mide en distancia recorrida por segundo, no en puntos de armadura. Si tu velocidad de void runner baja, tu supervivencia baja con ella, a menudo antes de que te des cuenta de la causa.
+Una aclaración por adelantado, porque los resultados de búsqueda son confusos con este nombre: esto no es Solar Ash, no es Void Crew, no es Void Stranger y no es Starfinder. Comparte una palabra con varios de ellos y nada más.
 
-El arquetipo aparece en tres formas comunes:
+## Lo que el desarrollador ha confirmado
 
-- **Clase de jugador:** un personaje de movilidad con dashes de enfriamiento corto, valores de sprint altos y defensas finas.
-- **Unidad enemiga:** un flanqueador rápido que cierra distancias con rapidez y castiga reacciones lentas o mal posicionamiento.
-- **Build de roguelike:** una partida que acumula mejoras de movimiento hasta que el propio desplazamiento se convierte en la fuente de daño.
+La ficha de Steam describe Void Runners como una incursión cooperativa de salvamento para uno a cuatro pilotos, jugable en un solo sofá o en línea. La mecánica que lo define es un rayo que enlaza cada par de naves. El rayo destroza cualquier cosa que barre. Eso significa que el rayo no es solo un conector visual o un aura de mejora. Es daño, y se aplica a lo largo de la línea entre dos jugadores.
 
-| Rasgo | Void Runner | Bruiser estándar |
-|---|---|---|
-| Salud efectiva | Baja, basada en esquiva | Alta, basada en aguante |
-| Movimiento base | Por encima de la media | Por debajo de la media |
-| Movilidad explosiva | Dash o blink | Carga o salto |
-| Ventana de daño | Corta, frecuente | Larga, comprometida |
-| Castigado por | Control de masas, pasillos estrechos | Kiting, daño a distancia |
-| Gana mediante | Reposicionarse constantemente | Mantener la posición |
+De esa única regla se derivan naturalmente varios comportamientos anunciados:
 
-## Las cinco capas de la velocidad de los void runners
+- Separarse y hacer girar la red. Se supone que los jugadores se alejen y roten, arrastrando el amarre sobre los enemigos en lugar de apuntarles directamente.
+- Fuego cruzado. Los rayos superpuestos crean zonas que los enemigos cruzan a su propio riesgo.
+- Esquivar. El mismo movimiento que apunta tu rayo también expone o protege tu nave.
+- Revivir a la tripulación desde cápsulas de escape. Los pilotos derribados no quedan fuera de forma permanente; hay un paso de recuperación.
+- Construir una nave recuperada. La progresión se articula en torno a ensamblar una nave con lo que recuperas.
 
-Los jugadores nuevos tratan la velocidad como una sola estadística. No lo es: es una pila de cinco capas, y la capa que descuidas suele ser la que más tiempo te cuesta.
+Estructuralmente, una partida atraviesa tres sectores de cuatro saltos cada uno, terminando en un guardián. La página de la tienda menciona tres guardianes en total. Esa es toda la forma documentada de una partida.
 
-1. **Velocidad de movimiento base.** El suelo sobre el que se multiplica todo lo demás. Se aplica al caminar, al hacer strafe y, a menudo, al atacar.
-2. **Multiplicador de sprint o impulso.** Un porcentaje aplicado sobre la base. Aquí es donde se originan en realidad la mayoría de las quejas del tipo "me siento lento".
-3. **Movilidad explosiva.** Dashes, blinks, rodadas y pasos de fase. Ignoran la mayor parte de la fricción del suelo y son la mayor fuente individual de velocidad a corta distancia.
-4. **Conservación de inercia.** Cuánta velocidad sobrevive a un giro, un aterrizaje o el final de un dash. Una conservación alta te permite encadenar movimientos; una baja hace que cada acción se sienta como empezar desde cero.
-5. **El tope suave.** El punto en el que la velocidad extra rinde cada vez menos porque tus entradas, la cámara o tu radio de giro ya no pueden seguir el ritmo.
+## Por qué el amarre cambia tus decisiones
 
-| Capa | Qué la controla | Cuello de botella habitual | Solución más rápida |
-|---|---|---|---|
-| Velocidad base | Estadísticas del personaje, clase de peso | Equipo pesado sin compensación | Reequilibrar el peso del equipamiento |
-| Multiplicador de sprint | Mejoras, buffs, auras | El tiempo activo del buff, no su tamaño | Mejorar primero el tiempo activo |
-| Movilidad explosiva | Enfriamientos, cargas | Enfriamiento largo, una sola carga | Añadir una carga antes de añadir alcance |
-| Conservación de inercia | Física del motor, sincronización de entradas | Cancelar movimientos demasiado pronto | Practicar la sincronización de entradas |
-| Tope suave | Velocidad de giro, cámara, tiempo de reacción | La habilidad del jugador, no las estadísticas | Ejercicios, no equipo |
+En un roguelike twin-stick normal, tu posición importa por lo que puedes disparar y lo que puede dispararte. En Void Runners, tu posición también determina dónde está tu daño en ese momento, y ese daño pertenece a dos personas a la vez.
 
-La conclusión práctica: si ya superaste el tope suave, comprar más velocidad es tirar recursos. Convierte ese presupuesto en daño o supervivencia.
+Considera las consecuencias prácticas. Si tú y tu compañero voláis en paralelo, vuestro rayo barre un carril. Si orbitáis un objetivo desde lados opuestos, lo cortáis dos veces por rotación. Si os cruzáis, el rayo se colapsa momentáneamente hasta desaparecer, que es lo contrario de lo que quieres durante una ventana de daño. Cada una de esas es una decisión espacial, no una decisión de apretar el gatillo.
 
-## Técnicas de movimiento que realmente acumulan velocidad de void runner
+Con cuatro pilotos, la geometría se vuelve más difícil de retener en la cabeza. La descripción de la tienda habla de una "red" de rayos, lo que implica múltiples enlaces interactuando. El desarrollador no ha publicado las reglas exactas de emparejamiento con cuatro jugadores, así que si los rayos forman una cadena fija, una malla completa o algo reasignado a mitad de partida **no está documentado**. Ese es un detalle a vigilar en las notas del parche, un tráiler oficial o el tutorial del juego.
 
-Las estadísticas brutas te llevan hasta el techo; la técnica decide si lo tocas. La experiencia de los jugadores en todo el género apunta de forma consistente a un mismo puñado de técnicas de movimiento como los verdaderos diferenciadores.
+La misma cautela se aplica a las piezas de nave, las estadísticas de las armas y los nombres de los guardianes. La página de la tienda no los publica. Cualquiera que cite números concretos ahora mismo está adivinando, y deberías tratar las guías de terceros sobre un juego no lanzado como de segunda mano en el mejor de los casos.
 
-- **Cancelación de dash.** Terminar un dash antes de tiempo para conservar la velocidad de salida y liberar tu siguiente acción. La ganancia es pequeña por uso y enorme a lo largo de una partida completa.
-- **Encadenado de deslizamientos o planeos.** Enlazar movimientos de desplazamiento de forma que la animación de recuperación de uno se convierta en el inicio del siguiente. Bien hecho, no hay pausa visible.
-- **Control aéreo y strafe.** Ajustar la dirección en el aire te permite recortar esquinas que el movimiento en el suelo te obligaría a rodear.
-- **Pegarse a las esquinas.** Cortar el interior de un giro ahorra más distancia de la que otorgan la mayoría de las mejoras de velocidad, y no cuesta nada.
-- **Cancelación de salto.** Interrumpir un aterrizaje para saltarte fotogramas de recuperación. En motores donde la física se ejecuta por fotograma, aquí es donde quitar el límite de FPS cambia la sensación de la velocidad de los void runners.
+| Pregunta | Estado según la ficha de Steam |
+|---|---|
+| Número de jugadores | De uno a cuatro, sofá o en línea (documentado) |
+| Estructura de la partida | Tres sectores, cuatro saltos cada uno, guardián al final (documentado) |
+| Guardianes | Tres mencionados, ninguno nombrado (no documentado) |
+| Reglas de emparejamiento de rayos con 4 jugadores | No publicadas |
+| Piezas de nave, armas, estadísticas | No publicadas |
+| Costes de desbloqueo, sistema de códigos | No publicados |
 
-| Técnica | Dificultad | Ganancia de velocidad | Riesgo |
-|---|---|---|---|
-| Pegarse a las esquinas | Baja | Constante, pequeña | Ninguno |
-| Control aéreo | Baja–Media | Moderada | Exposición en el aire |
-| Cancelación de salto | Media | Moderada | Una entrada mal sincronizada mata la inercia |
-| Cancelación de dash | Media | Alta con el tiempo | Enfriamiento desperdiciado si es pronto |
-| Encadenado de deslizamientos | Alta | La más alta sostenida | Alta presión de ejecución |
+## Jugar con el rayo en lugar del gatillo
 
-Una nota sobre el hardware: los informes de la comunidad sugieren que, en algunos motores, la física del movimiento está ligada a la tasa de fotogramas o al tick rate del servidor. Si tus entradas se sienten inconsistentes entre sesiones, comprueba si cambió tu límite de FPS o tus condiciones de red antes de culpar a tu build.
+Si quieres prepararte para Void Runners antes del lanzamiento, el ejercicio mental útil no es memorizar builds. Es practicar la conciencia de la posición en pantalla de tu aliado. Los veteranos del twin-stick tienden a fijarse en la mira; este juego recompensa a los pilotos que mantienen un segundo marcador mental en su compañero.
 
-Para hacerte una idea de cómo maneja el género en general el movimiento de alta movilidad, echa un vistazo a los [juegos de runner frenéticos en Steam](https://store.steampowered.com/tags/en/Runner/) y compara cómo estructura cada uno la economía del dash: es un marco de referencia útil a la hora de evaluar los sistemas de cualquier juego concreto.
+Algunos hábitos transferibles de otros juegos cooperativos de sofá:
 
-## Builds de velocidad: prioridad de mejoras y compensaciones
+- Anuncia tu movimiento, no solo tus objetivos. "Girando a la izquierda" le dice a tu compañero hacia dónde va el rayo.
+- Trata el rayo como un recurso con una ubicación. Pregunta dónde está antes de preguntar dónde están los enemigos.
+- Dale un carril a los pilotos derribados. El revivir desde cápsulas de escape sugiere que la recuperación ocurre en el espacio, así que un compañero que vuele en un patrón cerrado puede ser el que pueda alcanzarla.
 
-Cada punto gastado en velocidad de void runner es un punto que no se gasta en daño. El truco está en saber cuándo la velocidad ya se ha pagado sola.
+Nada de esto garantiza el éxito. El juego no está lanzado, el equilibrio es desconocido, y el desarrollador no ha descrito el escalado de dificultad para el juego en solitario más allá de confirmar que se admite un jugador.
 
-| Prioridad | Tipo de mejora | Por qué importa | Cuándo omitirla |
-|---|---|---|---|
-| 1 | Carga de dash extra | Multiplica todas las demás herramientas de movimiento | Nunca, en una build de movilidad pura |
-| 2 | Reducción de enfriamiento | Mejora el tiempo activo, el verdadero limitante | Cuando el tiempo activo ya ronda el 100 % |
-| 3 | Multiplicador de sprint | Beneficio amplio y siempre activo | Si ya alcanzaste el tope suave |
-| 4 | Velocidad de movimiento base | Eleva el suelo de todo lo demás | Si tu build depende del dash |
-| 5 | Buffs de velocidad fijos con temporizador | Estallido situacional | Si el tiempo activo es inferior a la mitad |
+## Solitario, sofá y en línea en el mismo diseño
 
-La razón por la que las cargas de dash ocupan lo más alto: una segunda carga no solo te da más distancia, también te da una opción de seguridad y una opción de reposicionamiento en el mismo hueco. La reducción de enfriamiento va segunda porque duplicar el tiempo activo de un dash suele superar a añadir una fracción a tu valor de sprint.
+Admitir de uno a cuatro jugadores en un solo sofá *y* en línea es una restricción de diseño real, y la página de la tienda indica ambos sin dar más detalles. Para un juego basado en rayos, lo interesante y desconocido es cómo vive un solo piloto la mecánica central cuando no hay una segunda nave a la que enlazarse. La descripción no lo explica.
 
-El rendimiento decreciente aparece rápido tras el tope suave. Una vez que superas cómodamente los proyectiles enemigos y los temporizadores de desplazamiento, invertir más en velocidad no produce ninguna mejora medible en el tiempo de limpieza, pero invertir en daño sí.
+Si estás planeando un grupo, el consejo práctico es decidir pronto si sois una tripulación de sofá o una tripulación remota, porque la comunicación de voz soporta la mayor parte de la carga en un juego donde la posición relativa es la entrada principal. El juego en línea normalmente necesita indicaciones más claras que el juego en pantalla compartida, donde basta con mirar de reojo.
 
-## Ejercicios, errores y los límites de la velocidad
+## Cómo verificar cualquier cosa antes de comprar
 
-La mayoría de las pérdidas de velocidad no son problemas de estadísticas. Son problemas de hábitos, y aparecen de formas predecibles.
+Como Void Runners no está lanzado, el enfoque responsable es consultar la fuente directamente. La [página de la tienda de Steam](https://store.steampowered.com/app/5334520/) contiene la descripción autorizada, la ventana anunciada del primer trimestre de 2027 y el estado de "próximamente". Cualquier cosa sobre piezas, estadísticas, jefes o códigos debería verificarse ahí, en un tráiler oficial o en la propia versión final una vez que exista.
 
-| Error | Síntoma | Solución |
-|---|---|---|
-| Cancelar los dashes demasiado pronto | Saltitos cortos en lugar de deslizamientos largos | Mantén la entrada hasta la extensión completa primero |
-| Hacer strafe en exceso | Trayectorias amplias e ineficientes | Practicar rutas en línea recta |
-| Guardar el dash para emergencias | Tiempos de limpieza lentos, enfriamientos sin usar | Gastar dashes según enfriamiento, no por miedo |
-| Ignorar el terreno | Rodear obstáculos | Aprender qué bordes puedes recortar |
-| Acumular velocidad por encima del tope | Ningún cambio en el tiempo de limpieza | Reasignar a daño |
+Sé escéptico con las páginas agregadoras y los artículos ajustados por palabras clave que mezclan Void Runners con juegos de nombre similar. Varios títulos comparten la palabra "void", y confundirlos te llevará a buscar mecánicas que no existen aquí.
 
-| Ejercicio | Duración | Qué entrena |
-|---|---|---|
-| Carrera de sprint en línea recta | 5 minutos | Ruteo base y recorte de esquinas |
-| Vuelta encadenando dashes | 10 minutos | Ritmo de enfriamiento y conservación de inercia |
-| Limpieza sin dash | 10 minutos | Posicionamiento sin muleta |
-| Partida completa cronometrada | 1 partida | Si los cambios ayudan de verdad |
+## FAQ
 
-Haz la partida completa cronometrada al final. Es el único ejercicio que responde a la pregunta real: ¿este cambio te hizo más rápido o solo lo parece? Sentirse más rápido y ser más rápido son cosas distintas, y solo una de ellas aparece en el cronómetro.
+**¿Está lanzado Void Runners?**
+No. Está marcado como "próximamente" con una ventana del primer trimestre de 2027 en Steam.
 
-## Preguntas frecuentes
+**¿Quién lo está haciendo?**
+Aaron Reisman figura como desarrollador y editor.
 
-**¿La velocidad de los void runners tiene un tope duro?**
-Normalmente hay un tope suave más que uno duro. Pasado cierto punto, la velocidad adicional produce rendimientos decrecientes porque tu velocidad de giro, la velocidad de cámara o tu tiempo de reacción se convierten en el factor limitante, no la estadística en sí.
+**¿Cuántos jugadores?**
+De uno a cuatro, en un solo sofá o en línea.
 
-**¿Qué es más importante, la velocidad de movimiento base o el enfriamiento del dash?**
-Para la mayoría de los void runners, gana el enfriamiento del dash. Los dashes evitan la fricción y otorgan una distancia explosiva que la velocidad base no puede replicar, y un mejor tiempo activo se acumula a lo largo de una partida completa.
+**¿Qué es exactamente el rayo?**
+Un enlace entre dos naves que destroza cualquier cosa que barre. Es la mecánica central del juego y la razón por la que posicionarse importa más que apuntar.
 
-**¿Se puede aumentar la velocidad de los void runners solo con equipo?**
-El equipo te lleva aproximadamente hasta el tope suave. Más allá de eso, la técnica —cancelación de dash, encadenado de deslizamientos y recorte de esquinas— es donde viven las ganancias restantes. La experiencia de los jugadores sugiere de forma consistente que el techo de habilidad está muy por encima del techo de estadísticas.
+**¿Hay guardianes o piezas de nave con nombre?**
+No públicamente. La página de la tienda menciona tres guardianes y la construcción de naves recuperadas, pero no nombra ni detalla nada.
 
-**¿Por qué los void runners se sienten más rápidos en algunas configuraciones que en otras?**
-La tasa de fotogramas y el tick rate de la red pueden afectar a cómo se registran las entradas de movimiento en algunos motores. Si tu build no ha cambiado pero la sensación sí, comprueba esas dos variables antes de reconstruir nada.
+**¿Es lo mismo que Void Crew o Void Stranger?**
+No. Juegos totalmente distintos, a pesar de la palabra compartida.
+
+**¿Puedo jugarlo en solitario?**
+La ficha admite un jugador. Cómo funciona el rayo con una sola nave no está documentado.

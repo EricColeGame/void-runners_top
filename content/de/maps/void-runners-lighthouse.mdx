@@ -1,123 +1,87 @@
 export const metadata = {
-  title: "Void-Runners-Leuchtturm: So findest du ihn, erreichst ihn und meisterst die Leuchtfeuer-Karte",
-  description: "Ein praktischer Leitfaden zum Void-Runners-Leuchtturm: Wie du das Leuchtfeuer erkennst, eine sichere Route wählst und den letzten Aufstieg in Hinderniskarten im Void-Runner-Stil überlebst.",
+  title: "Void Runners: Was das Co-op-Beam-Roguelike wirklich ist",
+  description: "Void Runners ist ein Twin-Stick-Roguelike für ein bis vier Piloten, die durch schreddernde Strahlen verbunden sind. Hier steht, was bestätigt ist, was nicht, und wie man gut spielt.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Der Void-Runners-Leuchtturm ist oft das Einzige im Level, das nicht aktiv versucht, dich umzubringen – und genau deshalb verdient er deine Aufmerksamkeit. In einer Karte aus schwebenden Plattformen, schwarzem Himmel und Nebel, der den Horizont verschluckt, bewirkt ein einzelner Lichtstrahl mehr für dein Überleben als jedes Pickup, denn er gibt dir etwas, das die Leere nie tut: einen festen Punkt, an dem du dich orientieren kannst. Zu lernen, den Void-Runners-Leuchtturm zu lesen, verwandelt ein orientierungsloses Gerangel in eine Route, die du tatsächlich planen kannst, und es ist der Unterschied zwischen einem sauberen Run und einem Dutzend blinder Stürze.
+Der Name **Void Runners** zieht eine Menge Suchtraffic an, der ihm nicht gehört. Leute landen dort auf der Suche nach Solar Ash, Void Crew, Void Stranger oder Starfinder und gehen mit dem falschen Spiel im Kopf wieder weg. Dieser Artikel handelt von einem bestimmten Titel: dem Steam-Spiel *Void Runners* von Aaron Reisman, bei Steam als App 5334520 gelistet, für Q1 2027 angekündigt und noch nicht veröffentlicht. Alles Folgende ist in drei Kategorien aufgeteilt: beworbene Features von der offiziellen Steam-Seite, Beobachtungen der Community und Dinge, die einfach noch nicht dokumentiert sind. Wenn ein Detail nicht in der ersten Kategorie steht oder klar als zur zweiten gehörend gekennzeichnet ist, behandle es als unbekannt.
 
-Dieser Leitfaden behandelt, wie du das Leuchtfeuer erkennst, wie du dich darauf zubewegst, ohne deinen Run zu verschwenden, und wie du den Moment meisterst, in dem sich der Leuchtturm als Falle entpuppt. Alles hier ist so geschrieben, dass es allgemein auf Karten im Void-Runner-Stil anwendbar ist; betrachte die Details also als anpassbare Muster und nicht als feste Regeln – Kartenmacher lieben es, sie zu brechen.
+## Was Void Runners laut Store-Seite ist
 
-## Warum der Void-Runners-Leuchtturm mehr zählt als jedes Power-Up
+Der offizielle Eintrag unter [Void Runners on Steam](https://store.steampowered.com/app/5334520/) beschreibt einen Co-op-Bergungsraid für ein bis vier Piloten, spielbar entweder auf einer Couch oder online. Die zentrale Mechanik ist der Strahl. Jedes Schiffspaar ist durch einen Energiestrahl verbunden, und dieser Strahl schreddert alles, was er überstreicht. Du fliegst nicht nur ein Schiff und schießt; du ziehst eine Schneidelinie über die Karte, und diese Linie ist an einen anderen Menschen gebunden.
 
-Die meisten Void-Runner-Karten teilen ein Designproblem: Ohne Gelände haben Spieler kein räumliches Gedächtnis. Jede Plattform sieht aus wie jede andere, und sobald du fällst, respawnst du ohne Ahnung, in welche Richtung du unterwegs warst. Ein Leuchtturm löst das, indem er das eine Objekt im Level mit einer einzigartigen Silhouette und einer Lichtquelle ist, die durch den Nebel schneidet.
+Diese eine Designentscheidung verändert alles. Wo du fliegst, ist keine persönliche Entscheidung mehr, denn deine Position bestimmt auch, wo der Strahl ist und was er schneidet. Sich aufteilen und das Netz schwingen sind die eigenen Worte der Store-Seite dafür, wie eine Crew operieren soll. Die Seite erwähnt außerdem Kreuzfeuer, Ausweichen, das Wiederbeleben von Crewmitgliedern aus Rettungskapseln und den Aufbau eines geborgenen Schiffs im Laufe des Runs.
 
-Dadurch erfüllt er mehrere Aufgaben gleichzeitig. Er ist Wegpunkt, Kompass und – in vielen von der Community erstellten Karten – der Checkpoint oder Extraktionspunkt, der den Run beendet. Erfahrungsberichte von Spielern beschreiben immer wieder dasselbe Verhalten: Wenn jemand sich verirrt, sucht er zuerst den Strahl und kümmert sich erst danach um die Route.
+Die Run-Struktur wird klar genannt. Ein Run führt durch drei Sektoren mit je vier Sprüngen und endet bei einem Wächter. Drei Sektoren, drei Wächter. Das ist die beworbene Form eines Kampagnenversuchs, und es ist eine kurze, dichte Struktur statt eines langen Crawls.
 
-| Funktion des Leuchtturms | Warum er hilft | Worauf du achten solltest |
-|---|---|---|
-| Visueller Anker | Gibt einen einzigen festen Bezugspunkt in einer leeren Skybox | Er wird möglicherweise nur auf große Entfernung gerendert, nicht im mittleren Bereich |
-| Richtungsweisendes Leuchtfeuer | Der Schwenk des Strahls zeigt dir, welche Richtung „vorwärts“ ist | Rotierende Lichter können dich irreführen und im Kreis laufen lassen |
-| Checkpoint-Marker | Oft die sichere Zone oder das Ziel der Karte | Manche Karten nutzen einen Köderturm als Lockmittel |
-| Höhenreferenz | Der Lampenraum ist normalerweise der höchste Punkt | Ein schwebender oder umgekehrter Turm bricht diese Regel |
-| Routenplaner | Lässt dich Plattformen auswählen, die mit ihm auf einer Linie liegen | Direkte Linien sind selten der sicherste Weg |
+| Beworbenes Feature | Detail von der offiziellen Seite |
+|---|---|
+| Spieler | 1-4 Piloten, eine Couch oder online |
+| Kernmechanik | Strahlen, die Schiffe verbinden und alles schreddern, was sie überstreichen |
+| Crew-Taktiken | Sich aufteilen, das Netz schwingen, Kreuzfeuer |
+| Überleben | Ausweichen, Crewmitglieder aus Rettungskapseln wiederbeleben |
+| Progression | Aufbau eines geborgenen Schiffs |
+| Run-Länge | Drei Sektoren, je vier Sprünge, endend bei einem Wächter |
 
-Die praktische Schlussfolgerung ist einfach: Entscheide früh, ob der Leuchtturm dein Ziel oder nur dein Kompass ist. Wenn er dein Ziel ist, halte dich an eine Route, die sich ihm stetig nähert. Wenn er nur ein Kompass ist, nutze ihn, um deinen Kurs zu halten, während du anderswo Plattformen und Checkpoints sammelst.
+## Warum der Strahl das ganze Spiel ist
 
-## Wie du das Leuchtfeuer liest: Sichtlinien, Nebel und Höhe
+Die meisten Twin-Stick-Roguelikes verlangen, dass du gleichzeitig zielst und dich bewegst. Void Runners verlangt, dass du zielst, dich bewegst und bedenkst, wo dein verbundener Partner ist – oft alles gleichzeitig. Der Strahl ist kein Bonus, den du gelegentlich abfeuerst. Er ist eine dauerhafte Verbindung zwischen zwei Schiffen, was bedeutet, dass die Geometrie eurer Formation die eigentliche Waffe ist.
 
-Das Licht zu entdecken ist einfach. Es zu interpretieren, ist die eigentliche Fähigkeit. Die meisten Void-Runner-Karten setzen auf dichten Nebel oder eine geringe Sichtweite, was bedeutet, dass du oft das Glühen der Lampe siehst, lange bevor du den Turm selbst siehst. Trainiere dich darin, nach dem Licht statt nach der Geometrie zu navigieren.
+Das erzeugt eine interessante Spannung, die die Store-Beschreibung andeutet, aber nicht ausbuchstabiert. Wenn du dich aufteilst, um mehr Boden abzudecken, dehnt sich der Strahl und überstreicht einen breiteren Bogen, aber jeder Pilot hat weniger Unterstützung. Wenn du dich zusammendrängst, ist der Strahl kurz und eng, und du verlierst die überstreichende Abdeckung, die die Mechanik nützlich macht. Es gibt keine dokumentierte „richtige" Distanz, also wird die praktische Antwort situationsabhängig und crew-abhängig sein.
 
-### Sichtlinien und Parallaxe
+Das Wiederbelebungssystem fügt eine zweite Ebene hinzu. Wenn ein Pilot ausfällt, kann er aus einer Rettungskapsel geborgen werden, statt einfach zu respawnen. Das bedeutet, dass ein ausgelöschtes Paar nicht unbedingt ein verlorener Run ist, aber es bedeutet auch, dass jemand die Formation verlassen muss, um eine Kapsel zu bergen, was die Strahlgeometrie für alle verändert, die noch fliegen. Kooperative Bergung ist in die Risikokalkulation eingebaut und nicht nachträglich angeflanscht.
 
-Bewege dich seitwärts, nicht vorwärts, und beobachte, wie sich der Turm vor dem Hintergrund verschiebt. Ein Orientierungspunkt, der sich relativ zur fernen Szenerie kaum bewegt, ist weit weg. Einer, der schnell über dein Sichtfeld gleitet, ist nah – oft näher, als der Nebel vermuten lässt. Diese eine Gewohnheit verhindert den häufigsten Navigationsfehler in Void-Karten: die Entfernung zu überschätzen und eine unnötig riskante Abkürzung zu nehmen.
+## Was noch nicht öffentlich ist
 
-### Nebel, Düsternis und emissives Licht
+Hier geht eine Menge Void-Runners-Content online schief. Das Spiel ist unveröffentlicht. Die offizielle Store-Seite veröffentlicht keine Schiffsteile, Waffenwerte, Wächter-Namen, Sektor-Layouts, Freischaltkosten, Drop-Raten oder irgendeine Art von Codesystem. Jeder Artikel, der dir eine „Void Runners Codes List" anbietet oder bestimmte Bosse benennt, arbeitet mit etwas anderem als der eigenen Dokumentation des Entwicklers.
 
-Emissive Lichtquellen durchdringen Nebel normalerweise weiter als solide Geometrie. Wenn du ein Glühen, aber keinen Turm siehst, bist du wahrscheinlich noch weit entfernt. Wenn du einzelne Fenster oder Geländer erkennen kannst, befindest du dich in der Annäherungszone und solltest nach einer Landeplattform statt nach einer Abkürzung suchen.
+Hier ist die klare Version:
 
-### Höhenhinweise
+- Schiffsteile und ihre Effekte: nicht dokumentiert.
+- Waffenstatistiken oder Schadenszahlen: nicht dokumentiert.
+- Wächter-Namen oder Angriffsmuster: nicht dokumentiert.
+- Sektor-Themen oder Layouts über die Anzahl hinaus: nicht dokumentiert.
+- Freischaltkosten, Währungen oder Meta-Progression: nicht dokumentiert.
+- Codes, Hotkeys oder ein Einlösesystem: kein solches System ist veröffentlicht.
 
-Achte auf die Horizontlinie. Wenn der Lampenraum darüber liegt, bist du unterhalb des Leuchtturms und musst aufsteigen. Wenn der Lampenraum unterhalb des Horizonts liegt, bist du höher als der Turm – eine häufige Situation in Karten, die dich auf einem hohen Sims spawnen und einen Abstieg erwarten.
+Wenn ein von dir gesuchtes Keyword annimmt, dass eines davon existiert, ist die ehrliche Antwort, dass das Detail noch nicht öffentlich ist. Der Weg, irgendetwas davon zu verifizieren, ist, die offizielle Steam-Seite direkt zu prüfen und, sobald das Spiel erscheint, im Spiel zu bestätigen, statt einer Zusammenfassung eines Drittanbieters zu vertrauen. Drittanbieter-Guides sind sekundäre Beobachtungen, keine Entwicklerdokumentation, und sie sollten als solche gekennzeichnet werden, wenn sie überhaupt verwendet werden.
 
-| Visuelles Signal | Was es normalerweise bedeutet | Empfohlene Aktion |
-|---|---|---|
-| Schwaches Glühen, keine Struktur | Große Entfernung, dichter Nebel | Halte deinen Kurs, hüpfe weiter von Plattform zu Plattform |
-| Sichtbarer Strahlschwenk | Mittlere Entfernung | Merke dir die Schwenkrichtung und wähle eine Seite für die Annäherung |
-| Sichtbare Fenster oder Geländer | Nahe Entfernung | Hör auf zu sprinten, suche eine Landefläche |
-| Lampenraum unter dem Horizont | Du bist über dem Turm | Plane einen kontrollierten Abstieg, keinen Sprung |
-| Zwei identische Strahlen | Zwillings- oder gespiegelter Leuchtturm | Wähle einen und ignoriere den anderen, um Zickzack zu vermeiden |
+## Praktische Überlegungen für eine Crew von ein bis vier
 
-## Schritt für Schritt: Zum Leuchtturm navigieren, ohne den Run zu verlieren
+Da die Mechaniken crew-relativ sind, geht es beim nützlichen Rat um Formation statt um Builds.
 
-Die Route ist wichtiger als die Geschwindigkeit. Unten steht eine allgemeine Abfolge, die in den meisten Void-Runner-Karten funktioniert und aus Beschreibungen erfahrener Spieler abgeleitet ist.
+Mit zwei Piloten ist der Strahl euer einziger Strahl, also ist jede Entscheidung ein Tausch. Einen breiten Bogen zu überstreichen schafft Platz, lässt aber beide Schiffe exponiert. Eine engere Schleife ist sicherer, aber langsamer. Die Wiederbelebung per Rettungskapsel bedeutet, dass du mehr riskieren kannst als in einem Spiel mit Permadeath für jeden Piloten, vorausgesetzt, wer noch steht, ist bereit, in Gefahr zu fliegen, um die Kapsel zu bergen.
 
-1. **Früh hoch kommen.** Höhe liefert Informationen. Klettere, bevor du dich auf den Weg machst, auch wenn es ein paar Sekunden kostet.
-2. **Peile deinen Kurs ein.** Sobald du den Strahl siehst, merke dir zwei oder drei Plattformen, die ungefähr auf dieser Linie liegen.
-3. **Wähle eine Treppe, keine gerade Linie.** Verkette Plattformen, die stufenweise auf den Turm zuführen, statt direkt auf ihn zuzuspringen.
-4. **Markiere deinen Fortschritt im Kopf.** Wähle eine markante Plattform als deinen „letzten bekannten sicheren“ Punkt, damit ein Sturz deine Route nicht zurücksetzt.
-5. **Werde bei der Annäherung langsamer.** Der letzte Abschnitt hat meist die engsten Sprünge und die am wenigsten verzeihende Geometrie.
-6. **Umrunde die Basis, bevor du kletterst.** Eine vollständige Runde deckt oft eine Rampe, Leiter oder Innentreppe auf, die du sonst übersehen hättest.
-7. **Klettere in Etappen.** Nimm die Wendel- oder Außentreppe in Abschnitten und halte auf Absätzen an, um den Strahl erneut zu prüfen.
-8. **Berühre den Lampenraum.** In den meisten Karten sitzen hier der Checkpoint, der Zielauslöser oder die Belohnung.
+Mit drei oder vier Piloten wird die Formulierung der Store-Seite vom „Netz schwingen" wörtlich. Mehrere Strahlen können sich kreuzen, und dort kommt Kreuzfeuer ins Bild. Das Risiko ist, dass ein dichtes Netz auch eine dichte Gefahr ist: Wenn ein Strahl alles schreddert, was er überstreicht, ist der Strahl eines Verbündeten nicht offensichtlich sicher, nur weil er freundlich ist. Diese spezifische Interaktion ist nicht dokumentiert, also behandle sie als offene Frage, die im Spiel getestet werden muss, statt als angenommene Regel.
 
-| Schritt | Hauptziel | Häufigster Fehler |
-|---|---|---|
-| 1. Klettern | Informationen gewinnen | Den Aufstieg an einer Sackgassen-Spitze verschwenden |
-| 2. Peilung | Einen Kurs festlegen | Sich festlegen, bevor der Strahl klar sichtbar ist |
-| 3. Treppe | Am Leben bleiben | Auf den Turm zuspringen und zu kurz springen |
-| 4. Markieren | Fortschritt bewahren | Nach einem Sturz die Route aus den Augen verlieren |
-| 5. Annäherung | Präzision | In eine Lücke sprinten |
-| 6. Umrunden | Den Eingang finden | Annehmen, dass die Vorderseite der Weg hinein ist |
-| 7. Klettern | Ausdauer einteilen | In der Nähe der Spitze in Panik springen |
-| 8. Lampenraum | Das Ziel auslösen | Das Trigger-Volumen verfehlen und herunterfallen |
+Für einen Solo-Piloten listet die Seite ein bis vier Spieler, was nahelegt, dass Solo-Spiel unterstützt wird, aber sie erklärt nicht, wie sich die Strahlmechanik anpasst, wenn es keinen Partner gibt. Das ist ein weiterer nicht dokumentierter Bereich. Geh nicht davon aus, dass der Strahl verschwindet oder an einer Drohne hängt, bis das Spiel es sagt.
 
-Viele Karten im Void-Runner-Stil werden auf Plattformen mit nutzergenerierten Inhalten gehostet, und [Roblox' offizielle Website](https://www.roblox.com/) ist einer der größten Orte, an denen Creator diese Art von Hindernis-Erfahrung veröffentlichen und aktualisieren. Wenn du nach einer bestimmten Leuchtturm-Karte suchst, sind die Discovery- und Suchwerkzeuge der Plattform selbst normalerweise schneller als Listen von Drittanbietern, da Creator Karten häufig umbenennen und überarbeiten.
+## Wie man die Entwicklung verfolgt, ohne schlechte Informationen
 
-## Leuchtturm-Varianten, die dir in Void-Runner-Karten begegnen
+Die sicherste Regel für ein unveröffentlichtes Spiel ist, die eigene Seite des Entwicklers als einzige Autorität für Features zu behandeln. Der [official Steam listing for Void Runners](https://store.steampowered.com/app/5334520/) ist die Quelle der beschriebenen Mechaniken, und dort würde auch zuerst eine Änderung des Veröffentlichungsdatums, eine Demo oder eine Klarstellung zu Features auftauchen. Da das Spiel als „coming soon" markiert und auf Q1 2027 datiert ist, erwarte, dass Details bis näher am Launch spärlich bleiben, und erwarte, dass Suchergebnisse von unrelated Spielen mit ähnlichen Namen verseucht werden.
 
-Nicht jedes Leuchtfeuer verhält sich gleich. Die Variante früh zu erkennen, erspart dir einen verschwendeten Run, denn die richtige Reaktion ändert sich dramatisch je nachdem, was du vor dir hast.
-
-| Variante | Woran du sie erkennst | Typische Rolle | Routentipp |
-|---|---|---|---|
-| Standardturm | Klare Silhouette, stetiger Strahl | Ziel oder Checkpoint | Nähere dich vom Boden, nicht aus der Luft |
-| Ruinenturm | Zerbrochene Wände, flackerndes Licht | Checkpoint in der Kartenmitte | Achte auf eingestürzte Böden, die dich hinausfallen lassen |
-| Schwebender Leuchtturm | Kein Fels darunter | Dekoration oder falsches Ziel | Bestätige, dass er erreichbar ist, bevor du dich festlegst |
-| Umgekehrter Leuchtturm | Lampenraum zeigt nach unten | Rätsel-Element | Suche darunter nach einem gespiegelten Pfad |
-| Zwillingsleuchtturm | Zwei Strahlen, ähnliche Höhe | Wahl zwischen geteilten Routen | Wähle früh einen; Wechseln kostet mehr, als es spart |
-| Köderturm | Sieht richtig aus, keine Lichtquelle | Falle | Wenn er keinen Strahl wirft, ist er meist nicht das Ziel |
-| Sturmleuchtturm | Strahl durch Wettereffekte verdeckt | Endgame | Nutze kurze Bewegungsphasen zwischen Sichtfenstern |
-
-Berichte aus der Community deuten darauf hin, dass der Köderturm das am häufigsten kritisierte Design in Void-Runner-Karten ist, gerade weil er den Instinkt bestraft, der den echten Leuchtturm nützlich macht. Die Gegenmaßnahme ist einfach: Ein echter Leuchtturm sendet fast immer Licht aus. Wenn es keinen Strahl, kein Glühen und keinen Schwenk gibt, behandle die Struktur als Kulisse.
-
-## Häufige Fehler, Tempogestaltung und wann du die Route aufgeben solltest
-
-Selbst Spieler, die den Leuchtturm verstehen, verlieren Runs immer noch durch dieselben wenigen Gewohnheiten. Sie zu beheben, ist eher eine Frage der Disziplin als des Könnens.
-
-| Fehler | Warum er passiert | Lösung |
-|---|---|---|
-| Direkt auf das Licht zusteuern | Der Strahl wirkt wie ein direkter Pfad | Route über Plattformen, nicht durch leeren Raum |
-| Den gesamten Anflug sprinten | Adrenalin und Zeitdruck | Spare Burst-Bewegung für Lücken auf, gehe die engen Abschnitte |
-| Die Basis ignorieren | Annehmen, dass der Eingang zu dir zeigt | Mach eine vollständige Runde, bevor du kletterst |
-| Einem zweiten Strahl nachjagen | Zwillingsleuchttürme erzeugen Unentschlossenheit | Lege dich auf einen fest und höre auf, neu zu bewerten |
-| Ohne Ausweichmöglichkeit klettern | Selbstvertrauen nach einer langen Serie | Bestimme vor jedem großen Sprung eine sichere Landung |
-| Den Leuchtturm als einziges Ziel behandeln | Tunnelblick | Prüfe, ob Checkpoints auf dem Weg lohnenswert sind |
-
-Die Tempogestaltung verdient einen eigenen Hinweis. Void-Runner-Karten belohnen selten reine Geschwindigkeit; sie belohnen Beständigkeit. Eine stetige Annäherung mit bewussten Pausen auf Absätzen schlägt meist eine aggressive, denn ein einziger Sturz kostet mehr Zeit als alle Pausen zusammen. Wenn du auf demselben Abschnitt zweimal gefallen bist, ist das dein Signal, die Route statt das Timing zu ändern – einen fehlgeschlagenen Sprung mit mehr Selbstvertrauen zu wiederholen, ist der Weg, wie Runs sterben.
-
-Du solltest auch wissen, wann du dich ganz vom Leuchtturm abwenden solltest. Wenn der Strahl sichtbar ist, aber jede Plattform zwischen dir und ihm sich bewegt, zerbröckelt oder zeitgesteuert ist, verlangt die Karte wahrscheinlich zuerst etwas anderes. Eine schlechte Route früh aufzugeben ist kein Verlust; es ist die günstigste Entscheidung, die du treffen kannst.
+Wenn du vor der Veröffentlichung einschätzen willst, ob dieses Spiel für dich ist, stelle eine Frage: Magst du Spiele, in denen deine Position eine geteilte Ressource statt einer privaten ist? Wenn ja, wird das Strahlkonzept wahrscheinlich zünden. Wenn du lieber dein eigenes Schiff fliegst, ohne mit einem Partner über Raum zu verhandeln, könnte sich der Core Loop einschränkend anfühlen. Das ist ein Urteil über Design-Präferenzen, keine Vorhersage über Qualität, und kein Artikel kann versprechen, dass das Spiel für dich Klick macht.
 
 ## FAQ
 
-**Was genau ist der Void-Runners-Leuchtturm?**
-Es ist die hohe Leuchtfeuerstruktur, die in vielen Hinderniskarten im Void-Runner-Stil erscheint, normalerweise als Orientierungspunkt, Checkpoint oder Endziel. Ihr Hauptzweck im Gameplay ist es, Spielern einen festen Bezugspunkt in einer ansonsten leeren, nebligen Umgebung zu geben.
+**Ist Void Runners dasselbe wie Void Crew oder Void Stranger?**
+Nein. Void Runners ist ein separates Spiel von Aaron Reisman, gelistet als Steam-App 5334520. Void Crew, Void Stranger, Solar Ash und Starfinder sind andere Titel.
 
-**Wie finde ich den Void-Runners-Leuchtturm, wenn ich ihn nicht sehen kann?**
-Klettere auf die höchste Plattform, die du erreichen kannst, und suche den Horizont nach einem Glühen ab, nicht nach einer Struktur. Emissives Licht wird durch Nebel meist weiter gerendert als Geometrie, daher erscheint der Strahl oft vor dem Turm.
+**Ist Void Runners veröffentlicht?**
+Nicht laut dem offiziellen Eintrag. Es ist als „coming soon" mit einem Veröffentlichungsdatum Q1 2027 markiert.
 
-**Ist der Leuchtturm immer das Ziel der Karte?**
-Nein. In manchen Karten ist er das Ziel oder der Extraktionspunkt, während er in anderen nur ein Navigations-Orientierungspunkt oder ein Checkpoint auf halber Strecke ist. Manche Karten enthalten sogar Ködertürme ohne Lichtquelle, um Spieler in die Irre zu führen.
+**Hat Void Runners Codes?**
+Auf der offiziellen Seite ist kein Codesystem veröffentlicht. Jede Codes-Liste, die du findest, basiert nicht auf Entwicklerdokumentation.
 
-**Warum falle ich beim letzten Aufstieg immer wieder?**
-Der letzte Abschnitt hat meist die engsten Sprünge und die am wenigsten verzeihende Geometrie. Werde langsamer, klettere in Etappen, halte auf Absätzen an, um den Strahl erneut zu prüfen, und umrunde die Basis einmal, bevor du dich für eine Route entscheidest.
+**Wie viele Spieler werden unterstützt?**
+Ein bis vier Piloten, auf einer Couch oder online, laut der Store-Beschreibung.
+
+**Wie lang ist ein Run?**
+Die Seite beschreibt drei Sektoren mit je vier Sprüngen, endend bei einem Wächter. Drei Sektoren, drei Wächter.
+
+**Gibt es benannte Bosse oder Schiffsteile?**
+Nicht dokumentiert. Die offizielle Seite veröffentlicht keine Wächter-Namen, Schiffsteile oder Waffenwerte.
+
+**Wo sollte ich nach Updates schauen?**
+Die [Steam store page](https://store.steampowered.com/app/5334520/) ist die primäre Quelle.

@@ -1,126 +1,93 @@
 export const metadata = {
-  title: "Void Runners Worlds Collide: Guía completa de mapas de zonas, mecánicas y consejos de supervivencia",
-  description: "Un recorrido práctico por los mapas de Void Runners Worlds Collide: diseño de zonas, mecánicas principales, consejos de rutas y trucos de supervivencia para todos los niveles.",
+  title: "Void Runners: Qué Hace Realmente el Roguelike Cooperativo de Rayos",
+  description: "Void Runners es un roguelike twin-stick para uno a cuatro pilotos cuyas naves están unidas por rayos trituradores. Esto es lo confirmado antes de su lanzamiento en el primer trimestre de 2027.",
   category: "maps",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Qué hace diferente a un mapa de Void Runner
+"Void Runners" es un nombre fácil de confundir con otra cosa. No es Solar Ash, no es Void Crew, no es Void Stranger y no es Starfinder. Es un juego de Steam específico y actualmente inédito del desarrollador y editor Aaron Reisman, listado con la app 5334520 y marcado como "próximamente" con una ventana de lanzamiento en el primer trimestre de 2027. Como aún no se ha lanzado, la mayor parte de lo que circula sobre él cae en tres categorías: lo que la página de la tienda realmente anuncia, lo que los jugadores infieren razonablemente de esa descripción, y lo que simplemente no se ha documentado en ningún lugar. Mantener esas categorías separadas es el objetivo central de este artículo.
 
-Los mapas de Void Runners Worlds Collide son esa rara variedad de pista de obstáculos donde el suelo simplemente no existe. Si alguna vez has visto a un corredor esprintar sobre plataformas flotantes mientras un cielo vacío se abre bajo sus pies, ya entiendes tanto el atractivo como el terror del diseño de niveles de Void Runners Worlds Collide. No hay paisaje detrás del que esconderse, ni suelo que atrape un salto mal calculado, ni segundas oportunidades a menos que un anillo de punto de control esté cerca.
+Si quieres verificar cualquier afirmación a continuación contra la fuente, la [página oficial de Void Runners en Steam](https://store.steampowered.com/app/5334520/) es el único lugar que importa. Todo aquí se extrae de ella o se etiqueta como inferencia.
 
-Esa única decisión de diseño lo cambia todo. En un circuito de parkour normal, el propio entorno te enseña hacia dónde ir: una cornisa sugiere un agarre, una pendiente sugiere un deslizamiento. En el vacío, cada plataforma es una isla, y el único mapa que tienes es el que construyes en tu cabeza. El conocimiento de la ruta, no los reflejos puros, es lo que separa una pasada limpia de cien reinicios.
+## Lo que la página de la tienda realmente anuncia
 
-Esta guía desglosa cómo se construyen estos mapas, cómo el tema "worlds collide" los transforma y qué puedes hacer realmente para sobrevivir más tiempo.
+La descripción verificada es breve, pero densa en compromisos mecánicos. Despoja el lenguaje de marketing y obtienes esto:
 
-## Por qué el tema "Worlds Collide" cambia la partida
+- **Incursiones cooperativas de salvamento para uno a cuatro pilotos**, jugables en un sofá o en línea. Eso significa que el mismo juego admite partidas en solitario y equipos completos de cuatro jugadores sin un modo separado.
+- **Los rayos conectan naves.** Cada par de naves está unido por un rayo de energía, y ese rayo tritura todo lo que barre. El rayo no es un vínculo cosmético; es el instrumento de daño principal.
+- **El posicionamiento es la decisión central.** La descripción enmarca explícitamente el dispersarse y "balancear la red" como el punto clave. Dónde vuelas en relación con tus compañeros de tripulación determina dónde aterriza tu daño.
+- **Fuego cruzado, esquiva y reanimación de la tripulación desde cápsulas de escape** se nombran como parte del bucle. Los pilotos derribados son recuperables en lugar de perderse permanentemente dentro de una partida.
+- **Construyes una nave recuperada**, lo que implica una progresión ensamblada a partir de lo que recuperas en lugar de un equipamiento fijo.
+- **Una partida atraviesa tres sectores y tres guardianes de profundidad.** Esa es la estructura declarada: tres sectores, cada uno terminando en un guardián, con una confrontación final.
 
-La mayoría de los mapas de void runner eligen una identidad visual y se mantienen fieles a ella. La variante worlds collide hace lo contrario: une varios temas distintos en un solo recorrido continuo, así que puedes salir esprintando de un campo de esquirlas congeladas y aterrizar en un horizonte de neón tres saltos después.
+Todo en esa lista está declarado por el desarrollador. Nada en ella nombra una pieza específica, un número de daño o un jefe.
 
-Esa variedad es fantástica para la atmósfera y terrible para la memoria muscular. Cada zona tiende a introducir su propio ritmo de peligros, su propio espaciado de plataformas y, a menudo, su propio sabor físico. Los informes de la comunidad señalan sistemáticamente el mismo punto crítico: la propia transición. Los corredores que mueren en una costura de zona normalmente no fallan el salto, fallan al cambiar de marcha mental lo suficientemente rápido.
+## Cómo la red de rayos cambia las decisiones en cuatro jugadores
 
-| Capa temática | Qué cambia | Qué castiga |
+La mayoría de los juegos cooperativos twin-stick tratan a cada jugador como una torreta independiente. Void Runners hace algo estructuralmente diferente: tu producción de daño es una función de la geometría compartida con tus compañeros de equipo. Si dos naves se enlazan en un rayo, el rayo existe en el espacio entre ellas. Muévete, y el rayo se mueve. Rota la formación, y el área barrida cambia de forma.
+
+Eso produce algunas consecuencias prácticas que vale la pena razonar antes del lanzamiento:
+
+**Dispersarse cubre más terreno pero adelgaza tu daño.** Una red amplia barre un área grande de forma lenta e impredecible. Una red compacta concentra el fuego pero deja a todos dentro de la misma ventana de esquiva con menos espacio para reaccionar.
+
+**La esquiva de un jugador es el problema de todos.** Si un rayo te conecta con un compañero de tripulación, tu movimiento evasivo arrastra el rayo — y posiblemente el daño del rayo — por toda la arena. Esquivar no es puramente egoísta en este diseño.
+
+**El juego en solitario cambia el rompecabezas por completo.** Con un solo piloto no hay pares, así que la mecánica de red tal como se describe no puede funcionar de la misma manera. La página de la tienda afirma compatibilidad de uno a cuatro jugadores, pero no explica cómo funcionan los rayos en solitario. **Ese detalle no es público.** Un jugador en solitario debería verificarlo en el juego o vigilar la página oficial en busca de una descripción específica para solitario antes de asumir paridad con el cooperativo.
+
+## Qué añaden la comunidad y las fuentes de terceros
+
+Han aparecido un puñado de guías de terceros y artículos de agregadores desde el anuncio. Trátalos como observaciones secundarias, no como documentación. Por lo general, repiten la descripción de la tienda, a veces con una redacción más segura de lo que la fuente respalda.
+
+Cuando la cobertura de terceros se ha desviado hacia detalles específicos — piezas de nave con nombre, niveles de armas, costos de desbloqueo, nombres de guardianes o cualquier tipo de sistema de códigos o semillas — esos detalles **no están respaldados por la página oficial**. La descripción de la tienda no publica piezas de nave, estadísticas de armas, nombres de jefes ni sistema de códigos. Si ves una lista de "códigos de Void Runners", una tabla de niveles o un jefe final con nombre, es inventado, especulativo o tomado de un juego diferente. Esa es la forma más común en que la cobertura de un título inédito sale mal.
+
+Un hábito rápido de verificación: si una afirmación no está en la [página de la tienda de Steam](https://store.steampowered.com/app/5334520/) y no se demuestra en un tráiler oficial o una publicación del desarrollador, archívala como no confirmada y sigue adelante en lugar de memorizarla.
+
+| Tipo de afirmación | Estado | Dónde verificar |
 |---|---|---|
-| Zonas de hielo y cristal | Aterrizajes resbaladizos, baja fricción | Comprometerse en exceso al aterrizar |
-| Zonas de ciudad de neón | Espaciado ajustado, escaladas verticales | Ajustes de cámara apresurados |
-| Zonas de tormenta y grieta | Plataformas móviles, pulsos de retroceso | Quedarse quieto para "planificar" |
-| Zonas de ruinas cubiertas de vegetación | Líneas de visión rotas, superficies irregulares | Leer la ruta demasiado tarde |
-| Zonas de mezcla final | Todo a la vez | Cualquier mal hábito |
+| Cooperativo de 1 a 4 jugadores, sofá o en línea | Anunciado | Página oficial de Steam |
+| Los rayos conectan naves y trituran lo que barren | Anunciado | Página oficial de Steam |
+| Tres sectores, tres guardianes | Anunciado | Página oficial de Steam |
+| Reanimar desde cápsulas de escape | Anunciado | Página oficial de Steam |
+| Construir una nave recuperada | Anunciado | Página oficial de Steam |
+| Piezas de nave con nombre, estadísticas de armas | No documentado | En ningún lugar aún; verificar al lanzamiento |
+| Nombres de jefes, diseños de sectores | No documentado | En ningún lugar aún; verificar al lanzamiento |
+| Códigos, semillas, costos de desbloqueo | No documentado | En ningún lugar aún; verificar al lanzamiento |
 
-Si te llevas una sola cosa de esta sección, que sea esta: trata cada límite de zona como su propio mini-inicio. Deja de esprintar durante medio segundo, vuelve a leer la geometría y luego comprométete.
+## La partida de tres sectores y lo que implica "guardián"
 
-## Anatomía del mapa: los bloques de construcción de un circuito
+La estructura de partida anunciada es de tres sectores de cuatro saltos cada uno, terminando en un guardián por sector. Esa es una partida legible y acotada — lo suficientemente corta como para que un intento completo sea una sola sesión, lo que encaja con el marco roguelike en el que se apoya la descripción.
 
-Casi todos los circuitos de void runner se ensamblan con el mismo pequeño conjunto de piezas. Aprender a reconocerlas a simple vista es la forma más rápida de mejorar.
+Lo que la página no especifica es qué sucede entre saltos. ¿Son los saltos arenas de combate discretas, pantallas de transición o algo más? ¿Se recoge el botín a mitad del salto o se acumula al final del sector? ¿Hay una tienda, una pantalla de elección o un orden fijo? **Nada de eso está documentado.** Cualquiera que describa en detalle el "mapa de saltos" de Void Runners ahora mismo está esbozando, no informando.
 
-| Elemento | Qué hace | Qué pone a prueba |
-|---|---|---|
-| Plataforma estática | Apoyo seguro estándar | Distancia y timing del salto |
-| Plataforma desvaneciente | Se derrumba tras el contacto | Ritmo y decisión |
-| Plataforma de impulso | Te lanza hacia delante o hacia arriba | Control en el aire |
-| Campo de baja gravedad | Ralentiza tu caída | Gestión de la flotación |
-| Puerta de portal | Te teletransporta entre zonas | Conciencia del límite de zona |
-| Barrido de peligro | Láser o línea de pulso temporizada | Ritmo y paciencia |
-| Anillo de punto de control | Guarda tu progreso | Memorización de la ruta |
-| Ancla móvil | Plataforma en una trayectoria fija | Predicción, no reacción |
+La palabra "guardián" sí que hace un trabajo real. Señala un encuentro persistente y definitorio de la partida en lugar de un enemigo élite genérico — y con tres de ellos colocados en los límites de los sectores, el ritmo probablemente sea una escalada constante en lugar de un único pico. Eso es una inferencia a partir de la redacción de la descripción, no una declaración de diseño confirmada. Los nombres de los guardianes, los patrones de ataque y los valores de salud están todos sin publicar.
 
-La última merece énfasis. Las anclas móviles son la mayor fuente de muertes "injustas" en los mapas de vacío, y casi todas esas muertes provienen de reaccionar a dónde está la plataforma en lugar de predecir dónde estará. Observa un ciclo completo antes de saltar.
+## Qué observar antes del primer trimestre de 2027
 
-Esta filosofía de precisión ante todo es la misma que define a los juegos de parkour en [el centro de etiquetas de parkour de Steam](https://store.steampowered.com/tags/en/Parkour/): el género recompensa la planificación por encima del pánico.
+Como el juego no se ha lanzado, el movimiento útil es saber qué cambiaría tus expectativas — no memorizar números que aún no existen.
 
-## Zona por zona: leer un diseño de Worlds Collide
+1. **Una explicación del juego en solitario.** La red de rayos es una idea con forma multijugador. Cómo la resuelve el desarrollador para un solo piloto es la mayor pregunta abierta en la descripción.
+2. **Un tráiler de gameplay real.** El texto de la página de la tienda describe mecánicas; las imágenes confirmarían si la red se lee en pantalla con la misma claridad que en prosa.
+3. **Cualquier detalle de progresión.** "Construir una nave recuperada" es la característica anunciada más vaga. Si eso significa desbloqueos permanentes, ensamblaje por partida o ambos, dará forma a todo el bucle.
+4. **Una fecha de lanzamiento concreta.** El primer trimestre de 2027 es una ventana, no una fecha. Puede moverse.
 
-La estructura de Void Runners Worlds Collide suele seguir una curva de dificultad que parece aleatoria pero no lo es. Las zonas se acortan a medida que se vuelven más difíciles, porque las secciones brutales cortas son más fáciles de reintentar que las brutales largas.
-
-| Posición de la zona | Longitud típica | Amenaza principal | Mejor enfoque |
-|---|---|---|---|
-| Zona inicial | Larga | Enseñar lo básico | Aprende el ritmo, no te apresures |
-| Segunda zona | Media | Nueva regla física | Ajusta tu timing de salto |
-| Tercera zona | Media | Peligros combinados | Baja el ritmo en las costuras |
-| Cuarta zona | Corta | Presión de velocidad | Comprométete del todo, sin dudar |
-| Final | La más corta | Todo a la vez | Ejecuta el plan que ya conoces |
-
-### Enrutamiento y disciplina de puntos de control
-
-Los puntos de control no son solo redes de seguridad; son información. La ubicación de un anillo de punto de control te dice exactamente dónde esperaba el diseñador del mapa que tuvieras dificultades. Si un punto de control está justo antes de un hueco, ese hueco es el muro previsto.
-
-- Anota siempre el último punto de control antes de intentar una sección nueva.
-- Si una sección te mata tres veces, detente y observa las piezas móviles durante un ciclo completo.
-- No "practiques" una sección que no puedes ver. Repetir con pánico enseña pánico.
-
-## Consejos prácticos para sobrevivir más tiempo
-
-Los mapas de void runner son implacables, pero también predecibles. Esto es lo que realmente marca la diferencia.
-
-- **Baja la sensibilidad de la cámara en las secciones de vacío.** Los ajustes pequeños superan a los barridos amplios cuando no hay horizonte en el que anclarse.
-- **Apunta al borde lejano de las plataformas, no al centro.** Aterrizar profundo te da más espacio para el siguiente salto.
-- **Mantén la entrada de movimiento durante el arco del salto.** Los tanteos en el aire matan el impulso en la mayoría de los motores físicos.
-- **Aprende una zona a la vez.** Hacer speedrun de una pasada completa antes de poder superar cada zona es un desperdicio de intentos.
-- **Cuenta el compás de los barridos de peligro en voz alta.** El ritmo es más fácil de mantener que un temporizador visual.
-
-| Nivel de habilidad | Enfoque principal | Objetivo realista de sesión |
-|---|---|---|
-| Nuevo en mapas de vacío | No caerse de las plataformas estáticas | Superar la zona inicial tres veces |
-| Cómodo | Plataformas desvanecientes e impulsos | Alcanzar el segundo punto de control de forma constante |
-| Intermedio | Transiciones de zona | Superar dos zonas completas sin morir |
-| Avanzado | Optimización de ruta | Pasada completa con tiempo de sobra |
-| Experto | Pasadas de consistencia | Pasadas repetidas, bajo número de muertes |
-
-El salto de "cómodo" a "intermedio" casi siempre es un problema de transición, no un problema de mecánicas. Dedica tu tiempo de práctica a las costuras.
-
-## Errores comunes y cómo solucionarlos
-
-Incluso los corredores experimentados repiten el mismo puñado de errores en los circuitos de Void Runners Worlds Collide. La buena noticia es que cada uno tiene una solución específica y mecánica.
-
-| Error | Por qué ocurre | La solución |
-|---|---|---|
-| Saltar antes de que una plataforma deje de moverse | Emoción | Observa un ciclo completo primero |
-| Corregir en exceso en el aire | Sin referencia visual | Reduce la sensibilidad de la cámara |
-| Esprintar a través de una costura de zona | Hábito de impulso | Pausa deliberada de medio segundo |
-| Ignorar la ubicación de los puntos de control | Asumir que es aleatoria | Léela como una pista de dificultad |
-| Reintentar al instante tras una muerte | Frustración | Tómate cinco segundos y luego reinicia |
-| Culpar al mapa | Ego | Graba el intento y revísalo |
-
-Esa última fila importa más de lo que parece. La experiencia de los jugadores sugiere que los corredores que revisan sus propios fallos mejoran notablemente más rápido que los que simplemente acumulan intentos. Un clip corto de una muerte te dice más que diez intentos más.
+Nada de esto promete que el juego saldrá bien. Es una descripción con una especificidad mecánica inusual y muy poco material de apoyo, lo cual es normal para un título tan lejano.
 
 ## Preguntas frecuentes
 
-**¿Qué es exactamente un mapa de Void Runners Worlds Collide?**
+**¿Es Void Runners lo mismo que Void Crew o Void Stranger?**
+No. Son juegos separados con desarrolladores no relacionados. Void Runners es el proyecto de Aaron Reisman, app de Steam 5334520.
 
-Es una pista de obstáculos ambientada en el vacío —es decir, no hay suelo bajo las plataformas— que combina múltiples temas visuales y mecánicos distintos en una sola carrera continua. La parte de "collide" se refiere a cómo esos temas se superponen e interrumpen entre sí.
+**¿Ya salió Void Runners?**
+No. Está marcado como "próximamente" con una ventana en el primer trimestre de 2027.
 
-**¿Son los mapas de Void Runners Worlds Collide más difíciles que los mapas de parkour estándar?**
+**¿Admite juego en solitario?**
+La página de la tienda anuncia de uno a cuatro pilotos, así que sí según la descripción — pero cómo funciona el enlace de rayos con una sola nave no está documentado.
 
-En general, sí, pero no por la razón que la gente supone. Los saltos en sí rara vez son más exigentes técnicamente. La dificultad proviene de la falta de referencia visual y del constante cambio de marcha entre zonas.
+**¿Cuánto dura una partida?**
+Tres sectores, cuatro saltos cada uno, con un guardián al final de cada sector. El tiempo total de juego no se indica.
 
-**¿Cuánto se tarda en superar uno de estos mapas?**
+**¿Hay códigos de Void Runners?**
+No se publica ningún sistema de códigos. Cualquier lista de códigos que encuentres no proviene del desarrollador.
 
-Varía enormemente según la longitud del mapa y tu familiaridad con la física del vacío. La mayoría de los jugadores informan que su primera pasada completa tarda mucho más que la segunda, porque el conocimiento de la ruta —no el reflejo— es el verdadero cuello de botella.
-
-**¿Necesito una plataforma o juego específico para jugar al contenido de Void Runners Worlds Collide?**
-
-Ninguna plataforma en concreto es dueña del formato. Los circuitos de void runner aparecen en creadores de sandbox, juegos de obstáculos para navegador y centros de mapas de la comunidad, así que las habilidades principales se transfieren entre ellos.
-
-**¿Cuál es el mejor hábito para mejorar en estos mapas?**
-
-Observar antes de saltar. Ya sea un ancla móvil o un barrido de peligro, un ciclo completo de observación evita más muertes que cualquier cantidad de velocidad pura.
+**¿Dónde debería buscar actualizaciones?**
+La [página oficial de Steam](https://store.steampowered.com/app/5334520/) es la única fuente autorizada. Ignora las páginas de agregadores que presentan especulación como hecho.

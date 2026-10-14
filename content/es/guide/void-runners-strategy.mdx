@@ -1,126 +1,85 @@
 export const metadata = {
-  title: "Guía de estrategia de Void Runners: movimiento, equipamiento y dominio de rutas",
-  description: "Una guía práctica de estrategia de Void Runners que cubre técnicas de movimiento, economía de dash, planificación de rutas, equipamiento y los errores que terminan las partidas antes de tiempo.",
+  title: "Void Runners: Lo que realmente hace el roguelike cooperativo de rayos",
+  description: "Void Runners es un roguelike cooperativo para cuatro jugadores en el que los rayos conectan naves y arrasan con todo lo que barren. Esto es lo confirmado para el lanzamiento en Steam.",
   category: "guide",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Por qué la estrategia en Void Runners premia la preparación por encima de los reflejos
+Void Runners aún no ha salido. Ese único hecho determina todo lo que vale la pena decir al respecto. La ficha de Steam del juego, desarrollado y publicado por Aaron Reisman bajo el ID de aplicación 5334520, lo marca como próximamente con una ventana de lanzamiento para el primer trimestre de 2027, obtenida del endpoint oficial de appdetails el 14 de octubre de 2026. No hay notas de parche, ni cambios de equilibrio, ni meta que estudiar. Lo que existe es la descripción de una página de tienda y un concepto que es inusualmente fácil de razonar, porque la idea central es espacial en lugar de estadística.
 
-Una partida a través del vacío puede terminar en segundos si la tratas como una prueba de pura reacción. Los jugadores que completan las rutas más difíciles una y otra vez son los que tratan Void Runners como un problema de planificación primero y un problema de ejecución después. Una buena estrategia de Void Runners se decide antes del primer dash: a qué línea te comprometes, qué recursos estás dispuesto a gastar y el momento exacto en que abandonas un intento condenado. Esa preparación es lo que convierte una victoria afortunada en una repetible.
+Ese concepto: las naves vuelan en parejas, cada pareja unida por un rayo, y ese rayo destroza cualquier cosa que barre. No apuntas un arma tanto como decides dónde colocar un segmento de línea.
 
-La mayoría de las partidas fallidas se remontan a un mismo puñado de causas: dashes por pánico, desvíos codiciosos y negarse a reiniciar tras un error. Cada una de ellas es una decisión, no un reflejo, lo que significa que todas se pueden corregir con un sistema. Las secciones siguientes desglosan ese sistema en pilares, reglas de movimiento, niveles de ruta, elecciones de equipamiento y un breve circuito de práctica que puedes realizar en una sola sesión.
+## La única mecánica que explica todo lo demás
 
-Si todavía estás decidiendo con qué título aprender, ayuda [explorar títulos de void runner en Steam](https://store.steampowered.com/search/?term=void+runner) para que puedas ajustar el ritmo de un juego a tu nivel de comodidad antes de comprometerte con una rutina de grind.
+La mayoría de los roguelikes twin-stick preguntan hacia dónde apuntas. Void Runners pregunta dónde estás en relación con tu tripulación, porque tu daño producido es una función de la geometría, no de la puntería. Dos naves conectadas barriendo un rayo por una sala cubren terreno que ninguna nave sola puede cubrir, y el mismo rayo que mata enemigos también define el espacio que tu compañero debe evitar o aprovechar.
 
-## Los pilares fundamentales de una estrategia en Void Runners
+La descripción oficial en la [página de Steam de Void Runners](https://store.steampowered.com/app/5334520/) lo plantea como dispersarse y mover la red, con fuego cruzado, esquivas y revivir a la tripulación desde cápsulas de escape como parte del bucle. Eso es un puzle espacial cooperativo disfrazado de shooter. Si has jugado twin-stick en solitario durante años, el ajuste no es habilidad mecánica. Es aprender a pensar en la posición de tu compañero como un recurso que estás gastando continuamente.
 
-Las buenas partidas se apoyan en cinco decisiones que se repiten en casi todos los void runners, sin importar cómo se presenten el movimiento o la puntuación. Los informes de la comunidad apuntan de forma consistente al mismo patrón: los jugadores que mejoran más rápido son los que corrigen su toma de decisiones, no su configuración de sensibilidad.
+## Características anunciadas frente a inferencias de la comunidad
 
-| Pilar | Qué controla | Por qué importa | Victoria rápida |
-|---|---|---|---|
-| Economía de movimiento | Dashes, impulsos, control aéreo | Tu herramienta de escape suele ser un recurso limitado | Reserva siempre un dash |
-| Selección de ruta | La línea que tomas | Una línea segura supera a una rápida que falla | Explora la ruta antes de esprintarla |
-| Sincronización de enfriamientos | Cuándo vuelven las habilidades | Gastar por pánico te deja vacío en el peor momento | Sigue los enfriamientos por puntos de referencia, no por temporizadores |
-| Información y visión | Lo que puedes leer por delante | No puedes esquivar lo que no puedes ver | Aleja la cámara en los tramos rectos |
-| Disciplina de reinicio | Cuándo reinicias | Una partida condenada cuesta más que un reinicio | Establece una regla de abandono antes de empezar |
+Vale la pena ser estrictos sobre lo que está confirmado. La tabla a continuación separa lo que indica la página de la tienda de lo que los jugadores infieren razonablemente, y de lo que simplemente se desconoce.
 
-Los pilares se refuerzan entre sí. Una mejor visión mejora la selección de ruta, lo que reduce el gasto por pánico, lo que preserva el dash que necesitas para el único hueco verdaderamente peligroso. Cuando una partida se desmorona, resiste la tentación de culpar a tus manos. Pregúntate qué pilar se rompió primero: la respuesta suele ser la información o la disciplina, no los reflejos.
+| Estado | Detalle |
+| --- | --- |
+| Anunciado | De uno a cuatro pilotos, en el mismo sofá o en línea |
+| Anunciado | Los rayos conectan naves y destrozan todo lo que barren |
+| Anunciado | Dispérsense y muevan la red; fuego cruzado y esquivas |
+| Anunciado | Revive a la tripulación desde cápsulas de escape |
+| Anunciado | Construye una nave recuperada |
+| Anunciado | Tres sectores, cuatro saltos cada uno, terminando en un guardián |
+| Anunciado | Ventana de lanzamiento primer trimestre de 2027, marcado como próximamente |
+| No documentado | Piezas de nave, estadísticas de armas, nombres de guardianes, diseños de sectores |
+| No documentado | Costes de desbloqueo, moneda de progresión, cualquier sistema de códigos |
 
-## Movimiento, economía de dash y gestión del impulso
+La cobertura de terceros sobre Void Runners es escasa y en su mayoría repite el texto de la tienda. Trata cualquier guía que liste builds específicas, mejoras de rayo o estrategias de jefes como especulación, porque nada de eso se ha publicado. La página de la tienda no revela piezas de nave, estadísticas de armas, nombres de jefes ni un sistema de códigos, y este artículo no los inventará.
 
-El movimiento es donde la estrategia se hace visible, y también donde la mayoría de los jugadores desperdician en silencio sus mejores herramientas. El objetivo no es moverse constantemente, sino moverse con intención, de modo que cada ráfaga de velocidad te aporte algo.
+## Cooperativo en sofá frente a en línea, y por qué la diferencia importa
 
-### Trata los dashes como moneda
+La descripción indica de uno a cuatro pilotos en un sofá o en línea. Esas no son experiencias equivalentes para un juego construido sobre la geometría de rayos.
 
-En la mayoría de los diseños de void runner, tu dash es tanto tu opción de desplazamiento más rápida como tu única esquiva fiable. Ese doble propósito es toda la tensión del género. Gástalo para ahorrar tiempo y puede que no lo tengas cuando aparezca un peligro; acumúlalo y tu tiempo de completado se resiente. La regla práctica a la que la experiencia de los jugadores vuelve una y otra vez es sencilla: nunca entres en una sección desconocida con el depósito vacío. Si no sabes qué hay a la vuelta de la esquina, llega con un dash en reserva.
+En una pantalla compartida, puedes ver la nave de tu compañero y la tuya al mismo tiempo, y eso cambia cómo planificas. El rayo es visible para ambos simultáneamente, así que coordinar un barrido es cuestión de hablar, no de describir. El juego en línea añade una capa de traducción: tienes que decir lo que estás haciendo en lugar de simplemente hacerlo a la vista de alguien. Eso es un coste real en un juego donde la posición relativa es toda la decisión.
 
-### Las cinco capas del movimiento
+Si estás decidiendo cómo reunir a un grupo, la respuesta honesta es que el juego en sofá es estructuralmente más fácil de coordinar, pero la página de la tienda no clasifica los modos ni sugiere que uno sea favorecido. Elige según quién esté realmente disponible, y verifica los detalles de emparejamiento o sala en la página oficial más cerca del lanzamiento, ya que la descripción no los especifica.
 
-| Capa de movimiento | Propósito | Error común | Solución |
-|---|---|---|---|
-| Esprint en el suelo | Acumular y mantener la velocidad base | Detenerse para alinear un salto | Sigue moviéndote; dirige con pequeños inputs |
-| Dash o ráfaga | Cubrir huecos, esquivar peligros | Encadenar todos los dashes a la vez | Gasta uno, guarda uno |
-| Control aéreo | Ajustar en pleno vuelo | Corregir en exceso en la aproximación | Comprométete con el aterrizaje desde el principio |
-| Interacción con bordes y paredes | Redirigir el impulso | Pegarse a superficies que matan la velocidad | Toca, no te aferres |
-| Recuperación tras el aterrizaje | Restablecer tu estado | Machacar inputs durante la recuperación | Deja que la recuperación termine y luego actúa |
+## Leer una partida: tres sectores, cuatro saltos, un guardián
 
-### Gestionar el impulso sin perder el control
+La estructura de partida anunciada es compacta: tres sectores, cuatro saltos por sector y un guardián al final. Eso es un arco corto para los estándares de los roguelikes, lo que sugiere que la intención de diseño son partidas repetidas en lugar de campañas largas. Un sector de cuatro saltos es aproximadamente la duración de una sesión enfocada, y el guardián actúa como punto de control sobre si la coordinación de tu tripulación se mantuvo.
 
-El impulso es un recurso con un techo y un suelo. Por encima del techo dejas de poder dirigir con precisión; por debajo del suelo no puedes salvar los huecos que exige la ruta. Los corredores experimentados describen una "banda de trabajo": el rango de velocidad en el que el personaje todavía responde a pequeñas correcciones. Aprender dónde se sitúa esa banda en tu juego preferido es una de las horas de mayor valor que puedes invertir, porque te dice cuándo acelerar y cuándo sangrar velocidad deliberadamente antes de una sección técnica.
+Lo que la página de la tienda no dice es qué ocurre entre saltos, cómo funciona la ramificación si es que se ramifica, ni cómo es un encuentro con un guardián. Tampoco nombra a los guardianes. Cualquiera que describa una fase específica de un guardián o un patrón de ataque está trabajando desde suposiciones, no desde información.
 
-La recuperación es la otra mitad del impulso. Después de un aterrizaje brusco o de rozar un peligro, tus inputs suelen ir lentos durante un instante. Los jugadores que machacan durante esa ventana tienden a derivar hacia el siguiente peligro. Haz una pausa, deja que el estado se restablezca y vuelve a la acción. Se siente más lento y casi nunca lo es.
+La conclusión práctica es que la duración de tu partida es lo suficientemente corta como para que el fracaso sea barato, lo que recompensa experimentar con posicionamiento agresivo del rayo en lugar de jugar sobre seguro. Eso es una inferencia de la estructura anunciada, no una declaración del desarrollador.
 
-## Planificación de rutas, equipamiento y roles de equipo
+## Construir una nave recuperada: lo que es y no es público
 
-Una vez que el movimiento está bajo control, la partida se convierte en un problema de rutas. Aquí es donde una estrategia de Void Runners empieza a generar interés compuesto, porque una mejor ruta ahorra tiempo en cada intento.
+La descripción menciona construir una nave recuperada, lo que implica que acumulas algo a lo largo de una partida y lo ensamblas. Más allá de eso, la página de la tienda guarda silencio. No hay una lista publicada de piezas, ni sistema de ranuras, ni árbol de mejoras, ni tabla de costes.
 
-### Leer la ruta antes de correrla
+Esta es el área donde los jugadores más querrán orientación y donde existe hoy la orientación menos honesta. Si ves una guía de builds de Void Runners con componentes nombrados, es fabricada. Lo correcto es esperar al lanzamiento y luego leer directamente la interfaz del juego, que será la fuente autorizada para piezas, estadísticas y cualquier regla de progresión.
 
-Recorre la ruta una vez sin esprintar. Buscas tres cosas: el hueco más ajustado, el peligro con el aviso más corto y el punto de no retorno en el que ya no puedes abandonar con seguridad. Marca mentalmente esos tres puntos de referencia y tendrás un plan de ruta.
+## Cómo verificar cualquier cosa antes del lanzamiento
 
-| Nivel | Cómo se ve | Perfil de recompensa | Cuándo intentarlo |
-|---|---|---|---|
-| Línea segura | Plataformas amplias, pocos peligros | Lenta pero fiable | Aprendizaje, farmeo, poca salud |
-| Línea estándar | Saltos variados, uno o dos peligros | Equilibrada | La mayoría de las partidas y sesiones |
-| Línea agresiva | Sincronización ajustada, peligros en movimiento | Completados más rápidos, mejores recompensas | Tras un completado estándar limpio |
-| Línea de exhibición | Cadenas perfectas al frame, sin margen | Mejores tiempos, derecho a presumir | Solo con práctica dedicada |
+Como Void Runners no se ha lanzado, cada afirmación debería ser rastreable hasta la página oficial de la tienda. Las comprobaciones fiables son:
 
-### Prioridades de equipamiento
+- Confirma la ventana de lanzamiento y el estado en la [ficha oficial de Steam](https://store.steampowered.com/app/5334520/).
+- Revisa el campo de desarrollador y editor, listado como Aaron Reisman.
+- Lee tú mismo la lista de características en lugar de confiar en resúmenes, incluido este.
+- Después del lanzamiento, usa los menús del juego para piezas, estadísticas y cualquier detalle de desbloqueo, ya que no se publican de antemano.
 
-| Enfoque de build | Qué potencia | Mejor para | Contrapartida |
-|---|---|---|---|
-| Movilidad | Cantidad de dashes, velocidad máxima, control aéreo | Speedruns, rutas largas | Frágil cuando te atrapan |
-| Supervivencia | Salud, escudos, recuperación | Aprender rutas, cooperativo | Completados más lentos |
-| Utilidad | Visión, velocidad de enfriamiento, ganancia de recursos | Exploración, roles de apoyo | Débil como carry en solitario |
-| Equilibrado | Un poco de todo | Juego general | Sin fortaleza destacada |
+## FAQ
 
-El error que cometen los jugadores novatos es copiar la build de un speedrunner antes de poder sobrevivir a la ruta. Las builds de movilidad premian la ejecución limpia y castigan todo lo demás. Hasta que tus completados sean consistentes, la supervivencia es la maestra más rápida.
+**¿Es Void Runners lo mismo que Void Crew, Void Stranger, Solar Ash o Starfinder?**
+No. Esos son títulos no relacionados. Void Runners es un juego distinto de Aaron Reisman, aplicación de Steam 5334520.
 
-### Roles en cooperativo
+**¿Cuándo sale?**
+La ficha oficial muestra una ventana de lanzamiento para el primer trimestre de 2027 y un estado de próximamente, obtenida el 14 de octubre de 2026. Las ventanas pueden moverse, así que revisa la página de la tienda.
 
-| Rol | Función | Posicionamiento | Error común |
-|---|---|---|---|
-| Vanguardia | Cantar la ruta y los primeros peligros | Ligeramente por delante | Adelantarse a la información del equipo |
-| Corredor | Mover objetivos y recursos | En medio | Desvíos codiciosos |
-| Apoyo | Gestionar reanimaciones, escudos, enfriamientos | En la retaguardia, vigilando atrás | Acumular enfriamientos para una emergencia |
-| Ancla | Aguantar la salida y controlar el reinicio | En el lado de la salida | Irse antes de que todos hayan pasado |
+**¿Cuántos jugadores?**
+De uno a cuatro, en un sofá o en línea, según la descripción oficial.
 
-Los informes de la comunidad de grupos cooperativos sugieren que las tasas de completado mejoran mucho más con roles fijos que con mejores mecánicas individuales. Un equipo que siempre sabe quién canta la ruta vencerá a un equipo de cuatro solistas fuertes casi todas las veces.
+**¿Tiene un sistema de códigos, piezas de nave que pueda listar o jefes con nombre?**
+Nada de eso está documentado. La página de la tienda no publica piezas de nave, estadísticas de armas, nombres de jefes ni un sistema de códigos.
 
-## Errores comunes y un plan de práctica sencillo
+**¿Cuánto dura una partida?**
+Tres sectores con cuatro saltos cada uno, terminando en un guardián. Esa es la estructura anunciada; el tiempo exacto no se indica.
 
-Estos son los errores que terminan las partidas con más frecuencia, aproximadamente en orden de cuánto tiempo cuestan:
-
-- **Dashes por pánico.** Gastar un dash porque estás nervioso en lugar de porque necesitas distancia.
-- **Codicia de ruta.** Tomar un atajo que nunca has completado, en una partida que ya iba bien.
-- **Luchar contra la recuperación.** Machacar inputs durante los frames de aterrizaje o tambaleo en lugar de esperar a que pasen.
-- **Ignorar la visión.** Correr una sección en la que no puedes ver más allá del siguiente peligro.
-- **Sin regla de abandono.** Continuar una partida que ya estaba perdida, por terquedad.
-- **Copiar builds.** Usar una configuración ajustada para un nivel de habilidad que no has alcanzado.
-
-Un circuito de práctica estructurado supera al grind de partidas completas. Diez minutos concentrados en una debilidad suelen producir más mejora que una hora de intentos sin foco.
-
-| Foco de la sesión | Ejercicio | Qué observar |
-|---|---|---|
-| Economía de dash | Completa una ruta usando un dash por hueco | Con qué frecuencia gastas por costumbre |
-| Memoria de ruta | Recorre la ruta y luego córrela | Puntos de referencia que no notaste |
-| Recuperación | Recibe un golpe a propósito y luego escapa | Si puedes restablecerte con calma |
-| Sincronización | Repite un salto difícil diez veces | La consistencia, no tu mejor intento |
-| Juego en equipo | Corre con un compañero que cante los peligros | Si de verdad escuchas |
-
-Registra un número por sesión: intentos por completado, dashes desperdiciados o muertes por sección. Una sola métrica registrada convierte la práctica en retroalimentación, y la retroalimentación es lo que hace que una estrategia de Void Runners se afiance.
-
-## Preguntas frecuentes
-
-**¿Cuál es la parte más importante de una estrategia en Void Runners?**
-La disciplina de reinicio. La mayoría de los jugadores ya tienen las mecánicas para completar las rutas que están fallando; simplemente se niegan a reiniciar una partida que ha ido mal. Decidir de antemano cuándo abandonar protege tu tiempo y mantiene tu práctica centrada en las secciones que realmente necesitan trabajo.
-
-**¿Debería jugar rápido o seguro?**
-Juega seguro hasta que una ruta te resulte aburrida, y entonces juega rápido. La velocidad viene de eliminar la hesitación, no de añadir riesgo. Una vez que puedes completar una línea sin pensar en ella, la versión más rápida de esa línea suele revelarse por sí sola.
-
-**¿Cómo dejo de hacer dashes por pánico?**
-Dale a ti mismo una regla que puedas decir en voz alta: nunca entres en una sección que no ves sin un dash disponible. Las reglas son más fáciles de seguir bajo presión que las intenciones, y esta te obliga a mirar hacia delante antes de comprometerte.
-
-**¿Importa más el equipamiento que la habilidad?**
-No. Una buena build amplifica los buenos hábitos y exagera los malos. Si tus completados son inconsistentes, una configuración de supervivencia te enseñará más que cualquier build centrada en movilidad, y podrás cambiar cuando tu conocimiento de las rutas se ponga al día.
+**¿Debería comprarlo ahora?**
+Aún no se puede comprar. Añádelo a tu lista de deseados si el concepto del rayo te atrae, y trata cualquier consejo de build previo al lanzamiento como provisional hasta que el juego y su documentación oficial existan.

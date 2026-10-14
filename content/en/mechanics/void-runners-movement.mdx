@@ -1,149 +1,94 @@
 export const metadata = {
-  title: "Void Runners Movement Guide: Momentum, Dashes, and Air Control Mastery",
-  description: "Master void runners movement: momentum, dash timing, air control, coyote time, and drills that turn sloppy runs into clean, fast clears.",
+  title: "Void Runners: What the Co-op Beam Game Actually Is",
+  description: "Void Runners is an unreleased twin-stick roguelike where beams link up to four ships. Here is what the Steam page confirms, and what is not public yet.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Void runners movement is the difference between a run that looks effortless and one that ends against a wall. In games built around endless voids, momentum-driven dashes, and split-second air control, your hands are the only difficulty setting that truly matters. Nail the mechanics and the level design opens up; fumble them and every gap starts to feel like a trap.
+"Void Runners" is an easy name to confuse with something else. There is a whole cluster of spacey titles with "void" in them, and several of them are already out. This one is not. Void Runners is an announced Steam game from developer and publisher Aaron Reisman, listed as app 5334520, marked coming soon with a release window of Q1 2027. If you searched for Void Runners ships, beams, or co-op rules and landed on a page about Solar Ash, Void Crew, Void Stranger, or Starfinder, you are in the wrong place. Those are different games by different people.
 
-This guide breaks down how void runners movement actually works under the hood — the speed tiers, the hidden timing windows, the drills that build muscle memory, and the habits that quietly ruin otherwise good runs.
+The official [Void Runners Steam page](https://store.steampowered.com/app/5334520/) is the only authority on what the game is, and it is deliberately short. That short page is the reason this article spends as much time on what is *not* documented as on what is. For an unreleased co-op roguelike, knowing the boundary between advertised features and community guesswork is genuinely useful.
 
-## What Makes Void Runners Movement Feel So Good
+## What Void Runners Is, Per the Store Page
 
-Every movement system in this space chases the same feeling: flow. You want the player to reach a state where input and outcome line up so tightly that conscious thinking stops and reacting takes over. Void runners get there with four design pillars.
+The store description frames Void Runners as co-op salvage raids for one to four pilots, played on one couch or online. Two ideas carry the whole pitch:
 
-- **Forward bias.** Camera placement, level geometry, and rewards all push you toward the next platform. Backtracking is possible but rarely worth it.
-- **Forgiving windows.** Missing a jump by two frames shouldn't end a run, so generous coyote time and input buffering keep small errors from snowballing.
-- **Expressive chaining.** Dashes, wall kicks, and grapples link into each other, letting skilled players invent routes the designers never planned.
-- **Readable failure.** When you die, you should understand exactly why within a second of respawning.
+- **Beams link ships.** Each pair of ships is joined by a beam, and that beam shreds anything it sweeps.
+- **Position is the decision.** Because the beam is a line between two moving players, where you fly relative to your crew is the core tactical choice. Spreading out stretches the beam; swinging the web changes what it cuts.
 
-The void itself is more than a backdrop. It's a pressure system. Because there's no floor to stand on, hesitation costs altitude, and altitude costs options. That's why void runners movement rewards decisiveness more than raw precision.
+The page also mentions crossfire, dodging, reviving crew from escape pods, and building a salvaged ship. Structurally, a run crosses three sectors of four jumps and ends at a guardian, with three guardians in total.
 
-If you want to see how differently studios interpret these pillars, browsing a curated catalog such as [Steam's Parkour tag hub](https://store.steampowered.com/tags/en/Parkour/) makes the range obvious — some games lean into heavy physics, others into snappy, arcade-style acceleration.
+That is the entire advertised feature set. It is enough to understand the loop, and not enough to build a spreadsheet.
 
-## The Core Mechanics Behind Void Runners Movement
+| Advertised on Steam | Not published on Steam |
+|---|---|
+| 1–4 pilots, local or online | Ship parts or loadout options |
+| Beams linking each pair of ships | Weapon stats, damage numbers, cooldowns |
+| Beam shreds what it sweeps | Guardian names or attack patterns |
+| Three sectors, four jumps each | Sector layouts, hazards, or modifiers |
+| Three guardians | Unlock costs or progression currency |
+| Escape-pod revives | Any code system or hotkeys |
+| Salvaged ship building | Difficulty settings or run length in minutes |
 
-Most games in the genre build from the same small kit of verbs. The table below covers the ones you'll meet again and again.
+If a page claims to list Void Runners ship parts, guardian names, or a redeem code, treat it as unverified at best. The developer has not published those details, so nobody outside the project can legitimately supply them yet.
 
-| Mechanic | What it does | Skill floor | Payoff when mastered |
-|---|---|---|---|
-| Dash / burst | Instant directional speed spike | Low | Closing gaps, mid-air corrections |
-| Double jump | One extra impulse after leaving the ground | Low | Height recovery, route extension |
-| Wall run / wall kick | Converts vertical surfaces into speed | Medium | Vertical shortcuts, corner escapes |
-| Grapple / tether | Pulls you toward an anchor point | High | Massive route freedom |
-| Slide | Retains speed on landing | Low | Slipping through tight geometry |
-| Air control | Steering while airborne | Medium | Precision landings, adjustments |
-| Launch pad / boost ring | Scripted speed injection | None | Free momentum, route entries |
+## Why the Beam Changes How You Play
 
-Notice how few of these are attack verbs. Void runners movement is almost entirely locomotion. Combat, when it exists at all, is usually a tool for redirecting momentum rather than stopping it.
+Most twin-stick co-op games treat players as independent guns that happen to share a screen. Void Runners inverts that. Your damage is a relationship, not a weapon.
 
-The magic happens in the combinations:
+Think through the consequences. If you and a partner fly close together, the beam is short — safe, easy to aim, but covering very little ground. Spread apart and the beam becomes a long sweeping line that can cut across a wide arc, which is exactly what you want against spread-out salvage or a crowd. The cost is that a long beam is harder to steer precisely and drags both players' positioning into each other's problems.
 
-- **Dash + air control** lets you cut corners that look impossible from the ground.
-- **Wall kick + grapple** creates vertical chains that skip entire sections.
-- **Slide + dash** preserves speed through tight corridors where a normal landing would kill it.
+Add a third or fourth pilot and it becomes a web rather than a line. Now the interesting question is not "where is the enemy" but "which of us should move to change the shape of the web." A player who drifts off to chase a target is not just risking themselves; they are redrawing everyone's coverage.
 
-Community reports from veteran players suggest the strongest runners rarely use every mechanic equally. They pick two or three, master them completely, and build every route around those strengths.
+Two advertised details reinforce this. Crossfire suggests the design rewards overlapping angles rather than a single stacked gun line. Escape-pod revives suggest that dying is expected and recoverable, which softens the usual roguelike penalty and keeps a four-player run from collapsing when one pilot makes a bad read. Both are store-page statements, not tested mechanics — the game is unreleased.
 
-## Momentum, Speed Tiers, and Route Reading
+## Three Sectors, Four Jumps, One Guardian
 
-Speed in these games isn't a single number. It's a state machine, and knowing which tier you're in tells you what's possible in the next second.
+The advertised run structure is tidy and worth repeating precisely: three sectors, four jumps in each, ending at a guardian, three guardians deep. That means twelve jumps between you and the end of a run, assuming the store page is describing a straight path.
 
-| Speed state | How you get there | What it unlocks | Main risk |
-|---|---|---|---|
-| Neutral | Standing, walking, respawn | Precision movement, safe scouting | Losing tempo |
-| Cruising | Normal run speed | Standard jumps, simple chains | Easy for the level to outpace you |
-| Charged | Dash, boost pad, downhill slope | Long gaps, wall chains | Harder to steer |
-| Chained | Two or more momentum sources stacked | Route shortcuts, skips | One mistake erases everything |
-| Terminal | Sustained chaining over long stretches | Speedrun-level lines | Almost no recovery |
+The practical read is that Void Runners is aiming for a shorter, denser roguelike run than the genre's long-form entries — the kind of structure that suits a couch session where people rotate in and out. Twelve encounters plus three bosses is a shape you can finish in one sitting, though the page does not state a target run time, and you should not assume one.
 
-Think of momentum as a debt you're always paying interest on. Every time you stop, you owe the game slower acceleration to get back to speed. Route reading, then, is mostly about deciding where you can afford to slow down.
+What the page does not tell you is arguably more important. There is no published information on:
 
-A practical method for planning a line:
+- What happens between jumps (shop, choice screen, rest, or nothing)
+- Whether guardians scale with player count
+- Whether sectors have themes, factions, or biome differences
+- Whether ships are chosen before a run or assembled during it, beyond the phrase "building a salvaged ship"
 
-1. **Scan for the highest point.** Vertical position is usually worth more than horizontal distance.
-2. **Find your anchors.** Grapple points, launch pads, and wall segments define the skeleton of the route.
-3. **Mark the reset points.** Wide platforms and safe ledges are where you can breathe.
-4. **Test it backwards.** Running a route in reverse exposes shortcuts you'd miss going forward.
+"Building a salvaged ship" is the one phrase that hints at meta-progression — collecting wreckage across runs and assembling something — but the store page never says whether that ship persists between runs or is assembled within a single one. Do not let a third-party guide tell you otherwise; there is no developer documentation to support either reading.
 
-Players who plan routes this way typically stop blaming their reflexes and start fixing their lines — which is a much faster path to improvement.
+## Single Player, Couch, and Online
 
-## Timing Windows and Input Feel
+Void Runners supports one to four pilots, which means solo play is in scope. That raises an obvious question the store page does not answer: if beams link *pairs* of ships, what does a solo pilot's beam connect to? There is no documented answer. It could be a drone, a tether to an object, or a reworked solo kit. Until the game ships or the developer explains it, any answer is a guess.
 
-The invisible half of void runners movement is forgiveness. These systems are usually tuned with hidden windows that make inputs feel responsive even when they land slightly early or late.
+For online play, the page confirms online co-op exists but publishes nothing about matchmaking, host migration, dedicated servers, or crossplay. For an unreleased indie title from a solo developer, those are reasonable things to wait on rather than assume.
 
-| System | What it forgives | Typical range | How to train it |
-|---|---|---|---|
-| Coyote time | Jumping just after leaving a ledge | ~80–170 ms | Deliberately jump late off ledges |
-| Jump buffer | Pressing jump just before landing | ~80–130 ms | Jump early into landings |
-| Dash buffer | Queuing a dash during another action | ~100 ms | Dash out of slides and wall kicks |
-| Corner correction | Clipping a platform edge | A few pixels | Aim slightly short on purpose |
-| Input leniency | Diagonal inputs near cardinal directions | Varies by game | Test on both input types |
+## How to Verify Anything You Read Elsewhere
 
-Exact values differ from game to game and often differ between keyboard and gamepad, so treat these ranges as general design conventions rather than universal rules. What matters is that you learn your game's feel, not the numbers behind it.
+Because Void Runners is unreleased, the verification path is short and boring, which is a good thing:
 
-One more variable people underestimate: display refresh rate. Community reports frequently mention that the same route feels different at 60 Hz versus higher refresh rates — not because the game changed, but because the feedback loop did. Late inputs become visible, and visible problems are fixable.
+1. Go to the [official Steam listing](https://store.steampowered.com/app/5334520/). Check the description, the screenshots, and any developer posts or announcements.
+2. Check the release date field. As of October 2026 it reads Q1 2027, marked coming soon. If a site quotes a specific day, that site is ahead of the developer.
+3. When a demo, playtest, or release build exists, the in-game menus will settle questions about ship parts, loadouts, and solo beams faster than any article can.
 
-Settings worth adjusting early:
-
-- **Field of view.** A wider view gives you more time to read upcoming geometry.
-- **Camera smoothing.** Reduce it; a camera that lags behind your movement hides landing spots.
-- **Camera shake.** Turn it down if it obscures the platform you're aiming for.
-- **Sensitivity / deadzone.** Tune until small stick movements produce predictable turns.
-
-## Practice Drills to Sharpen Void Runners Movement
-
-Grinding full runs is the slowest way to improve. Isolated drills build the same skills in a fraction of the time.
-
-| Drill | How to run it | Suggested volume | What it trains |
-|---|---|---|---|
-| No-dash run | Clear a section without dashing | 5–10 attempts | Jump timing, route efficiency |
-| Reverse route | Play a section backwards | 3–5 attempts | Spatial awareness |
-| One-life chain | Link as many gaps as possible, reset on any full stop | 10 attempts | Momentum management |
-| Late jump drill | Jump at the last possible moment off each ledge | 10 reps per ledge | Coyote time feel |
-| Segment split | Time one segment instead of the whole level | 5 runs | Consistency under pressure |
-
-Deliberate practice beats volume. Ten focused minutes on wall kicks will do more for your movement than an hour of unstructured runs, because you're training one variable at a time instead of five.
-
-A simple warm-up that takes about eight minutes:
-
-- Two minutes of air-control figure-eights.
-- Three minutes of dash cancels and buffered inputs.
-- Two minutes of full-speed straight-line running.
-- One minute of the hardest jump in your current route.
-
-## Common Mistakes That Break Your Flow
-
-Most stalled progress comes from a short list of repeatable errors. Find yours in the table below.
-
-| Mistake | Symptom | Fix |
-|---|---|---|
-| Over-dashing | Speed spikes, then stalls out | Dash only for gaps you can't jump |
-| Fighting the camera | Repeated misjudged landings | Increase FOV, cut smoothing, look further ahead |
-| Landing flat | Momentum dies on every platform | Land at an angle and slide into your next input |
-| Ignoring buffers | Inputs feel dropped or eaten | Press the next action before the current one ends |
-| Grinding one section | Tilt and sloppy muscle memory | Change routes or take a short break |
-| Copying routes blindly | Inconsistent execution | Adapt the line to your own timing |
-
-The last one deserves emphasis. Watching a top player's line and copying it exactly rarely works, because their route assumes their reaction time and their input device. Steal the structure, then rebuild the timing around your own hands.
+Third-party guides written before release are working from the same store page you are. When this article cites community observation, that is what it means: inference, not documentation.
 
 ## FAQ
 
-### How long does it take to get good at void runners movement?
+**Is Void Runners the same as Void Crew or Void Stranger?**
+No. Those are separate games by separate developers. Void Runners is by Aaron Reisman, Steam app 5334520.
 
-It depends heavily on the game and how you practice. Players who isolate one mechanic per session tend to see noticeable improvement within a handful of focused sessions, while players who only run full levels often plateau for weeks. Consistency matters more than long sessions.
+**How many players does Void Runners support?**
+One to four, on one couch or online, according to the official store page.
 
-### Is keyboard or controller better for void runners movement?
+**What are the beams for?**
+They link each pair of ships and shred anything they sweep. Positioning the beam is the advertised core decision.
 
-Both work, and the right answer depends on how the game is tuned. Controllers generally offer smoother air control thanks to analog input, while keyboards give exact cardinal directions that make certain dash angles more consistent. Try both on the same segment and compare your times.
+**How long is a run?**
+Three sectors of four jumps each, ending at a guardian, three guardians deep. No run time is published.
 
-### Why do I keep losing speed when I land?
+**Are there cheat codes or a code system?**
+Not documented. Nothing on the official page mentions codes, so any code list you find is fabricated until the developer says otherwise.
 
-Landing flat is the usual culprit. In most movement systems, a flat landing converts your horizontal speed into a stop, while an angled landing or a slide preserves it. Chain a slide, a dash, or a jump buffer immediately after touchdown to keep the run alive.
-
-### Do graphics and input settings really affect performance?
-
-They can. Field of view, camera smoothing, and refresh rate all change how much information you have and how quickly you receive it. None of them replace practice, but a clean, readable screen makes every practice rep more useful.
-
-Mastering void runners movement isn't about memorizing frame data. It's about building a feel for momentum, respecting the timing windows the designers gave you, and practicing the specific skills your routes demand. Pick one drill, run it for ten minutes, and watch how quickly the void stops feeling empty.
+**When does it come out?**
+Q1 2027 is the current window on Steam, dated October 2026. Windows change; the store page is the source to trust.

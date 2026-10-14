@@ -1,109 +1,104 @@
 export const metadata = {
-  title: "Void-Runner-Kampfmechaniken: Phasen-Dashes, Burst-Fenster und Void-Energie meistern",
-  description: "Erfahre, wie der Kampf mit Void Runnern funktioniert: Phasen-Dashes, Void-Energie-Management, Burst-Fenster, Build-Prioritäten und Drills, die deine Kampfzeit erhöhen.",
+  title: "Void Runners Koop: So funktioniert das Strahlennetz im Twin-Stick-Roguelike",
+  description: "Void Runners Koop verbindet Schiffe mit Strahlen, die alles zerfetzen, was sie überstreichen. Hier steht, was die Steam-Seite bestätigt, was sie offen lässt und wie man sich vorbereitet.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Void Runner leben und sterben nach der Uhr. Ein einziger falsch getimter Phasen-Dash verwandelt einen sauberen Kill in einen Todesbildschirm, während eine perfekt verkettete Combo einen Elite-Gegner auslöschen kann, bevor dessen Aushol-Animation überhaupt zu Ende ist.
+"Void Runners" ist ein noch nicht veröffentlichtes Twin-Stick-Roguelike vom Entwickler und Publisher Aaron Reisman, das auf Steam als App 5334520 mit einem Release-Fenster im Q1 2027 gelistet ist. Der Haken ist keine größere Waffe und kein tieferer Skilltree. Es ist Geometrie. Im Koop wird jedes Schiffspaar durch einen Strahl verbunden, und dieser Strahl zerfetzt alles, was er überstreicht. Diese eine Regel macht Formationsflug zur Hauptwaffe. Dieser Artikel hält sich an das, was die [offizielle Steam-Seite](https://store.steampowered.com/app/5334520/) tatsächlich bewirbt, benennt die Lücken klar und erklärt, wie man an ein Spiel herangeht, das noch nicht erschienen ist.
 
-Das ist die Kernspannung des **Void-Runner-Kampfs**: Dein bestes defensives Werkzeug ist zugleich dein bestes offensives Werkzeug, und beide schöpfen aus demselben begrenzten Pool an Void-Energie. Der Void-Runner-Kampf belohnt Spieler, die zwei Züge vorausplanen, und bestraft jeden, der Mobilität als Panikknopf statt als Ressource behandelt. Dieser Guide erklärt, wie die Mechaniken zusammenspielen, wo die meisten Spieler Kämpfe verlieren und welche Gewohnheiten einen sauberen Run von einem Wipe trennen.
+## Was die Steam-Seite tatsächlich bewirbt
 
-## Was den Void-Runner-Kampf anders macht
+Die Store-Beschreibung ist kurz und konkret, deshalb lohnt es sich, das Gesagte von dem zu trennen, was Spieler vermuten könnten.
 
-Void Runner sind um Verdrängung herum gebaut. Während ein Tank Schaden absorbiert und ein Standard-Damage-Dealer Treffer tauscht, vermeidet ein Void Runner Schaden, indem er einfach nicht dort ist, wo der Angriff landet – und wandelt diese gesparte Zeit dann in Offensive um. Spielerfahrungen aus mobilitätsfokussierten Actionspielen beschreiben meist dasselbe Gefühl: Du bist entweder einen Schritt vor dem Kampf oder einen Schritt hinter ihm, dazwischen gibt es sehr wenig.
+Vom offiziellen Eintrag bestätigt:
 
-| Mechanik | Was sie typischerweise tut | Warum sie im Kampf wichtig ist |
-|---|---|---|
-| Phasen-Dash | Kurzstrecken-Blink, der deine Hitbox kurzzeitig entfernt | Dient gleichzeitig als Engage, Ausweichmanöver und Repositionierungswerkzeug |
-| Void-Energie | Gemeinsame Ressource für Dashes und verstärkte Angriffe | Erzwingt eine ständige Wahl zwischen Überleben und Töten |
-| Burst-Fenster | Kurzer Zeitraum nach einer Phase, in dem der Schaden verstärkt wird | Verwandelt Bewegung direkt in Schadensausgabe |
-| Void-Marke | Debuff, der durch aufeinanderfolgende Treffer angewendet wird | Belohnt anhaltenden Druck statt zufälliges Herumstochern |
-| Aerial Reset | Aktion in der Luft, die einen Teil eines Cooldowns zurückerstattet | Hält Combos am Leben, während du Boden-Effekten ausweichst |
+- Koop-Bergungsraids für ein bis vier Piloten
+- Spiel auf einer Couch oder online
+- Strahlen verbinden Schiffe und zerfetzen alles, was sie überstreichen
+- Auffächern und das Netz schwingen
+- Kreuzfeuer, Ausweichen und Wiederbeleben der Crew aus Rettungskapseln
+- Ein geborgenes Schiff aufbauen
+- Eine Run-Struktur aus drei Sektoren und drei Wächtern
+- Release-Fenster Q1 2027, derzeit als „Demnächst verfügbar" markiert
 
-Der Designtrick ist die Überlappung. Wenn eine Taste drei Aufgaben abdeckt, wird jeder Druck zu einer Entscheidung mit Kosten. Deshalb zählt rohe Reaktionsgeschwindigkeit weniger als die Abfolge: Ein Spieler, der früh, aber richtig dasht, wird mehr Schaden machen als ein schnellerer Spieler, der zufällig dasht.
+Diese Liste ist alles. Alles andere, wonach Leute suchen, etwa benannte Schiffsteile, Waffenwerte, Bossnamen oder ein Codesystem, ist nicht veröffentlicht. Wenn ein Video oder ein Forenbeitrag etwas anderes behauptet, behandle es als Vermutung, bis das Spiel draußen ist.
 
-## Die Kampfschleife des Void Runners, Schritt für Schritt
+Eine wichtige Klarstellung: Dies ist nicht Solar Ash, Void Crew, Void Stranger oder Starfinder. Es ist ein eigenständiges, im Alleingang entwickeltes Projekt, und Suchen nach diesen Titeln führen nicht hierher.
 
-Die meisten Begegnungen folgen demselben Vier-Takt-Rhythmus. Ihn zu verinnerlichen ist der schnellste Weg, nicht mehr in den ersten zehn Sekunden eines Kampfes zu sterben.
+## Warum das Strahlennetz die gesamte Entscheidungsebene verändert
 
-| Phase | Dein Ziel | Häufiger Fehler |
-|---|---|---|
-| Annäherung | Distanz schließen, ohne Void-Energie auszugeben | Aus maximaler Reichweite hineindashen und mit leerer Leiste ankommen |
-| Ködern | Den schweren Angriff des Gegners erzwingen | Durch das Ausholen hindurch angreifen und den Treffer kassieren |
-| Bestrafen | Alles innerhalb des Burst-Fensters entladen | Schaden gleichmäßig verteilen statt zu konzentrieren |
-| Reset | Vor dem nächsten Angriffszyklus disengagen | Einen Extratreffer gierig mitnehmen und den Trade verlieren |
+Die meisten Twin-Stick-Shooter stellen eine Frage: Wohin ziele ich? Void Runners stellt eine zweite, schwierigere Frage: Wie fliege ich relativ zu meiner Crew?
 
-**Annäherung.** Gehen, nicht blinken. Jeder Dash, den du auf dem Weg hinein sparst, ist ein Dash, den du auf dem Weg hinaus ausgeben kannst. Fernkampfdruck oder ein geworfenes Werkzeug kann einen Gegner zu dir ziehen, ohne überhaupt Energie zu kosten.
+Wenn zwei Schiffe verbunden sind, ist der Strahl zwischen ihnen ein bewegliches Schadensegment. Ihn über ein Ziel zu streichen, erledigt die Arbeit. Das bedeutet, der Wert eines Spielers liegt nicht nur in der eigenen Treffsicherheit. Er liegt in der Form, die er mit einem Partner erzeugt. Zwei Spieler, die zusammen abdriften, hören auf zu schneiden. Zwei Spieler, die weit auseinander bleiben, decken einen breiten Bogen ab, lassen aber die Mitte leer. Das interessante Spiel liegt in der Mitte, wo das Netz weit genug zum Überstreichen und eng genug zum Bündeln ist.
 
-**Ködern.** Lerne die zwei oder drei Angriffe, die dir wirklich gefährlich werden, und ignoriere den Rest. Knapp innerhalb der Reichweite zu stehen und dann auf Reaktion hinauszuphasen ist weit zuverlässiger, als alles ausweichen zu wollen.
+Der Store-Text nennt zwei unterstützende Ideen, die daraus folgen. Auffächern und das Netz schwingen beschreibt die offensive Form. Kreuzfeuer, Ausweichen und Wiederbeleben der Crew aus Rettungskapseln beschreibt den Preis, wenn es schiefgeht. Beachte das Detail zur Wiederbelebung: Ein Ausfall entfernt einen Piloten nicht unbedingt aus dem Run. Ein Crewmitglied kann aus einer Rettungskapsel geborgen werden, was bedeutet, dass sich das Strahlenpaar mitten im Kampf neu formieren kann. Das ist ein bedeutsames Designsignal, und es ist das, was die Seite unmissverständlich angibt.
 
-**Bestrafen.** Schaden gehört ins Fenster. Ein Void Runner, der während eines verstärkten Bursts drei Treffer landet, schlägt meist einen, der acht Treffer über eine ganze Minute zähen Herumstocherns verteilt.
+## Koop-Struktur: Couch und online, ein bis vier Piloten
 
-**Reset.** Das ist der Schritt, den alle überspringen. Sobald der Gegner sich erholt, ist dein verstärktes Fenster weg und du bist nur noch ein Charakter mit wenig Leben in Nahkampfreichweite.
+Der Eintrag bestätigt sowohl lokales als auch Online-Spiel für ein bis vier Piloten, erklärt aber nicht, wie das Beitreten funktioniert, ob Drop-in und Drop-out unterstützt werden oder wie ein Solo-Pilot mit Strahlen umgeht. Bei vier Piloten gibt es mehrere mögliche Paarungen, und keine der Paarungsregeln ist dokumentiert.
 
-## Void-Energie: Die Ressource, die Kämpfe entscheidet
+Praktische Lesart: Bei ein bis vier Spielern ändert die Crewgröße wahrscheinlich, wie viele Strahlen gleichzeitig existieren, aber die offizielle Seite sagt das nicht. Plane keine Vier-Spieler-Strategie um angenommene Paarungen herum. Schau näher am Launch noch einmal auf die Seite, und sobald das Spiel draußen ist, teste das Paarungsverhalten im ersten Sektor, wo Fehler günstig sind.
 
-Void-Energie ist die eigentliche Lebensleiste. Wenn sie auf null fällt, während noch etwas auf dich einschlägt, ist der Kampf vorbei – egal, wie viel HP du noch hast.
+<table>
+  <thead>
+    <tr><th>Thema</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Spieleranzahl</td><td>Beworben: ein bis vier Piloten, Couch oder online</td></tr>
+    <tr><td>Strahlenverhalten</td><td>Beworben: verbindet Schiffe, zerfetzt, was er überstreicht</td></tr>
+    <tr><td>Wiederbelebung</td><td>Beworben: Crew wird aus Rettungskapseln wiederbelebt</td></tr>
+    <tr><td>Run-Länge</td><td>Beworben: drei Sektoren, je vier Sprünge, drei Wächter</td></tr>
+    <tr><td>Schiffsteile und Werte</td><td>Nicht dokumentiert</td></tr>
+    <tr><td>Wächter-Namen, Sektor-Layouts</td><td>Nicht dokumentiert</td></tr>
+    <tr><td>Codes, Freischaltungen, Hotkeys</td><td>Nicht dokumentiert</td></tr>
+  </tbody>
+</table>
 
-| Priorität | Ausgabe | Wann verwenden |
-|---|---|---|
-| 1 | Notfall-Phase aus einem tödlichen Treffer heraus | Jederzeit, wenn ein Treffer dich töten würde |
-| 2 | Phase in ein verstärktes Burst-Fenster | Wenn der Gegner festgelegt ist und nicht abbrechen kann |
-| 3 | Verstärkter Finisher | Wenn das Ziel unter seine Hinrichtungs-Schwelle fällt |
-| 4 | Mobilität für Fortbewegung oder Repositionierung | Nur, wenn dich gerade nichts aktiv verfolgt |
+## Drei Sektoren, vier Sprünge, drei Wächter
 
-Eine gängige Faustregel unter erfahrenen Spielern ist, bei Boss-Begegnungen etwa eine halbe Leiste in Reserve zu halten und alles darüber als ausgabefähig zu betrachten. Berichte aus der Community legen außerdem nahe, dass viele "unfaire" Tode in Wahrheit Energietode sind – der Spieler hatte theoretisch ein Ausweichmanöver verfügbar, aber nicht im Ressourcenpool.
+Die Seite beschreibt einen Run, der drei Sektoren mit je vier Sprüngen durchquert und bei einem Wächter endet, mit insgesamt drei Wächtern. Einfach gelesen ist das eine kompakte Struktur. Ungefähr zwölf Sprünge trennen den Start eines Runs vom finalen Wächter, wobei ein Bosskampf jeden Sektor abschließt.
 
-Zwei Gewohnheiten beheben das schnell. Erstens: Hör auf, im Kampf zu dashen, um Distanz zu schließen. Zweitens: Lerne, welche Angriffe bei einem erfolgreichen Ausweichmanöver Energie zurückerstatten, denn diese verwandeln einen defensiven Read in eine offensive Öffnung.
+Was die Seite nicht sagt, ist, wie Sprünge gewählt werden, ob Routen sich verzweigen, ob der Wächter eines Sektors festgelegt oder aus einem Pool gezogen wird oder was zwischen den Sprüngen passiert. Die Formulierung „ein geborgenes Schiff aufbauen" deutet auf Progression innerhalb eines Runs hin, aber keine Teilenamen, Upgrade-Währungen oder Statuswerte sind öffentlich. Behandle die Run-Länge eher als Pacing-Hinweis denn als Karte: Ein kurzer Run begünstigt aggressives, stark varianzbehaftetes Strahlenspiel, weil weniger Zeit bleibt, um sich von einem langsamen Start zu erholen.
 
-## Build-Prioritäten für den Void-Runner-Kampf
+## Wie man sich vor Q1 2027 vorbereitet
 
-Void Runner sind von Design aus Glaskanonen, das Ziel ist also nicht, mehr Treffer zu überleben – sondern weniger davon zu brauchen. Rohe Robustheit zu stapeln verzögert meist nur dieselbe Niederlage.
+Da das Spiel noch nicht veröffentlicht ist, geht es bei der Vorbereitung vor allem um Kalibrierung, nicht um das Auswendiglernen von Inhalten, die es noch nicht gibt.
 
-| Priorität | Stat oder Effekt | Warum er hier rangiert |
-|---|---|---|
-| Höchste | Dash-Aufladung und Cooldown-Reduktion | Mehr Phasen pro Kampf bedeuten mehr Ausweichmanöver und mehr Burst-Fenster |
-| Hoch | Void-Energie-Pool und Regeneration | Verlängert direkt, wie lange du aggressiv bleiben kannst |
-| Mittel | Burst- und kritischer Schaden | Zahlt sich nur aus, wenn du tatsächlich Treffer in den Fenstern landest |
-| Mittel | Sustain, Lifesteal oder Heilung beim Ausweichen | Glättet Chip-Schaden zwischen Resets |
-| Niedrig | Rohe Gesundheit und Rüstung | Ändert selten das Ergebnis einer falsch getimten Phase |
+Ein paar konkrete Dinge, die du tun kannst:
 
-Die eine Ausnahme ist Gruppencontent. Im koordinierten Spiel ist ein Void Runner, der einen zusätzlichen Fehler überlebt, oft wertvoller als einer, der etwas mehr Schaden macht, denn ein toter Runner trägt überhaupt nichts bei.
+1. Folge der offiziellen Steam-Seite und setze sie auf die Wunschliste. Diese Seite ist die einzige verlässliche Quelle für Release-Zeitpunkt und Feature-Änderungen.
+2. Übe die Kernfähigkeit in jedem Twin-Stick-Spiel: einen Partner auf konstanter Distanz halten, während ihr euch beide bewegt. Das Strahlennetz belohnt Abstandsdisziplin mehr als rohe Zielgenauigkeit.
+3. Sprich vor dem Launch mit deiner Crew Rollen durch. Entscheidet, wer Position ansagt und wer Ziele ansagt. Auf dem Pfad des Strahls zu verweilen, ist kein Problem, bis es eines ist.
+4. Halte die Erwartungen offen. Kalkuliere nicht mit Freischaltkosten, präge dir keine Wächter-Muster ein und baue keinen Plan um benannte Teile herum, denn nichts davon ist dokumentiert.
 
-## Fünf Fehler, die Void Runner sterben lassen
+Ein Vorbehalt, der direkt genannt werden sollte: Nichts hier garantiert einen erfolgreichen Run. Die beschriebenen Mechaniken sind beworbene Features, keine gelösten Strategien, und die Balance wird sich zwischen jetzt und dem Release wahrscheinlich verschieben.
 
-1. **Aus Instinkt dashen statt auf einen Read hin.** Vor dem Commitment des Gegners zu phasen bedeutet, mit leerer Ressource und ohne Cooldown wieder auf dem Boden zu landen.
-2. **Auf maximaler Reichweite kämpfen.** Void Runner verlieren die meisten ihrer Werkzeuge außerhalb der Nahkampfdistanz, und ihr Schaden fällt stark ab.
-3. **Die Ressourcenleiste ignorieren.** Auf seinen Charakter zu schauen ist nicht dasselbe wie auf seine Energie zu schauen. Wirf einen Blick auf die Leiste zwischen Combos, nicht währenddessen.
-4. **Kills quer durch die Arena jagen.** Wenn ein Ziel sich zurückzieht, resetten und neu engagen. Jagen verbrennt Energie und zieht dich in Adds hinein.
-5. **Nie ohne Sicherheitsnetz üben.** Spieler, die nur überlevelten Content bekämpfen, lernen nie das Timing, das das Kit funktionieren lässt.
+## Community-Beobachtungen versus bestätigte Fakten
 
-## Drills und Teamplay
+Suchen nach Void Runners Koop-Tipps, Strahlenmechaniken oder Schiff-Builds liefern derzeit sehr wenig Vertrauenswürdiges. Wo Drittanbieter-Guides existieren, sind es sekundäre Beobachtungen von Leuten, die dieselbe Store-Seite lesen, keine Entwicklerdokumentation. Ordne sie entsprechend ein und verifiziere alles Spezifische im Spiel oder im offiziellen Eintrag, bevor du es weitergibst.
 
-Du kannst jede Kernfähigkeit solo in einer risikoarmen Umgebung trainieren, ohne einen Build-Guide anzufassen.
-
-| Drill | Setup | Was er trainiert |
-|---|---|---|
-| Nur-Dash-Überleben | 60 Sekunden kämpfen, ohne anzugreifen | Phase-Timing und Hitbox-Erkennung |
-| Zwei-Treffer-Bestrafung | Pro Fenster nur zweimal angreifen | Geduld und Fenster-Disziplin |
-| Halbe-Leiste-Budget | Beschränke dich auf halbe Energie | Ressourcenplanung unter Druck |
-| Blind-Leiste | Spielen, ohne auf die Ressourcenleiste zu schauen | Muskelgedächtnis und internes Pacing |
-
-In Gruppencontent füllen Void Runner meist eine Disruptionsrolle statt einer reinen Schadensrolle aus. Ihre Mobilität erlaubt es ihnen, Backline-Bedrohungen zu erreichen, Casts zu unterbrechen und Druck von langsameren Teammitgliedern zu nehmen. Der Trade-off ist, dass sie kein Gelände halten können, also braucht das Team jemand anderen als Anker.
-
-Wenn du untersuchen möchtest, wie andere Actionspiele mobilitätslastige Archetypen und cooldown-getriebenen Kampf handhaben, ist ein Blick in [den Action-Katalog auf Steam](https://store.steampowered.com/) ein vernünftiger Ausgangspunkt für einen Vergleich.
+Die klare Trennung ist einfach. Beworben: Spieleranzahl, Strahlenverbindung und -zerfetzen, Auffächern und Schwingen, Kreuzfeuer, Ausweichen, Rettungskapsel-Wiederbelebungen, Aufbau eines geborgenen Schiffs, drei Sektoren mit vier Sprüngen, drei Wächter, Q1 2027. Nicht dokumentiert: Schiffsteile, Waffenwerte, Wächter-Namen, Sektor-Layouts, Codes, Freischaltkosten, Hotkeys und Patch-Historie. Wenn du diese Details irgendwo behauptet siehst, frag, woher die Behauptung stammt.
 
 ## FAQ
 
-**Was ist die einzige wichtigste Fähigkeit im Void-Runner-Kampf?**
-Energie-Disziplin. Reaktionszeit hilft, aber ein Spieler, der immer einen Dash in Reserve behält, wird einen schnelleren Spieler übertreffen, der alles für die Annäherung ausgibt.
+**Ist Void Runners veröffentlicht?**
+Nein. Die offizielle Seite listet es als „Demnächst verfügbar" mit einem Fenster im Q1 2027.
 
-**Wie viel Void-Energie sollte ich in Reserve halten?**
-Etwa eine halbe Leiste in gefährlichen Begegnungen. Community-Berichte zeigen konsistent, dass Spieler, die diesen Puffer halten, deutlich seltener an Ressourcenmangel sterben als jene, die frei ausgeben.
+**Wie viele Spieler können mitmachen?**
+Laut Store-Beschreibung ein bis vier Piloten, auf einer Couch oder online.
 
-**Sind Void Runner in Gruppencontent gut?**
-Ja, aber nicht als Anker. Sie glänzen darin, gefährliche Ziele zu erreichen, Fähigkeiten zu unterbrechen und Öffnungen für langsamere Teammitglieder zu schaffen. Kombiniere sie mit einer robusten Frontlinie.
+**Was macht der Strahl?**
+Er verbindet Schiffe und zerfetzt alles, was er überstreicht. Wie Paarungen bei drei oder vier Spielern zugewiesen werden, ist nicht dokumentiert.
 
-**Wie übe ich den Void-Runner-Kampf, ohne ständig zu sterben?**
-Nutze Begegnungen mit niedrigem Einsatz und führe Drills statt voller Kämpfe durch. Nur-Dash-Überleben und Zwei-Treffer-Bestrafungs-Drills bauen das Timing auf, das sich weit schneller auf echte Begegnungen überträgt als wiederholte Wipes.
+**Können ausgefallene Spieler zurückkommen?**
+Die Seite bewirbt das Wiederbeleben der Crew aus Rettungskapseln, also ja, in irgendeiner Form, wobei die genauen Regeln nicht veröffentlicht sind.
+
+**Gibt es benannte Bosse oder Schiffsteile?**
+Nicht öffentlich. Die Seite erwähnt drei Wächter und ein geborgenes Schiff, listet aber keine Namen, Werte oder Kosten.
+
+**Ist das dasselbe Spiel wie Void Crew oder Void Stranger?**
+Nein. Void Runners ist ein eigenständiges Twin-Stick-Roguelike von Aaron Reisman. Das sind verschiedene Titel.
+
+**Wo sollte ich nach Updates schauen?**
+Der [offizielle Steam-Eintrag](https://store.steampowered.com/app/5334520/) ist die maßgebliche Quelle für Release-Zeitpunkt und Feature-Details.

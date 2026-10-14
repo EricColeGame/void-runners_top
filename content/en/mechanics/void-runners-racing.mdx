@@ -1,139 +1,83 @@
 export const metadata = {
-  title: "Void Runners Racing Mechanics Explained: Speed, Momentum, and Track Mastery",
-  description: "A practical guide to void runners racing: momentum control, boost timing, track reading, and the drills that turn messy runs into clean laps.",
+  title: "Void Runners: What the Co-Op Beam Game Actually Does",
+  description: "Void Runners is an unreleased twin-stick roguelike where beams link each pair of ships. Here is what is verified, what is rumored, and what is unknown.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## What Makes Void Runners Racing Different
+"Void Runners" is an easy name to confuse with something else. Searches for it turn up void-themed games of every genre, most of which have nothing to do with this one. The Void Runners in question is a Steam game by developer and publisher Aaron Reisman (Steam app 5334520), announced for Q1 2027 and currently marked "coming soon." Nothing about it is playable yet, which means anything you read about builds, bosses, or codes is either speculation or about a different game entirely.
 
-Void runners racing looks simple from the outside: pick a lane, hold a boost, and hope for the best. In practice, it is one of the most demanding speed formats in the genre, because the space you race through punishes hesitation far more than it punishes mistakes. Void runners racing rewards players who understand momentum as a resource rather than a number on the screen.
+This article sticks to what the official [Void Runners store page](https://store.steampowered.com/app/5334520/) actually advertises, notes where third-party guides have filled in gaps, and is explicit about what is simply not documented. If a detail is not public, you will read that it is not public rather than getting a plausible-sounding invention.
 
-The "void" here is not just a backdrop. It is an open, often low-gravity environment with sparse geometry, floating platforms, and long empty stretches where there is nothing to collide with — and nothing to push against. That combination changes everything about how a race plays out compared to a grounded circuit racer.
+## The Core Idea: Pairs of Ships, Joined by Beams
 
-If you have ever watched a skilled runner carve through a void course and wondered why they look so much faster than everyone else, the answer is rarely raw top speed. It is timing, routing, and the discipline to not waste a single unit of boost.
+The advertised hook is geometry. Void Runners is described as a co-op salvage raid for one to four pilots, played on one couch or online. Each pair of ships is linked by a beam that shreds anything it sweeps. That single sentence reframes the whole genre: in a normal twin-stick shooter, you ask "where do I fly?" Here you also ask "where am I relative to my crew?"
 
-## Core Mechanics That Drive Void Runners Racing
+Because the beam exists only between linked ships, the damage you deal is a function of two players' positions at once, not one player's aim. Spreading out stretches the beam into a long line that covers ground but moves slowly across the screen as angles change. Flying close makes the beam short and possibly harder to keep on a target. The store description explicitly names spreading out, swinging the web, and crossfire as part of the intended play, which suggests the design rewards coordinated positioning over individual twitch skill.
 
-Every void racing format shares a handful of systems. Names differ between games, but the underlying logic is consistent enough to build a mental model around.
+What the page does not say is how many beams exist at four players, whether links are fixed or reconfigurable, or whether a solo pilot controls one ship or a linked pair. Those are documented nowhere publicly as of this writing.
 
-| Core element | What it does | Why it decides races |
-|---|---|---|
-| Momentum | Carries your speed through open space | Lost momentum is nearly impossible to rebuild mid-stretch |
-| Traction / grip | Converts input into direction change | Low traction means wide lines and lost time |
-| Boost economy | Grants bursts of acceleration | Spending early often means crawling at the finish |
-| Gravity rules | Determines arc, fall speed, and air control | Vertical sections become shortcuts or traps |
-| Collision | Contact with geometry and other runners | A single clip can erase an entire clean sector |
+## A Run: Three Sectors, Four Jumps, One Guardian
 
-### Momentum and Traction
+The advertised run structure is short and legible: three sectors, each four jumps long, ending at a guardian. That is twelve jumps and three guardian encounters if you clear the whole thing. The store page frames the goal as going "three sectors and three guardians deep," not as an endless mode.
 
-Momentum is the single most important variable in void runners racing. In a grounded racer, you can usually brake, reset, and accelerate again without catastrophic loss. In the void, a bad corner costs you the speed you built over the previous ten seconds, and there is often no straightaway long enough to recover it.
+Two cautions here. First, the page does not name the guardians, describe their attack patterns, or state whether guardians are mandatory gates or optional fights. Second, "jump" is not defined in the store text; it could mean a discrete combat room, a node on a map, or a transition. Anyone claiming to know the exact sector layouts is working from something other than the official description.
 
-Traction governs how much of your momentum you can redirect. High traction lets you take tight lines but bleeds speed on wide arcs. Low traction preserves speed but forces you to plan turns several seconds in advance. Community reports consistently suggest that newer players over-steer — they fight the surface instead of using it.
+| Advertised | Not documented publicly |
+| --- | --- |
+| 1-4 players, local or online | Matchmaking, crossplay, or lobby details |
+| 3 sectors, 4 jumps each | Sector themes, layouts, or enemy rosters |
+| 3 guardians | Guardian names, patterns, or health values |
+| Beams linking pairs of ships | How links are assigned or changed |
+| Reviving crew from escape pods | Revive timers, costs, or limits |
+| Building a salvaged ship | Parts, slots, stats, or upgrade costs |
 
-A useful habit: treat your first lap on any course as a traction test. Feather your inputs through the first three corners and note how far the craft slides. That single lap tells you more than any tutorial.
+## Escape Pods, Salvage, and Building a Ship
 
-### Boost Economy
+Two systems appear in the store description and are worth separating from the combat hook. The first is death handling: crew are revived from escape pods rather than simply respawning. That implies a downed pilot leaves something behind that a teammate must reach, which turns a wipe into a rescue problem — and, given the beam mechanic, likely a repositioning problem too.
 
-Boost is not a "go faster" button. It is a budget you spend across a race, and the players who win are usually the ones who spent it last.
+The second is progression: players build a salvaged ship. "Salvaged" is the operative word, implying parts are recovered from what you destroy or find rather than bought from a menu. That is consistent with the salvage-raid framing.
 
-Where boost typically comes from:
+Beyond that, nothing is public. The page does not publish ship parts, weapon stats, rarity tiers, currency, unlock costs, or a persistent progression system. If you see a list of named modules with damage numbers attributed to Void Runners, treat it as unreliable unless it comes from Reisman.
 
-- **Pickups** placed on the racing line — free value if your route already passes them
-- **Momentum thresholds** — holding a clean line long enough to trigger a surge
-- **Slipstream / drafting** — sitting behind another runner to bank speed
-- **Landing bonuses** — clean, flat landings after a big drop
+## Community Observations and Third-Party Guides
 
-The mistake is treating pickups as the goal. A pickup that forces you off the ideal line costs more than it gives. Player experience suggests that the fastest lines often skip one or two obvious boost pads in exchange for a cleaner exit angle.
+Because the game is unreleased, third-party coverage is thin. Where guides or wiki pages exist, they are secondary observations compiled by players or writers, not developer documentation, and they should be read that way. A few practical notes on evaluating them:
 
-### Gravity, Verticality, and Air Control
+- Anything describing hands-on play predates the Q1 2027 window and cannot be based on a public build.
+- Any "code" list is suspect. The official store page publishes no code system, so redeemable codes are not a documented feature.
+- Named guardians, boss health bars, and drop tables in third-party write-ups are unsourced unless the writer cites the developer directly.
 
-Void courses are rarely flat. They stack platforms, drop chasms, and use low-gravity pockets to stretch jumps into long glides. Air control is where void runners racing diverges most sharply from traditional racing games.
+The reliable verification path is the store page itself, updated by the developer. When a demo, playtest, or release build appears, in-game menus and the patch notes on Steam become the authoritative source for anything the page leaves out. Until then, "not documented yet" is the honest answer for most mechanical questions.
 
-| Situation | Weak response | Strong response |
-|---|---|---|
-| Long drop ahead | Brake hard, lose momentum | Hold line, use drop to build speed |
-| Low-gravity pocket | Fight for altitude | Glide, bank the arc, land flat |
-| Wall segment | Avoid contact | Ride the wall for a speed-preserving turn |
-| Tight platform chain | Hop each gap separately | Chain landings into one continuous flow |
+## Practical Reasoning for Players Planning Ahead
 
-Flat landings matter more than most players realize. A landing that keeps your chassis level preserves speed; a landing at an angle scrubs it. If a course has a signature drop, practice only that drop for ten minutes and you will gain more than a full hour of full-lap attempts.
+If you are deciding whether to follow this game, a few grounded takeaways:
 
-## Track Reading: How to Learn Any Void Course Fast
+1. **Plan for a group of two or four.** The beam-pair mechanic is the identity of the game. One player and four players are both advertised, but the interesting decisions described all involve crew positioning, so a duo is the natural minimum for the intended experience.
+2. **Expect short runs.** Twelve jumps across three sectors is a compact structure by roguelike standards. If you prefer long, sprawling runs, this may not be the shape you want.
+3. **Local co-op is a real option.** "One couch or online" is explicit, which matters if you want to play without networking.
+4. **Do not buy build guides.** There are no parts or stats published, so no build advice can be current.
+5. **Wishlist rather than preorder-watch.** The page lists Q1 2027, and release timing for small-team projects moves. The store page is where a change would appear first.
 
-The fastest void runners racing players do not memorize inputs. They memorize **structure**. Instead of learning "turn left at the third pillar," they learn "this sector is a descending right-hand spiral with one boost pad on the outside."
-
-Break every course into four segment types:
-
-| Segment type | What it demands | Priority |
-|---|---|---|
-| Launch | Clean acceleration out of the gate | Avoid contact at all costs |
-| Flow | Sustained corners and gentle arcs | Preserve momentum, minimal inputs |
-| Technical | Tight gaps, precise landings | Accuracy over speed |
-| Recovery | Wide, forgiving space | Rebuild speed, spend boost |
-
-Most courses alternate Flow and Technical segments, with Launch and Recovery framing them. Once you can label a course in your head, you stop reacting and start planning.
-
-For a broader sense of how racing games structure these systems, [Steam's racing genre hub](https://store.steampowered.com/tags/en/Racing/) is a useful place to compare how different titles handle speed, drift, and track design.
-
-## Builds and Loadout Comparisons
-
-Most void racing games let you tune your runner. There is no universal best build, but there are three recognizable archetypes.
-
-| Archetype | Strength | Weakness | Best for |
-|---|---|---|---|
-| Balanced | Forgiving in every sector | Never dominant anywhere | Learning new courses |
-| Top-speed | Huge straight-line gain | Slow to rotate, punishes errors | Courses with long void stretches |
-| Agility | Sharp turns, quick recovery | Lower ceiling on straights | Technical, platform-heavy tracks |
-
-A practical rule from community reports: race your **learning build** until you can complete a course three times without a major collision, then switch to a specialized build for time chasing. Switching too early hides your mistakes behind raw stats.
-
-## Common Mistakes in Void Runners Racing — and How to Fix Them
-
-| Mistake | Why it happens | Fix |
-|---|---|---|
-| Boosting on the opening straight | Feels fast, looks fast | Save boost for the first Technical sector |
-| Braking into corners | Grounded-racer instinct | Lift early, steer late, keep speed |
-| Chasing pickups off-line | Treats boost as the objective | Only take pickups already on your line |
-| Fighting low gravity | Expects normal fall speed | Glide with the arc, land flat |
-| Restarting after one error | Perfectionism | Finish the lap — recovery is a skill |
-| Ignoring the rear camera | Tunnel vision | Check behind before spending boost |
-
-The last one is underrated. In void runners racing, another player's slipstream can be worth more than a boost pad, but you cannot use it if you never look behind you.
-
-## A Practice Routine That Actually Works
-
-Improvement in void runners racing comes from targeted repetition, not from grinding full laps. Try this weekly structure:
-
-| Session | Focus | Duration | Goal |
-|---|---|---|---|
-| 1 | Single hardest sector | 15 min | Zero collisions in that sector |
-| 2 | Full laps, no boost | 20 min | Learn momentum-only lines |
-| 3 | Boost routing | 15 min | Decide where boost is spent |
-| 4 | Race conditions | 30 min | Apply everything with opponents |
-
-Bullet points worth taping to your monitor:
-
-- **One variable at a time.** Change your line or your boost timing, never both.
-- **Record your runs.** Watching a replay reveals hesitation you cannot feel mid-race.
-- **Finish every lap.** Abandoned runs teach you nothing about recovery.
-- **Race people slightly better than you.** Slipstream and pressure expose weak sectors fast.
-
-Void runners racing is a format where the gap between a good player and a great one is measured in decisions, not reflexes. Reflexes get you through a corner. Decisions get you through the course.
+None of this guarantees the game will play well; it only describes what has been promised.
 
 ## FAQ
 
-**Is void runners racing hard to learn?**
-The basics are approachable — accelerate, steer, boost. The difficulty is in consistency. Most players can finish a course quickly but need real practice before they can finish it cleanly.
+**Is Void Runners the same as Void Crew, Void Stranger, or Solar Ash?**
+No. Those are separate games by other developers with unrelated mechanics. Void Runners is the Aaron Reisman co-op beam shooter on Steam app 5334520.
 
-**Do I need a specialized build to be competitive?**
-No. A balanced setup will carry you through most courses. Specialized builds only pay off once your lines are already clean, because they amplify good decisions and punish bad ones.
+**How many players does it support?**
+One to four, on one couch or online, per the official store description.
 
-**What is the most common mistake in void runners racing?**
-Spending boost too early. Players treat boost as an opening burst when it is far more valuable as a late-race weapon.
+**Are there codes I can redeem?**
+No code system is documented on the store page. Treat any code list as unverified.
 
-**How do I get faster without grinding full laps?**
-Isolate your worst sector and practice only that. Targeted repetition beats full-course runs for skill acquisition, and it is far less frustrating.
+**What are the guardians called?**
+Not public. The store page says there are three guardians but does not name them.
 
-**Does drafting really matter in the void?**
-In most implementations, yes. Slipstreaming behind another runner is one of the few ways to gain speed without spending boost, which makes it a core part of high-level void runners racing.
+**What ship parts can I find?**
+Not public. "Building a salvaged ship" is advertised, but no parts, stats, or costs have been published.
+
+**When does it come out?**
+The official listing says Q1 2027 and marks the game coming soon. Check the [Steam page](https://store.steampowered.com/app/5334520/) for any change to that window.

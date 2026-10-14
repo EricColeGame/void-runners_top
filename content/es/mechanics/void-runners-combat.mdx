@@ -1,109 +1,104 @@
 export const metadata = {
-  title: "Mecánicas de combate de Void Runners: domina los dash de fase, las ventanas de ráfaga y la energía del vacío",
-  description: "Aprende cómo funciona el combate de Void Runners: dash de fase, gestión de energía del vacío, ventanas de ráfaga, prioridades de build y ejercicios que aumentan tu tiempo activo en combate.",
+  title: "Void Runners Co-op: Cómo funciona la red de haces en el roguelike twin-stick",
+  description: "El co-op de Void Runners une naves con haces que destrozan lo que barren. Esto es lo que confirma la página de Steam, lo que deja abierto y cómo prepararse.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-Los Void Runners viven y mueren por el reloj. Un solo dash de fase mal cronometrado convierte una muerte limpia en una pantalla de derrota, mientras que un combo encadenado a la perfección puede borrar a un élite antes de que termine siquiera su animación de preparación.
+"Void Runners" es un roguelike twin-stick no lanzado del desarrollador y editor Aaron Reisman, listado en Steam como la app 5334520 con una ventana de lanzamiento del primer trimestre de 2027. Su gancho no es un arma más grande ni un árbol de habilidades más profundo. Es la geometría. En el co-op, cada par de naves está unido por un haz, y ese haz destroza todo lo que barre. Esa única regla convierte el vuelo en formación en el arma principal. Este artículo se ciñe a lo que la [página oficial de Steam](https://store.steampowered.com/app/5334520/) realmente anuncia, señala las lagunas con claridad y explica cómo abordar un juego que aún no se ha lanzado.
 
-Esa es la tensión central del **combate de Void Runners**: tu mejor herramienta defensiva también es tu mejor herramienta ofensiva, y ambas se alimentan de la misma reserva limitada de energía del vacío. El combate de Void Runners recompensa a quienes planean dos movimientos por adelantado y castiga a cualquiera que trate la movilidad como un botón de pánico en lugar de un recurso. Esta guía desglosa cómo encajan las mecánicas, dónde pierden los combates la mayoría de los jugadores y qué hábitos separan una partida limpia de una derrota total.
+## Qué anuncia realmente la página de Steam
 
-## Qué hace diferente al combate de Void Runners
+La descripción de la tienda es breve y específica, así que vale la pena separar lo que dice de lo que los jugadores podrían suponer.
 
-Los Void Runners están construidos en torno al desplazamiento. Donde un tanque absorbe daño y un DPS estándar intercambia golpes, un Void Runner evita el daño simplemente no estando donde aterriza el ataque, y luego convierte ese tiempo ahorrado en ofensiva. La experiencia de los jugadores en juegos de acción centrados en la movilidad suele describir la misma sensación: o vas un paso por delante del combate o un paso por detrás, con muy poco término medio.
+Confirmado por el listado oficial:
 
-| Mecánica | Qué suele hacer | Por qué importa en un combate |
-|---|---|---|
-| Dash de fase | Parpadeo de corto alcance que elimina brevemente tu hitbox | Funciona como inicio, esquiva y herramienta de reposicionamiento a la vez |
-| Energía del vacío | Recurso compartido para dashes y ataques potenciados | Obliga a elegir constantemente entre sobrevivir y matar |
-| Ventana de ráfaga | Breve periodo tras una fase en el que el daño se amplifica | Convierte el movimiento directamente en daño |
-| Marca de vacío | Debuff aplicado por impactos consecutivos | Recompensa la presión sostenida en lugar del poke aleatorio |
-| Reinicio aéreo | Acción en el aire que devuelve parte de un cooldown | Mantiene vivos los combos mientras esquivas efectos en el suelo |
+- Incursiones cooperativas de salvamento para uno a cuatro pilotos
+- Juega en un sofá o en línea
+- Los haces unen naves y destrozan todo lo que barren
+- Separarse y hacer oscilar la red
+- Fuego cruzado, esquiva y reanimación de la tripulación desde cápsulas de escape
+- Construir una nave recuperada
+- Una estructura de partida de tres sectores y tres guardianes
+- Ventana de lanzamiento: primer trimestre de 2027, actualmente marcado como próximamente
 
-El truco de diseño es la superposición. Cuando un botón cubre tres funciones, cada pulsación se convierte en una decisión con un coste. Por eso la velocidad de reacción pura importa menos que la secuenciación: un jugador que hace dash antes pero correctamente superará en daño a un jugador más rápido que hace dash al azar.
+Esa lista lo es todo. Todo lo demás que la gente busca, como piezas de nave con nombre, estadísticas de armas, nombres de jefes o un sistema de códigos, no está publicado. Si un vídeo o una publicación de foro afirma lo contrario, trátalo como una suposición hasta que salga el juego.
 
-## El bucle de combate de Void Runner, paso a paso
+Una aclaración importante: este no es Solar Ash, Void Crew, Void Stranger ni Starfinder. Es un proyecto distinto, desarrollado por una sola persona, y las búsquedas de esos títulos no llevarán aquí.
 
-La mayoría de los encuentros siguen el mismo ritmo de cuatro tiempos. Interiorizarlo es la forma más rápida de dejar de morir en los primeros diez segundos de un combate.
+## Por qué la red de haces cambia toda la capa de decisiones
 
-| Fase | Tu objetivo | Error común |
-|---|---|---|
-| Aproximación | Acercarte sin gastar energía del vacío | Hacer dash desde la distancia máxima y llegar con la barra vacía |
-| Cebo | Forzar el ataque pesado del enemigo | Atacar durante la preparación y comerte el golpe |
-| Castigo | Descargar todo dentro de la ventana de ráfaga | Repartir el daño por igual en vez de concentrarlo |
-| Reinicio | Desengancharte antes del siguiente ciclo de ataque | Arriesgar un golpe extra y perder el intercambio |
+La mayoría de los shooters twin-stick plantean una pregunta: ¿a dónde apunto? Void Runners plantea una segunda, más difícil: ¿dónde vuelo en relación con mi tripulación?
 
-**Aproximación.** Camina, no parpadees. Cada dash que ahorras al entrar es un dash que puedes gastar al salir. La presión a distancia o un objeto arrojadizo pueden atraer a un enemigo hacia ti sin costar energía en absoluto.
+Si dos naves están unidas, el haz entre ellas es un segmento móvil de daño. Barrerlo sobre un objetivo hace el trabajo. Eso significa que el valor de un jugador no es solo su propia puntería. Es la forma que crea con un compañero. Dos jugadores que se desplazan juntos dejan de cortar. Dos jugadores que se mantienen muy separados cubren un arco amplio pero dejan vacío el centro. El juego interesante vive en el medio, donde la red es lo bastante amplia para barrer y lo bastante estrecha para concentrar.
 
-**Cebo.** Aprende los dos o tres ataques que realmente te amenazan e ignora el resto. Colocarte justo dentro del alcance y luego salir con fase por reacción es mucho más fiable que intentar esquivarlo todo.
+El texto de la tienda nombra dos ideas de apoyo que se derivan de esto. Separarse y hacer oscilar la red describe la forma ofensiva. Fuego cruzado, esquiva y reanimación de la tripulación desde cápsulas de escape describe el coste de equivocarse. Fíjate en el detalle de la reanimación: caer no elimina necesariamente a un piloto de la partida. Un compañero de tripulación puede recuperarse de una cápsula de escape, lo que significa que la pareja del haz puede reformarse en mitad del combate. Es una señal de diseño significativa, y es la que la página afirma sin rodeos.
 
-**Castigo.** El daño pertenece a la ventana. Un Void Runner que acierta tres golpes durante una ráfaga amplificada normalmente superará a uno que acierta ocho golpes repartidos a lo largo de un minuto entero de poke desordenado.
+## Estructura del co-op: sofá y en línea, de uno a cuatro pilotos
 
-**Reinicio.** Este es el paso que todo el mundo se salta. Cuando el enemigo se recupera, tu ventana amplificada desaparece y solo eres un personaje con poca salud de pie en rango cuerpo a cuerpo.
+El listado confirma tanto el juego local como el en línea para uno a cuatro pilotos, pero no explica cómo funciona unirse, si se admite entrar y salir en cualquier momento, ni cómo gestiona los haces un piloto en solitario. Con cuatro pilotos hay múltiples emparejamientos posibles, y ninguna de las reglas de emparejamiento está documentada.
 
-## Energía del vacío: el recurso que decide los combates
+Lectura práctica: con uno a cuatro jugadores, el tamaño de la tripulación probablemente cambia cuántos haces existen a la vez, pero la página oficial no lo dice. No planifiques una estrategia para cuatro jugadores en torno a emparejamientos supuestos. Consulta la página más cerca del lanzamiento y, cuando salga el juego, prueba el comportamiento de los emparejamientos en el primer sector, donde los errores salen baratos.
 
-La energía del vacío es la verdadera barra de salud. Si llega a cero mientras algo sigue atacándote, el combate ha terminado sin importar cuánta HP te quede.
+<table>
+  <thead>
+    <tr><th>Tema</th><th>Estado</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Número de jugadores</td><td>Anunciado: de uno a cuatro pilotos, sofá o en línea</td></tr>
+    <tr><td>Comportamiento del haz</td><td>Anunciado: une naves, destroza lo que barre</td></tr>
+    <tr><td>Reanimación</td><td>Anunciado: tripulación reanimada desde cápsulas de escape</td></tr>
+    <tr><td>Duración de la partida</td><td>Anunciado: tres sectores, cuatro saltos cada uno, tres guardianes</td></tr>
+    <tr><td>Piezas de nave y estadísticas</td><td>No documentado</td></tr>
+    <tr><td>Nombres de guardianes, diseños de sectores</td><td>No documentado</td></tr>
+    <tr><td>Códigos, desbloqueos, atajos de teclado</td><td>No documentado</td></tr>
+  </tbody>
+</table>
 
-| Prioridad | Gasto | Cuándo usarlo |
-|---|---|---|
-| 1 | Fase de emergencia para salir de un golpe letal | Siempre que un golpe vaya a matarte |
-| 2 | Fase hacia una ventana de ráfaga amplificada | Cuando el enemigo está comprometido y no puede cancelar |
-| 3 | Remate potenciado | Cuando el objetivo baja de su umbral de ejecución |
-| 4 | Movilidad para desplazarte o reposicionarte | Solo cuando nada te está persiguiendo activamente |
+## Tres sectores, cuatro saltos, tres guardianes
 
-Una regla general común entre jugadores experimentados es mantener aproximadamente media barra en reserva durante los combates contra jefes y tratar todo lo que supere eso como gastable. Los informes de la comunidad también sugieren que muchas muertes "injustas" son en realidad muertes por energía: el jugador tenía una esquiva disponible en teoría, pero no en la reserva del recurso.
+La página describe una partida que cruza tres sectores de cuatro saltos y termina en un guardián, con tres guardianes en total. Leído sin más, es una estructura compacta. Aproximadamente doce saltos separan el inicio de una partida del guardián final, con una pelea de jefe cerrando cada sector.
 
-Dos hábitos solucionan esto rápidamente. Primero, deja de hacer dash para acortar distancia en combate. Segundo, aprende qué ataques devuelven energía al esquivar con éxito, ya que esos convierten una lectura defensiva en una apertura ofensiva.
+Lo que la página no dice es cómo se eligen los saltos, si las rutas se ramifican, si el guardián de un sector es fijo o se extrae de un conjunto, ni qué ocurre entre saltos. La frase "construir una nave recuperada" sugiere progresión dentro de una partida, pero no hay nombres de piezas, monedas de mejora ni valores de estadísticas públicos. Trata la duración de la partida como una pista de ritmo más que como un mapa: una partida corta favorece un juego de haces agresivo y de alta varianza, porque hay menos tiempo para recuperarse de un inicio lento.
 
-## Prioridades de build para el combate de Void Runners
+## Cómo prepararse antes del primer trimestre de 2027
 
-Los Void Runners son cañones de cristal por diseño, así que el objetivo no es sobrevivir a más golpes, sino necesitar menos. Acumular durabilidad bruta normalmente solo retrasa la misma derrota.
+Como el juego no se ha lanzado, la preparación consiste sobre todo en calibrar, no en memorizar contenido que aún no existe.
 
-| Prioridad | Estadística o efecto | Por qué está en este puesto |
-|---|---|---|
-| Máxima | Recarga de dash y reducción de cooldown | Más fases por combate significa más esquivas y más ventanas de ráfaga |
-| Alta | Reserva y regeneración de energía del vacío | Extiende directamente cuánto tiempo puedes mantenerte agresivo |
-| Media | Daño de ráfaga y crítico | Solo compensa si realmente aciertas golpes dentro de las ventanas |
-| Media | Sustento, robo de vida o curación al esquivar | Suaviza el daño residual entre reinicios |
-| Baja | Salud y armadura brutas | Rara vez cambia el resultado de una fase mal cronometrada |
+Algunas cosas concretas que puedes hacer:
 
-La única excepción es el contenido en grupo. En juego coordinado, un Void Runner que puede sobrevivir a un error extra suele ser más valioso que uno que inflige un poco más de daño, porque un runner muerto no contribuye en absoluto.
+1. Sigue la página oficial de Steam y añádelo a tu lista de deseados. Esa página es la única fuente fiable sobre los tiempos de lanzamiento y los cambios en las características.
+2. Practica la habilidad central en cualquier juego twin-stick: mantener a un compañero a una distancia constante mientras ambos os movéis. La red de haces recompensa la disciplina de espaciado más que la puntería bruta.
+3. Habla de los roles con tu tripulación antes del lanzamiento. Decidid quién canta la posición y quién canta los objetivos. Quedarse en la trayectoria del haz no es un problema hasta que lo es.
+4. Mantén las expectativas abiertas. No presupuestes costes de desbloqueo, no memorices patrones de guardianes ni construyas un plan en torno a piezas con nombre, porque nada de eso está documentado.
 
-## Cinco errores que matan a los Void Runners
+Una advertencia que vale la pena decir directamente: nada de esto garantiza una partida exitosa. Las mecánicas descritas son características anunciadas, no estrategias resueltas, y el equilibrio probablemente cambiará de aquí al lanzamiento.
 
-1. **Hacer dash por instinto en lugar de por una lectura.** Entrar en fase antes de que el enemigo se comprometa significa volver al suelo sin recurso y sin cooldown.
-2. **Combatir a distancia máxima.** Los Void Runners pierden la mayoría de sus herramientas fuera de la distancia de melé, y su daño cae mucho.
-3. **Ignorar la barra de recurso.** Mirar a tu personaje no es lo mismo que mirar tu energía. Echa un vistazo a la barra entre combos, no durante ellos.
-4. **Perseguir muertes por toda la arena.** Si un objetivo se retira, reinicia y vuelve a enganchar. Perseguir quema energía y te arrastra hacia los adds.
-5. **No practicar nunca sin una red de seguridad.** Los jugadores que solo luchan contra contenido de nivel superior nunca aprenden el timing que hace funcionar el kit.
+## Observaciones de la comunidad frente a hechos confirmados
 
-## Ejercicios y juego en equipo
+Las búsquedas de consejos para el co-op de Void Runners, mecánicas de haces o builds de naves devuelven actualmente muy poco que sea fiable. Donde existen guías de terceros, son observaciones secundarias de personas que leen la misma página de la tienda, no documentación del desarrollador. Atribúyelas como tales y verifica cualquier detalle concreto en el juego o en el listado oficial antes de repetirlo.
 
-Puedes entrenar cada habilidad central en solitario, en un entorno de bajo riesgo, sin tocar una guía de build.
-
-| Ejercicio | Configuración | Qué entrena |
-|---|---|---|
-| Supervivencia solo con dash | Combatir sin atacar durante 60 segundos | Timing de fase y reconocimiento de hitbox |
-| Castigo de dos golpes | Atacar solo dos veces por ventana | Paciencia y disciplina de ventana |
-| Presupuesto de media barra | Limitarte a media energía | Planificación de recursos bajo presión |
-| Barra ciega | Jugar sin mirar la barra de recurso | Memoria muscular y ritmo interno |
-
-En contenido en grupo, los Void Runners suelen cumplir un rol de disrupción más que un rol de daño puro. Su movilidad les permite alcanzar amenazas en la retaguardia, interrumpir casteos y quitar presión a compañeros más lentos. La contrapartida es que no pueden mantener terreno, así que el equipo necesita que alguien más ancle.
-
-Si quieres estudiar cómo otros juegos de acción manejan arquetipos con mucha movilidad y combate basado en cooldowns, explorar [el catálogo de acción en Steam](https://store.steampowered.com/) es un punto de partida razonable para comparar.
+La división clara es sencilla. Anunciado: número de jugadores, unión y destrozo de haces, separarse y hacer oscilar, fuego cruzado, esquiva, reanimaciones desde cápsulas de escape, construcción de una nave recuperada, tres sectores de cuatro saltos, tres guardianes, primer trimestre de 2027. No documentado: piezas de nave, estadísticas de armas, nombres de guardianes, diseños de sectores, códigos, costes de desbloqueo, atajos de teclado e historial de parches. Si ves esos detalles afirmados, pregunta de dónde viene la afirmación.
 
 ## Preguntas frecuentes
 
-**¿Cuál es la habilidad más importante en el combate de Void Runners?**
-Disciplina de energía. El tiempo de reacción ayuda, pero un jugador que siempre mantiene un dash en reserva superará a un jugador más rápido que gasta todo al aproximarse.
+**¿Void Runners ha salido?**
+No. La página oficial lo lista como próximamente con una ventana para el primer trimestre de 2027.
 
-**¿Cuánta energía del vacío debería mantener en reserva?**
-Aproximadamente media barra durante encuentros peligrosos. Los informes de la comunidad muestran consistentemente que los jugadores que mantienen ese colchón mueren por falta de recursos mucho menos a menudo que quienes gastan sin moderación.
+**¿Cuántos jugadores pueden unirse?**
+De uno a cuatro pilotos, en un sofá o en línea, según la descripción de la tienda.
 
-**¿Los Void Runners son buenos en contenido en grupo?**
-Sí, pero no como anclas. Destacan alcanzando objetivos peligrosos, interrumpiendo habilidades y creando aperturas para compañeros más lentos. Empárealos con una primera línea resistente.
+**¿Qué hace el haz?**
+Une naves y destroza todo lo que barre. Cómo se asignan los emparejamientos con tres o cuatro jugadores no está documentado.
 
-**¿Cómo practico el combate de Void Runners sin morir constantemente?**
-Usa encuentros de bajo riesgo y haz ejercicios en lugar de combates completos. Los ejercicios de supervivencia solo con dash y castigo de dos golpes construyen el timing que se traslada a encuentros reales mucho más rápido que las derrotas repetidas.
+**¿Pueden volver los jugadores derribados?**
+La página anuncia la reanimación de la tripulación desde cápsulas de escape, así que sí de alguna forma, aunque las reglas exactas no están publicadas.
+
+**¿Hay jefes o piezas de nave con nombre?**
+No públicamente. La página menciona tres guardianes y una nave recuperada, pero no lista nombres, estadísticas ni costes.
+
+**¿Es el mismo juego que Void Crew o Void Stranger?**
+No. Void Runners es un roguelike twin-stick aparte de Aaron Reisman. Son títulos diferentes.
+
+**¿Dónde debería consultar las novedades?**
+El [listado oficial de Steam](https://store.steampowered.com/app/5334520/) es la fuente autorizada para los tiempos de lanzamiento y los detalles de las características.

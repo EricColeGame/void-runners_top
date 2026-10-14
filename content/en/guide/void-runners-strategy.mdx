@@ -1,126 +1,85 @@
 export const metadata = {
-  title: "Void Runners Strategy Guide: Movement, Loadouts, and Route Mastery",
-  description: "A practical void runners strategy guide covering movement tech, dash economy, route planning, loadouts, and the mistakes that end runs early.",
+  title: "Void Runners: What the Co-op Beam Roguelike Actually Does",
+  description: "Void Runners is a four-player co-op roguelike where beams link ships and shred what they sweep. Here is what is confirmed for the Steam release.",
   category: "guide",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Why Void Runners Strategy Rewards Preparation Over Reflexes
+Void Runners is not out yet. That single fact shapes everything worth saying about it. The Steam listing for the game, developed and published by Aaron Reisman under app ID 5334520, marks it as coming soon with a Q1 2027 release window, retrieved from the official appdetails endpoint on October 14, 2026. There are no patch notes, no balance changes, no meta to study. What exists is a store page description and a concept that is unusually easy to reason about, because the core idea is spatial rather than statistical.
 
-A run through the void can end in seconds if you treat it as a pure reaction test. The players who clear the hardest routes again and again are the ones who treat void runners as a planning problem first and an execution problem second. A good void runners strategy is decided before the first dash: which line you commit to, which resources you are willing to spend, and the exact moment you abandon a doomed attempt. That preparation is what turns a lucky clear into a repeatable one.
+That concept: ships fly in pairs, each pair joined by a beam, and that beam shreds anything it sweeps. You are not aiming a gun so much as deciding where to put a line segment.
 
-Most failed runs trace back to the same handful of causes — panic dashes, greedy detours, and refusing to reset after a mistake. Each of those is a decision, not a reflex, which means each one can be fixed with a system. The sections below break that system into pillars, movement rules, route tiers, loadout choices, and a short practice loop you can run in a single sitting.
+## The one mechanic that explains everything else
 
-If you are still deciding which title to learn on, it helps to [browse void runner titles on Steam](https://store.steampowered.com/search/?term=void+runner) so you can match a game's pace to your comfort level before committing to a grind.
+Most twin-stick roguelikes ask where you point. Void Runners asks where you are relative to your crew, because your damage output is a function of geometry, not aim. Two linked ships sweeping a beam across a room cover ground that no single ship can cover, and the same beam that kills enemies also defines the space your teammate must avoid or exploit.
 
-## The Core Pillars of a Void Runners Strategy
+The official description on the [Void Runners Steam page](https://store.steampowered.com/app/5334520/) frames this as spreading out and swinging the web, with crossfire, dodging, and reviving crew from escape pods as part of the loop. That is a cooperative spatial puzzle dressed as a shooter. If you have played twin-stick games solo for years, the adjustment is not mechanical skill. It is learning to think of your teammate's position as a resource you are continuously spending.
 
-Strong runs rest on five decisions that repeat in almost every void runner, regardless of how the movement or scoring is dressed up. Community reports consistently point to the same pattern: players who improve fastest are the ones who fix their decision-making, not their sensitivity settings.
+## Advertised features versus community inference
 
-| Pillar | What it controls | Why it matters | Quick win |
-|---|---|---|---|
-| Movement economy | Dashes, boosts, air control | Your escape tool is usually a limited resource | Bank one dash at all times |
-| Route selection | The line you take | A safe line beats a fast line that fails | Scout the route before sprinting it |
-| Cooldown timing | When abilities come back | Panic spending leaves you empty at the worst moment | Track cooldowns by landmarks, not timers |
-| Information and vision | What you can read ahead | You cannot dodge what you cannot see | Pull the camera back on straightaways |
-| Reset discipline | When you restart | A doomed run costs more than a restart | Set a bail-out rule before you start |
+It is worth being strict about what is confirmed. The table below separates what the store page states from what players reasonably infer, and from what is simply unknown.
 
-The pillars reinforce each other. Better vision improves route selection, which reduces panic spending, which preserves the dash you need for the one genuinely dangerous gap. When a run falls apart, resist the urge to blame your hands. Ask which pillar broke first — the answer is usually information or discipline, not reflexes.
+| Status | Detail |
+| --- | --- |
+| Advertised | One to four pilots, same couch or online |
+| Advertised | Beams link ships and shred anything they sweep |
+| Advertised | Spread out and swing the web; crossfire and dodging |
+| Advertised | Revive crew from escape pods |
+| Advertised | Build a salvaged ship |
+| Advertised | Three sectors, four jumps each, ending at a guardian |
+| Advertised | Release window Q1 2027, marked coming soon |
+| Not documented | Ship parts, weapon stats, guardian names, sector layouts |
+| Not documented | Unlock costs, progression currency, any code system |
 
-## Movement, Dash Economy, and Momentum Management
+Third-party coverage of Void Runners is thin and mostly restates the store text. Treat any guide that lists specific builds, beam upgrades, or boss strategies as speculation, because none of that has been published. The store page does not disclose ship parts, weapon stats, boss names, or a code system, and this article will not invent them.
 
-Movement is where the strategy becomes visible, and it is also where most players quietly waste their best tools. The goal is not to move constantly; it is to move with intent, so that every burst of speed buys you something.
+## Couch co-op versus online, and why the difference matters
 
-### Treat Dashes as Currency
+The description lists one to four pilots on one couch or online. Those are not equivalent experiences for a game built on beam geometry.
 
-In most void runner designs, your dash is both your fastest traversal option and your only reliable dodge. That dual purpose is the whole tension of the genre. Spend it to save time and you may not have it when a hazard appears; hoard it and your clear time suffers. The practical rule that player experience keeps returning to is simple: never enter an unknown section with an empty tank. If you do not know what is around the corner, arrive with a dash in reserve.
+On a shared screen, you can see your partner's ship and your own at the same time, and that changes how you plan. The beam is visible to both of you simultaneously, so coordinating a sweep is a matter of talking, not describing. Online play adds a layer of translation: you have to say what you are doing rather than simply doing it in view of someone. That is a real cost in a game where relative position is the whole decision.
 
-### The Five Movement Layers
+If you are deciding how to gather a group, the honest answer is that couch play is structurally easier to coordinate, but the store page does not rank the modes or suggest one is favored. Choose based on who is actually available, and verify matchmaking or lobby details on the official page closer to launch, since the description does not specify them.
 
-| Movement layer | Purpose | Common error | Fix |
-|---|---|---|---|
-| Grounded sprint | Build and hold base speed | Stopping to line up a jump | Keep moving; steer with small inputs |
-| Dash or burst | Cover gaps, dodge hazards | Chaining every dash at once | Spend one, save one |
-| Air control | Adjust mid-flight | Over-correcting on approach | Commit to the landing early |
-| Edge and wall interaction | Redirect momentum | Hugging surfaces that kill speed | Touch, do not cling |
-| Landing recovery | Reset your state | Mashing inputs through recovery | Let the recovery finish, then act |
+## Reading a run: three sectors, four jumps, one guardian
 
-### Managing Momentum Without Losing Control
+The advertised run structure is compact: three sectors, four jumps per sector, and a guardian at the end. That is a short arc by roguelike standards, which suggests the design intent is repeated runs rather than long campaigns. A four-jump sector is roughly the length of a focused session, and the guardian acts as a checkpoint on whether your crew's coordination held up.
 
-Momentum is a resource with a ceiling and a floor. Above the ceiling you stop being able to steer precisely; below the floor you cannot clear the gaps the route demands. Experienced runners describe a "working band" — the speed range where the character still responds to small corrections. Learning where that band sits in your game of choice is one of the highest-value hours you can spend, because it tells you when to accelerate and when to deliberately bleed speed before a technical section.
+What the store page does not say is what happens between jumps, how branching works if it branches at all, or what a guardian encounter looks like. It also does not name the guardians. Anyone describing a specific guardian phase or attack pattern is working from assumption, not information.
 
-Recovery is the other half of momentum. After a hard landing or a clipped hazard, your inputs are usually sluggish for a beat. Players who mash through that window tend to drift into the next hazard. Pause, let the state reset, then re-engage. It feels slower and it almost never is.
+The practical takeaway is that your run length is short enough that failure is cheap, which rewards experimenting with aggressive beam positioning rather than playing safe. That is inference from the advertised structure, not a developer statement.
 
-## Route Planning, Loadouts, and Team Roles
+## Building a salvaged ship: what is and is not public
 
-Once movement is under control, the run becomes a routing problem. This is where a void runners strategy starts paying compound interest, because a better route saves time on every single attempt.
+The description mentions building a salvaged ship, which implies you accumulate something across a run and assemble it. Beyond that, the store page is silent. There is no published list of parts, no slot system, no upgrade tree, and no cost table.
 
-### Reading the Route Before You Run It
+This is the area where players will most want guidance and where the least honest guidance exists today. If you see a Void Runners build guide with named components, it is fabricated. The correct move is to wait for launch, then read the in-game interface directly, which will be the authoritative source for parts, stats, and any progression rules.
 
-Walk the route once without sprinting. You are looking for three things: the tightest gap, the hazard with the shortest warning, and the point of no return where you can no longer bail safely. Mark those three landmarks mentally and you have a route plan.
+## How to verify anything before launch
 
-| Tier | What it looks like | Reward profile | When to attempt |
-|---|---|---|---|
-| Safe line | Wide platforms, few hazards | Slow but reliable | Learning, farming, low health |
-| Standard line | Mixed jumps, one or two hazards | Balanced | Most runs, most sessions |
-| Aggressive line | Tight timing, moving hazards | Faster clears, better payouts | After a clean standard clear |
-| Showcase line | Frame-perfect chains, no margin | Top times, bragging rights | Dedicated practice only |
+Because Void Runners is unreleased, every claim should be traceable to the official store page. The reliable checks are:
 
-### Loadout Priorities
-
-| Build focus | What it boosts | Best for | Trade-off |
-|---|---|---|---|
-| Mobility | Dash count, top speed, air control | Speed runs, long routes | Fragile when caught |
-| Survivability | Health, shields, recovery | Learning routes, co-op | Slower clears |
-| Utility | Vision, cooldown speed, resource gain | Scouting, support roles | Weak as a solo carry |
-| Balanced | A little of everything | General play | No standout strength |
-
-The mistake newer players make is copying a speedrunner's build before they can survive the route. Mobility builds reward clean execution and punish everything else. Until your clears are consistent, survivability is the faster teacher.
-
-### Co-op Roles
-
-| Role | Job | Positioning | Common mistake |
-|---|---|---|---|
-| Vanguard | Call the route and first hazards | Slightly ahead | Outrunning the team's information |
-| Runner | Move objectives and resources | Middle | Greedy detours |
-| Support | Manage revives, shields, cooldowns | Rear, watching behind | Hoarding cooldowns for an emergency |
-| Anchor | Hold the exit and control the reset | Exit side | Leaving before everyone is through |
-
-Community reports from co-op groups suggest that clear rates improve far more from fixed roles than from better individual mechanics. A team that always knows who is calling the route will beat a team of four strong solo players almost every time.
-
-## Common Mistakes and a Simple Practice Plan
-
-These are the errors that end runs most often, roughly in order of how much time they cost:
-
-- **Panic dashing.** Spending a dash because you are nervous rather than because you need distance.
-- **Route greed.** Taking a shortcut you have never cleared, in a run that was already going well.
-- **Fighting recovery.** Mashing inputs during landing or stagger frames instead of waiting them out.
-- **Ignoring vision.** Running a section you cannot see past the next hazard.
-- **No bail-out rule.** Continuing a run that was already lost, out of stubbornness.
-- **Copying builds.** Using a setup tuned for a skill level you have not reached.
-
-A structured practice loop beats grinding full runs. Ten focused minutes on one weakness usually produces more improvement than an hour of unfocused attempts.
-
-| Session focus | Drill | What to watch |
-|---|---|---|
-| Dash economy | Clear a route using one dash per gap | How often you spend out of habit |
-| Route memory | Walk the route, then run it | Landmarks you failed to notice |
-| Recovery | Take a hit on purpose, then escape | Whether you can reset calmly |
-| Timing | Repeat one hard jump ten times | Consistency, not your best attempt |
-| Team play | Run with a partner calling hazards | Whether you actually listen |
-
-Track one number per session — attempts per clear, dashes wasted, or deaths per section. A single tracked metric turns practice into feedback, and feedback is what makes a void runners strategy stick.
+- Confirm the release window and status on the [official Steam listing](https://store.steampowered.com/app/5334520/).
+- Check the developer and publisher field, listed as Aaron Reisman.
+- Read the feature list yourself rather than trusting summaries, including this one.
+- After launch, use in-game menus for parts, stats, and any unlock details, since those are not pre-published.
 
 ## FAQ
 
-**What is the most important part of a void runners strategy?**
-Reset discipline. Most players already have the mechanics to clear routes they are failing; they just refuse to restart a run that has gone wrong. Deciding in advance when to bail protects your time and keeps your practice focused on the sections that actually need work.
+**Is Void Runners the same as Void Crew, Void Stranger, Solar Ash, or Starfinder?**
+No. Those are unrelated titles. Void Runners is a distinct game by Aaron Reisman, Steam app 5334520.
 
-**Should I play fast or safe?**
-Play safe until a route is boring, then play fast. Speed comes from removing hesitation, not from adding risk. Once you can clear a line without thinking about it, the faster version of that line usually reveals itself on its own.
+**When does it come out?**
+The official listing shows a Q1 2027 release window and a coming soon status, retrieved October 14, 2026. Windows can move, so check the store page.
 
-**How do I stop panic-dashing?**
-Give yourself a rule you can say out loud: never enter an unseen section without a dash available. Rules are easier to follow under pressure than intentions, and this one forces you to look ahead before you commit.
+**How many players?**
+One to four, on one couch or online, per the official description.
 
-**Do loadouts matter more than skill?**
-No. A good build amplifies good habits and exaggerates bad ones. If your clears are inconsistent, a survivability setup will teach you more than any mobility-focused build — and you can switch once your route knowledge catches up.
+**Does it have a code system, ship parts I can list, or named bosses?**
+None of that is documented. The store page does not publish ship parts, weapon stats, boss names, or a code system.
+
+**How long is a run?**
+Three sectors with four jumps each, ending at a guardian. That is the advertised structure; exact timing is not stated.
+
+**Should I buy it now?**
+It is not purchasable yet. Wishlist it if the beam concept appeals, and treat any pre-release build advice as provisional until the game and its official documentation exist.

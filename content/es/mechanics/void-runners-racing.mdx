@@ -1,139 +1,83 @@
 export const metadata = {
-  title: "Mecánicas de void runners racing explicadas: velocidad, inercia y dominio de la pista",
-  description: "Una guía práctica de void runners racing: control de la inercia, sincronización del boost, lectura de pistas y los ejercicios que convierten carreras caóticas en vueltas limpias.",
+  title: "Void Runners: Lo que realmente hace el juego cooperativo de rayos",
+  description: "Void Runners es un roguelike twin-stick no lanzado donde los rayos conectan cada par de naves. Esto es lo verificado, lo rumoreado y lo desconocido.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-## Qué hace diferente a void runners racing
+"Void Runners" es un nombre fácil de confundir con otra cosa. Las búsquedas arrojan juegos con temática del vacío de todos los géneros, la mayoría de los cuales no tienen nada que ver con este. El Void Runners en cuestión es un juego de Steam del desarrollador y editor Aaron Reisman (Steam app 5334520), anunciado para el primer trimestre de 2027 y actualmente marcado como "próximamente". Nada de él es jugable todavía, lo que significa que cualquier cosa que leas sobre builds, jefes o códigos es especulación o trata de un juego completamente diferente.
 
-Void runners racing parece sencillo desde fuera: elige un carril, mantén el boost y espera que salga bien. En la práctica, es uno de los formatos de velocidad más exigentes del género, porque el espacio por el que compites castiga la duda mucho más de lo que castiga los errores. Void runners racing recompensa a los jugadores que entienden la inercia como un recurso y no como un número en la pantalla.
+Este artículo se ciñe a lo que la [página oficial de la tienda de Void Runners](https://store.steampowered.com/app/5334520/) realmente anuncia, señala dónde las guías de terceros han rellenado huecos y es explícito sobre lo que simplemente no está documentado. Si un detalle no es público, leerás que no es público en lugar de recibir una invención que suena plausible.
 
-El «vacío» aquí no es solo un telón de fondo. Es un entorno abierto, a menudo de baja gravedad, con geometría escasa, plataformas flotantes y largos tramos vacíos donde no hay nada con lo que chocar — ni nada contra lo que impulsarse. Esa combinación lo cambia todo en cómo se desarrolla una carrera en comparación con un juego de circuitos con suelo firme.
+## La idea central: pares de naves, unidas por rayos
 
-Si alguna vez has visto a un corredor hábil trazar un circuito del vacío y te has preguntado por qué parece mucho más rápido que los demás, la respuesta rara vez es la velocidad punta. Es la sincronización, el trazado y la disciplina de no desperdiciar ni una sola unidad de boost.
+El gancho anunciado es la geometría. Void Runners se describe como una incursión cooperativa de salvamento para uno a cuatro pilotos, jugada en un sofá o en línea. Cada par de naves está vinculado por un rayo que destroza cualquier cosa que barre. Esa única frase reencuadra todo el género: en un shooter twin-stick normal, preguntas "¿dónde vuelo?" Aquí también preguntas "¿dónde estoy respecto a mi tripulación?"
 
-## Mecánicas centrales que impulsan void runners racing
+Como el rayo solo existe entre naves vinculadas, el daño que infliges es una función de las posiciones de dos jugadores a la vez, no de la puntería de uno. Separarse estira el rayo en una línea larga que cubre terreno pero se mueve lentamente por la pantalla a medida que cambian los ángulos. Volar cerca hace que el rayo sea corto y posiblemente más difícil de mantener sobre un objetivo. La descripción de la tienda nombra explícitamente separarse, balancear la red y el fuego cruzado como parte del juego previsto, lo que sugiere que el diseño recompensa el posicionamiento coordinado por encima de la habilidad individual de reflejos.
 
-Todo formato de carreras en el vacío comparte un puñado de sistemas. Los nombres cambian entre juegos, pero la lógica subyacente es lo bastante consistente como para construir un modelo mental en torno a ella.
+Lo que la página no dice es cuántos rayos existen con cuatro jugadores, si los vínculos son fijos o reconfigurables, o si un piloto en solitario controla una nave o un par vinculado. Eso no está documentado en ningún lugar público a fecha de este escrito.
 
-| Elemento central | Qué hace | Por qué decide las carreras |
-|---|---|---|
-| Inercia | Transporta tu velocidad por el espacio abierto | La inercia perdida es casi imposible de recuperar a mitad de tramo |
-| Tracción / agarre | Convierte la entrada en cambio de dirección | Poca tracción significa trazadas amplias y tiempo perdido |
-| Economía del boost | Otorga ráfagas de aceleración | Gastarlo pronto suele significar arrastrarse en la meta |
-| Reglas de gravedad | Determinan el arco, la velocidad de caída y el control aéreo | Los tramos verticales se vuelven atajos o trampas |
-| Colisión | Contacto con la geometría y con otros corredores | Un solo roce puede borrar todo un sector limpio |
+## Una partida: tres sectores, cuatro saltos, un guardián
 
-### Inercia y tracción
+La estructura de partida anunciada es corta y legible: tres sectores, cada uno de cuatro saltos de duración, terminando en un guardián. Eso son doce saltos y tres encuentros con guardianes si lo completas todo. La página de la tienda enmarca el objetivo como ir "tres sectores y tres guardianes de profundidad", no como un modo infinito.
 
-La inercia es la variable más importante de void runners racing. En un juego de carreras con suelo firme, normalmente puedes frenar, reiniciar y volver a acelerar sin una pérdida catastrófica. En el vacío, una curva mal tomada te cuesta la velocidad que acumulaste durante los diez segundos anteriores, y a menudo no hay una recta lo bastante larga para recuperarla.
+Dos advertencias aquí. Primero, la página no nombra a los guardianes, describe sus patrones de ataque ni indica si los guardianes son puertas obligatorias o combates opcionales. Segundo, "salto" no está definido en el texto de la tienda; podría significar una sala de combate discreta, un nodo en un mapa o una transición. Cualquiera que afirme conocer los diseños exactos de los sectores está trabajando con algo que no es la descripción oficial.
 
-La tracción determina cuánta de tu inercia puedes redirigir. Una tracción alta te permite tomar trazadas cerradas, pero sangra velocidad en arcos amplios. Una tracción baja conserva la velocidad, pero te obliga a planificar los giros con varios segundos de antelación. Los informes de la comunidad sugieren de forma constante que los jugadores novatos giran en exceso: luchan contra la superficie en lugar de usarla.
+| Anunciado | No documentado públicamente |
+| --- | --- |
+| 1-4 jugadores, local o en línea | Emparejamiento, crossplay o detalles de lobby |
+| 3 sectores, 4 saltos cada uno | Temas de sector, diseños o listas de enemigos |
+| 3 guardianes | Nombres, patrones o valores de salud de los guardianes |
+| Rayos que vinculan pares de naves | Cómo se asignan o cambian los vínculos |
+| Revivir a la tripulación desde cápsulas de escape | Temporizadores, costes o límites de reanimación |
+| Construir una nave recuperada | Piezas, ranuras, estadísticas o costes de mejora |
 
-Un hábito útil: trata tu primera vuelta en cualquier circuito como una prueba de tracción. Modula las entradas con suavidad en las tres primeras curvas y fíjate en cuánto se desliza el vehículo. Esa sola vuelta te dice más que cualquier tutorial.
+## Cápsulas de escape, salvamento y construcción de una nave
 
-### Economía del boost
+Dos sistemas aparecen en la descripción de la tienda y merecen separarse del gancho de combate. El primero es el manejo de la muerte: la tripulación se revive desde cápsulas de escape en lugar de simplemente reaparecer. Eso implica que un piloto caído deja algo atrás que un compañero debe alcanzar, lo que convierte una aniquilación en un problema de rescate — y, dado el mecanismo del rayo, probablemente también en un problema de reposicionamiento.
 
-El boost no es un botón de «ir más rápido». Es un presupuesto que gastas a lo largo de una carrera, y quienes ganan suelen ser los que lo gastaron al final.
+El segundo es la progresión: los jugadores construyen una nave recuperada. "Recuperada" es la palabra clave, lo que implica que las piezas se obtienen de lo que destruyes o encuentras en lugar de comprarse en un menú. Eso es coherente con el planteamiento de incursión de salvamento.
 
-De dónde suele venir el boost:
+Más allá de eso, nada es público. La página no publica piezas de nave, estadísticas de armas, niveles de rareza, moneda, costes de desbloqueo ni un sistema de progresión persistente. Si ves una lista de módulos con nombres y números de daño atribuidos a Void Runners, trátala como poco fiable a menos que provenga de Reisman.
 
-- **Objetos** colocados en la trazada — valor gratis si tu ruta ya pasa por ellos
-- **Umbrales de inercia** — mantener una trazada limpia el tiempo suficiente para activar un impulso
-- **Estela / rebufo** — colocarte detrás de otro corredor para acumular velocidad
-- **Bonificaciones por aterrizaje** — aterrizajes limpios y planos tras una gran caída
+## Observaciones de la comunidad y guías de terceros
 
-El error es tratar los objetos como el objetivo. Un objeto que te obliga a salirte de la trazada ideal cuesta más de lo que aporta. La experiencia de los jugadores sugiere que las trazadas más rápidas a menudo se saltan una o dos placas de boost evidentes a cambio de un ángulo de salida más limpio.
+Como el juego no se ha lanzado, la cobertura de terceros es escasa. Donde existen guías o páginas wiki, son observaciones secundarias recopiladas por jugadores o escritores, no documentación del desarrollador, y deben leerse como tales. Algunas notas prácticas para evaluarlas:
 
-### Gravedad, verticalidad y control aéreo
+- Cualquier cosa que describa juego práctico es anterior a la ventana del primer trimestre de 2027 y no puede basarse en una build pública.
+- Cualquier lista de "códigos" es sospechosa. La página oficial de la tienda no publica ningún sistema de códigos, por lo que los códigos canjeables no son una característica documentada.
+- Los guardianes con nombre, las barras de salud de jefes y las tablas de botín en artículos de terceros no tienen fuente a menos que el escritor cite directamente al desarrollador.
 
-Los circuitos del vacío rara vez son planos. Apilan plataformas, desploman abismos y usan bolsas de baja gravedad para estirar los saltos en largos planeos. El control aéreo es donde void runners racing se aleja más bruscamente de los juegos de carreras tradicionales.
+La vía fiable de verificación es la propia página de la tienda, actualizada por el desarrollador. Cuando aparezca una demo, una prueba de juego o una build de lanzamiento, los menús del juego y las notas de parche en Steam se convierten en la fuente autorizada para cualquier cosa que la página omita. Hasta entonces, "aún no documentado" es la respuesta honesta para la mayoría de las preguntas mecánicas.
 
-| Situación | Respuesta débil | Respuesta fuerte |
-|---|---|---|
-| Caída larga por delante | Frenar a fondo, perder inercia | Mantener la trazada, usar la caída para ganar velocidad |
-| Bolsa de baja gravedad | Luchar por ganar altitud | Planear, inclinar el arco, aterrizar plano |
-| Tramo de pared | Evitar el contacto | Rodar por la pared para un giro que conserva velocidad |
-| Cadena de plataformas ajustadas | Saltar cada hueco por separado | Encadenar los aterrizajes en un flujo continuo |
+## Razonamiento práctico para jugadores que planifican con antelación
 
-Los aterrizajes planos importan más de lo que la mayoría de los jugadores cree. Un aterrizaje que mantiene el chasis nivelado conserva la velocidad; un aterrizaje en ángulo la desgasta. Si un circuito tiene una caída característica, practica solo esa caída durante diez minutos y ganarás más que con una hora entera de intentos de vuelta completa.
+Si estás decidiendo si seguir este juego, algunas conclusiones fundamentadas:
 
-## Lectura de pista: cómo aprender rápido cualquier circuito del vacío
+1. **Planifica para un grupo de dos o cuatro.** El mecanismo de pares de rayos es la identidad del juego. Tanto un jugador como cuatro están anunciados, pero las decisiones interesantes descritas implican todas el posicionamiento de la tripulación, así que un dúo es el mínimo natural para la experiencia prevista.
+2. **Espera partidas cortas.** Doce saltos repartidos en tres sectores es una estructura compacta para los estándares del roguelike. Si prefieres partidas largas y extensas, puede que esta no sea la forma que buscas.
+3. **El cooperativo local es una opción real.** "Un sofá o en línea" es explícito, lo que importa si quieres jugar sin conexión de red.
+4. **No compres guías de builds.** No hay piezas ni estadísticas publicadas, así que ningún consejo de build puede estar actualizado.
+5. **Añádelo a la lista de deseos en lugar de vigilar la reserva.** La página indica el primer trimestre de 2027, y los plazos de lanzamiento de proyectos de equipos pequeños cambian. La página de la tienda es donde aparecería primero un cambio.
 
-Los jugadores más rápidos de void runners racing no memorizan entradas. Memorizan **estructura**. En lugar de aprender «gira a la izquierda en el tercer pilar», aprenden «este sector es una espiral descendente hacia la derecha con una placa de boost en el exterior».
-
-Divide cada circuito en cuatro tipos de segmento:
-
-| Tipo de segmento | Qué exige | Prioridad |
-|---|---|---|
-| Salida | Aceleración limpia desde la parrilla | Evitar el contacto a toda costa |
-| Flujo | Curvas sostenidas y arcos suaves | Conservar la inercia, entradas mínimas |
-| Técnico | Huecos ajustados, aterrizajes precisos | Precisión por encima de velocidad |
-| Recuperación | Espacio amplio y permisivo | Recuperar velocidad, gastar boost |
-
-La mayoría de los circuitos alternan segmentos de Flujo y Técnicos, con Salida y Recuperación enmarcándolos. Cuando puedes etiquetar un circuito en tu cabeza, dejas de reaccionar y empiezas a planificar.
-
-Para hacerte una idea más amplia de cómo estructuran estos sistemas los juegos de carreras, [el centro del género de carreras de Steam](https://store.steampowered.com/tags/en/Racing/) es un lugar útil para comparar cómo distintos títulos gestionan la velocidad, el derrape y el diseño de circuitos.
-
-## Comparación de configuraciones y equipamiento
-
-La mayoría de los juegos de carreras en el vacío te permiten ajustar tu corredor. No existe una configuración mejor universal, pero hay tres arquetipos reconocibles.
-
-| Arquetipo | Fortaleza | Debilidad | Ideal para |
-|---|---|---|---|
-| Equilibrado | Permisivo en todos los sectores | Nunca domina en ninguno | Aprender circuitos nuevos |
-| Velocidad punta | Gran ganancia en línea recta | Gira despacio, castiga los errores | Circuitos con largos tramos de vacío |
-| Agilidad | Giros cerrados, recuperación rápida | Techo más bajo en rectas | Pistas técnicas, con muchas plataformas |
-
-Una regla práctica de los informes de la comunidad: corre con tu **configuración de aprendizaje** hasta que puedas completar un circuito tres veces sin una colisión grave, y luego cambia a una configuración especializada para perseguir tiempos. Cambiar demasiado pronto esconde tus errores detrás de las estadísticas brutas.
-
-## Errores comunes en void runners racing — y cómo corregirlos
-
-| Error | Por qué ocurre | Solución |
-|---|---|---|
-| Usar boost en la recta inicial | Se siente rápido, se ve rápido | Guarda el boost para el primer sector Técnico |
-| Frenar en las curvas | Instinto de juego con suelo firme | Levanta el pie antes, gira tarde, mantén la velocidad |
-| Perseguir objetos fuera de la trazada | Trata el boost como el objetivo | Toma solo los objetos que ya estén en tu trazada |
-| Luchar contra la baja gravedad | Espera una caída a velocidad normal | Planea con el arco, aterriza plano |
-| Reiniciar tras un error | Perfeccionismo | Termina la vuelta: recuperarse es una habilidad |
-| Ignorar la cámara trasera | Visión de túnel | Mira atrás antes de gastar boost |
-
-El último está infravalorado. En void runners racing, la estela de otro jugador puede valer más que una placa de boost, pero no puedes usarla si nunca miras hacia atrás.
-
-## Una rutina de práctica que funciona de verdad
-
-La mejora en void runners racing viene de la repetición específica, no de machacar vueltas completas. Prueba esta estructura semanal:
-
-| Sesión | Enfoque | Duración | Objetivo |
-|---|---|---|---|
-| 1 | El sector más difícil | 15 min | Cero colisiones en ese sector |
-| 2 | Vueltas completas, sin boost | 20 min | Aprender trazadas solo con inercia |
-| 3 | Planificación del boost | 15 min | Decidir dónde se gasta el boost |
-| 4 | Condiciones de carrera | 30 min | Aplicarlo todo con rivales |
-
-Puntos que merece la pena pegar en tu monitor:
-
-- **Una variable a la vez.** Cambia tu trazada o el momento del boost, nunca ambos.
-- **Graba tus carreras.** Ver una repetición revela dudas que no puedes notar en plena carrera.
-- **Termina cada vuelta.** Las carreras abandonadas no te enseñan nada sobre la recuperación.
-- **Corre contra gente un poco mejor que tú.** La estela y la presión exponen rápido los sectores débiles.
-
-Void runners racing es un formato donde la distancia entre un buen jugador y uno excelente se mide en decisiones, no en reflejos. Los reflejos te sacan de una curva. Las decisiones te sacan del circuito.
+Nada de esto garantiza que el juego funcione bien; solo describe lo que se ha prometido.
 
 ## Preguntas frecuentes
 
-**¿Es difícil aprender void runners racing?**
-Lo básico es accesible: acelera, gira, usa el boost. La dificultad está en la consistencia. La mayoría de los jugadores puede terminar un circuito enseguida, pero necesita práctica real antes de terminarlo limpio.
+**¿Es Void Runners lo mismo que Void Crew, Void Stranger o Solar Ash?**
+No. Son juegos separados de otros desarrolladores con mecánicas no relacionadas. Void Runners es el shooter cooperativo de rayos de Aaron Reisman en Steam app 5334520.
 
-**¿Necesito una configuración especializada para ser competitivo?**
-No. Una configuración equilibrada te llevará por la mayoría de los circuitos. Las configuraciones especializadas solo compensan cuando tus trazadas ya son limpias, porque amplifican las buenas decisiones y castigan las malas.
+**¿A cuántos jugadores da soporte?**
+De uno a cuatro, en un sofá o en línea, según la descripción oficial de la tienda.
 
-**¿Cuál es el error más común en void runners racing?**
-Gastar el boost demasiado pronto. Los jugadores tratan el boost como una ráfaga inicial cuando es mucho más valioso como arma de final de carrera.
+**¿Hay códigos que pueda canjear?**
+No hay ningún sistema de códigos documentado en la página de la tienda. Trata cualquier lista de códigos como no verificada.
 
-**¿Cómo puedo ser más rápido sin machacar vueltas completas?**
-Aísla tu peor sector y practica solo eso. La repetición específica supera a las vueltas completas para adquirir habilidad, y es mucho menos frustrante.
+**¿Cómo se llaman los guardianes?**
+No es público. La página de la tienda dice que hay tres guardianes pero no los nombra.
 
-**¿De verdad importa el rebufo en el vacío?**
-En la mayoría de las implementaciones, sí. Ir a la estela de otro corredor es una de las pocas formas de ganar velocidad sin gastar boost, lo que lo convierte en una parte central de void runners racing de alto nivel.
+**¿Qué piezas de nave puedo encontrar?**
+No es público. Se anuncia "construir una nave recuperada", pero no se han publicado piezas, estadísticas ni costes.
+
+**¿Cuándo sale?**
+El listado oficial dice el primer trimestre de 2027 y marca el juego como próximamente. Consulta la [página de Steam](https://store.steampowered.com/app/5334520/) para cualquier cambio en esa ventana.

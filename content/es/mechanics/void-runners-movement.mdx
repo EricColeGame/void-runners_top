@@ -1,149 +1,94 @@
 export const metadata = {
-  title: "Guía de movimiento en Void Runners: dominio del impulso, los dashes y el control aéreo",
-  description: "Domina el movimiento en los void runners: impulso, timing del dash, control aéreo, tiempo coyote y ejercicios que convierten carreras torpes en clears limpios y rápidos.",
+  title: "Void Runners: Qué es realmente el juego cooperativo de rayos",
+  description: "Void Runners es un roguelike twin-stick no lanzado en el que los rayos conectan hasta cuatro naves. Esto es lo que confirma la página de Steam y lo que aún no es público.",
   category: "mechanics",
-  date: "2026-10-12",
-}
+  date: "2026-10-14",
+};
 
-El movimiento en los void runners marca la diferencia entre una carrera que parece no costar nada y otra que termina estrellada contra una pared. En juegos construidos en torno a vacíos infinitos, dashes impulsados por el momento y control aéreo de fracciones de segundo, tus manos son el único ajuste de dificultad que de verdad importa. Domina las mecánicas y el diseño de niveles se abrirá ante ti; falla y cada hueco empezará a parecer una trampa.
+"Void Runners" es un nombre fácil de confundir con otra cosa. Hay todo un grupo de títulos espaciales con "void" en ellos, y varios ya han salido. Este no. Void Runners es un juego anunciado en Steam del desarrollador y editor Aaron Reisman, listado como app 5334520, marcado como próximamente con una ventana de lanzamiento del primer trimestre de 2027. Si buscaste naves, rayos o reglas cooperativas de Void Runners y aterrizaste en una página sobre Solar Ash, Void Crew, Void Stranger o Starfinder, estás en el lugar equivocado. Esos son juegos diferentes de personas diferentes.
 
-Esta guía desglosa cómo funciona de verdad el movimiento en los void runners a nivel interno: los niveles de velocidad, las ventanas de timing ocultas, los ejercicios que construyen memoria muscular y los hábitos que arruinan en silencio carreras que por lo demás serían buenas.
+La [página oficial de Void Runners en Steam](https://store.steampowered.com/app/5334520/) es la única autoridad sobre lo que es el juego, y es deliberadamente breve. Esa página corta es la razón por la que este artículo dedica tanto tiempo a lo que *no* está documentado como a lo que sí lo está. Para un roguelike cooperativo no lanzado, conocer la frontera entre las características anunciadas y las conjeturas de la comunidad es genuinamente útil.
 
-## Qué hace que el movimiento de los void runners se sienta tan bien
+## Qué es Void Runners, según la página de la tienda
 
-Todo sistema de movimiento en este género persigue la misma sensación: el flow. Buscas que el jugador llegue a un estado en el que entrada y resultado encajen con tal precisión que el pensamiento consciente se detenga y la reacción tome el control. Los void runners lo consiguen con cuatro pilares de diseño.
+La descripción de la tienda enmarca Void Runners como incursiones cooperativas de salvamento para uno a cuatro pilotos, jugadas en un sofá o en línea. Dos ideas sostienen todo el planteamiento:
 
-- **Sesgo hacia delante.** La colocación de la cámara, la geometría del nivel y las recompensas te empujan hacia la siguiente plataforma. Volver atrás es posible, pero rara vez merece la pena.
-- **Ventanas permisivas.** Fallar un salto por dos frames no debería terminar una carrera, así que un tiempo coyote generoso y el buffering de entradas evitan que los errores pequeños se multipliquen.
-- **Encadenamiento expresivo.** Los dashes, las patadas de pared y los garfios se enlazan entre sí, permitiendo que los jugadores hábiles inventen rutas que los diseñadores nunca planearon.
-- **Fallo legible.** Cuando mueres, deberías entender exactamente por qué en el primer segundo tras reaparecer.
+- **Los rayos conectan naves.** Cada par de naves está unido por un rayo, y ese rayo destroza todo lo que barre.
+- **La posición es la decisión.** Como el rayo es una línea entre dos jugadores en movimiento, dónde vuelas en relación con tu tripulación es la elección táctica central. Separarse estira el rayo; girar la red cambia lo que corta.
 
-El vacío en sí es más que un telón de fondo. Es un sistema de presión. Como no hay suelo donde pisar, dudar cuesta altura, y la altura cuesta opciones. Por eso el movimiento en los void runners premia la decisión más que la precisión pura.
+La página también menciona fuego cruzado, esquivas, revivir a la tripulación desde cápsulas de escape y construir una nave recuperada. Estructuralmente, una partida cruza tres sectores de cuatro saltos y termina en un guardián, con tres guardianes en total.
 
-Si quieres ver con qué variedad interpretan los estudios estos pilares, echar un vistazo a un catálogo curado como [el centro de etiquetas Parkour de Steam](https://store.steampowered.com/tags/en/Parkour/) deja claro el abanico: algunos juegos apuestan por físicas pesadas, otros por una aceleración ágil de estilo arcade.
+Ese es todo el conjunto de características anunciadas. Es suficiente para entender el bucle, y no suficiente para armar una hoja de cálculo.
 
-## Las mecánicas centrales del movimiento en los void runners
+| Anunciado en Steam | No publicado en Steam |
+|---|---|
+| 1–4 pilotos, local o en línea | Piezas de nave u opciones de equipamiento |
+| Rayos que conectan cada par de naves | Estadísticas de armas, números de daño, enfriamientos |
+| El rayo destroza lo que barre | Nombres de guardianes o patrones de ataque |
+| Tres sectores, cuatro saltos cada uno | Diseños de sector, peligros o modificadores |
+| Tres guardianes | Costes de desbloqueo o moneda de progresión |
+| Revivir desde cápsulas de escape | Cualquier sistema de códigos o atajos de teclado |
+| Construcción de nave recuperada | Ajustes de dificultad o duración de partida en minutos |
 
-La mayoría de juegos del género se construyen a partir del mismo pequeño conjunto de verbos. La tabla siguiente cubre los que te encontrarás una y otra vez.
+Si una página afirma listar piezas de nave, nombres de guardianes o un código canjeable de Void Runners, trátala como no verificada en el mejor de los casos. El desarrollador no ha publicado esos detalles, así que nadie fuera del proyecto puede proporcionarlos legítimamente todavía.
 
-| Mecánica | Qué hace | Nivel de habilidad mínimo | Recompensa al dominarla |
-|---|---|---|---|
-| Dash / impulso | Pico de velocidad direccional instantáneo | Bajo | Cerrar huecos, correcciones en el aire |
-| Doble salto | Un impulso extra tras dejar el suelo | Bajo | Recuperar altura, extender la ruta |
-| Carrera por pared / patada de pared | Convierte superficies verticales en velocidad | Medio | Atajos verticales, escapes en esquinas |
-| Garfio / cable | Te atrae hacia un punto de anclaje | Alto | Libertad de ruta enorme |
-| Deslizamiento | Conserva la velocidad al aterrizar | Bajo | Colarse por geometría estrecha |
-| Control aéreo | Dirección mientras estás en el aire | Medio | Aterrizajes precisos, ajustes |
-| Plataforma de lanzamiento / anillo de impulso | Inyección de velocidad programada | Ninguno | Impulso gratis, entradas de ruta |
+## Por qué el rayo cambia cómo juegas
 
-Fíjate en qué pocos de estos son verbos de ataque. El movimiento en los void runners es casi por completo locomoción. El combate, cuando existe, suele ser una herramienta para redirigir el impulso en lugar de detenerlo.
+La mayoría de los juegos cooperativos twin-stick tratan a los jugadores como armas independientes que casualmente comparten pantalla. Void Runners invierte eso. Tu daño es una relación, no un arma.
 
-La magia ocurre en las combinaciones:
+Piensa en las consecuencias. Si tú y un compañero vuelan juntos, el rayo es corto: seguro, fácil de apuntar, pero cubre muy poco terreno. Sepárense y el rayo se convierte en una larga línea de barrido que puede cortar un amplio arco, que es exactamente lo que quieres contra restos dispersos o una multitud. El coste es que un rayo largo es más difícil de dirigir con precisión y arrastra la posición de ambos jugadores hacia los problemas del otro.
 
-- **Dash + control aéreo** te permite trazar curvas que desde el suelo parecen imposibles.
-- **Patada de pared + garfio** crea cadenas verticales que se saltan secciones enteras.
-- **Deslizamiento + dash** conserva la velocidad en pasillos estrechos donde un aterrizaje normal la mataría.
+Añade un tercer o cuarto piloto y se convierte en una red en lugar de una línea. Ahora la pregunta interesante no es "dónde está el enemigo" sino "cuál de nosotros debería moverse para cambiar la forma de la red". Un jugador que se aleja para perseguir un objetivo no solo se arriesga a sí mismo; está redibujando la cobertura de todos.
 
-Los testimonios de la comunidad de jugadores veteranos sugieren que los mejores runners rara vez usan todas las mecánicas por igual. Eligen dos o tres, las dominan por completo y construyen cada ruta en torno a esas fortalezas.
+Dos detalles anunciados refuerzan esto. El fuego cruzado sugiere que el diseño recompensa ángulos superpuestos en lugar de una única línea de fuego apilada. Las reanimaciones desde cápsulas de escape sugieren que morir es esperado y recuperable, lo que suaviza la penalización habitual de los roguelikes y evita que una partida de cuatro jugadores colapse cuando un piloto toma una mala decisión. Ambas son declaraciones de la página de la tienda, no mecánicas probadas: el juego no ha salido.
 
-## Impulso, niveles de velocidad y lectura de rutas
+## Tres sectores, cuatro saltos, un guardián
 
-La velocidad en estos juegos no es un único número. Es una máquina de estados, y saber en qué nivel estás te dice qué es posible en el siguiente segundo.
+La estructura de partida anunciada es ordenada y vale la pena repetirla con precisión: tres sectores, cuatro saltos en cada uno, terminando en un guardián, tres guardianes de profundidad. Eso significa doce saltos entre tú y el final de una partida, asumiendo que la página de la tienda describe un camino recto.
 
-| Estado de velocidad | Cómo llegas a él | Qué desbloquea | Riesgo principal |
-|---|---|---|---|
-| Neutro | Estar de pie, caminar, reaparecer | Movimiento de precisión, exploración segura | Perder el tempo |
-| Crucero | Velocidad normal de carrera | Saltos estándar, cadenas simples | Que el nivel te supere con facilidad |
-| Cargado | Dash, plataforma de impulso, pendiente cuesta abajo | Huecos largos, cadenas en paredes | Más difícil de dirigir |
-| Encadenado | Dos o más fuentes de impulso acumuladas | Atajos de ruta, saltos de sección | Un solo error borra todo |
-| Terminal | Encadenamiento sostenido durante tramos largos | Líneas de nivel speedrun | Casi ninguna posibilidad de recuperación |
+La lectura práctica es que Void Runners apunta a una partida roguelike más corta y densa que las entradas de formato largo del género: el tipo de estructura que encaja en una sesión de sofá donde la gente rota hacia dentro y hacia fuera. Doce encuentros más tres jefes es una forma que puedes terminar de una sentada, aunque la página no indica una duración objetivo, y no deberías asumir una.
 
-Piensa en el impulso como una deuda sobre la que siempre pagas intereses. Cada vez que te detienes, le debes al juego una aceleración más lenta para volver a coger velocidad. La lectura de rutas, entonces, consiste sobre todo en decidir dónde puedes permitirte frenar.
+Lo que la página no te dice es posiblemente más importante. No hay información publicada sobre:
 
-Un método práctico para planificar una línea:
+- Qué ocurre entre saltos (tienda, pantalla de elección, descanso o nada)
+- Si los guardianes escalan con el número de jugadores
+- Si los sectores tienen temáticas, facciones o diferencias de bioma
+- Si las naves se eligen antes de una partida o se ensamblan durante ella, más allá de la frase "construir una nave recuperada"
 
-1. **Busca el punto más alto.** La posición vertical suele valer más que la distancia horizontal.
-2. **Encuentra tus anclajes.** Los puntos de garfio, las plataformas de lanzamiento y los segmentos de pared definen el esqueleto de la ruta.
-3. **Marca los puntos de reinicio.** Las plataformas amplias y las repisas seguras son donde puedes respirar.
-4. **Pruébala al revés.** Recorrer una ruta en sentido inverso revela atajos que pasarías por alto hacia delante.
+"Construir una nave recuperada" es la única frase que insinúa meta-progresión —recoger restos entre partidas y ensamblar algo—, pero la página de la tienda nunca dice si esa nave persiste entre partidas o se ensambla dentro de una sola. No dejes que una guía de terceros te diga lo contrario; no hay documentación del desarrollador que respalde ninguna de las dos lecturas.
 
-Los jugadores que planifican sus rutas así suelen dejar de culpar a sus reflejos y empiezan a corregir sus líneas, que es un camino mucho más rápido hacia la mejora.
+## Un jugador, sofá y en línea
 
-## Ventanas de timing y sensación de control
+Void Runners admite de uno a cuatro pilotos, lo que significa que el juego en solitario está contemplado. Eso plantea una pregunta obvia que la página de la tienda no responde: si los rayos conectan *pares* de naves, ¿a qué se conecta el rayo de un piloto en solitario? No hay respuesta documentada. Podría ser un dron, un amarre a un objeto o un kit en solitario rediseñado. Hasta que el juego salga o el desarrollador lo explique, cualquier respuesta es una conjetura.
 
-La mitad invisible del movimiento en los void runners es la permisividad. Estos sistemas suelen ajustarse con ventanas ocultas que hacen que las entradas se sientan receptivas incluso cuando llegan un poco antes o un poco después.
+Para el juego en línea, la página confirma que existe cooperativo en línea pero no publica nada sobre emparejamiento, migración de anfitrión, servidores dedicados o juego cruzado. Para un título indie no lanzado de un desarrollador en solitario, esas son cosas razonables que esperar en lugar de asumir.
 
-| Sistema | Qué perdona | Rango típico | Cómo entrenarlo |
-|---|---|---|---|
-| Tiempo coyote | Saltar justo después de dejar una repisa | ~80–170 ms | Salta a propósito tarde desde las repisas |
-| Buffer de salto | Pulsar salto justo antes de aterrizar | ~80–130 ms | Salta pronto al aterrizar |
-| Buffer de dash | Encolar un dash durante otra acción | ~100 ms | Haz dash saliendo de deslizamientos y patadas de pared |
-| Corrección de esquinas | Rozar el borde de una plataforma | Unos pocos píxeles | Apunta un poco corto a propósito |
-| Tolerancia de entrada | Entradas diagonales cerca de las direcciones cardinales | Varía según el juego | Prueba con ambos tipos de dispositivo |
+## Cómo verificar cualquier cosa que leas en otro sitio
 
-Los valores exactos varían de un juego a otro y a menudo difieren entre teclado y mando, así que toma estos rangos como convenciones generales de diseño y no como reglas universales. Lo que importa es que aprendas la sensación de tu juego, no los números que hay detrás.
+Como Void Runners no ha salido, el camino de verificación es corto y aburrido, lo cual es bueno:
 
-Otra variable que la gente subestima: la frecuencia de refresco de la pantalla. Los testimonios de la comunidad mencionan con frecuencia que la misma ruta se siente distinta a 60 Hz que a frecuencias de refresco más altas, no porque el juego haya cambiado, sino porque el bucle de retroalimentación sí lo hizo. Las entradas tardías se vuelven visibles, y los problemas visibles se pueden corregir.
+1. Ve al [listado oficial de Steam](https://store.steampowered.com/app/5334520/). Revisa la descripción, las capturas de pantalla y cualquier publicación o anuncio del desarrollador.
+2. Comprueba el campo de fecha de lanzamiento. A octubre de 2026 dice primer trimestre de 2027, marcado como próximamente. Si un sitio cita un día específico, ese sitio va por delante del desarrollador.
+3. Cuando exista una demo, una prueba de juego o una versión final, los menús del juego resolverán las preguntas sobre piezas de nave, equipamiento y rayos en solitario más rápido que cualquier artículo.
 
-Ajustes que conviene tocar desde el principio:
-
-- **Campo de visión.** Una vista más amplia te da más tiempo para leer la geometría que viene.
-- **Suavizado de cámara.** Redúcelo; una cámara que se queda rezagada respecto a tu movimiento oculta los puntos de aterrizaje.
-- **Vibración de cámara.** Bájala si te oculta la plataforma a la que apuntas.
-- **Sensibilidad / zona muerta.** Ajusta hasta que los movimientos pequeños del stick produzcan giros predecibles.
-
-## Ejercicios de práctica para afinar el movimiento en los void runners
-
-Machacar carreras completas es la forma más lenta de mejorar. Los ejercicios aislados construyen las mismas habilidades en una fracción del tiempo.
-
-| Ejercicio | Cómo ejecutarlo | Volumen sugerido | Qué entrena |
-|---|---|---|---|
-| Carrera sin dash | Completa una sección sin usar el dash | 5–10 intentos | Timing de salto, eficiencia de ruta |
-| Ruta inversa | Juega una sección al revés | 3–5 intentos | Conciencia espacial |
-| Cadena de una vida | Enlaza tantos huecos como puedas y reinicia ante cualquier parada total | 10 intentos | Gestión del impulso |
-| Ejercicio de salto tardío | Salta en el último momento posible desde cada repisa | 10 repeticiones por repisa | Sensación del tiempo coyote |
-| Split por segmento | Cronometra un segmento en lugar del nivel entero | 5 carreras | Consistencia bajo presión |
-
-La práctica deliberada supera al volumen. Diez minutos concentrados en patadas de pared harán más por tu movimiento que una hora de carreras sin estructura, porque entrenas una variable a la vez en lugar de cinco.
-
-Un calentamiento sencillo de unos ocho minutos:
-
-- Dos minutos de ochos con control aéreo.
-- Tres minutos de cancelaciones de dash y entradas con buffer.
-- Dos minutos de carrera en línea recta a máxima velocidad.
-- Un minuto del salto más difícil de tu ruta actual.
-
-## Errores comunes que rompen tu flow
-
-La mayoría de los estancamientos provienen de una lista corta de errores repetibles. Encuentra el tuyo en la tabla de abajo.
-
-| Error | Síntoma | Solución |
-|---|---|---|
-| Abusar del dash | Picos de velocidad y luego frenazos | Usa el dash solo para huecos que no puedas saltar |
-| Pelearse con la cámara | Aterrizajes mal calculados una y otra vez | Aumenta el FOV, reduce el suavizado, mira más hacia delante |
-| Aterrizar plano | El impulso muere en cada plataforma | Aterriza en ángulo y desliza hacia tu siguiente entrada |
-| Ignorar los buffers | Las entradas parecen perderse o comerse | Pulsa la siguiente acción antes de que termine la actual |
-| Machacar una sola sección | Tilt y memoria muscular descuidada | Cambia de ruta o tómate un descanso corto |
-| Copiar rutas a ciegas | Ejecución inconsistente | Adapta la línea a tu propio timing |
-
-La última merece un énfasis especial. Ver la línea de un jugador de élite y copiarla al pie de la letra rara vez funciona, porque su ruta da por sentado su tiempo de reacción y su dispositivo de entrada. Roba la estructura y luego reconstruye el timing en torno a tus propias manos.
+Las guías de terceros escritas antes del lanzamiento trabajan con la misma página de la tienda que tú. Cuando este artículo cita observación de la comunidad, eso es lo que significa: inferencia, no documentación.
 
 ## Preguntas frecuentes
 
-### ¿Cuánto se tarda en ser bueno en el movimiento de los void runners?
+**¿Es Void Runners lo mismo que Void Crew o Void Stranger?**
+No. Esos son juegos separados de desarrolladores distintos. Void Runners es de Aaron Reisman, app de Steam 5334520.
 
-Depende mucho del juego y de cómo practiques. Los jugadores que aíslan una mecánica por sesión suelen notar una mejora notable en un puñado de sesiones enfocadas, mientras que los que solo juegan niveles completos a menudo se estancan durante semanas. La constancia importa más que las sesiones largas.
+**¿Cuántos jugadores admite Void Runners?**
+De uno a cuatro, en un sofá o en línea, según la página oficial de la tienda.
 
-### ¿Es mejor el teclado o el mando para el movimiento de los void runners?
+**¿Para qué sirven los rayos?**
+Conectan cada par de naves y destrozan todo lo que barren. Posicionar el rayo es la decisión central anunciada.
 
-Ambos funcionan, y la respuesta correcta depende de cómo esté ajustado el juego. Los mandos suelen ofrecer un control aéreo más suave gracias a la entrada analógica, mientras que los teclados dan direcciones cardinales exactas que hacen más consistentes ciertos ángulos de dash. Prueba ambos en el mismo segmento y compara tus tiempos.
+**¿Cuánto dura una partida?**
+Tres sectores de cuatro saltos cada uno, terminando en un guardián, tres guardianes de profundidad. No se publica ninguna duración de partida.
 
-### ¿Por qué sigo perdiendo velocidad al aterrizar?
+**¿Hay códigos de trucos o un sistema de códigos?**
+No documentado. Nada en la página oficial menciona códigos, así que cualquier lista de códigos que encuentres es inventada hasta que el desarrollador diga lo contrario.
 
-Aterrizar plano suele ser el culpable. En la mayoría de sistemas de movimiento, un aterrizaje plano convierte tu velocidad horizontal en una parada, mientras que un aterrizaje en ángulo o un deslizamiento la conservan. Encadena un deslizamiento, un dash o un buffer de salto justo después de tocar el suelo para mantener viva la carrera.
-
-### ¿Afectan de verdad los ajustes gráficos y de entrada al rendimiento?
-
-Pueden hacerlo. El campo de visión, el suavizado de cámara y la frecuencia de refresco cambian cuánta información tienes y con qué rapidez la recibes. Ninguno sustituye a la práctica, pero una pantalla limpia y legible hace que cada repetición de práctica sea más útil.
-
-Dominar el movimiento en los void runners no consiste en memorizar datos de frames. Consiste en desarrollar una sensación para el impulso, respetar las ventanas de timing que te dieron los diseñadores y practicar las habilidades concretas que exigen tus rutas. Elige un ejercicio, practícalo durante diez minutos y observa lo rápido que el vacío deja de sentirse vacío.
+**¿Cuándo sale?**
+El primer trimestre de 2027 es la ventana actual en Steam, con fecha de octubre de 2026. Las ventanas cambian; la página de la tienda es la fuente en la que confiar.
